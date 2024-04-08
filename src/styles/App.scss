@@ -165,13 +165,18 @@
   cursor: pointer;
   font-size: 0.9em;
   font-weight: 600;
+  @media (max-width: 800px) {
+    font-size: 0.8rem;
+  }
 }
 
 .song-artist {
   font-size: 0.8rem;
   opacity: 0.6;
-  margin-top: 5px;
   cursor: pointer;
+  @media (max-width: 800px) {
+    font-size: 0.7rem;
+  }
 }
 
 .song-title:hover,

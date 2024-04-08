@@ -15,8 +15,12 @@ const SongDetails = memo(() => {
         src={`${process.env.PUBLIC_URL}/images/songs/${current + 1}.png`}
       />
       <div id='song-and-artist-name'>
-        <h3 className='text-white font-bold song-title'>{currentSongData.name}</h3>
-        <p className='text-gray-200 song-artist'>{currentSongData.artist}</p>
+        <p className='text-white font-bold song-title' title={currentSongData.name}>
+          {currentSongData.name}
+        </p>
+        <p className='text-gray-200 song-artist' title={currentSongData.artist}>
+          {currentSongData.artist}
+        </p>
       </div>
 
       <HeartLike />

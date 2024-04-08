@@ -28,13 +28,13 @@ const ExtraControlButtons = () => {
         </Tooltip>
 
         <Tooltip title={t('Queue')}>
-          <Col>
+          <Col className='hiddable-icon'>
             <ListIcon />
           </Col>
         </Tooltip>
 
         <Tooltip title={t('Connect to a device')}>
-          <Col>
+          <Col className='hiddable-icon'>
             <DeviceIcon />
           </Col>
         </Tooltip>
@@ -44,7 +44,7 @@ const ExtraControlButtons = () => {
         </Col>
 
         <Tooltip title={t('Full Screen')}>
-          <Col>
+          <Col className='hiddable-icon'>
             <ExpandIcon />
           </Col>
         </Tooltip>

@@ -52,6 +52,10 @@
     opacity: 0;
     transition: 0.2s ease;
   }
+
+  @media (max-width: 980px) {
+    display: none;
+  }
 }
 
 .heart-liked {
@@ -200,7 +204,13 @@
 }
 
 #song-and-artist-name {
-  min-width: 130px;
+  h3,
+  p {
+    width: 110px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 
 .replay {
@@ -226,5 +236,11 @@
       }
     }
     fill: #1db954 !important;
+  }
+}
+
+.hiddable-icon {
+  @media (max-width: 980px) {
+    display: none;
   }
 }
