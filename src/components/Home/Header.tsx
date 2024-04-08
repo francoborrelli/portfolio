@@ -1,6 +1,6 @@
 import { Space } from 'antd';
+// import { News } from '../Icons';
 import HistoryNavigation from '../Navbar/HistoryNavigation';
-import { News } from '../Icons';
 
 const Header = ({ opacity }: { opacity: number }) => {
   return (
@@ -12,9 +12,19 @@ const Header = ({ opacity }: { opacity: number }) => {
 
       <div className='flex flex-row items-center'>
         <Space>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            className='contact-me'
+            href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=francoborrelli96@gmail.com&su=SUBJECT'
+          >
+            <span>Contact me</span>
+          </a>
+
+          {/*
           <div className='news'>
             <News />
-          </div>
+          </div> */}
 
           <img
             className='avatar'

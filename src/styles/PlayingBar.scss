@@ -244,3 +244,42 @@
     display: none;
   }
 }
+
+.mobile-player {
+  bottom: 70px;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  position: fixed;
+  width: calc(100vw - 40px);
+
+  svg {
+    fill: white !important;
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  margin-top: 15px;
+
+  a {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    font-size: 0.85em;
+    gap: 4px;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+.mobile-menu,
+.mobile-player {
+  @media (min-width: 980px) {
+    display: none;
+  }
+}

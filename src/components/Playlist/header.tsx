@@ -26,11 +26,11 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist }) => {
       </div>
 
       <div style={{ padding: 40, paddingTop: 20 }}>
-        <Row gutter={24} align={'middle'}>
-          <Col xs={6} lg={5}>
+        <Row gutter={[24, 24]} align={'middle'}>
+          <Col xs={24} sm={6} lg={5}>
             <img src={playlist.imageUrl} alt='' className='playlist-img' />
           </Col>
-          <Col xs={18} lg={19}>
+          <Col xs={24} sm={18} lg={19}>
             <p className='text-white'>{t('Public playlist')}</p>
             <h1 className='playlist-title'>{playlist.name}</h1>
             <Space>
