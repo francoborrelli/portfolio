@@ -1,0 +1,230 @@
+.player-pause-button {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 38px;
+  min-width: 38px;
+  position: relative;
+  -webkit-transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  transition: none 33ms cubic-bezier(0.3, 0, 0.7, 1);
+  -webkit-transition-property: all;
+  transition-property: all;
+  width: 38px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  cursor: pointer;
+  justify-content: center;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* heart animation */
+
+.heart-like {
+  cursor: pointer;
+  position: relative;
+  display: grid;
+  place-content: center;
+
+  #center-heart {
+    #inner {
+      fill: transparent;
+      transition: 0.2s ease;
+    }
+
+    #outer {
+      fill: white;
+      transition: 0.2s ease;
+    }
+  }
+
+  #left-hearts > *,
+  #right-hearts > * {
+    opacity: 0;
+    transition: 0.2s ease;
+  }
+}
+
+.heart-liked {
+  cursor: pointer;
+
+  ::before {
+    content: '';
+    display: grid;
+    border-radius: 100%;
+    position: absolute;
+    outline: 25px solid #64d26d;
+    height: 300px;
+    width: 300px;
+    animation: scalePulse 0.5s cubic-bezier(0.12, 0.84, 0.5, 0.44) forwards;
+  }
+
+  ::after {
+    content: '';
+    display: grid;
+    border-radius: 100%;
+    position: absolute;
+    outline: 25px solid #64d26d;
+    height: 300px;
+    width: 300px;
+    animation: scalePulse 0.5s cubic-bezier(0.12, 0.84, 0.5, 0.44) forwards;
+    opacity: 1;
+    transform: scale(0);
+    animation-delay: 0.2s;
+  }
+
+  #center-heart {
+    #inner,
+    #outer {
+      fill: #64d26d;
+    }
+  }
+
+  #left-hearts > * {
+    transform-origin: center center;
+    animation: floatingHearts 0.65s cubic-bezier(0.12, 0.84, 0.5, 0.44) forwards;
+  }
+
+  #right-hearts {
+    > * {
+      transform-origin: center center;
+      animation: floatingHearts 0.65s cubic-bezier(0.12, 0.84, 0.5, 0.44) forwards;
+    }
+
+    g {
+      &:first-child {
+        animation-delay: 0.3s;
+      }
+
+      &:last-child {
+        animation-delay: 0.1s;
+      }
+    }
+  }
+
+  #left-hearts g {
+    &:first-child {
+      animation-delay: 0.2s;
+    }
+
+    &:last-child {
+      animation-delay: 0.5s;
+    }
+  }
+}
+
+@keyframes floatingHearts {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes scalePulse {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+.volume-sider-container {
+  width: 100%;
+
+  .volumen {
+    padding-right: 2px;
+  }
+
+  .volume-sider {
+    margin-bottom: 4px;
+    padding-left: 10px;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #696969;
+    transition: width 0.1s;
+    border-radius: 4px;
+
+    .position-sider {
+      background-color: white;
+    }
+
+    .handler-sider {
+      display: inline;
+    }
+
+    &:hover {
+      .position-sider {
+        background-color: #21cc44 !important;
+      }
+
+      .handler-sider {
+        display: block;
+        background: white;
+        height: 10px;
+        width: 10px;
+        border-radius: 5px;
+        margin-top: -7px;
+      }
+    }
+  }
+}
+
+.album-cover {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+#song-and-artist-name {
+  min-width: 130px;
+}
+
+.replay {
+  &:after {
+    background-color: currentcolor;
+    border-radius: 50%;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 4px;
+    color: #1db954;
+  }
+
+  &.active {
+    &:hover {
+      &:after {
+        fill: #38ec77 !important;
+      }
+    }
+    fill: #1db954 !important;
+  }
+}
