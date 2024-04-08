@@ -13,10 +13,12 @@ import storage from 'redux-persist/lib/storage'; // defaults to localStorage
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
 // Reducers
+import libraryReducer from './slices/library';
 import languageReducer from './slices/language';
 import playingBarReducer from './slices/playingBar';
 
 const appReducer = combineReducers({
+  library: libraryReducer,
   language: languageReducer,
   playingBar: playingBarReducer,
 });

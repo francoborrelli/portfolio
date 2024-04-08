@@ -27,13 +27,17 @@ export const HomeIcon = () => (
     viewBox='0 0 576 512'
     aria-hidden='true'
     role='img'
+    width='24'
+    height='24'
+    stroke='#b3b3b3'
+    fill='#b3b3b3'
     xmlns='http://www.w3.org/2000/svg'
   >
     <g transform='translate(288 256)' transform-origin='144 0'>
       <g transform='translate(0,0) scale(1,1)'>
         <path
           d='M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z'
-          fill='currentColor'
+          fill='#b3b3b3'
           transform='translate(-288 -256)'
         ></path>
       </g>
@@ -49,8 +53,8 @@ export const SearchIcon = () => (
     width='24'
     height='24'
     viewBox='0 0 30 30'
-    stroke='white'
-    fill='white'
+    stroke='#b3b3b3'
+    fill='#b3b3b3'
     className='hoverable-icon'
   >
     <path d='M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z'></path>
@@ -65,11 +69,29 @@ export const LibraryIcon = () => (
     viewBox='0 0 24 24'
     width='24'
     height='24'
-    stroke='white'
-    fill='white'
+    stroke='#b3b3b3'
+    fill='#b3b3b3'
+    stroke-width='0'
     className='hoverable-icon'
   >
     <path d='M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z'></path>
+  </svg>
+);
+
+export const LibraryCollapsedIcon = () => (
+  <svg
+    data-encore-id='icon'
+    role='img'
+    width='24'
+    height='24'
+    aria-hidden='true'
+    viewBox='0 0 24 24'
+    stroke='#b3b3b3'
+    fill='#b3b3b3'
+    stroke-width='0'
+    className='hoverable-icon'
+  >
+    <path d='M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z'></path>
   </svg>
 );
 

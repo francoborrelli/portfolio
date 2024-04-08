@@ -23,6 +23,7 @@ import { persistor, store, useAppSelector } from './store/store';
 
 const RootComponent = () => {
   const language = useAppSelector((state) => state.language.language);
+  const libraryCollapsed = useAppSelector((state) => state.library.collapsed);
 
   useEffect(() => {
     document.documentElement.setAttribute('lang', language);
@@ -35,11 +36,11 @@ const RootComponent = () => {
       <Router>
         <div style={{ padding: 10 }}>
           <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(98vh - 90px)' }}>
-            <Col xs={0} lg={6}>
+            <Col xs={0} lg={libraryCollapsed ? 2 : 6}>
               {/* Left panel - Navigation */}
               <Navigation playlists={playlists} />
             </Col>
-            <Col xs={24} lg={18}>
+            <Col xs={24} lg={libraryCollapsed ? 22 : 18}>
               {/* Left panel - Navigation */}
               <MainSection playlists={playlists} />
             </Col>

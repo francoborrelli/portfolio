@@ -1,5 +1,5 @@
 // Icons
-import { LibraryIcon } from '../Icons';
+import { LibraryCollapsedIcon, LibraryIcon } from '../Icons';
 
 // Utils
 import { memo, useCallback } from 'react';
@@ -15,13 +15,38 @@ import { useTranslation } from 'react-i18next';
 
 // Interfaces
 import type { Playlist } from '../../interfaces/types';
+import { useAppDispatch, useAppSelector } from '../../store/store';
+import { libraryActions } from '../../store/slices/library';
+import { Tooltip } from '../Common/Tooltip';
 
 const Title = memo(() => {
+  const dispatch = useAppDispatch();
   const { t } = useTranslation(['navbar']);
+  const collapsed = useAppSelector((state) => state.library.collapsed);
+
+  if (collapsed) {
+    return (
+      <Tooltip placement='right' title={t('Expand your library')}>
+        <button
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+          onClick={() => dispatch(libraryActions.toggleLibrary())}
+        >
+          <LibraryCollapsedIcon />
+        </button>
+      </Tooltip>
+    );
+  }
 
   return (
     <Space wrap>
-      <LibraryIcon />
+      <Tooltip placement='top' title={t('Collapse your library')}>
+        <button onClick={() => dispatch(libraryActions.toggleLibrary())}>
+          <LibraryIcon />
+        </button>
+      </Tooltip>
       <span className='Navigation-button'>{t('Your Library')}</span>
     </Space>
   );
@@ -29,6 +54,7 @@ const Title = memo(() => {
 
 const YourLibrary = ({ playlists }: { playlists: Playlist[] }) => {
   const navigate = useNavigate();
+  const collapsed = useAppSelector((state) => state.library.collapsed);
 
   const onClick = useCallback(
     (url: string) => {
@@ -42,8 +68,10 @@ const YourLibrary = ({ playlists }: { playlists: Playlist[] }) => {
       <Title />
 
       <div className='library-list-container'>
-        <Col style={{ overflowY: 'scroll' } as const}>
-          <div>
+        <Col style={collapsed ? {} : ({ overflowY: 'scroll', height: '100%' } as const)}>
+          <div
+            style={collapsed ? { overflowY: 'scroll', overflowX: 'hidden', height: '100%' } : {}}
+          >
             {playlists.map((playlist: Playlist, index: number) => {
               return (
                 <PlaylistCardShort

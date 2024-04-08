@@ -87,6 +87,10 @@
   overflow-x: hidden;
   transition: background-color 0.2s ease-in-out;
 
+  &.collapsed {
+    margin-bottom: 10px;
+  }
+
   img {
     border-radius: 4px;
   }

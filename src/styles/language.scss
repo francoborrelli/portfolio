@@ -30,9 +30,22 @@
   -webkit-box-pack: center;
   justify-content: center;
 
+  &.collapsed {
+    border: none;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
   &:hover {
     transform: scale(1.05);
+
     border: 2px solid var(--essential-subdued, white);
+
+    &.collapsed {
+      border: none;
+    }
   }
 }
 
