@@ -1,3 +1,5 @@
+@use './variables.scss' as *;
+
 .player-pause-button {
   background-color: #fff;
   border: none;
@@ -279,7 +281,7 @@
 
 .mobile-menu,
 .mobile-player {
-  @media (min-width: 768px) {
+  @media (min-width: $desktop-breakpoint) {
     display: none;
   }
 }

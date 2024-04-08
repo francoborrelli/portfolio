@@ -1,0 +1,47 @@
+@use './variables.scss' as *;
+
+.avatar {
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 30px;
+  cursor: pointer;
+}
+
+.news {
+  padding: 5px;
+  border-radius: 50%;
+  background: $background-color;
+  border: 2px solid $background-color;
+}
+
+.avatar:hover,
+.hoverable-icon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  fill: white !important;
+}
+
+.contact-me {
+  font-size: 13px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  background-color: var(--background-base, rgba(0, 0, 0, 0.54));
+  color: var(--text-base, #ffffff) !important;
+  display: flex;
+  border-radius: var(--encore-button-corner-radius, 9999px);
+  font-size: inherit;
+  min-block-size: var(--encore-control-size-smaller, 30px);
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-block-start: var(--encore-spacing-tighter-4, 3px);
+  padding-block-end: var(--encore-spacing-tighter-4, 3px);
+  padding-inline-start: 16px;
+  padding-inline-end: var(--encore-spacing-base, 16px);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

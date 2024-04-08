@@ -1,7 +1,9 @@
+@use './variables.scss' as *;
+
 .Navigation-section {
   padding: 20px;
   border-radius: 15px;
-  background-color: #121212;
+  background-color: $background-color;
   display: flex;
   flex-direction: column;
   justify-content: center;

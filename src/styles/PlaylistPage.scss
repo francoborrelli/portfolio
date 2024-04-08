@@ -1,3 +1,5 @@
+@use './variables.scss' as *;
+
 .playlist-img {
   box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
@@ -9,7 +11,7 @@
   object-position: center center;
   max-width: 350px;
 
-  @media (max-width: 768px) {
+  @media (max-width: $desktop-breakpoint) {
     & {
       max-width: 150px;
     }
@@ -52,12 +54,18 @@
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $desktop-breakpoint) {
   .playlist-title {
     font-size: 2rem;
   }
 
   .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .desktop-hidden {
     display: none;
   }
 }
@@ -83,5 +91,41 @@
     color: #b3b3b3;
     font-size: 14px;
     font-weight: 400;
+  }
+}
+
+.library-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.ant-avatar-group .ant-avatar {
+  border-color: #0000005c;
+}
+
+.ant-avatar-group > *:not(:first-child) {
+  margin-inline-start: 4px;
+}
+
+.ant-avatar-group-popover {
+  .ant-popover-arrow {
+    display: none;
+  }
+
+  .ant-popover-inner {
+    background-color: #242424 !important;
+  }
+}
+
+.song-details {
+  .drawer-icon {
+    visibility: hidden;
+  }
+
+  &:hover .drawer-icon {
+    visibility: visible;
   }
 }

@@ -1,3 +1,7 @@
+@use './variables.scss' as *;
+
+@use './home.scss';
+@use './header.scss';
 @use './Navbar.scss';
 @use './language.scss';
 @use './CirclePlay.scss';
@@ -14,45 +18,9 @@ h3 {
   text-overflow: ellipsis;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .Main-section {
   border-radius: 15px;
-  background-color: #121212;
+  background-color: $background-color;
   overflow-y: scroll;
   height: calc(100vh - 100px);
   width: 100%;
@@ -116,156 +84,6 @@ h3 {
   }
 }
 
-.avatar {
-  border: 2px solid black;
-  border-radius: 50%;
-  width: 30px;
-  cursor: pointer;
-}
-
-.news {
-  padding: 5px;
-  border-radius: 50%;
-  background: #121212;
-  border: 2px solid #121212;
-}
-
-.avatar:hover,
-.hoverable-icon:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  fill: white !important;
-}
-
 .hoverable-icon.active:hover {
   fill: #38ec77 !important;
-}
-
-.horizontal-playlist {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  border-radius: 5px;
-  width: 100%;
-  cursor: pointer;
-  background-color: #ffffff1a;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-  font-size: 0.8em;
-  transition: background-color 0.2s ease-in-out;
-  -webkit-user-select: none;
-  user-select: none;
-  justify-content: space-between;
-
-  .circle-play {
-    display: none;
-  }
-
-  &:hover {
-    background-color: #ffffff38;
-
-    .circle-play {
-      display: inherit;
-    }
-  }
-}
-
-.song-title {
-  cursor: pointer;
-  font-size: 0.9em;
-  font-weight: 600;
-  @media (max-width: 800px) {
-    font-size: 0.8rem;
-  }
-}
-
-.song-artist {
-  font-size: 0.8rem;
-  opacity: 0.6;
-  cursor: pointer;
-  @media (max-width: 800px) {
-    font-size: 0.7rem;
-  }
-}
-
-.song-title:hover,
-.song-artist:hover {
-  text-decoration: underline;
-}
-
-.playlist-card {
-  .circle-play-div {
-    display: none;
-    position: absolute;
-    right: 10px;
-    bottom: 25px;
-  }
-
-  &:hover .circle-play-div {
-    display: inherit;
-  }
-}
-
-/* Navigation bar */
-
-.library-list-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  height: 100%;
-  justify-content: space-between;
-}
-
-.contact-me {
-  font-size: 13px;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
-  background-color: var(--background-base, rgba(0, 0, 0, 0.54));
-  color: var(--text-base, #ffffff) !important;
-  display: flex;
-  border-radius: var(--encore-button-corner-radius, 9999px);
-  font-size: inherit;
-  min-block-size: var(--encore-control-size-smaller, 30px);
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  padding-block-start: var(--encore-spacing-tighter-4, 3px);
-  padding-block-end: var(--encore-spacing-tighter-4, 3px);
-  padding-inline-start: 16px;
-  padding-inline-end: var(--encore-spacing-base, 16px);
-
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
-.ant-avatar-group .ant-avatar {
-  border-color: #0000005c;
-}
-
-.ant-avatar-group > *:not(:first-child) {
-  margin-inline-start: 4px;
-}
-
-.ant-avatar-group-popover {
-  .ant-popover-arrow {
-    display: none;
-  }
-
-  .ant-popover-inner {
-    background-color: #242424 !important;
-  }
-}
-
-.song-details {
-  .drawer-icon {
-    visibility: hidden;
-  }
-
-  &:hover .drawer-icon {
-    visibility: visible;
-  }
 }

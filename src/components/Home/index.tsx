@@ -22,7 +22,7 @@ const HorizontalPlaylists: FC<PlaylistListProps> = (props) => {
     <Row gutter={[16, 16]} style={{ margin: 10 }} justify='space-between'>
       {SOCIAL_NETWORKS.map((socialNetwork) => {
         return (
-          <Col xs={24} md={12} xl={6}>
+          <Col xs={12} md={12} xl={6}>
             <PlaylistHorizontal socialNetwork={socialNetwork} />
           </Col>
         );

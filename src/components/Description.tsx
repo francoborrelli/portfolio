@@ -4,7 +4,7 @@ import { Description } from '../interfaces/types';
 const DescriptionView = ({ description }: { description: Description }) => {
   return (
     <div className='text-gray-300 mt-4 w-full'>
-      <div className='flex flex-row space-x-2 flex-wrap' style={{ columnGap: 5 }}>
+      <div className='desktop-hidden flex flex-row space-x-2 flex-wrap' style={{ columnGap: 5 }}>
         {description.tags?.map((tag) => (
           <Tag tag={tag} key={tag.text} />
         ))}

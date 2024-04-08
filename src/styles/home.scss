@@ -1,0 +1,65 @@
+.horizontal-playlist {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #ffffff1a;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  font-size: 0.8em;
+  transition: background-color 0.2s ease-in-out;
+  -webkit-user-select: none;
+  user-select: none;
+  justify-content: space-between;
+
+  .circle-play {
+    display: none;
+  }
+
+  &:hover {
+    background-color: #ffffff38;
+
+    .circle-play {
+      display: inherit;
+    }
+  }
+}
+
+.song-title {
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  @media (max-width: 800px) {
+    font-size: 0.8rem;
+  }
+}
+
+.song-artist {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  cursor: pointer;
+  @media (max-width: 800px) {
+    font-size: 0.7rem;
+  }
+}
+
+.song-title:hover,
+.song-artist:hover {
+  text-decoration: underline;
+}
+
+.playlist-card {
+  .circle-play-div {
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+  }
+
+  &:hover .circle-play-div {
+    display: inherit;
+  }
+}
