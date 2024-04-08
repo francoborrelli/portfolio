@@ -13,8 +13,10 @@ const NowPlayingBar = () => {
         <ExtraControlButtons />
       </div>
 
-      <NowPlayingBarMobile />
-      <MobileMenu />
+      <div className='mobile-bar'>
+        <NowPlayingBarMobile />
+        <MobileMenu />
+      </div>
     </>
   );
 };

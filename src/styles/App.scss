@@ -8,6 +8,17 @@
 @use './PlayingBar.scss';
 @use './PlaylistPage.scss';
 
+/* hide scrollbar but allow scrolling */
+.Main-section {
+  -ms-overflow-style: none !important; /* for Internet Explorer, Edge */
+  scrollbar-width: none !important; /* for Firefox */
+  overflow-y: scroll !important;
+}
+
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
 .App {
   text-align: center;
 }
@@ -21,9 +32,9 @@ h3 {
 .Main-section {
   border-radius: 15px;
   background-color: $background-color;
-  overflow-y: scroll;
   height: calc(100vh - 100px);
   width: 100%;
+  overflow: scroll;
 }
 
 .Playlist-section {
@@ -34,6 +45,7 @@ h3 {
 .Home-seccion {
   padding: 20px;
   height: 100%;
+  border-radius: 15px;
 }
 
 .Navigation-button {

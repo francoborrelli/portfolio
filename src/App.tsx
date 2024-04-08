@@ -35,12 +35,12 @@ const RootComponent = () => {
       <LanguageModal />
       <Router basename='portfolio'>
         <div style={{ padding: 10 }}>
-          <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(98vh - 90px)' }}>
+          <Row justify='end' gutter={[10, 10]} wrap style={{ height: 'calc(98vh - 90px)' }}>
             <Col xs={0} lg={libraryCollapsed ? 2 : 6}>
               {/* Left panel - Navigation */}
               <Navigation playlists={playlists} />
             </Col>
-            <Col xs={24} lg={libraryCollapsed ? 22 : 18}>
+            <Col xs={24} lg={libraryCollapsed ? 22 : 18} className='Main-section-col'>
               {/* Left panel - Navigation */}
               <MainSection playlists={playlists} />
             </Col>

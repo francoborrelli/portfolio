@@ -30,7 +30,7 @@ const Buttons = () => {
 
 const Navigation: FC<NavigationProps> = ({ playlists = [] }) => {
   return (
-    <Row gutter={[8, 8]} align='stretch'>
+    <Row gutter={[10, 10]} align='stretch'>
       <Col span={24}>
         <Buttons />
       </Col>

@@ -20,7 +20,7 @@ const PlaylistCard = ({ playlist, onClick }: { playlist: Playlist; onClick: () =
           <PlayCircle />
         </div>
       </div>
-      <div style={{ paddingLeft: 20, paddingBottom: 20 }}>
+      <div className='playlist-card-info'>
         <h3 className='text-md font-semibold text-white'>{title}</h3>
         <p className='text-gray-600 mt-2'>{description}</p>
       </div>
