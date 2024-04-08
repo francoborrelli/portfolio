@@ -1,9 +1,12 @@
-import { AVAILABLE_SONGS } from '../constants/songs';
 import { store } from '../store/store';
 
-export const AudioPlayer: Partial<HTMLAudioElement> = document.getElementById('audio')!;
+// Utils
+import { getSongPath } from '../utils/getPublicPath';
 
-const getSongPath = (song: string) => `${process.env.PUBLIC_URL}/songs/${song}`;
+// Constants
+import { AVAILABLE_SONGS } from '../constants/songs';
+
+export const AudioPlayer: Partial<HTMLAudioElement> = document.getElementById('audio')!;
 
 export const pauseAudio = () => {
   // @ts-ignore

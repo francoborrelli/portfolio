@@ -1,3 +1,4 @@
+import { getAlbumPath } from '../../utils/getPublicPath';
 import { tags } from '../tags';
 
 const publicURL = (url: string) => process.env.PUBLIC_URL + url;
@@ -121,6 +122,5 @@ export const ProfessionalExperience = {
   color: '#c45f23',
 
   songs: [LBS, GRAL, QWERTY, LIFIA],
-  imageUrl:
-    'https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Ed_Sheeran_%2B_cover.png/220px-Ed_Sheeran_%2B_cover.png',
+  imageUrl: getAlbumPath('ed.jpg'),
 };
