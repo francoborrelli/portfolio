@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Avatar } from 'antd';
 import { Tooltip } from './Common/Tooltip';
-import DescriptionView from './Description';
-import { FC, useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import type { Song } from '../interfaces/types';
+import { Play } from './Icons';
 
 const GitHubButton = ({ song }: { song: Song }) => {
   return (
@@ -21,25 +21,6 @@ const GitHubButton = ({ song }: { song: Song }) => {
         src='https://github.githubassets.com/favicons/favicon-dark.png'
       />
     </a>
-  );
-};
-
-const DrawerIcon: FC<{ open: boolean }> = (props) => {
-  return (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 20 20'
-      fill='currentColor'
-      className={`drawer-icon w-6 h-6 text-white m-2 transition-transform duration-300 transform ${
-        props.open ? 'rotate-180' : ''
-      }`}
-    >
-      <path
-        fillRule='evenodd'
-        d='M10 18a1 1 0 01-.707-.293l-7-7a1 1 0 011.414-1.414L10 15.586l6.293-6.293a1 1 0 011.414 1.414l-7 7A1 1 0 0110 18z'
-        clipRule='evenodd'
-      />
-    </svg>
   );
 };
 
@@ -69,16 +50,21 @@ const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index:
 
   const tags = (
     <div
-      style={{ flex: 4 }}
+      style={{ flex: 5 }}
       className='mobile-hidden flex flex-row items-center justify-start flex-wrap space-x-2'
     >
       <Avatar.Group
         maxCount={3}
-        maxStyle={{ color: 'black', backgroundColor: '#1cd760', cursor: 'pointer' }}
+        maxStyle={{
+          color: '1cb955',
+          fontWeight: 700,
+          cursor: 'pointer',
+          backgroundColor: '#1d1d1d',
+        }}
       >
         {(song.description.tags || []).map((tag, index) => (
           <Tooltip title={tag.text} placement='top' key={tag.text}>
-            <Avatar style={{ backgroundColor: tag.color }} icon={tag.icon} />
+            <Avatar style={{ backgroundColor: '#5c5c5c26' }} icon={tag.icon} />
           </Tooltip>
         ))}
       </Avatar.Group>
@@ -96,14 +82,16 @@ const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index:
     <div className='song-details flex flex-row items-center w-full songDetails'>
       <div className='flex flex-row items-center justify-between w-full'>
         <div style={{ flex: 1 }}>
-          <p>{index + 1}</p>
+          <p className='song-details-index'>{index + 1}</p>
+          <p className='song-details-play'>
+            <Play />
+          </p>
         </div>
         {image}
         {title}
         {tags}
         {time}
       </div>
-      <DrawerIcon open={isOpen} />
     </div>
   );
 };
@@ -124,7 +112,6 @@ const SongView = ({ song, index }: { song: Song; index: number }) => {
       onClick={toggleOpen}
     >
       <SongData song={song} isOpen={isOpen} index={index} />
-      {isOpen && <DescriptionView description={song.description} />}
     </button>
   );
 };

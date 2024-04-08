@@ -77,6 +77,10 @@
 }
 
 .song-details {
+  .drawer-icon {
+    visibility: hidden;
+  }
+
   .title {
     font-size: 15px;
     color: white;
@@ -91,6 +95,25 @@
     color: #b3b3b3;
     font-size: 14px;
     font-weight: 400;
+  }
+
+  .song-details-play {
+    display: none;
+    font-size: 10px;
+    justify-content: center;
+
+    svg {
+      fill: white !important;
+    }
+  }
+
+  &:hover {
+    .song-details-index {
+      display: none;
+    }
+    .song-details-play {
+      display: flex;
+    }
   }
 }
 
@@ -107,7 +130,7 @@
 }
 
 .ant-avatar-group > *:not(:first-child) {
-  margin-inline-start: 4px;
+  margin-inline-start: 1px;
 }
 
 .ant-avatar-group-popover {
@@ -117,15 +140,5 @@
 
   .ant-popover-inner {
     background-color: #242424 !important;
-  }
-}
-
-.song-details {
-  .drawer-icon {
-    visibility: hidden;
-  }
-
-  &:hover .drawer-icon {
-    visibility: visible;
   }
 }

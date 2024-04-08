@@ -29,20 +29,110 @@
 import {
   TypescriptPlain,
   ReactOriginal,
-  DockerOriginal,
-  JavascriptOriginal,
+  DockerPlain,
+  JavascriptPlain,
   LaravelOriginal,
-  AntdesignOriginal,
-  DjangorestOriginal,
+  AntdesignPlain,
+  DjangoPlain,
   GithubOriginal,
   GitlabOriginal,
+  Html5Plain,
+  Css3Plain,
+  PythonPlain,
+  NodejsPlain,
+  TensorflowOriginal,
+  GitPlain,
+  JiraPlain,
+  SlackPlain,
+  FirebasePlain,
+  GithubactionsPlain,
+  AmazonwebservicesPlainWordmark,
+  AngularPlain,
+  IonicOriginal,
+  ReactOriginalWordmark,
+  SentryOriginal,
+  KubernetesPlain,
+  RancherPlainWordmark,
+  TerraformPlain,
+  ConfluencePlain,
+  BootstrapPlain,
+  PostmanPlain,
+  RedisPlain,
+  RxjsPlain,
+  GraphqlPlain,
+  GatsbyOriginal,
+  HadoopPlain,
+  HerokuPlain,
+  LinuxPlain,
+  // MongodbPlain,
+  // NginxOriginal,
+  // MysqlPlainWordmark,
+  // PostgresqlOriginal,
+  // MaterializecssPlain,
+  // LodashPlain,
+  SymfonyOriginalWordmark,
 } from 'devicons-react';
 
 export const tags = {
+  LinuxPlain: {
+    text: 'Linux',
+    color: '#FCC624',
+    icon: <LinuxPlain />,
+  },
+  Heroku: {
+    text: 'Heroku',
+    color: '#430098',
+    icon: <HerokuPlain />,
+  },
+  Hadoop: {
+    text: 'Hadoop',
+    color: '#FBC02D',
+    icon: <HadoopPlain />,
+  },
+  Gatsby: {
+    text: 'Gatsby',
+    color: '#663399',
+    icon: <GatsbyOriginal />,
+  },
+  Postman: {
+    text: 'Postman',
+    color: '#FF6C37',
+    icon: <PostmanPlain />,
+  },
+  Graphql: {
+    text: 'GraphQL',
+    color: '#E535AB',
+    icon: <GraphqlPlain />,
+  },
+  Rxjs: {
+    text: 'Rxjs',
+    color: '#B7178C',
+    icon: <RxjsPlain />,
+  },
+  Redis: {
+    text: 'Redis',
+    color: '#DC382D',
+    icon: <RedisPlain />,
+  },
+  Bootstrap: {
+    text: 'Bootstrap',
+    color: '#7952B3',
+    icon: <BootstrapPlain />,
+  },
+  Sentry: {
+    text: 'Sentry',
+    color: 'black',
+    icon: <SentryOriginal />,
+  },
   React: {
     text: 'React',
     color: 'black',
     icon: <ReactOriginal />,
+  },
+  Firebase: {
+    text: 'Firebase',
+    color: '#FFCA28',
+    icon: <FirebasePlain />,
   },
   TypeScript: {
     text: 'TypeScript',
@@ -52,32 +142,37 @@ export const tags = {
   JavaScript: {
     text: 'JavaScript',
     color: '#F0DB4F',
-    icon: <JavascriptOriginal />,
+    icon: <JavascriptPlain />,
   },
   HTML: {
-    text: 'HTML',
+    text: 'HTML 5',
     color: '#E34F26',
+    icon: <Html5Plain />,
   },
   CSS: {
     text: 'CSS',
     color: '#264DE4',
+    icon: <Css3Plain />,
   },
   'Ant design': {
     text: 'Ant design',
     color: '#e6e6e6',
-    icon: <AntdesignOriginal />,
+    icon: <AntdesignPlain />,
   },
   Python: {
     text: 'Python',
     color: '#3776AB',
+    icon: <PythonPlain />,
   },
   'Node.js': {
     text: 'Node.js',
     color: '#68A063',
+    icon: <NodejsPlain />,
   },
   TensorFlow: {
     text: 'TensorFlow',
     color: '#FF6F00',
+    icon: <TensorflowOriginal />,
   },
   ML: {
     text: 'ML',
@@ -90,11 +185,12 @@ export const tags = {
   Django: {
     text: 'Django',
     color: '#092E20',
-    icon: <DjangorestOriginal />,
+    icon: <DjangoPlain />,
   },
   Git: {
     text: 'Git',
     color: '#F05032',
+    icon: <GitPlain />,
   },
   GitHub: {
     text: 'GitHub',
@@ -113,6 +209,7 @@ export const tags = {
   AWS: {
     text: 'AWS',
     color: '#232F3E',
+    icon: <AmazonwebservicesPlainWordmark />,
   },
   Agile: {
     text: 'Agile',
@@ -121,23 +218,32 @@ export const tags = {
   JIRA: {
     text: 'Jira',
     color: '#00599C',
+    icon: <JiraPlain />,
   },
   Slack: {
     text: 'Slack',
     color: '#0078D4',
+    icon: <SlackPlain />,
   },
   Terraform: {
     text: 'Terraform',
     color: '#FA7343',
+    icon: <TerraformPlain />,
   },
   'CI/CD': {
     text: 'CI/CD',
     color: '#007AFF',
+    icon: <GithubactionsPlain />,
   },
   Laravel: {
     text: 'Laravel',
     color: '#A4C639',
     icon: <LaravelOriginal />,
+  },
+  Confluence: {
+    text: 'Confluence',
+    color: '#172B4D',
+    icon: <ConfluencePlain />,
   },
   Redash: {
     text: 'Redash',
@@ -146,26 +252,40 @@ export const tags = {
   Docker: {
     text: 'Docker',
     color: '#06213f',
-    icon: <DockerOriginal />,
+    icon: <DockerPlain />,
   },
   Angular: {
     text: 'Angular',
     color: '#000000',
+    icon: <AngularPlain />,
   },
   IONIC: {
     text: 'Ionic',
     color: '#EE4C2C',
+    icon: <IonicOriginal />,
   },
   ReactNative: {
     text: 'React Native',
     color: '#009688',
+    icon: <ReactOriginalWordmark />,
   },
   Serverless: {
     text: 'Serverless',
     color: '#6DB33F',
   },
+  Rancher: {
+    text: 'Rancher',
+    color: '#0075A8',
+    icon: <RancherPlainWordmark />,
+  },
   Kubernetes: {
     text: 'Kubernetes',
     color: '#E09F3E',
+    icon: <KubernetesPlain />,
+  },
+  Symfony: {
+    text: 'Symfony',
+    color: '#000000',
+    icon: <SymfonyOriginalWordmark />,
   },
 };

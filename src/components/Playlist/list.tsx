@@ -16,7 +16,7 @@ export const PlaylistList: FC<PlaylistListProps> = ({ playlist }) => {
     <div
       className='playlist-list'
       style={{
-        background: `linear-gradient(180deg, ${playlist.color} -80%, #121212 40%)`,
+        background: `linear-gradient(${playlist.color} -10%, rgb(18, 18, 18) 35%)`,
       }}
     >
       <PlaylistControls />

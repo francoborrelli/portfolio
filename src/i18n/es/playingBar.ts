@@ -6,4 +6,7 @@ export const playingBar = {
   Mute: 'Silenciar',
   Unmute: 'Activar sonido',
   'Full Screen': 'Expandir pantalla',
+  Home: 'Inicio',
+  'Source code': 'Código fuente',
+  'Your Library': 'Tu biblioteca',
 };

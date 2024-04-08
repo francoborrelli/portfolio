@@ -9,3 +9,17 @@
   justify-content: center;
   gap: 20px;
 }
+
+#playlist-song-and-artist-name {
+  h3,
+  p {
+    font-size: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    @media (max-width: 1110px) {
+      width: 80%;
+    }
+  }
+}
