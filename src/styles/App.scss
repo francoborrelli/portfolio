@@ -241,3 +241,31 @@ h3 {
     transform: scale(1.05);
   }
 }
+
+.ant-avatar-group .ant-avatar {
+  border-color: #0000005c;
+}
+
+.ant-avatar-group > *:not(:first-child) {
+  margin-inline-start: 4px;
+}
+
+.ant-avatar-group-popover {
+  .ant-popover-arrow {
+    display: none;
+  }
+
+  .ant-popover-inner {
+    background-color: #242424 !important;
+  }
+}
+
+.song-details {
+  .drawer-icon {
+    visibility: hidden;
+  }
+
+  &:hover .drawer-icon {
+    visibility: visible;
+  }
+}

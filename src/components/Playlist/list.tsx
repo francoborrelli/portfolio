@@ -21,23 +21,32 @@ export const PlaylistList: FC<PlaylistListProps> = ({ playlist }) => {
     >
       <PlaylistControls />
       <div className='playlist-table'>
-        <div className='flex justify-between items-center py-2 px-4 ml-10'>
-          <div className='w-1/3'>
+        <div className='flex justify-between items-center py-2'>
+          <div style={{ flex: 1 }}>
+            <h3 className='column-name text-center'>#</h3>
+          </div>
+          <div style={{ flex: 5 }}>
             <h3 className='column-name text-left'>{t('Name')}</h3>
           </div>
-          <div className='w-1/3 mobile-hidden'>
-            <h3 className='column-name text-md text-left'>{t('Skills')}</h3>
+          <div className='mobile-hidden' style={{ flex: 4 }}>
+            <h3 className='column-name text-left'>{t('Skills')}</h3>
           </div>
-          <div className='w-1/3 '>
-            <h3 className='text-md text-white text-right'>
+          <div
+            style={{
+              flex: 4,
+              display: 'flex',
+              justifyContent: 'flex-end',
+            }}
+          >
+            <h3 className='text-center' style={{ marginRight: 50 }}>
               <Clock />
             </h3>
           </div>
         </div>
       </div>
       <div>
-        {playlist.songs.map((song) => (
-          <SongView song={song} />
+        {playlist.songs.map((song, index) => (
+          <SongView song={song} index={index} />
         ))}
       </div>
     </div>

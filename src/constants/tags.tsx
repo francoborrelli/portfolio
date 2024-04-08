@@ -26,23 +26,33 @@
 //   '#A9D6C2', // Light Teal
 // ];
 
-import { TypescriptPlain } from 'devicons-react';
-import { DiReact, DiDocker } from 'react-icons/di';
+import {
+  TypescriptPlain,
+  ReactOriginal,
+  DockerOriginal,
+  JavascriptOriginal,
+  LaravelOriginal,
+  AntdesignOriginal,
+  DjangorestOriginal,
+  GithubOriginal,
+  GitlabOriginal,
+} from 'devicons-react';
 
 export const tags = {
   React: {
     text: 'React',
-    color: '#61DAFB',
-    icon: <DiReact />,
+    color: 'black',
+    icon: <ReactOriginal />,
   },
   TypeScript: {
     text: 'TypeScript',
-    color: '#3178C6',
+    color: '#e6e6e6',
     icon: <TypescriptPlain />,
   },
   JavaScript: {
     text: 'JavaScript',
     color: '#F0DB4F',
+    icon: <JavascriptOriginal />,
   },
   HTML: {
     text: 'HTML',
@@ -54,7 +64,8 @@ export const tags = {
   },
   'Ant design': {
     text: 'Ant design',
-    color: '#06B6D4',
+    color: '#e6e6e6',
+    icon: <AntdesignOriginal />,
   },
   Python: {
     text: 'Python',
@@ -79,6 +90,7 @@ export const tags = {
   Django: {
     text: 'Django',
     color: '#092E20',
+    icon: <DjangorestOriginal />,
   },
   Git: {
     text: 'Git',
@@ -87,10 +99,12 @@ export const tags = {
   GitHub: {
     text: 'GitHub',
     color: '#181717',
+    icon: <GithubOriginal />,
   },
   GitLab: {
     text: 'GitLab',
     color: '#FCA326',
+    icon: <GitlabOriginal />,
   },
   'Data Science': {
     text: 'Data Science',
@@ -123,6 +137,7 @@ export const tags = {
   Laravel: {
     text: 'Laravel',
     color: '#A4C639',
+    icon: <LaravelOriginal />,
   },
   Redash: {
     text: 'Redash',
@@ -130,8 +145,8 @@ export const tags = {
   },
   Docker: {
     text: 'Docker',
-    color: '#0095D5',
-    icon: <DiDocker />,
+    color: '#06213f',
+    icon: <DockerOriginal />,
   },
   Angular: {
     text: 'Angular',

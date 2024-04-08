@@ -30,7 +30,7 @@ const DrawerIcon: FC<{ open: boolean }> = (props) => {
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 20 20'
       fill='currentColor'
-      className={`w-6 h-6 text-white m-2 transition-transform duration-300 transform ${
+      className={`drawer-icon w-6 h-6 text-white m-2 transition-transform duration-300 transform ${
         props.open ? 'rotate-180' : ''
       }`}
     >
@@ -43,13 +43,13 @@ const DrawerIcon: FC<{ open: boolean }> = (props) => {
   );
 };
 
-const SongData = ({ song, isOpen }: { song: Song; isOpen: boolean }) => {
+const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index: number }) => {
   const image = (
     <img src={song.imageUrl} alt='song cover' className='mobile-hidden w-10 h-10 mr-4 rounded-md' />
   );
 
   const title = (
-    <div className='flex flex-col w-1/3'>
+    <div className='flex flex-col' style={{ flex: 5 }}>
       <div className='flex flex-row items-center'>
         <p className='title text-left'>{song.name}</p>
         {song.github ? <GitHubButton song={song} /> : null}
@@ -68,23 +68,25 @@ const SongData = ({ song, isOpen }: { song: Song; isOpen: boolean }) => {
   );
 
   const tags = (
-    <div className='mobile-hidden flex flex-row items-center justify-start flex-wrap space-x-2 w-1/3'>
+    <div
+      style={{ flex: 4 }}
+      className='mobile-hidden flex flex-row items-center justify-start flex-wrap space-x-2'
+    >
       <Avatar.Group
-        maxCount={4}
-        maxStyle={{ color: '#f56a00', backgroundColor: '#fde3cf', cursor: 'pointer' }}
+        maxCount={3}
+        maxStyle={{ color: 'black', backgroundColor: '#1cd760', cursor: 'pointer' }}
       >
         {(song.description.tags || []).map((tag, index) => (
           <Tooltip title={tag.text} placement='top' key={tag.text}>
             <Avatar style={{ backgroundColor: tag.color }} icon={tag.icon} />
           </Tooltip>
-          // <Tag tag={tag} key={index} />
         ))}
       </Avatar.Group>
     </div>
   );
 
   const time = (
-    <p className='w-1/3 text-right'>
+    <p className='text-right' style={{ flex: 4 }}>
       {song.location && `${song.location}, `}{' '}
       {song.lengthStart && `${song.lengthStart} - ${song.lengthEnd}`}
     </p>
@@ -92,8 +94,11 @@ const SongData = ({ song, isOpen }: { song: Song; isOpen: boolean }) => {
 
   return (
     <div className='song-details flex flex-row items-center w-full songDetails'>
-      {image}
       <div className='flex flex-row items-center justify-between w-full'>
+        <div style={{ flex: 1 }}>
+          <p>{index + 1}</p>
+        </div>
+        {image}
         {title}
         {tags}
         {time}
@@ -103,7 +108,7 @@ const SongData = ({ song, isOpen }: { song: Song; isOpen: boolean }) => {
   );
 };
 
-const SongView = ({ song }: { song: Song }) => {
+const SongView = ({ song, index }: { song: Song; index: number }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = useCallback(() => {
@@ -118,7 +123,7 @@ const SongView = ({ song }: { song: Song }) => {
       }`}
       onClick={toggleOpen}
     >
-      <SongData song={song} isOpen={isOpen} />
+      <SongData song={song} isOpen={isOpen} index={index} />
       {isOpen && <DescriptionView description={song.description} />}
     </button>
   );

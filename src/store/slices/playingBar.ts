@@ -33,6 +33,9 @@ const playingBarSlice = createSlice({
     setPlaying(state) {
       state.playing = true;
       startAudio();
+      if (!state.duration) {
+        state.duration = 118.93551;
+      }
       setPlayerVolume(state.volume);
     },
     setPause(state) {
