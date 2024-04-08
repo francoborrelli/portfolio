@@ -33,7 +33,7 @@ const RootComponent = () => {
   return (
     <>
       <LanguageModal />
-      <Router>
+      <Router basename='portfolio'>
         <div style={{ padding: 10 }}>
           <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(98vh - 90px)' }}>
             <Col xs={0} lg={libraryCollapsed ? 2 : 6}>
