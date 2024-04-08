@@ -5,4 +5,5 @@ export const navbar = {
   'Collapse your library': 'Collapse your library',
   'Expand your library': 'Expand your library',
   Language: 'Language',
+  'Contact me': 'Contact me',
 };
