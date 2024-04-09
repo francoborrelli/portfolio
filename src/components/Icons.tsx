@@ -284,14 +284,15 @@ export const Heart = () => (
   </svg>
 );
 
-export const DetailsIcon = () => (
+export const DetailsIcon = (props: { active: boolean }) => (
   <svg
+    {...props}
     style={SongExtraControlStyle}
     data-encore-id='icon'
     role='img'
     aria-hidden='true'
     viewBox='0 0 16 16'
-    className='hoverable-icon'
+    className={`hoverable-icon replay ${props.active ? 'active' : ''}`}
   >
     <path d='M11.196 8 6 5v6l5.196-3z'></path>
     <path d='M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25h10.5z'></path>
@@ -460,5 +461,18 @@ export const OrderListIcon = () => (
     style={{ ...ControlStyle, height: '1.2rem' }}
   >
     <path d='M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z'></path>
+  </svg>
+);
+
+export const CloseIcon = () => (
+  <svg
+    data-encore-id='icon'
+    role='img'
+    aria-hidden='true'
+    viewBox='0 0 16 16'
+    className='hoverable-icon'
+    style={{ ...ControlStyle, height: '1.2rem' }}
+  >
+    <path d='M2.47 2.47a.75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z'></path>
   </svg>
 );

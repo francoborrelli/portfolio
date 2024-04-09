@@ -4,12 +4,14 @@
 @use './header.scss';
 @use './Navbar.scss';
 @use './language.scss';
+@use './PlayingNow.scss';
 @use './CirclePlay.scss';
 @use './PlayingBar.scss';
 @use './PlaylistPage.scss';
 
 /* hide scrollbar but allow scrolling */
-.Main-section {
+.Main-section,
+.playing-section {
   -ms-overflow-style: none !important; /* for Internet Explorer, Edge */
   scrollbar-width: none !important; /* for Firefox */
   overflow-y: scroll !important;
@@ -35,6 +37,14 @@ h3 {
   height: calc(100vh - 100px);
   width: 100%;
   overflow: scroll;
+}
+
+.playing-section {
+  overflow: scroll;
+  border-radius: $container-border-radius;
+  background-color: $background-color;
+  height: calc(100vh - 100px);
+  width: 100%;
 }
 
 .Playlist-section {

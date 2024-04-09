@@ -1,4 +1,4 @@
-import { TagType } from '../interfaces/types';
+import type { TagType } from '../../interfaces/types';
 
 const Tag = ({ tag }: { tag: TagType }) => {
   //create a tag that looks like a pill

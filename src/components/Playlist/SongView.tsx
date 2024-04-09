@@ -1,10 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Avatar } from 'antd';
-import { Tooltip } from './Common/Tooltip';
+import { Tooltip } from '../Common/Tooltip';
 import { useCallback, useState } from 'react';
 
-import type { Song } from '../interfaces/types';
-import { Play } from './Icons';
+import type { Song } from '../../interfaces/types';
+import { Play } from '../Icons';
+import { useAppDispatch } from '../../store/store';
+import { libraryActions } from '../../store/slices/library';
 
 const GitHubButton = ({ song }: { song: Song }) => {
   return (
@@ -25,6 +27,8 @@ const GitHubButton = ({ song }: { song: Song }) => {
 };
 
 const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index: number }) => {
+  const dispatch = useAppDispatch();
+
   const image = (
     <img src={song.imageUrl} alt='song cover' className='mobile-hidden w-10 h-10 mr-4 rounded-md' />
   );
@@ -51,10 +55,10 @@ const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index:
   const tags = (
     <div
       style={{ flex: 5 }}
-      className='mobile-hidden flex flex-row items-center justify-start flex-wrap space-x-2'
+      className='tablet-hidden flex flex-row items-center justify-start flex-wrap space-x-2'
     >
       <Avatar.Group
-        maxCount={3}
+        maxCount={1}
         maxStyle={{
           color: '1cb955',
           fontWeight: 700,
@@ -64,7 +68,7 @@ const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index:
       >
         {(song.description.tags || []).map((tag, index) => (
           <Tooltip title={tag.text} placement='top' key={tag.text}>
-            <Avatar style={{ backgroundColor: '#5c5c5c26' }} icon={tag.icon} />
+            <Avatar key={tag.text} style={{ backgroundColor: '#5c5c5c26' }} icon={tag.icon} />
           </Tooltip>
         ))}
       </Avatar.Group>
@@ -79,7 +83,12 @@ const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index:
   );
 
   return (
-    <div className='song-details flex flex-row items-center w-full songDetails'>
+    <div
+      className='song-details flex flex-row items-center w-full songDetails'
+      onClick={() => {
+        dispatch(libraryActions.setSongPlaying(song));
+      }}
+    >
       <div className='flex flex-row items-center justify-between w-full'>
         <div style={{ flex: 1 }}>
           <p className='song-details-index'>{index + 1}</p>

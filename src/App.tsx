@@ -20,9 +20,11 @@ import { playlists } from './constants/cv';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store, useAppSelector } from './store/store';
+import { PlayingNow } from './components/NowPlaying';
 
 const RootComponent = () => {
   const language = useAppSelector((state) => state.language.language);
+  const songPlaying = useAppSelector((state) => state.library.detailsOpen);
   const libraryCollapsed = useAppSelector((state) => state.library.collapsed);
 
   useEffect(() => {
@@ -36,13 +38,27 @@ const RootComponent = () => {
       <Router basename='portfolio'>
         <div style={{ padding: 10 }}>
           <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(98vh - 90px)' }}>
-            <Col xs={0} lg={libraryCollapsed ? 2 : 6}>
+            <Col
+              xs={0}
+              md={libraryCollapsed || !!songPlaying ? 3 : 6}
+              xl={libraryCollapsed || !!songPlaying ? 2 : 6}
+            >
               {/* Left panel - Navigation */}
               <Navigation playlists={playlists} />
             </Col>
-            <Col xs={24} lg={libraryCollapsed ? 22 : 18} className='Main-section-col'>
+
+            <Col
+              xs={24}
+              md={!!songPlaying ? 15 : libraryCollapsed ? 21 : 18}
+              xl={!!songPlaying ? 16 : libraryCollapsed ? 22 : 18}
+              className='Main-section-col'
+            >
               {/* Left panel - Navigation */}
               <MainSection playlists={playlists} />
+            </Col>
+
+            <Col xs={0} md={!!songPlaying ? 6 : 0}>
+              <PlayingNow />
             </Col>
           </Row>
         </div>

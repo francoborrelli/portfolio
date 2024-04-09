@@ -8,6 +8,49 @@ import { DetailsIcon, DeviceIcon, ExpandIcon, ListIcon, MicrophoneIcon } from '.
 
 // I18n
 import { useTranslation } from 'react-i18next';
+import { useAppDispatch, useAppSelector } from '../../store/store';
+import { languageActions } from '../../store/slices/language';
+import { libraryActions } from '../../store/slices/library';
+
+const LyricsButton = () => {
+  const dispatch = useAppDispatch();
+  const { t } = useTranslation(['playingBar']);
+
+  return (
+    <Tooltip title={t('Lyrics')}>
+      <button
+        style={{ marginLeft: 5, marginRight: 5 }}
+        onClick={() => dispatch(languageActions.openLanguageModal())}
+      >
+        <MicrophoneIcon />
+      </button>
+    </Tooltip>
+  );
+};
+
+const DetailsButton = () => {
+  const dispatch = useAppDispatch();
+  const { t } = useTranslation(['playingBar']);
+
+  const actions = useAppSelector((state) => state.library.detailsOpen);
+  const songPlaying = useAppSelector((state) => state.library.songPlaying);
+
+  return (
+    <Tooltip title={t('Now playing view')}>
+      <button
+        disabled={!songPlaying}
+        onClick={() => dispatch(libraryActions.toggleSongPlaying())}
+        style={{
+          marginLeft: 5,
+          marginRight: 10,
+          cursor: songPlaying ? 'pointer' : 'not-allowed',
+        }}
+      >
+        <DetailsIcon active={actions && !!songPlaying} />
+      </button>
+    </Tooltip>
+  );
+};
 
 const ExtraControlButtons = () => {
   const { t } = useTranslation(['playingBar']);
@@ -15,17 +58,9 @@ const ExtraControlButtons = () => {
   return (
     <div style={{ marginBottom: 10 }}>
       <Row gutter={18} align='middle'>
-        <Tooltip title={t('Now playing view')}>
-          <Col>
-            <DetailsIcon />
-          </Col>
-        </Tooltip>
+        <DetailsButton />
 
-        <Tooltip title={t('Lyrics')}>
-          <Col>
-            <MicrophoneIcon />
-          </Col>
-        </Tooltip>
+        <LyricsButton />
 
         <Tooltip title={t('Queue')}>
           <Col className='hiddable-icon'>

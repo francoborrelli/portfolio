@@ -49,7 +49,7 @@
   white-space: nowrap;
   margin-block: 0px;
   font-weight: 600;
-  color: white;
+  color: $text-primary-color;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -70,6 +70,12 @@
   }
 }
 
+@media (max-width: $desktop-small-breakpoint) {
+  .tablet-hidden {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .playlist-title {
     font-size: 1.5rem;
@@ -83,7 +89,7 @@
 
   .title {
     font-size: 15px;
-    color: white;
+    color: $text-primary-color;
   }
 
   .artist:hover {
@@ -92,7 +98,7 @@
   }
 
   p {
-    color: #b3b3b3;
+    color: $text-secondary-color;
     font-size: 14px;
     font-weight: 400;
   }
@@ -103,7 +109,7 @@
     justify-content: center;
 
     svg {
-      fill: white !important;
+      fill: $text-primary-color !important;
     }
   }
 

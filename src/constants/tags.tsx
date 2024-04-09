@@ -27,37 +27,23 @@
 // ];
 
 import {
-  TypescriptPlain,
   ReactOriginal,
   DockerPlain,
   JavascriptPlain,
   LaravelOriginal,
-  AntdesignPlain,
   DjangoPlain,
   GithubOriginal,
   GitlabOriginal,
   Html5Plain,
   Css3Plain,
   PythonPlain,
-  NodejsPlain,
   TensorflowOriginal,
   GitPlain,
-  JiraPlain,
-  SlackPlain,
-  FirebasePlain,
-  GithubactionsPlain,
   AmazonwebservicesPlainWordmark,
-  AngularPlain,
   IonicOriginal,
   ReactOriginalWordmark,
   SentryOriginal,
-  KubernetesPlain,
-  RancherPlainWordmark,
-  TerraformPlain,
   ConfluencePlain,
-  BootstrapPlain,
-  PostmanPlain,
-  RedisPlain,
   RxjsPlain,
   GraphqlPlain,
   GatsbyOriginal,
@@ -70,7 +56,21 @@ import {
   // PostgresqlOriginal,
   // MaterializecssPlain,
   // LodashPlain,
-  SymfonyOriginalWordmark,
+  AngularOriginal,
+  TerraformOriginal,
+  SlackOriginal,
+  JiraOriginal,
+  NodejsOriginal,
+  TypescriptOriginal,
+  FirebaseOriginal,
+  BootstrapOriginal,
+  RedisOriginal,
+  PostcssOriginal,
+  AntdesignOriginal,
+  GithubactionsOriginal,
+  KubernetesOriginal,
+  SymfonyOriginal,
+  RancherOriginal,
 } from 'devicons-react';
 
 export const tags = {
@@ -97,7 +97,7 @@ export const tags = {
   Postman: {
     text: 'Postman',
     color: '#FF6C37',
-    icon: <PostmanPlain />,
+    icon: <PostcssOriginal />,
   },
   Graphql: {
     text: 'GraphQL',
@@ -112,12 +112,12 @@ export const tags = {
   Redis: {
     text: 'Redis',
     color: '#DC382D',
-    icon: <RedisPlain />,
+    icon: <RedisOriginal />,
   },
   Bootstrap: {
     text: 'Bootstrap',
     color: '#7952B3',
-    icon: <BootstrapPlain />,
+    icon: <BootstrapOriginal />,
   },
   Sentry: {
     text: 'Sentry',
@@ -132,12 +132,12 @@ export const tags = {
   Firebase: {
     text: 'Firebase',
     color: '#FFCA28',
-    icon: <FirebasePlain />,
+    icon: <FirebaseOriginal />,
   },
   TypeScript: {
     text: 'TypeScript',
     color: '#e6e6e6',
-    icon: <TypescriptPlain />,
+    icon: <TypescriptOriginal />,
   },
   JavaScript: {
     text: 'JavaScript',
@@ -157,7 +157,7 @@ export const tags = {
   'Ant design': {
     text: 'Ant design',
     color: '#e6e6e6',
-    icon: <AntdesignPlain />,
+    icon: <AntdesignOriginal />,
   },
   Python: {
     text: 'Python',
@@ -167,7 +167,7 @@ export const tags = {
   'Node.js': {
     text: 'Node.js',
     color: '#68A063',
-    icon: <NodejsPlain />,
+    icon: <NodejsOriginal />,
   },
   TensorFlow: {
     text: 'TensorFlow',
@@ -218,22 +218,22 @@ export const tags = {
   JIRA: {
     text: 'Jira',
     color: '#00599C',
-    icon: <JiraPlain />,
+    icon: <JiraOriginal />,
   },
   Slack: {
     text: 'Slack',
     color: '#0078D4',
-    icon: <SlackPlain />,
+    icon: <SlackOriginal />,
   },
   Terraform: {
     text: 'Terraform',
     color: '#FA7343',
-    icon: <TerraformPlain />,
+    icon: <TerraformOriginal />,
   },
   'CI/CD': {
     text: 'CI/CD',
     color: '#007AFF',
-    icon: <GithubactionsPlain />,
+    icon: <GithubactionsOriginal />,
   },
   Laravel: {
     text: 'Laravel',
@@ -257,7 +257,7 @@ export const tags = {
   Angular: {
     text: 'Angular',
     color: '#000000',
-    icon: <AngularPlain />,
+    icon: <AngularOriginal />,
   },
   IONIC: {
     text: 'Ionic',
@@ -276,16 +276,16 @@ export const tags = {
   Rancher: {
     text: 'Rancher',
     color: '#0075A8',
-    icon: <RancherPlainWordmark />,
+    icon: <RancherOriginal />,
   },
   Kubernetes: {
     text: 'Kubernetes',
     color: '#E09F3E',
-    icon: <KubernetesPlain />,
+    icon: <KubernetesOriginal />,
   },
   Symfony: {
     text: 'Symfony',
     color: '#000000',
-    icon: <SymfonyOriginalWordmark />,
+    icon: <SymfonyOriginal />,
   },
 };

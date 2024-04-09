@@ -1,0 +1,71 @@
+@use './variables.scss' as *;
+
+.playing-now-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 12px;
+
+  background-color: #242424;
+  border-radius: 8px;
+  z-index: 1;
+
+  .playing-now-card-title {
+    color: $text-primary-color;
+    font-weight: 700;
+  }
+
+  .playing-now-card-subtitle {
+    color: $text-secondary-color;
+    margin-top: 5px;
+  }
+
+  .playing-now-card-body {
+    margin-top: 10px;
+    color: $text-secondary-color;
+  }
+
+  .playing-now-card-text {
+    padding: 16px;
+  }
+
+  .playing-now-card-image {
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 8px 8px 0 0;
+    padding-bottom: 50%;
+    position: relative;
+    width: 100%;
+
+    .playing-now-card-image-text {
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 16px;
+      font-weight: 700;
+    }
+  }
+
+  .ant-avatar {
+    margin: 5px;
+  }
+}
+
+.playing-section-close-button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}

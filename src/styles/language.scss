@@ -1,3 +1,5 @@
+@use './variables.scss' as *;
+
 .language-button {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
@@ -123,13 +125,13 @@
     .title {
       font-size: 1rem;
       font-weight: 400;
-      color: white;
+      color: $text-primary-color;
     }
 
     .subtitle {
       font-size: 1rem;
       font-weight: 400;
-      color: #b3b3b3;
+      color: $text-secondary-color;
     }
   }
 }

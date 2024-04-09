@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import SongView from '../SongView';
+import SongView from './SongView';
 import type { Playlist } from '../../interfaces/types';
 import { Clock } from '../Icons';
 import { PlaylistControls } from './controls';
@@ -28,7 +28,7 @@ export const PlaylistList: FC<PlaylistListProps> = ({ playlist }) => {
           <div style={{ flex: 5 }}>
             <h3 className='column-name text-left'>{t('Name')}</h3>
           </div>
-          <div className='mobile-hidden' style={{ flex: 4 }}>
+          <div className='tablet-hidden' style={{ flex: 4 }}>
             <h3 className='column-name text-left'>{t('Skills')}</h3>
           </div>
           <div
