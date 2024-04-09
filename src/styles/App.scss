@@ -30,7 +30,7 @@ h3 {
 }
 
 .Main-section {
-  border-radius: 15px;
+  border-radius: $container-border-radius;
   background-color: $background-color;
   height: calc(100vh - 100px);
   width: 100%;
@@ -45,14 +45,14 @@ h3 {
 .Home-seccion {
   padding: 20px;
   height: 100%;
-  border-radius: 15px;
+  border-radius: $container-border-radius;
 }
 
 .Navigation-button {
   font-size: 17px;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(229 231 (235 / var(--tw-text-opacity)));
+  color: rgb(179 179 179);
 }
 
 .library {
@@ -98,4 +98,25 @@ h3 {
 
 .hoverable-icon.active:hover {
   fill: #38ec77 !important;
+}
+
+.ant-dropdown-menu-root {
+  -webkit-app-region: no-drag !important;
+  background-color: #282828 !important;
+  border-radius: 4px !important;
+  -webkit-box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3), 0 6px 8px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3), 0 6px 8px rgba(0, 0, 0, 0.2) !important;
+  max-height: calc(100vh - 24px) !important;
+  max-width: 350px !important;
+  min-width: 160px !important;
+  overflow-y: auto !important;
+  padding: 4px !important;
+
+  li {
+    color: white !important;
+
+    &.active {
+      color: #1ed760 !important;
+    }
+  }
 }

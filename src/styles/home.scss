@@ -147,7 +147,7 @@
 }
 
 .Main-section-col {
-  border-radius: 15px;
+  border-radius: $container-border-radius;
   padding: 0px;
 
   @media (max-width: $desktop-breakpoint) {

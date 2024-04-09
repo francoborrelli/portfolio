@@ -68,7 +68,11 @@ const YourLibrary = ({ playlists }: { playlists: Playlist[] }) => {
       <Title />
 
       <div className='library-list-container'>
-        <Col style={collapsed ? {} : ({ overflowY: 'scroll', height: '100%' } as const)}>
+        <Col
+          style={
+            collapsed ? {} : ({ overflowY: 'scroll', height: '100%', marginLeft: -20 } as const)
+          }
+        >
           <div
             style={collapsed ? { overflowY: 'scroll', overflowX: 'hidden', height: '100%' } : {}}
           >
