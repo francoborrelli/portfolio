@@ -2,7 +2,6 @@ import { useTranslation } from 'react-i18next';
 import { Playlist } from '../../interfaces/types';
 import { useAppSelector } from '../../store/store';
 import { Tooltip } from '../Common/Tooltip';
-import { Link } from 'react-router-dom';
 
 const PlaylistCardShort = ({ playlist, onClick }: { playlist: Playlist; onClick: () => void }) => {
   const { t } = useTranslation(['playlist', 'cv']);
