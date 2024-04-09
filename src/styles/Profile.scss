@@ -21,7 +21,22 @@
       @media (max-width: $desktop-breakpoint) {
         font-size: 3rem;
       }
+
+      @media (max-width: 600px) {
+        font-size: 2rem;
+      }
     }
+
+    @media (max-width: 600px) {
+      .owner span {
+        display: none;
+      }
+      .songs-number {
+        margin-bottom: 5px;
+        display: block !important;
+      }
+    }
+
     .profile-img {
       border-radius: 50%;
       -webkit-box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);

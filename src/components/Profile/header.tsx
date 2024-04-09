@@ -35,7 +35,7 @@ export const ProfileHeader = () => {
               <Col span={24}>
                 <Space className='owner'>
                   <h3 className='text-sm font-semibold text-white'>
-                    <span className='songs-number'>{t('Experience years')}</span> •{' '}
+                    <span className='songs-number'>{t('Experience years')}</span> <span>•</span>{' '}
                     <span className='songs-number'>{t('Minutes on spotify')}</span>
                   </h3>
                 </Space>
