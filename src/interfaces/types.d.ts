@@ -43,4 +43,5 @@ export type SocialNetwork = {
   name: string;
   imageUrl: string;
   link: string;
+  icon: any;
 };
