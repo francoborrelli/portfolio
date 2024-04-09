@@ -21,7 +21,7 @@ export const PlaylistList: FC<PlaylistListProps> = ({ playlist }) => {
     >
       <PlaylistControls />
       <div className='playlist-table'>
-        <div className='flex justify-between items-center py-2'>
+        <div className='mobile-hidden flex justify-between items-center py-2'>
           <div style={{ flex: 1 }}>
             <h3 className='column-name text-center'>#</h3>
           </div>

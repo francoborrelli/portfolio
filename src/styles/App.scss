@@ -122,3 +122,9 @@ h3 {
     }
   }
 }
+
+@media (max-width: $desktop-breakpoint) {
+  #root > div:first-child {
+    padding: 0px !important;
+  }
+}

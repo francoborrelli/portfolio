@@ -32,6 +32,13 @@
   .column-name {
     color: rgb(186, 186, 186);
   }
+
+  @media (max-width: 600px) {
+    & {
+      padding: 10px;
+      padding-top: 20px;
+    }
+  }
 }
 
 .playlist-controls {

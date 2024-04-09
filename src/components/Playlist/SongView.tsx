@@ -29,9 +29,7 @@ const GitHubButton = ({ song }: { song: Song }) => {
 const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index: number }) => {
   const dispatch = useAppDispatch();
 
-  const image = (
-    <img src={song.imageUrl} alt='song cover' className='mobile-hidden w-10 h-10 mr-4 rounded-md' />
-  );
+  const image = <img src={song.imageUrl} alt='song cover' className='w-10 h-10 mr-4 rounded-md' />;
 
   const title = (
     <div className='flex flex-col' style={{ flex: 5 }}>
@@ -90,7 +88,7 @@ const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index:
       }}
     >
       <div className='flex flex-row items-center justify-between w-full'>
-        <div style={{ flex: 1 }}>
+        <div style={{ flex: 1 }} className='mobile-hidden'>
           <p className='song-details-index'>{index + 1}</p>
           <p className='song-details-play'>
             <Play />

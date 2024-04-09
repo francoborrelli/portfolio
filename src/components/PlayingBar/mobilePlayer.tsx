@@ -26,7 +26,7 @@ const NowPlayingBarMobile = () => {
       <div
         className='mobile-player'
         style={{
-          background: `linear-gradient(${currentSongData.color} -50%, rgb(18, 18, 18) 100%)`,
+          background: `linear-gradient(${currentSongData.color} -50%, rgb(18, 18, 18) 300%)`,
         }}
       >
         <Row justify='space-between'>
