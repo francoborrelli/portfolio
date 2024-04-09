@@ -14,7 +14,7 @@ const PlaylistCardShort = ({ playlist, onClick }: { playlist: Playlist; onClick:
         placement='right'
         title={
           <div>
-            <p>{t(playlist.name)}</p>
+            <p>{cvt(playlist.name)}</p>
             <p style={{ fontSize: 13, color: 'gray', fontWeight: 400 }}>
               Playlist • Franco Borrelli
             </p>

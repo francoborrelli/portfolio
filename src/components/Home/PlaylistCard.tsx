@@ -5,9 +5,10 @@ import type { Playlist } from '../../interfaces/types';
 
 const PlaylistCard = ({ playlist, onClick }: { playlist: Playlist; onClick: () => void }) => {
   const [t] = useTranslation(['cv']);
+  const [tpy] = useTranslation(['playlist']);
 
   const title = t(playlist.name);
-  const description = playlist.description;
+  const description = `Playlist • ${playlist.songs.length} ${tpy('songs')}`;
 
   return (
     <div
@@ -26,7 +27,7 @@ const PlaylistCard = ({ playlist, onClick }: { playlist: Playlist; onClick: () =
       </div>
       <div className='playlist-card-info'>
         <h3 className='text-md font-semibold text-white'>{title}</h3>
-        <p className='text-gray-600 mt-2'>{description}</p>
+        <p>{description}</p>
       </div>
     </div>
   );

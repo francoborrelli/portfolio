@@ -16,7 +16,7 @@ const Profile: FC<{ song: Song }> = ({ song }) => {
   return (
     <NowPlayingCard title={t(song.name)!} subtitle={t(song.artist || '')} image={song.imageUrl}>
       {song.link ? (
-        <Space>
+        <Space style={{ marginTop: 10 }}>
           <Tooltip title={t('WEB_SITE')} placement='top'>
             <a target={'_blank'} href={song.link} className='link-social-button' rel='noreferrer'>
               <FaLink />
