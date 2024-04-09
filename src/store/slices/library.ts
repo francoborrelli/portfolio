@@ -55,9 +55,6 @@ const librarySlice = createSlice({
   },
 });
 
-const shouldOpenDetails = (state: LibraryState) =>
-  state.detailsOpen && (!!state.songPlaying || state.queue);
-
 export const libraryActions = librarySlice.actions;
 
 export default librarySlice.reducer;

@@ -1,4 +1,4 @@
-import { FC, memo, useCallback } from 'react';
+import { FC, memo } from 'react';
 import { Pause, Play } from '../../Icons';
 import { AVAILABLE_SONGS } from '../../../constants/songs';
 import { useAppDispatch, useAppSelector } from '../../../store/store';

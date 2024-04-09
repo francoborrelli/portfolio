@@ -31,19 +31,28 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist }) => {
             <img src={playlist.imageUrl} alt='' className='playlist-img' />
           </Col>
           <Col xs={24} sm={18} lg={19}>
-            <p className='text-white'>{t('Public playlist')}</p>
-            <h1 className='playlist-title'>{playlist.name}</h1>
-            <Space>
-              <img
-                className='avatar'
-                id='user-avatar'
-                alt='User Avatar'
-                src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}
-              />
-              <h3 className='text-sm font-semibold text-white'>
-                Franco Borrelli • {playlist.songs.length} {t('songs')}
-              </h3>
-            </Space>
+            <Row justify='space-between'>
+              <Col span={24}>
+                <p className='text-white'>{t('Public playlist')}</p>
+                <h1 className='playlist-title'>{playlist.name}</h1>
+              </Col>
+              <Col span={24}>
+                <Space className='owner'>
+                  <img
+                    className='avatar'
+                    id='user-avatar'
+                    alt='User Avatar'
+                    src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}
+                  />
+                  <h3 className='text-sm font-semibold text-white'>
+                    Franco Borrelli •{' '}
+                    <span className='songs-number'>
+                      {playlist.songs.length} {t('songs')}
+                    </span>
+                  </h3>
+                </Space>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </div>
