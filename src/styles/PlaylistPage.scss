@@ -43,6 +43,14 @@
       padding: 12px;
       padding-top: 20px;
     }
+
+    button {
+      margin-bottom: 7px;
+      background-color: transparent !important;
+      &:active {
+        transform: scale(0.99);
+      }
+    }
   }
 
   .song-details {
@@ -86,9 +94,14 @@
     }
 
     @media (max-width: $desktop-breakpoint) {
-      title {
-        font-size: 12px;
+      img {
+        border-radius: 1px;
       }
+
+      .title {
+        font-size: 13px;
+      }
+
       p {
         font-size: 11px;
       }
