@@ -39,10 +39,9 @@
   }
 
   @media (max-width: $desktop-breakpoint) {
-    & {
-      padding: 12px;
-      padding-top: 20px;
-    }
+    padding: 12px;
+    padding-top: 20px;
+    margin-bottom: 50px;
 
     button {
       margin-bottom: 7px;

@@ -11,4 +11,6 @@ export const playingBar = {
   'Your Library': 'Tu biblioteca',
   'Now playing': 'Reproduciendo',
   Next: 'A continuación',
+  Skills: 'Habilidades',
+  Experience: 'Experiencia',
 };

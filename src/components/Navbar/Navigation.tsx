@@ -24,7 +24,9 @@ const Buttons = () => {
   return (
     <div className='Navigation-section'>
       <NavigationButton text={t('Home')} icon={<HomeIcon />} onClick={() => navigate('/')} />
-      <NavigationButton onClick={() => {}} text={t('Search')} icon={<SearchIcon />} />
+      <a href='https://github.com/francoborrelli/portfolio' target='_blank' rel='noreferrer'>
+        <NavigationButton onClick={() => {}} text={t('Search')} icon={<SearchIcon />} />
+      </a>
     </div>
   );
 };

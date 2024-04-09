@@ -8,4 +8,6 @@ export const playingBar = {
   'Full Screen': 'Full Screen',
   'Now playing': 'Now playing',
   Next: 'Next',
+  Skills: 'Skills',
+  Experience: 'Experience',
 };

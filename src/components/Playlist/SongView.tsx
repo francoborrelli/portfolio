@@ -7,6 +7,7 @@ import type { Song } from '../../interfaces/types';
 import { Play } from '../Icons';
 import { useAppDispatch } from '../../store/store';
 import { libraryActions } from '../../store/slices/library';
+import { useTranslation } from 'react-i18next';
 
 const GitHubButton = ({ song }: { song: Song }) => {
   return (
@@ -26,15 +27,16 @@ const GitHubButton = ({ song }: { song: Song }) => {
   );
 };
 
-const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index: number }) => {
+const SongData = ({ song, index }: { song: Song; isOpen: boolean; index: number }) => {
   const dispatch = useAppDispatch();
+  const [t] = useTranslation(['cv']);
 
   const image = <img src={song.imageUrl} alt='song cover' className='w-10 h-10 mr-4 rounded-md' />;
 
   const title = (
     <div className='flex flex-col' style={{ flex: 5 }}>
       <div className='flex flex-row items-center'>
-        <p className='title text-left'>{song.name}</p>
+        <p className='title text-left'>{t(song.name)}</p>
         {song.github ? <GitHubButton song={song} /> : null}
       </div>
       <a
@@ -45,7 +47,7 @@ const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index:
         }}
         rel='noreferrer'
       >
-        <p className='text-left artist'>{song.artist}</p>
+        <p className='text-left artist'>{t(song.artist || '')}</p>
       </a>
     </div>
   );
@@ -56,7 +58,7 @@ const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index:
       className='tablet-hidden flex flex-row items-center justify-start flex-wrap space-x-2'
     >
       <Avatar.Group
-        maxCount={1}
+        maxCount={2}
         maxStyle={{
           color: '1cb955',
           fontWeight: 700,
@@ -64,7 +66,7 @@ const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index:
           backgroundColor: '#1d1d1d',
         }}
       >
-        {(song.description.tags || []).map((tag, index) => (
+        {(song.skills || []).map((tag) => (
           <Tooltip title={tag.text} placement='top' key={tag.text}>
             <Avatar key={tag.text} style={{ backgroundColor: '#5c5c5c26' }} icon={tag.icon} />
           </Tooltip>
@@ -75,8 +77,7 @@ const SongData = ({ song, isOpen, index }: { song: Song; isOpen: boolean; index:
 
   const time = (
     <p className='text-right' style={{ flex: 4 }}>
-      {song.location && `${song.location}, `}{' '}
-      {song.lengthStart && `${song.lengthStart} - ${song.lengthEnd}`}
+      {t(song.length!)}
     </p>
   );
 

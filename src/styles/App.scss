@@ -128,3 +128,15 @@ h3 {
     padding: 0px !important;
   }
 }
+
+.link-social-button {
+  display: block;
+  padding: 6px;
+  border-radius: 43px;
+  color: white !important;
+  background: #2d2d2d;
+  font-size: 20px;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

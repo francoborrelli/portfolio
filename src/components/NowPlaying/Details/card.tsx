@@ -1,8 +1,10 @@
+import { Col, Row } from 'antd';
 import { FC } from 'react';
 
 interface NowPlayingCardProps {
   title: string;
 
+  extra?: any;
   children?: any;
   image?: string;
   subtitle?: string;
@@ -28,8 +30,13 @@ export const NowPlayingCard: FC<NowPlayingCardProps> = (props) => {
       ) : null}
 
       <div className='playing-now-card-text'>
-        <div className='playing-now-card-title'>{props.title}</div>
-        <div className='playing-now-card-subtitle'>{props.subtitle}</div>
+        <Row align='middle' justify='space-between'>
+          <Col span={props.extra ? 14 : 24}>
+            <div className='playing-now-card-title'>{props.title}</div>
+            <div className='playing-now-card-subtitle'>{props.subtitle}</div>
+          </Col>
+          {props.extra ? <Col span={10}>{props.extra}</Col> : null}
+        </Row>
         {props.children ? <div className='playing-now-card-body'>{props.children}</div> : null}
       </div>
     </div>

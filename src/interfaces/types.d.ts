@@ -1,18 +1,18 @@
 export type Song = {
   name: string;
+  length?: string;
   artist?: string;
-  description: Description;
-  lengthStart?: string;
-  lengthEnd?: string;
   imageUrl?: string;
-  location?: string;
-  github?: string;
+  skills: TagType[];
+  description?: string;
+
   link?: string;
+  github?: string;
 };
 
 export type Playlist = {
   name: string;
-  description: string;
+  description?: string;
   songs: Song[];
   imageUrl?: string;
   color: string;

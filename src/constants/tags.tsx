@@ -50,7 +50,6 @@ import {
   HadoopPlain,
   HerokuPlain,
   LinuxPlain,
-  // MongodbPlain,
   // NginxOriginal,
   // MysqlPlainWordmark,
   // PostgresqlOriginal,
@@ -71,6 +70,7 @@ import {
   KubernetesOriginal,
   SymfonyOriginal,
   RancherOriginal,
+  MongodbOriginal,
 } from 'devicons-react';
 
 export const tags = {
@@ -287,5 +287,10 @@ export const tags = {
     text: 'Symfony',
     color: '#000000',
     icon: <SymfonyOriginal />,
+  },
+  Mongo: {
+    text: 'MongoDB',
+    color: '#47A248',
+    icon: <MongodbOriginal />,
   },
 };
