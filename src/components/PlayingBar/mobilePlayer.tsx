@@ -3,6 +3,7 @@ import { getCurrentSongData, playingBarActions } from '../../store/slices/playin
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import { Col, Row } from 'antd';
 import { ListIcon, Pause, Play } from '../Icons';
+import { libraryActions } from '../../store/slices/library';
 
 const PlayButton = () => {
   const dispatch = useAppDispatch();
@@ -14,6 +15,15 @@ const PlayButton = () => {
       }
     >
       {!playing ? <Play /> : <Pause />}
+    </button>
+  );
+};
+
+const QueueButton = () => {
+  const dispatch = useAppDispatch();
+  return (
+    <button onClick={() => dispatch(libraryActions.openQueue())}>
+      <ListIcon />
     </button>
   );
 };
@@ -43,7 +53,7 @@ const NowPlayingBarMobile = () => {
                 justifyContent: 'space-between',
               }}
             >
-              <ListIcon />
+              <QueueButton />
               <PlayButton />
             </div>
           </Col>

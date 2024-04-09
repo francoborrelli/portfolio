@@ -10,7 +10,7 @@ export const AVAILABLE_SONGS = [
     file: '1.mp3',
     name: 'Drive to where...',
     artist: 'JamesBellX',
-    color: '#f7f7f7',
+    color: '#E91E63',
     image: '2.png',
   },
   {

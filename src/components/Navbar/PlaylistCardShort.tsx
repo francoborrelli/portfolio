@@ -5,6 +5,7 @@ import { Tooltip } from '../Common/Tooltip';
 
 const PlaylistCardShort = ({ playlist, onClick }: { playlist: Playlist; onClick: () => void }) => {
   const { t } = useTranslation(['playlist', 'cv']);
+  const { t: cvt } = useTranslation(['cv']);
   const collapsed = useAppSelector((state) => state.library.collapsed);
 
   if (collapsed) {
@@ -40,7 +41,7 @@ const PlaylistCardShort = ({ playlist, onClick }: { playlist: Playlist; onClick:
       </div>
       <div id='playlist-song-and-artist-name'>
         <h3 className='text-md font-semibold text-white' style={{ fontSize: 15, marginBottom: -5 }}>
-          {t(playlist.name)}
+          {cvt(playlist.name)}
         </h3>
 
         <p

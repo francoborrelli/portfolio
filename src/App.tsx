@@ -1,13 +1,15 @@
 import './styles/App.scss';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 import { Col, ConfigProvider, Row } from 'antd';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 // Components
 import PlayingBar from './components/PlayingBar';
 import MainSection from './components/MainSection';
+import { PlayingNow } from './components/NowPlaying';
 import Navigation from './components/Navbar/Navigation';
 import { LanguageModal } from './components/Common/LanguageModal';
+import { PlayingNowDrawer } from './components/Common/PlayingNowDrawer';
 
 // Utils
 import i18next from 'i18next';
@@ -18,10 +20,9 @@ import { playlists } from './constants/cv';
 
 // Redux
 import { Provider } from 'react-redux';
+import { libraryActions } from './store/slices/library';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store, useAppSelector } from './store/store';
-import { PlayingNow } from './components/NowPlaying';
-import { libraryActions } from './store/slices/library';
 
 window.addEventListener('resize', () => {
   const vh = window.innerWidth;
@@ -43,6 +44,8 @@ const RootComponent = () => {
   return (
     <>
       <LanguageModal />
+      <PlayingNowDrawer />
+
       <Router basename='portfolio'>
         <div style={{ padding: 10 }}>
           <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(98vh - 90px)' }}>
@@ -61,15 +64,18 @@ const RootComponent = () => {
               xl={!!hasDetails ? 16 : libraryCollapsed ? 22 : 18}
               className='Main-section-col'
             >
-              {/* Left panel - Navigation */}
+              {/* Home | Playlists */}
               <MainSection playlists={playlists} />
             </Col>
 
+            {/* Queue | Song details */}
             <Col xs={0} md={!!hasDetails ? 6 : 0}>
               <PlayingNow />
             </Col>
           </Row>
         </div>
+
+        {/* Player bar */}
         <footer>
           <PlayingBar />
         </footer>

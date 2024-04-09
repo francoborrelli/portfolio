@@ -13,7 +13,8 @@ interface PlaylistHeaderProps {
 }
 
 export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist }) => {
-  const { t } = useTranslation(['playlist', 'cv']);
+  const { t } = useTranslation(['playlist']);
+  const { t: cvt } = useTranslation(['cv']);
 
   return (
     <div
@@ -34,7 +35,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist }) => {
             <Row justify='space-between'>
               <Col span={24}>
                 <p className='text-white'>{t('Public playlist')}</p>
-                <h1 className='playlist-title'>{t(playlist.name)}</h1>
+                <h1 className='playlist-title'>{cvt(playlist.name)}</h1>
               </Col>
               <Col span={24}>
                 <Space className='owner'>

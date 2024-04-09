@@ -142,3 +142,20 @@
     }
   }
 }
+
+.ant-drawer {
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+  .ant-drawer-header {
+    display: none !important;
+  }
+  .ant-drawer-body {
+    padding: 0;
+
+    .playing-section {
+      height: 100%;
+      border-radius: 0px;
+    }
+  }
+}
