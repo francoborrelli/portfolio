@@ -9,4 +9,6 @@ export const playingBar = {
   Home: 'Inicio',
   'Source code': 'Código fuente',
   'Your Library': 'Tu biblioteca',
+  'Now playing': 'Reproduciendo',
+  Next: 'A continuación',
 };

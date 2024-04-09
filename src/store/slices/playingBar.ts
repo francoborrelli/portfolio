@@ -51,6 +51,12 @@ const playingBarSlice = createSlice({
       play(state.currentSong);
       setPlayerVolume(state.volume);
     },
+    setSong(state, action: PayloadAction<{ song: number }>) {
+      state.currentSong = action.payload.song;
+      state.playing = true;
+      play(action.payload.song);
+      setPlayerVolume(state.volume);
+    },
     previousSong(state) {
       state.currentSong--;
       if (state.currentSong < 0) {
@@ -78,6 +84,15 @@ const playingBarSlice = createSlice({
 
 export const getCurrentSongData = (state: { playingBar: typeof initialState }) => {
   return AVAILABLE_SONGS[state.playingBar.currentSong];
+};
+
+export const getQueue = (state: { playingBar: typeof initialState }) => {
+  const { currentSong } = state.playingBar;
+  const queue = [
+    ...AVAILABLE_SONGS.slice(currentSong + 1),
+    ...AVAILABLE_SONGS.slice(0, currentSong),
+  ];
+  return queue;
 };
 
 export const playingBarActions = playingBarSlice.actions;

@@ -32,6 +32,7 @@ const DetailsButton = () => {
   const dispatch = useAppDispatch();
   const { t } = useTranslation(['playingBar']);
 
+  const queue = useAppSelector((state) => state.library.queue);
   const actions = useAppSelector((state) => state.library.detailsOpen);
   const songPlaying = useAppSelector((state) => state.library.songPlaying);
 
@@ -46,7 +47,32 @@ const DetailsButton = () => {
           cursor: songPlaying ? 'pointer' : 'not-allowed',
         }}
       >
-        <DetailsIcon active={actions && !!songPlaying} />
+        <DetailsIcon active={actions && !!songPlaying && !queue} />
+      </button>
+    </Tooltip>
+  );
+};
+
+const QueueButton = () => {
+  const dispatch = useAppDispatch();
+  const { t } = useTranslation(['playingBar']);
+
+  const isQueueOpen = useAppSelector((state) => state.library.queue);
+  const actions = useAppSelector((state) => state.library.detailsOpen);
+
+  return (
+    <Tooltip title={t('Queue')}>
+      <button
+        onClick={() =>
+          isQueueOpen ? dispatch(libraryActions.closeQueue()) : dispatch(libraryActions.openQueue())
+        }
+        style={{
+          marginLeft: 10,
+          marginRight: 5,
+          cursor: isQueueOpen ? 'pointer' : 'not-allowed',
+        }}
+      >
+        <ListIcon active={actions && !!isQueueOpen} />
       </button>
     </Tooltip>
   );
@@ -62,11 +88,7 @@ const ExtraControlButtons = () => {
 
         <LyricsButton />
 
-        <Tooltip title={t('Queue')}>
-          <Col className='hiddable-icon'>
-            <ListIcon />
-          </Col>
-        </Tooltip>
+        <QueueButton />
 
         <Tooltip title={t('Connect to a device')}>
           <Col className='hiddable-icon'>

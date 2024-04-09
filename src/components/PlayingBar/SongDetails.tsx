@@ -5,14 +5,13 @@ import { getCurrentSongData } from '../../store/slices/playingBar';
 
 const SongDetails = memo(() => {
   const currentSongData = useAppSelector(getCurrentSongData);
-  const current = useAppSelector((state) => state.playingBar.currentSong);
 
   return (
     <div className='flex flex-row items-center'>
       <img
         alt='Album Cover'
         className='album-cover'
-        src={`${process.env.PUBLIC_URL}/images/songs/${current + 1}.png`}
+        src={`${process.env.PUBLIC_URL}/images/songs/${currentSongData.image}`}
       />
       <div id='song-and-artist-name'>
         <p className='text-white font-bold song-title' title={currentSongData.name}>

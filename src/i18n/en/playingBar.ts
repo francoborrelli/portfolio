@@ -6,4 +6,6 @@ export const playingBar = {
   Mute: 'Mute',
   Unmute: 'Unmute',
   'Full Screen': 'Full Screen',
+  'Now playing': 'Now playing',
+  Next: 'Next',
 };
