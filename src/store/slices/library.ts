@@ -11,16 +11,19 @@ interface LibraryState {
 }
 
 const initialState: LibraryState = {
-  collapsed: false,
+  queue: false,
+  collapsed: window.innerWidth < 973,
   songPlaying: null,
   detailsOpen: false,
-  queue: false,
 };
 
 const librarySlice = createSlice({
   name: 'library',
   initialState,
   reducers: {
+    collapseLibrary(state) {
+      state.collapsed = true;
+    },
     toggleLibrary(state) {
       if (!state.detailsOpen) {
         state.collapsed = !state.collapsed;

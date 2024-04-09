@@ -1,8 +1,12 @@
-import type { Playlist } from '../../interfaces/types';
 import { PlayCircle } from './PlayCircle';
 
+import { useTranslation } from 'react-i18next';
+import type { Playlist } from '../../interfaces/types';
+
 const PlaylistCard = ({ playlist, onClick }: { playlist: Playlist; onClick: () => void }) => {
-  const title = playlist.name;
+  const [t] = useTranslation(['cv']);
+
+  const title = t(playlist.name);
   const description = playlist.description;
 
   return (

@@ -95,6 +95,10 @@
   .playlist-card-info {
     padding-left: 20px;
     padding-bottom: 20px;
+
+    h3 {
+      width: 94%;
+    }
   }
 
   @media (max-width: $desktop-breakpoint) {

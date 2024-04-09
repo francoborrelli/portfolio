@@ -21,6 +21,14 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store, useAppSelector } from './store/store';
 import { PlayingNow } from './components/NowPlaying';
+import { libraryActions } from './store/slices/library';
+
+window.addEventListener('resize', () => {
+  const vh = window.innerWidth;
+  if (vh < 950) {
+    store.dispatch(libraryActions.collapseLibrary());
+  }
+});
 
 const RootComponent = () => {
   const language = useAppSelector((state) => state.language.language);

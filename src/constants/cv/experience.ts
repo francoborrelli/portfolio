@@ -124,7 +124,7 @@ const LIFIA = {
 };
 
 export const ProfessionalExperience = {
-  name: 'Professional Experience',
+  name: 'EXPERIENCE',
   description: 'Description 2',
   color: '#c45f23',
 

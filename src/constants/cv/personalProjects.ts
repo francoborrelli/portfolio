@@ -1,7 +1,7 @@
 import { getAlbumPath } from '../../utils/getPublicPath';
 
 export const PersonalProjects = {
-  name: 'Projects',
+  name: 'PROJECTS',
   color: '#113066',
   songs: [],
   description: 'Description 1',
