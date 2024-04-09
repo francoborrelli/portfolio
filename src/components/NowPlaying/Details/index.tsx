@@ -1,4 +1,4 @@
-import { Avatar, Button, Space } from 'antd';
+import { Avatar, Space } from 'antd';
 import { NowPlayingCard } from './card';
 import { Tooltip } from '../../Common/Tooltip';
 import { useAppSelector } from '../../../store/store';
