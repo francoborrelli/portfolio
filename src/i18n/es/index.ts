@@ -1,7 +1,8 @@
 import { cv } from './cv';
 import { home } from './home';
 import { navbar } from './navbar';
+import { profile } from './profile';
 import { playlist } from './playlist';
 import { playingBar } from './playingBar';
 
-export { home, navbar, playlist, playingBar, cv };
+export { cv, home, navbar, playlist, playingBar, profile };

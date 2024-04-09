@@ -1,7 +1,7 @@
 import { Space } from 'antd';
-// import { News } from '../Icons';
-import HistoryNavigation from '../Navbar/HistoryNavigation';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import HistoryNavigation from '../Navbar/HistoryNavigation';
 
 const Header = ({ opacity }: { opacity: number }) => {
   const { t } = useTranslation(['navbar']);
@@ -29,12 +29,14 @@ const Header = ({ opacity }: { opacity: number }) => {
             <News />
           </div> */}
 
-          <img
-            className='avatar'
-            id='user-avatar'
-            alt='User Avatar'
-            src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}
-          />
+          <Link to='/profile'>
+            <img
+              className='avatar'
+              id='user-avatar'
+              alt='User Avatar'
+              src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}
+            />
+          </Link>
         </Space>
       </div>
     </div>

@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 // Interfaces
 import type { FC } from 'react';
 import type { Playlist } from '../../interfaces/types';
+import { Link } from 'react-router-dom';
 
 interface PlaylistHeaderProps {
   playlist: Playlist;
@@ -39,14 +40,19 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist }) => {
               </Col>
               <Col span={24}>
                 <Space className='owner'>
-                  <img
-                    className='avatar'
-                    id='user-avatar'
-                    alt='User Avatar'
-                    src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}
-                  />
+                  <Link to='/profile'>
+                    <img
+                      className='avatar'
+                      id='user-avatar'
+                      alt='User Avatar'
+                      src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}
+                    />
+                  </Link>
                   <h3 className='text-sm font-semibold text-white'>
-                    Franco Borrelli •{' '}
+                    <Link className='link-text' to='/profile'>
+                      Franco Borrelli
+                    </Link>{' '}
+                    •{' '}
                     <span className='songs-number'>
                       {playlist.songs.length} {t('songs')}
                     </span>

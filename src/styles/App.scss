@@ -3,6 +3,7 @@
 @use './home.scss';
 @use './header.scss';
 @use './Navbar.scss';
+@use './Profile.scss';
 @use './language.scss';
 @use './PlayingNow.scss';
 @use './CirclePlay.scss';
@@ -39,7 +40,8 @@ h3 {
   overflow: scroll;
 }
 
-.Playlist-section {
+.Playlist-section,
+.Profile-section {
   width: 100%;
   height: 100%;
 }
@@ -138,5 +140,12 @@ h3 {
   font-size: 20px;
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+.link-text {
+  color: $text-primary-color !important;
+  &:hover {
+    text-decoration: underline;
   }
 }

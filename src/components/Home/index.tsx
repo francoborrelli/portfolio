@@ -1,13 +1,20 @@
+// Components
+import Header from './Header';
+import { Col, Row } from 'antd';
 import PlaylistCard from './PlaylistCard';
+import { PlaylistHorizontal } from './PlaylistHorizontal';
+
+// Utils
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { FC, useCallback, useState } from 'react';
 
-import type { Playlist } from '../../interfaces/types';
-import { PlaylistHorizontal } from './PlaylistHorizontal';
-import { Col, Row } from 'antd';
-import Header from './Header';
-import { useTranslation } from 'react-i18next';
+// Constants
+import { playlists } from '../../constants/cv';
 import { SOCIAL_NETWORKS } from '../../constants/socialNetworks';
+
+// Interfaces
+import type { Playlist } from '../../interfaces/types';
 
 interface HomeProps {
   playlists: Playlist[];
@@ -63,7 +70,7 @@ const Playlists: FC<PlaylistListProps> = ({ playlists, onSetColor }) => {
   );
 };
 
-const Home: FC<HomeProps> = ({ playlists }) => {
+const Home = () => {
   const [color, setColor] = useState('rgb(66, 32, 35)');
   return (
     <div
