@@ -12,15 +12,7 @@ const LBS = {
   link: 'https://www.lbsinformatica.com.ar/',
   imageUrl: publicURL('/images/experience/logo_lbs.svg'),
   description: 'LBS_JOB_DESCRIPTION',
-  skills: [
-    tags.React,
-    tags.Docker,
-    tags.TypeScript,
-    tags.Laravel,
-    tags['CI/CD'],
-    tags.GitLab,
-    tags.Redash,
-  ],
+  skills: [tags.React, tags.Docker, tags.TypeScript, tags.Laravel, tags['CI/CD'], tags.GitLab],
 } as Song;
 
 const GRAL = {

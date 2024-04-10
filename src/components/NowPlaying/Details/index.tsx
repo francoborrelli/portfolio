@@ -71,7 +71,9 @@ const Skills: FC<{ song: Song }> = ({ song }) => {
     <NowPlayingCard title={t('Skills')}>
       {(song.skills || []).map((tag) => (
         <Tooltip title={tag.text} placement='top' key={tag.text}>
-          <Avatar style={{ backgroundColor: '#5c5c5c26' }} icon={tag.icon} />
+          <a href={tag.link} target='_blank' rel='noreferrer'>
+            <Avatar style={{ backgroundColor: '#5c5c5c26' }} icon={tag.icon} />
+          </a>
         </Tooltip>
       ))}
     </NowPlayingCard>

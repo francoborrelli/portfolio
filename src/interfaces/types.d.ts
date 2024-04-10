@@ -38,6 +38,7 @@ export type TagType = {
   color: string;
   help?: string;
   icon?: any;
+  link?: string;
 };
 
 export type SocialNetwork = {
