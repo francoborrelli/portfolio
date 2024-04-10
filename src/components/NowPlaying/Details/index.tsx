@@ -10,18 +10,34 @@ import { useTranslation } from 'react-i18next';
 import type { FC } from 'react';
 import type { Song } from '../../../interfaces/types';
 
-import { FaGithub, FaLink } from 'react-icons/fa6';
+import { FaGithub, FaLink, FaYoutube } from 'react-icons/fa6';
 
 const Profile: FC<{ song: Song }> = ({ song }) => {
   const [t] = useTranslation(['cv']);
+
+  const hasButtons = song.link || song.github || song.youtube;
+
   return (
     <NowPlayingCard title={t(song.name)!} subtitle={t(song.artist || '')} image={song.imageUrl}>
-      {song.link || song.github ? (
+      {hasButtons ? (
         <Space style={{ marginTop: 10 }}>
           {song.link ? (
             <Tooltip title={t('WEB_SITE')} placement='top'>
               <a target={'_blank'} href={song.link} className='link-social-button' rel='noreferrer'>
                 <FaLink />
+              </a>
+            </Tooltip>
+          ) : null}
+
+          {song.youtube ? (
+            <Tooltip title={t('Youtube')} placement='top'>
+              <a
+                target={'_blank'}
+                href={song.youtube}
+                className='link-social-button'
+                rel='noreferrer'
+              >
+                <FaYoutube />
               </a>
             </Tooltip>
           ) : null}

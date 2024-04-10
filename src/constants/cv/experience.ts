@@ -41,6 +41,7 @@ const GRAL = {
     tags.Slack,
     tags.Symfony,
     tags.Redis,
+    tags.Telegram,
   ],
 } as Song;
 

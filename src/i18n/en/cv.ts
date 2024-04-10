@@ -30,9 +30,51 @@ export const LIFIA = {
 
 export const SPOTIFY_CLONE = {
   SPOTIFY_CLONE_NAME: 'Spotify Clone',
-  SPOTIFY_CLONE_LENGTH: '1 month',
+  SPOTIFY_CLONE_LENGTH: '2018',
   SPOTIFY_CLONE_ARTIST: 'Personal project',
   SPOTIFY_CLONE_DESCRIPTION: `This project is a Spotify Web Client developed using the Spotify Web API and Spotify Playback SDK. It was initiated with Create React App, providing a solid foundation for building the web application.\nThe client offers various features to enhance the user's music streaming experience. Firstly, users can enjoy full audio track playback directly from the Spotify platform. This includes comprehensive playback control options such as pausing, adjusting volume, and enabling shuffle mode, giving users complete control over their listening experience.\nFurthermore, the client allows users to manage their playlists effortlessly. They can create new playlists or edit existing ones seamlessly within the web interface. Additionally, users have access to their recent playback history and top artists, enabling them to discover new music or revisit their favorite tracks.\nAnother key feature is the ability to follow or unfollow playlists and artists directly from the web client. This simplifies playlist curation and artist discovery, allowing users to tailor their music library to their preferences.\nMoreover, users can manage their track library by adding or removing tracks as desired. The client also facilitates device management, enabling users to switch playback devices conveniently within the application.\nLastly, the client offers advanced search capabilities, allowing users to explore Spotify's extensive database by searching for tracks, albums, artists, and playlists.`,
+};
+
+export const LOTTIE = {
+  LOTTIE_NAME: 'Lottie React Native',
+  LOTTIE_LENGTH: '2023',
+  LOTTIE_ARTIST: 'Personal project',
+  LOTTIE_DESCRIPTION: `This project is a React Native application that showcases the capabilities of the Lottie animation library. Lottie is a powerful tool that enables developers to integrate high-quality animations into their applications with ease.\nThe application features a variety of animations, including loading spinners, progress bars, and interactive elements.`,
+};
+
+export const TENSORFLOW_REACT_NATIVE = {
+  TENSORFLOW_REACT_NATIVE_NAME: 'TensorFlow.js for React Native',
+  TENSORFLOW_REACT_NATIVE_ARTIST: 'Personal project',
+  TENSORFLOW_REACT_NATIVE_LENGTH: '2023',
+  TENSORFLOW_DESCRIPTION: `The project I developed in React Native with Expo integrates TensorFlow.js into the application to run object recognition and detection models locally on the device. This implementation serves as a proof of concept aimed at exploring and assessing the feasibility of using this technology in future projects. The integration of TensorFlow.js enables the execution of machine learning models directly on the device, which can improve efficiency and privacy by processing data locally without the need to send it to external servers. This project demonstrates the potential of leveraging machine learning technologies in mobile applications and lays the groundwork for future research and development in this area.`,
+};
+
+export const TFD = {
+  TFD_NAME: 'tfd | Tu Factura Digital',
+  TFD_ARTIST: 'Qwertysoft SRL',
+  TFD_LENGTH: '2019 - 2022',
+  TFD_DESCRIPTION: `The project I collaborated on with the team focuses on developing a comprehensive Software as a Service (SaaS) solution for invoicing, catering to both businesses and individuals.\nI worked on both frontend and backend development, ensuring that users have a complete and effective experience. A notable aspect is the integration with the Federal Public Revenue Administration (AFIP), the Argentine tax authority, enabling users to fulfill their tax obligations accurately and efficiently.\nAdditionally, I implemented a flexible subscription system, allowing users to choose between monthly or yearly plans based on their needs and preferences.\nAnother crucial aspect is our platform's ability to communicate with various renowned external services such as MercadoLibre, MercadoPago, TiendaNube, and Mobbex. This integration streamlines users' access to and utilization of sales and invoicing data, simplifying their business operations.\nI also focused on implementing additional features, including automated generation of annual and monthly sales and invoicing reports, as well as customization of invoices.`,
+};
+
+export const CALM_COVID = {
+  CALM_COVID_NAME: 'CALM covid',
+  CALM_COVID_ARTIST: 'Qwertysoft SRL',
+  CALM_COVID_LENGTH: '2020',
+  CALM_COVID_DESCRIPTION: `An app designed to help contain the spread of COVID-19 by notifying close contacts of infected individuals.\nThis application was conceived with a clear purpose: to offer an effective and agile solution for identifying and notifying individuals who may have been exposed to the virus. In a time of uncertainty and the need for solidarity, this tool became a crucial way to mitigate the spread of contagion.\nThe application allows users to register their close contacts and receive instant notifications in case any of them are diagnosed as COVID-19 positive. This gives them the opportunity to take preventive measures quickly, such as self-quarantine and testing, to protect their health and that of those around them.\nIn addition to providing COVID-19 contact alerts, the application also offers the ability to report swab test results. This additional feature is crucial for keeping users informed about their health status and making informed decisions about how to proceed.`,
+};
+
+export const QWERTY_LANDING_PAGE = {
+  QWERTY_LANDING_PAGE_NAME: 'Qwerty Landing Page',
+  QWERTY_LANDING_PAGE_LENGTH: '2019',
+  QWERTY_LANDING_PAGE_ARTIST: 'Qwertysoft SRL',
+  QWERTY_LANDING_PAGE_DESCRIPTION: `A landing page designed to showcase the services and projects of Qwertysoft SRL, a software development company.\nThe landing page serves as a digital storefront for the company, providing visitors with an overview of the services offered, the team behind the projects, and the company's portfolio. It is designed to be visually appealing and informative, guiding visitors through the company's offerings and encouraging them to engage further.\nThe landing page features a responsive design that adapts to different screen sizes, ensuring a seamless user experience across devices. It also incorporates interactive elements and animations to enhance user engagement and create a dynamic browsing experience.\nMoreover, the landing page is optimized for search engines, making it easier for potential clients to discover Qwertysoft SRL and learn about the company's expertise and capabilities.`,
+};
+
+export const AUTHORING_TOOL = {
+  AUTHORING_TOOL_NAME: 'Co-design Authoring Tool',
+  AUTHORING_TOOL_LENGTH: '2021',
+  AUTHORING_TOOL_ARTIST: 'LIFIA - Facultad de Informática UNLP',
+  AUTHORING_TOOL_DESCRIPTION: `I developed this project as part of my undergraduate thesis at the National University of La Plata.\nThis project represents research into the collaborative, in-situ design of context-aware mobile applications. In an environment where GPS has limitations in indoor spaces, I explored user positioning within these areas, an area of study in constant evolution.\nIn particular, I investigated WiFi fingerprinting technologies to achieve precise user location in space. This exploration led to the development of a specialized tool for co-designing in-situ location-based question games.\nWith this tool, users have the ability to physically map an indoor space and record questions at strategic locations within it. These co-designed applications can then be utilized, inviting other participants to explore the space and engage in an interactive game.`,
 };
 
 // Global Object
@@ -54,5 +96,11 @@ export const cv = {
   ...LIFIA,
 
   // Projects
+  ...TFD,
+  ...LOTTIE,
+  ...CALM_COVID,
   ...SPOTIFY_CLONE,
+  ...AUTHORING_TOOL,
+  ...QWERTY_LANDING_PAGE,
+  ...TENSORFLOW_REACT_NATIVE,
 } as const;

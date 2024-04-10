@@ -9,6 +9,7 @@ export type Song = {
   link?: string;
   github?: string;
   images?: string[];
+  youtube?: string;
 };
 
 export type Playlist = {
