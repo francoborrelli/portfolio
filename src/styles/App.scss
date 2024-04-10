@@ -8,6 +8,7 @@
 @use './PlayingNow.scss';
 @use './CirclePlay.scss';
 @use './PlayingBar.scss';
+@use './FullScreen.scss';
 @use './PlaylistPage.scss';
 
 /* hide scrollbar but allow scrolling */
@@ -147,5 +148,31 @@ h3 {
   color: $text-primary-color !important;
   &:hover {
     text-decoration: underline;
+  }
+}
+
+.fullscreen {
+  display: none !important;
+}
+
+.fullscreen-enabled {
+  display: block !important;
+}
+
+.active-icon-button {
+  position: relative;
+
+  &::after {
+    background-color: #1db954;
+    border-radius: 50%;
+    bottom: -10px;
+    content: '';
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 4px;
+    inline-size: 4px !important;
   }
 }

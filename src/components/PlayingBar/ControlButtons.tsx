@@ -50,7 +50,10 @@ const ReplayButton = () => {
   const dispatch = useAppDispatch();
   const { looping } = useAppSelector((state) => state.playingBar);
   return (
-    <button onClick={() => dispatch(playingBarActions.toggleLooping())}>
+    <button
+      className={looping ? 'active-icon-button' : ''}
+      onClick={() => dispatch(playingBarActions.toggleLooping())}
+    >
       <Replay active={looping} />
     </button>
   );
@@ -60,7 +63,7 @@ const CONTROLS = [ShuffleButton, SkipBackButton, PlayButton, SkipNextButton, Rep
 
 const ControlButtons = () => {
   return (
-    <Row gutter={24} align='middle' style={{ marginBottom: 5 }}>
+    <Row gutter={24} align='middle' style={{ marginBottom: 5, justifyContent: 'center' }}>
       {CONTROLS.map((Component, index) => (
         <Col key={index}>
           <Component />

@@ -3,6 +3,8 @@ import { Col, Row } from 'antd';
 import VolumeControls from './Volume';
 import { Tooltip } from '../Common/Tooltip';
 
+import { FullScreen, useFullScreenHandle } from 'react-full-screen';
+
 // Icons
 import { DetailsIcon, DeviceIcon, ExpandIcon, ListIcon, MicrophoneIcon } from '../Icons';
 
@@ -11,6 +13,7 @@ import { useTranslation } from 'react-i18next';
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import { languageActions } from '../../store/slices/language';
 import { libraryActions } from '../../store/slices/library';
+import { FullScreenPlayer } from '../FullScreen';
 
 const LyricsButton = () => {
   const dispatch = useAppDispatch();
@@ -36,20 +39,25 @@ const DetailsButton = () => {
   const actions = useAppSelector((state) => state.library.detailsOpen);
   const songPlaying = useAppSelector((state) => state.library.songPlaying);
 
+  const active = actions && !!songPlaying && !queue;
+
   return (
-    <Tooltip title={t('Now playing view')}>
-      <button
-        disabled={!songPlaying}
-        onClick={() => dispatch(libraryActions.toggleSongPlaying())}
-        style={{
-          marginLeft: 5,
-          marginRight: 10,
-          cursor: songPlaying ? 'pointer' : 'not-allowed',
-        }}
-      >
-        <DetailsIcon active={actions && !!songPlaying && !queue} />
-      </button>
-    </Tooltip>
+    <>
+      <Tooltip title={t('Now playing view')}>
+        <button
+          disabled={!songPlaying}
+          className={active ? 'active-icon-button' : ''}
+          onClick={() => dispatch(libraryActions.toggleSongPlaying())}
+          style={{
+            marginLeft: 5,
+            marginRight: 10,
+            cursor: songPlaying ? 'pointer' : 'not-allowed',
+          }}
+        >
+          <DetailsIcon active={active} />
+        </button>
+      </Tooltip>
+    </>
   );
 };
 
@@ -60,9 +68,12 @@ const QueueButton = () => {
   const isQueueOpen = useAppSelector((state) => state.library.queue);
   const actions = useAppSelector((state) => state.library.detailsOpen);
 
+  const active = actions && !!isQueueOpen;
+
   return (
     <Tooltip title={t('Queue')}>
       <button
+        className={active ? 'active-icon-button' : ''}
         onClick={() =>
           isQueueOpen ? dispatch(libraryActions.closeQueue()) : dispatch(libraryActions.openQueue())
         }
@@ -72,9 +83,36 @@ const QueueButton = () => {
           cursor: isQueueOpen ? 'pointer' : 'not-allowed',
         }}
       >
-        <ListIcon active={actions && !!isQueueOpen} />
+        <ListIcon active={active} />
       </button>
     </Tooltip>
+  );
+};
+
+const ExpandButton = () => {
+  const { t } = useTranslation(['playingBar']);
+
+  const handle = useFullScreenHandle();
+  const isQueueOpen = useAppSelector((state) => state.library.queue);
+
+  return (
+    <>
+      <FullScreen handle={handle}>
+        <FullScreenPlayer onExit={handle.exit} />
+      </FullScreen>
+
+      <Tooltip title={t('Full Screen')}>
+        <button
+          onClick={handle.enter}
+          style={{
+            marginRight: 5,
+            cursor: isQueueOpen ? 'pointer' : 'not-allowed',
+          }}
+        >
+          <ExpandIcon />
+        </button>
+      </Tooltip>
+    </>
   );
 };
 
@@ -100,11 +138,9 @@ const ExtraControlButtons = () => {
           <VolumeControls />
         </Col>
 
-        <Tooltip title={t('Full Screen')}>
-          <Col className='hiddable-icon'>
-            <ExpandIcon />
-          </Col>
-        </Tooltip>
+        <Col>
+          <ExpandButton />
+        </Col>
       </Row>
     </div>
   );
