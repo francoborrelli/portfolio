@@ -3,25 +3,41 @@ import { NowPlayingCard } from './card';
 import { Tooltip } from '../../Common/Tooltip';
 import { useAppSelector } from '../../../store/store';
 
-// Interfaces
-import type { FC } from 'react';
-import type { Song } from '../../../interfaces/types';
 import { NowPlayingLayout } from '../layout';
 import { useTranslation } from 'react-i18next';
 
-import { FaLink } from 'react-icons/fa6';
+// Interfaces
+import type { FC } from 'react';
+import type { Song } from '../../../interfaces/types';
+
+import { FaGithub, FaLink } from 'react-icons/fa6';
 
 const Profile: FC<{ song: Song }> = ({ song }) => {
   const [t] = useTranslation(['cv']);
   return (
     <NowPlayingCard title={t(song.name)!} subtitle={t(song.artist || '')} image={song.imageUrl}>
-      {song.link ? (
+      {song.link || song.github ? (
         <Space style={{ marginTop: 10 }}>
-          <Tooltip title={t('WEB_SITE')} placement='top'>
-            <a target={'_blank'} href={song.link} className='link-social-button' rel='noreferrer'>
-              <FaLink />
-            </a>
-          </Tooltip>
+          {song.link ? (
+            <Tooltip title={t('WEB_SITE')} placement='top'>
+              <a target={'_blank'} href={song.link} className='link-social-button' rel='noreferrer'>
+                <FaLink />
+              </a>
+            </Tooltip>
+          ) : null}
+
+          {song.github ? (
+            <Tooltip title={t('Github')} placement='top'>
+              <a
+                target={'_blank'}
+                href={song.github}
+                className='link-social-button'
+                rel='noreferrer'
+              >
+                <FaGithub />
+              </a>
+            </Tooltip>
+          ) : null}
         </Space>
       ) : null}
     </NowPlayingCard>

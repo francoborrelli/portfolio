@@ -24,7 +24,7 @@ export const SOCIAL_NETWORKS = [
   {
     name: 'Spotify',
     link: 'https://open.spotify.com/user/21dzxax5geyjawwrgvrjogqwa?si=54468bda2a7e422d',
-    imageUrl: getSocialNetworkPath('spotify.jpeg'),
+    imageUrl: getSocialNetworkPath('spotify.png'),
     icon: <FaSpotify />,
   },
 ] as SocialNetwork[];

@@ -71,7 +71,10 @@ import {
   SymfonyOriginal,
   RancherOriginal,
   MongodbOriginal,
+  SassOriginal,
+  ReduxOriginal,
 } from 'devicons-react';
+import { FaSpotify } from 'react-icons/fa6';
 
 export const tags = {
   LinuxPlain: {
@@ -292,5 +295,20 @@ export const tags = {
     text: 'MongoDB',
     color: '#47A248',
     icon: <MongodbOriginal />,
+  },
+  Spotify: {
+    text: 'Spotify API',
+    color: '#1DB954',
+    icon: <FaSpotify fill='#1ed760' />,
+  },
+  REDUX: {
+    text: 'Redux',
+    color: '#764ABC',
+    icon: <ReduxOriginal />,
+  },
+  SASS: {
+    text: 'Sass',
+    color: '#CC6699',
+    icon: <SassOriginal />,
   },
 };
