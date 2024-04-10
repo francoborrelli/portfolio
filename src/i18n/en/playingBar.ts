@@ -10,4 +10,5 @@ export const playingBar = {
   Next: 'Next',
   Skills: 'Skills',
   Experience: 'Experience',
+  Images: 'Images',
 };

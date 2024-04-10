@@ -1,4 +1,4 @@
-import { Avatar, Space } from 'antd';
+import { Avatar, Image, Space } from 'antd';
 import { NowPlayingCard } from './card';
 import { Tooltip } from '../../Common/Tooltip';
 import { useAppSelector } from '../../../store/store';
@@ -49,6 +49,7 @@ const Experience: FC<{ song: Song }> = ({ song }) => {
   const [tcv] = useTranslation(['cv']);
 
   if (!song.description) return null;
+
   return (
     <NowPlayingCard title={t('Experience')}>
       {tcv(song.description)
@@ -77,6 +78,19 @@ const Skills: FC<{ song: Song }> = ({ song }) => {
   );
 };
 
+const Images: FC<{ song: Song }> = ({ song }) => {
+  const [t] = useTranslation(['playingBar']);
+  if (!song.images || !song.images.length) return null;
+
+  return (
+    <NowPlayingCard title={t('Images')}>
+      <Image.PreviewGroup items={song.images}>
+        <Image width={'100%'} src={song.images[0]} />
+      </Image.PreviewGroup>
+    </NowPlayingCard>
+  );
+};
+
 export const Details = () => {
   const song = useAppSelector((state) => state.library.songPlaying);
 
@@ -87,6 +101,7 @@ export const Details = () => {
       <Profile song={song} />
       <Skills song={song} />
       <Experience song={song} />
+      <Images song={song} />
     </NowPlayingLayout>
   );
 };

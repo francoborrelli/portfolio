@@ -8,6 +8,7 @@ export type Song = {
 
   link?: string;
   github?: string;
+  images?: string[];
 };
 
 export type Playlist = {
