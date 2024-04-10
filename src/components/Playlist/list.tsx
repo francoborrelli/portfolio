@@ -29,7 +29,7 @@ export const PlaylistList: FC<PlaylistListProps> = ({ playlist }) => {
             <h3 className='column-name text-left'>{t('Name')}</h3>
           </div>
           <div className='tablet-hidden' style={{ flex: 4 }}>
-            <h3 className='column-name text-left'>{t('Skills')}</h3>
+            {/* <h3 className='column-name text-left'>{t('Skills')}</h3> */}
           </div>
           <div
             style={{
