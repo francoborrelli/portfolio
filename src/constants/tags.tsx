@@ -13,7 +13,6 @@ import {
   GitPlain,
   IonicOriginal,
   ReactOriginalWordmark,
-  SentryOriginal,
   ConfluencePlain,
   RxjsPlain,
   GraphqlPlain,
@@ -40,7 +39,8 @@ import {
   PostmanPlain,
   AndroidOriginal,
   PostgresqlOriginal,
-  ExpressOriginal,
+  DynamodbPlain,
+  MysqlOriginal,
 } from 'devicons-react';
 import { FaSpotify, FaSymfony, FaArrowsSpin, FaTelegram, FaAws, FaApple } from 'react-icons/fa6';
 import { PiGooglePlayLogo } from 'react-icons/pi';
@@ -51,6 +51,25 @@ export const tags = {
     color: '#FCC624',
     icon: <LinuxPlain />,
     link: 'https://www.linux.org/',
+  },
+  Keycloak: {
+    text: 'Keycloak',
+    color: '#EB5424',
+    link: 'https://www.keycloak.org/',
+    icon: (
+      <svg xmlns='http://www.w3.org/2000/svg' width='800px' height='800px' viewBox='0 0 1024 1024'>
+        <path
+          d='M786.2 395.5h-80.6c-1.5 0-3-.8-3.7-2.1l-64.7-112.2c-.8-1.3-2.2-2.1-3.8-2.1h-264c-1.5 0-3 .8-3.7 2.1l-67.3 116.4-64.8 112.2c-.7 1.3-.7 2.9 0 4.3l64.8 112.2 67.2 116.5c.7 1.3 2.2 2.2 3.7 2.1h264.1c1.5 0 3-.8 3.8-2.1L702 630.6c.7-1.3 2.2-2.2 3.7-2.1h80.6c2.7 0 4.8-2.2 4.8-4.8V400.4c-.1-2.7-2.3-4.9-4.9-4.9zM477.5 630.6l-20.3 35c-.3.5-.8 1-1.3 1.3-.6.3-1.2.5-1.9.5h-40.3c-1.4 0-2.7-.7-3.3-2l-60.1-104.3-5.9-10.3-21.6-36.9c-.3-.5-.5-1.1-.4-1.8 0-.6.2-1.3.5-1.8l21.7-37.6 65.9-114c.7-1.2 2-2 3.3-2H454c.7 0 1.4.2 2.1.5.5.3 1 .7 1.3 1.3l20.3 35.2c.6 1.2.5 2.7-.2 3.8l-65.1 112.8c-.3.5-.4 1.1-.4 1.6 0 .6.2 1.1.4 1.6l65.1 112.7c.9 1.5.8 3.1 0 4.4zm202.1-116.7L658 550.8l-5.9 10.3L592 665.4c-.7 1.2-1.9 2-3.3 2h-40.3c-.7 0-1.3-.2-1.9-.5-.5-.3-1-.7-1.3-1.3l-20.3-35c-.9-1.3-.9-2.9-.1-4.2l65.1-112.7c.3-.5.4-1.1.4-1.6 0-.6-.2-1.1-.4-1.6l-65.1-112.8c-.7-1.2-.8-2.6-.2-3.8l20.3-35.2c.3-.5.8-1 1.3-1.3.6-.4 1.3-.5 2.1-.5h40.4c1.4 0 2.7.7 3.3 2l65.9 114 21.7 37.6c.3.6.5 1.2.5 1.8 0 .4-.2 1-.5 1.6z'
+          style={{ fill: 'white' }}
+        />
+      </svg>
+    ),
+  },
+  Mysql: {
+    text: 'MySQL',
+    color: '#4479A1',
+    link: 'https://www.mysql.com/',
+    icon: <MysqlOriginal />,
   },
   GooglePlay: {
     text: 'Google Play Console',
@@ -109,7 +128,22 @@ export const tags = {
   Sentry: {
     text: 'Sentry',
     color: 'black',
-    icon: <SentryOriginal />,
+    icon: (
+      <svg
+        viewBox='0 0 128 128'
+        xmlns='http://www.w3.org/2000/svg'
+        style={{
+          fill: 'white',
+          width: '1rem',
+          height: '1rem',
+        }}
+      >
+        <path
+          d='M74.012 13.328a11.939 11.939 0 0 0-20.45 0L36.734 42.145a82.34 82.34 0 0 1 45.383 68.164H70.309a70.78 70.78 0 0 0-39.527-58.09l-15.57 26.926a40.72 40.72 0 0 1 23.598 31.113H11.68a1.94 1.94 0 0 1-1.582-2.836l7.516-12.781a27.4 27.4 0 0 0-8.59-4.859l-7.445 12.781c-1.562 2.684-1.988 5.887-1.172 8.883s2.789 5.547 5.492 7.07a11.9 11.9 0 0 0 5.781 1.535h37.152a49.63 49.63 0 0 0-20.453-44.258l5.902-10.227a61.04 61.04 0 0 1 26.336 54.484H92.09a91.74 91.74 0 0 0-41.953-81.305l11.938-20.453a1.97 1.97 0 0 1 2.684-.691c1.355.742 51.879 88.898 52.828 89.922a1.95 1.95 0 0 1-.035 1.949 1.96 1.96 0 0 1-1.707.941h-12.168a104 104 0 0 1 0 9.742h12.219a11.73 11.73 0 0 0 11.813-11.789 11.47 11.47 0 0 0-1.582-5.832zm0 0'
+          fill='white'
+        ></path>
+      </svg>
+    ),
     link: 'https://sentry.io/',
   },
   React: {
@@ -289,6 +323,23 @@ export const tags = {
     text: 'Serverless',
     color: '#6DB33F',
     link: 'https://www.serverless.com/',
+    icon: (
+      <svg xmlns='http://www.w3.org/2000/svg' width='800px' height='800px' viewBox='-9.5 0 50 31'>
+        <path
+          d='M2,22.419H6.956L5.42,27H2ZM2,13.71H9.875L8.34,18.29H2ZM2,5H12.794L11.259,9.581H2ZM17.679,5H30V9.581H16.143ZM13.224,18.291,14.76,13.71H30v4.581Zm-1.383,4.128H30V27H10.305Z'
+          style={{
+            fill: '#fd5750',
+            fillRule: 'evenodd',
+          }}
+        />
+      </svg>
+    ),
+  },
+  Dynamo: {
+    text: 'DynamoDB',
+    color: '#4053D6',
+    link: 'https://aws.amazon.com/dynamodb/',
+    icon: <DynamodbPlain />,
   },
   Rancher: {
     text: 'Rancher',
@@ -360,7 +411,22 @@ export const tags = {
     text: 'Express',
     color: '#000000',
     link: 'https://expressjs.com/',
-    icon: <ExpressOriginal />,
+    icon: (
+      <svg
+        viewBox='0 0 128 128'
+        xmlns='http://www.w3.org/2000/svg'
+        style={{
+          fill: 'white',
+          width: '1rem',
+          height: '1rem',
+        }}
+      >
+        <path
+          fill='white'
+          d='M126.67 98.44c-4.56 1.16-7.38.05-9.91-3.75-5.68-8.51-11.95-16.63-18-24.9-.78-1.07-1.59-2.12-2.6-3.45C89 76 81.85 85.2 75.14 94.77c-2.4 3.42-4.92 4.91-9.4 3.7l26.92-36.13L67.6 29.71c4.31-.84 7.29-.41 9.93 3.45 5.83 8.52 12.26 16.63 18.67 25.21 6.45-8.55 12.8-16.67 18.8-25.11 2.41-3.42 5-4.72 9.33-3.46-3.28 4.35-6.49 8.63-9.72 12.88-4.36 5.73-8.64 11.53-13.16 17.14-1.61 2-1.35 3.3.09 5.19C109.9 76 118.16 87.1 126.67 98.44M1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06C60.93 41.64 63.39 52.62 62.9 65H7.1c-.84 22.21 15.15 35.62 35.53 28.78 7.15-2.4 11.36-8 13.47-15 1.07-3.51 2.84-4.06 6.14-3.06-1.69 8.76-5.52 16.08-13.52 20.66-12 6.86-29.13 4.64-38.14-4.89C5.26 85.89 3 78.92 2 71.39c-.15-1.2-.46-2.38-.7-3.57q.03-3.04.03-6.08m5.87-1.49h50.43c-.33-16.06-10.33-27.47-24-27.57-15-.12-25.78 11.02-26.43 27.57'
+        ></path>
+      </svg>
+    ),
   },
   Mercadopago: {
     text: 'Mercado Pago API',

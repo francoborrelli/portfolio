@@ -173,6 +173,30 @@ export const GralLecturas = {
   ],
 } as Song;
 
+export const GralLecturasWeb = {
+  name: 'GRAL_LECTURAS_WEB_NAME',
+  artist: 'GRAL_LECTURAS_WEB_ARTIST',
+  length: 'GRAL_LECTURAS_WEB_LENGTH',
+  type: ProjectTypesEnum.WEB,
+  description: 'GRAL_LECTURAS_WEB_DESCRIPTION',
+  imageUrl: getExperiencePath('gral.jpg'),
+  skills: [
+    tags.React,
+    tags.Serverless,
+    tags.Dynamo,
+    tags['Ant design'],
+    tags['CI/CD'],
+    tags.Keycloak,
+  ],
+  images: [
+    getProjectPath('gral_lecturas_web/1.png'),
+    getProjectPath('gral_lecturas_web/2.png'),
+    getProjectPath('gral_lecturas_web/3.png'),
+    getProjectPath('gral_lecturas_web/4.png'),
+    getProjectPath('gral_lecturas_web/5.png'),
+  ],
+} as Song;
+
 export const GralVehicles = {
   name: 'GRAL_VEHICLES_NAME',
   artist: 'GRAL_VEHICLES_ARTIST',
@@ -185,10 +209,12 @@ export const GralVehicles = {
     tags.Django,
     tags.TypeScript,
     tags.Docker,
+    tags.SASS,
     tags['CI/CD'],
     tags.AWS,
     tags['Ant design'],
     tags.Sentry,
+    tags.Keycloak,
   ],
   images: [
     getProjectPath('gral_vehicles/1.png'),
@@ -219,7 +245,7 @@ export const GO4Clic = {
   imageUrl: getProjectPath('go4clic/logo.jpg'),
   link: 'https://go4clic.com/',
   youtube: 'https://www.youtube.com/@go4clic',
-  skills: [tags.Angular, tags.Django, tags.Postgres, tags.Docker, tags['CI/CD'], tags.AWS],
+  skills: [tags.Angular, tags.Django, tags.Postgres, tags.Docker, tags['CI/CD']],
   images: [
     getProjectPath('go4clic/0.jpg'),
     getProjectPath('go4clic/1.png'),
@@ -231,6 +257,72 @@ export const GO4Clic = {
   ],
 } as Song;
 
+export const RUKIR = {
+  name: 'RUKIR_NAME',
+  artist: 'RUKIR_ARTIST',
+  length: 'RUKIR_LENGTH',
+  type: ProjectTypesEnum.WEB,
+  description: 'RUKIR_DESCRIPTION',
+  imageUrl: getProjectPath('rukir/logo.jpg'),
+  skills: [tags.Angular, tags.Django, tags.Postgres, tags.Docker, tags['CI/CD']],
+  images: [getProjectPath('rukir/1.png'), getProjectPath('rukir/2.png')],
+} as Song;
+
+export const GralStores = {
+  name: 'GRAL_STORES_NAME',
+  artist: 'GRAL_STORES_ARTIST',
+  length: 'GRAL_STORES_LENGTH',
+  type: ProjectTypesEnum.WEB,
+  description: 'GRAL_STORES_DESCRIPTION',
+  imageUrl: getExperiencePath('gral.jpg'),
+  skills: [
+    tags.React,
+    tags.Laravel,
+    tags.TypeScript,
+    tags['Ant design'],
+    tags.SASS,
+    tags.Mysql,
+    tags.Docker,
+    tags.Sentry,
+    tags['CI/CD'],
+    tags.Keycloak,
+  ],
+  images: [
+    getProjectPath('gral_depositos/1.png'),
+    getProjectPath('gral_depositos/2.png'),
+    getProjectPath('gral_depositos/3.png'),
+    getProjectPath('gral_depositos/4.png'),
+    getProjectPath('gral_depositos/5.png'),
+  ],
+} as Song;
+
+export const GralStatistics = {
+  name: 'GRAL_STATISTICS_NAME',
+  artist: 'GRAL_STATISTICS_ARTIST',
+  length: 'GRAL_STATISTICS_LENGTH',
+  type: ProjectTypesEnum.WEB,
+  description: 'GRAL_STATISTICS_DESCRIPTION',
+  imageUrl: getExperiencePath('gral.jpg'),
+  skills: [
+    tags.React,
+    tags['Node.js'],
+    tags.TypeScript,
+    tags.SASS,
+    tags.Mysql,
+    tags['Ant design'],
+    tags.Docker,
+    tags.Sentry,
+    tags['CI/CD'],
+    tags.Keycloak,
+  ],
+  images: [
+    getProjectPath('gral_estadisticas/1.png'),
+    getProjectPath('gral_estadisticas/2.png'),
+    getProjectPath('gral_estadisticas/3.png'),
+    getProjectPath('gral_estadisticas/4.png'),
+  ],
+} as Song;
+
 export const PersonalProjects = {
   name: 'PROJECTS',
   color: '#113066',
@@ -238,13 +330,17 @@ export const PersonalProjects = {
     TensorflowReactNative,
     LottieReactNative,
     GralVehicles,
+    GralStatistics,
     TFD,
+    CalmCovid,
+    GralStores,
     AuthoringTool,
+    QwertyLandingPage,
     MasEfectivo,
     GO4Clic,
     GralLecturas,
-    CalmCovid,
-    QwertyLandingPage,
+    GralLecturasWeb,
+    RUKIR,
     SpotifyClone,
   ],
   filters: [ProjectTypesEnum.WEB, ProjectTypesEnum.MOBILE],

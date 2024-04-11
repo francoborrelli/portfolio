@@ -110,13 +110,13 @@ export const TFD = {
 export const CALM_COVID = {
   CALM_COVID_NAME: 'CALM covid',
   CALM_COVID_ARTIST: 'Qwertysoft SRL',
-  CALM_COVID_LENGTH: '2020',
+  CALM_COVID_LENGTH: '2021',
   CALM_COVID_DESCRIPTION: `An app designed to help contain the spread of COVID-19 by notifying close contacts of infected individuals.\nThis application was conceived with a clear purpose: to offer an effective and agile solution for identifying and notifying individuals who may have been exposed to the virus. In a time of uncertainty and the need for solidarity, this tool became a crucial way to mitigate the spread of contagion.\nThe application allows users to register their close contacts and receive instant notifications in case any of them are diagnosed as COVID-19 positive. This gives them the opportunity to take preventive measures quickly, such as self-quarantine and testing, to protect their health and that of those around them.\nIn addition to providing COVID-19 contact alerts, the application also offers the ability to report swab test results. This additional feature is crucial for keeping users informed about their health status and making informed decisions about how to proceed.`,
 };
 
 export const QWERTY_LANDING_PAGE = {
   QWERTY_LANDING_PAGE_NAME: 'Qwerty Landing Page',
-  QWERTY_LANDING_PAGE_LENGTH: '2019',
+  QWERTY_LANDING_PAGE_LENGTH: '2021',
   QWERTY_LANDING_PAGE_ARTIST: 'Qwertysoft SRL',
   QWERTY_LANDING_PAGE_DESCRIPTION: `A landing page designed to showcase the services and projects of Qwertysoft SRL, a software development company.\nThe landing page serves as a digital storefront for the company, providing visitors with an overview of the services offered, the team behind the projects, and the company's portfolio. It is designed to be visually appealing and informative, guiding visitors through the company's offerings and encouraging them to engage further.\nThe landing page features a responsive design that adapts to different screen sizes, ensuring a seamless user experience across devices. It also incorporates interactive elements and animations to enhance user engagement and create a dynamic browsing experience.\nMoreover, the landing page is optimized for search engines, making it easier for potential clients to discover Qwertysoft SRL and learn about the company's expertise and capabilities.`,
 };
@@ -129,15 +129,22 @@ export const AUTHORING_TOOL = {
 };
 
 export const GRAL_LECTURAS = {
-  GRAL_LECTURAS_NAME: 'Gral | Meter Readings',
-  GRAL_LECTURAS_ARTIST: 'GRAL Saneamiento SRL',
+  GRAL_LECTURAS_NAME: 'Gral | Meter Readings (App)',
+  GRAL_LECTURAS_ARTIST: 'GRAL Saneamiento SA',
   GRAL_LECTURAS_LENGTH: '2019 - 2020',
   GRAL_LECTURAS_DESCRIPTION: `This is an internal application of the company aimed at facilitating the task of water meter readers within the province of Buenos Aires, Argentina. The application allows for the recording of water meter readings and enables re-readings and audits, while also allowing users to capture and attach photos of the meters.`,
 };
 
+export const GRAL_LECTURAS_WEB = {
+  GRAL_LECTURAS_WEB_NAME: 'Gral | Meter Readings (App)',
+  GRAL_LECTURAS_WEB_ARTIST: 'GRAL Saneamiento SA',
+  GRAL_LECTURAS_WEB_LENGTH: '2020',
+  GRAL_LECTURAS_WEB_DESCRIPTION: `This system, crucial for the internal management of the company, serves as the starting point from which the data used by meter readers in the application to carry out their routes for water meter readings are fed. In addition to its primary function, this system also serves as a platform for viewing the information and photographs captured by the meter readers from their devices.\nAmong its capabilities, the assignment of routes, the visualization of statistical data related to readings, and the management of audits and rereadings of the routes stand out.\nOne of the most outstanding features is the implementation of a connection via websocket, allowing for real-time data updates. This innovation ensures a smooth and up-to-date experience for users, thereby improving efficiency and accuracy in the process of meter reading.\nTo host the site, S3 and CloudFront were used, ensuring optimal availability and speed. The system was developed in React, offering a dynamic and responsive user interface, while the API was implemented as a series of Lambda functions, ensuring exceptional scalability and efficiency.`,
+};
+
 export const GRAL_VEHICLES = {
   GRAL_VEHICLES_NAME: 'Gral | Vehicles',
-  GRAL_VEHICLES_ARTIST: 'GRAL Saneamiento SRL',
+  GRAL_VEHICLES_ARTIST: 'GRAL Saneamiento SA',
   GRAL_VEHICLES_LENGTH: '2022',
   GRAL_VEHICLES_DESCRIPTION: `This is an internal application of the company aimed at managing the vehicle fleet. The application allows for the registration of vehicles, tracking of maintenance tasks, and monitoring of fuel consumption.`,
 };
@@ -152,8 +159,30 @@ export const MAS_EFECTIVO = {
 export const GO4CLIC = {
   GO4CLIC_NAME: 'Go4Clic',
   GO4CLIC_ARTIST: 'Qwertysoft SRL',
-  GO4CLIC_LENGTH: '2020',
+  GO4CLIC_LENGTH: '2019',
   GO4CLIC_DESCRIPTION: `Go4clic is an innovative platform for social learning that drives growth and collaboration. Grounded in the concept of social learning, it fosters user interaction to enhance collective knowledge. With a wide range of features designed to promote participation and the exchange of ideas, Go4clic offers a unique online learning experience.\nAmong its key features are challenges, where users can create and join learning activities individually or as a team, thus encouraging personal commitment and improvement. Forums provide a dynamic space to discuss relevant topics related to work or training content, allowing users to exchange perspectives and enrich their understanding. Additionally, groups facilitate connections among users with similar interests, creating an active and collaborative community.\nMoreover, Go4clic offers a wide range of content options to adapt to the learning needs of each company. From text-based lessons to instructional videos, the platform enables the creation of diverse content types to ensure a rich and engaging learning experience. It is also possible to design different challenges to test knowledge and encourage active user participation.\nIn addition to working on frontend and backend development, efforts were made to develop a video streaming feature using technologies such as WebRTC and Simple Peer. This feature enables more dynamic and real-time interaction, further enhancing the online social learning experience.`,
+};
+
+export const RUKIR = {
+  RUKIR_NAME: 'Rukir',
+  RUKIR_ARTIST: 'Qwertysoft SRL',
+  RUKIR_LENGTH: '2019',
+  RUKIR_DESCRIPTION:
+    'Rukir is the new online platform where, through an auction, you negotiate the price of the property you want to buy.',
+};
+
+export const GRAL_STORES = {
+  GRAL_STORES_NAME: 'Gral | Stores & Stock',
+  GRAL_STORES_ARTIST: 'GRAL Saneamiento SA',
+  GRAL_STORES_LENGTH: '2022',
+  GRAL_STORES_DESCRIPTION: `This application represents a pivotal asset within the company's infrastructure, dedicated to the efficient management of its stores and warehouses. Its versatile features enable seamless registration of warehouses across the company's network, fostering enhanced organization and logistical control.\nFurthermore, the application boasts robust capabilities for meticulously monitoring stock levels, encompassing both inbound and outbound operations. This meticulous tracking ensures optimal inventory management, allowing for proactive decision-making to meet demand fluctuations and maintain operational continuity.\nMoreover, the application facilitates comprehensive audits, providing a systematic framework for evaluating inventory accuracy and integrity. These audits play a critical role in maintaining regulatory compliance, identifying discrepancies, and implementing corrective actions as needed.`,
+};
+
+export const GRAL_STATISTICS = {
+  GRAL_STATISTICS_NAME: 'Gral | Statistics',
+  GRAL_STATISTICS_ARTIST: 'GRAL Saneamiento SA',
+  GRAL_STATISTICS_LENGTH: '2022',
+  GRAL_STATISTICS_DESCRIPTION: `This application serves as a central hub for the company's statistical analysis and reporting, offering a comprehensive suite of tools to extract actionable insights from operational data. By leveraging advanced data visualization techniques, the application empowers stakeholders to identify trends, patterns, and anomalies, enabling informed decision-making and strategic planning.\nMoreover, the application provides a dynamic dashboard interface that displays key performance indicators (KPIs) and performance metrics in real time. This feature enhances operational transparency and facilitates data-driven decision-making, fostering a culture of continuous improvement and accountability within the organization.\nAdditionally, the application supports the generation of customizable reports and data exports, enabling stakeholders to tailor insights to their specific needs and preferences. This flexibility ensures that users can extract relevant information efficiently and effectively, enhancing the utility and value of the application.`,
 };
 
 // Global Object
@@ -186,14 +215,18 @@ export const cv = {
 
   // Projects
   ...TFD,
+  ...RUKIR,
   ...LOTTIE,
   ...GO4CLIC,
   ...CALM_COVID,
+  ...GRAL_STORES,
   ...MAS_EFECTIVO,
   ...SPOTIFY_CLONE,
   ...GRAL_LECTURAS,
   ...GRAL_VEHICLES,
   ...AUTHORING_TOOL,
+  ...GRAL_STATISTICS,
+  ...GRAL_LECTURAS_WEB,
   ...QWERTY_LANDING_PAGE,
   ...TENSORFLOW_REACT_NATIVE,
 } as const;
