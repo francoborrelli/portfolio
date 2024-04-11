@@ -10,3 +10,5 @@ export const getSocialNetworkPath = (socialNetwork: string) =>
 export const getProjectPath = (project: string) => getPath(`images/projects/${project}`);
 
 export const getExperiencePath = (experience: string) => getPath(`images/experience/${experience}`);
+
+export const getEducationPath = (education: string) => getPath(`images/education/${education}`);

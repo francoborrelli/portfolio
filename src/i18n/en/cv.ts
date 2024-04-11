@@ -77,6 +77,29 @@ export const AUTHORING_TOOL = {
   AUTHORING_TOOL_DESCRIPTION: `I developed this project as part of my undergraduate thesis at the National University of La Plata.\nThis project represents research into the collaborative, in-situ design of context-aware mobile applications. In an environment where GPS has limitations in indoor spaces, I explored user positioning within these areas, an area of study in constant evolution.\nIn particular, I investigated WiFi fingerprinting technologies to achieve precise user location in space. This exploration led to the development of a specialized tool for co-designing in-situ location-based question games.\nWith this tool, users have the ability to physically map an indoor space and record questions at strategic locations within it. These co-designed applications can then be utilized, inviting other participants to explore the space and engage in an interactive game.`,
 };
 
+// Education
+
+export const APU = {
+  APU_TITLE: 'Analyst Programmer',
+  APU_ARTIST: 'Facultad de Informática UNLP',
+  APU_DURATION: 'Feb 2015 - Nov 2019',
+  APU_DESCRIPTION: `Degree GPA: 9.19/10\nThe Analyst Programmer career aims to train graduates with basic knowledge of the discipline's fundamentals and current technologies, enabling them to be qualified for professional work in systems of small and medium complexity.\nThe labor reality at the Faculty indicates that a significant number of students enter the market before graduating, primarily in program and system development, for which a basic understanding of the discipline's fundamentals and the development of problem-solving skills through subjects with intense practice are required. This is the profile sought with the UAP, aiming to enhance students' competitiveness. Additionally, graduates can continue their studies in Systems or Informatics without major difficulties.`,
+};
+
+export const LICENCIATURA = {
+  LICENCIATURA_TITLE: `Bachelor's Degree in Systems`,
+  LICENCIATURA_ARTIST: 'Facultad de Informática UNLP',
+  LICENCIATURA_DURATION: 'Feb 2015 - Mar 2021',
+  LICENCIATURA_DESCRIPTION: `Degree GPA: 9.35/10\nThe Bachelor's Degree in Systems is internationally certified by EUROINF.\nThe profile of the graduate in the Bachelor's Degree in Systems is that of a professional specially oriented towards the market linked with computer systems, particularly the aspects related to software and data management within an organization. The basic training also allows for participation in Research, Development, and Innovation activities within the discipline.`,
+};
+
+export const ENGLISH_CAMBRIDGE = {
+  ENGLISH_CAMBRIDGE_TITLE: 'Cambridge English: First (FCE) – CEFR level C1',
+  ENGLISH_CAMBRIDGE_ARTIST: 'Cambridge University Press & Assessment English',
+  ENGLISH_CAMBRIDGE_DURATION: 'Dic 2014',
+  ENGLISH_CAMBRIDGE_DESCRIPTION: `Grade: A\nThe Cambridge English: Advanced (CAE) certification is proof of high-level English language skills for academic and professional purposes. It is recognized by universities and employers worldwide as a demonstration of proficiency in English.`,
+};
+
 // Global Object
 
 export const cv = {
@@ -88,12 +111,18 @@ export const cv = {
   SKILLS: 'Skills',
 
   WEB_SITE: 'Web Site',
+  Certificate: 'Certificate',
 
   // Experience
   ...LBS,
   ...GRAL,
   ...QWERTY,
   ...LIFIA,
+
+  // Education
+  ...APU,
+  ...LICENCIATURA,
+  ...ENGLISH_CAMBRIDGE,
 
   // Projects
   ...TFD,

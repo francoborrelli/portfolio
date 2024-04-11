@@ -77,6 +77,27 @@ export const AUTHORING_TOOL = {
   AUTHORING_TOOL_DESCRIPTION: `Desarrollé este proyecto como parte de mi tesis de grado en la Facultad Nacional de La Plata.\nEste proyecto representa una investigación en el diseño colaborativo in-situ de aplicaciones móviles sensibles al contexto. En un entorno donde el GPS presenta limitaciones en espacios interiores, exploré el posicionamiento de usuarios en estos espacios, un área de estudio en constante evolución.\nEn particular, investigué tecnologías de fingerprint de WiFi para lograr la ubicación precisa de los usuarios en el espacio. Esta exploración condujo al desarrollo de una herramienta especializada para co-diseñar in-situ juegos de preguntas posicionadas.\nCon esta herramienta, los usuarios tienen la capacidad de mapear físicamente un espacio interior y registrar preguntas en ubicaciones estratégicas dentro del mismo. Estas aplicaciones, co-diseñadas, luego pueden utilizarse, invitando a otros participantes a explorar el espacio y participar en un juego interactivo.`,
 };
 
+export const APU = {
+  APU_TITLE: 'Analista Programador Universitario',
+  APU_ARTIST: 'Facultad de Informática UNLP',
+  APU_DURATION: 'Feb 2015 - Nov 2019',
+  APU_DESCRIPTION: `Promedio de la carrera: 9.19\nLa carrera Analista Programador Universitario tiene como objetivo la formación de un graduado con conocimientos básicos de los fundamentos de la disciplina y de las tecnologías actuales, a fin de resultar capacitado para el trabajo profesional en sistemas de pequeña y mediana complejidad.\nLa realidad laboral en la Facultad indica que un número importante de alumnos se vuelca al mercado antes de egresar, fundamentalmente en desarrollo de programas y sistemas, para lo cual se requiere un conocimiento básico de los fundamentos de la disciplina y un desarrollo de aptitudes para la resolución de problemas, mediante asignaturas con intensa práctica. Este es el perfil buscado con el APU, de modo de aumentar la competencia de los alumnos. Además, el egresado puede continuar la carrera de Licenciatura en Sistemas o Informática sin mayores dificultades.`,
+};
+
+export const LICENCIATURA = {
+  LICENCIATURA_TITLE: 'Licenciatura en Sistemas',
+  LICENCIATURA_ARTIST: 'Facultad de Informática UNLP',
+  LICENCIATURA_DURATION: 'Feb 2015 - Mar 2021',
+  LICENCIATURA_DESCRIPTION: `Promedio de la carrera: 9.35\nLa Licenciatura en Sistemas se encuentra certificada Internacionalmente por EUROINF.\nEl perfil del graduado en la Licenciatura en Sistemas es el de un profesional orientado especialmente al mercado vinculado con los sistemas informáticos, en particular los aspectos propios del manejo de software y datos dentro de una organización. La formación básica permite también una participación en actividades de Investigación, Desarrollo e Innovación dentro de la disciplina.`,
+};
+
+export const ENGLISH_CAMBRIDGE = {
+  ENGLISH_CAMBRIDGE_TITLE: 'Cambridge English: First (FCE) – CEFR level C1',
+  ENGLISH_CAMBRIDGE_ARTIST: 'Cambridge University Press & Assessment English',
+  ENGLISH_CAMBRIDGE_DURATION: 'Dic 2014',
+  ENGLISH_CAMBRIDGE_DESCRIPTION: `Nota: A\nEl Cambridge English: First (FCE) es un examen de nivel intermedio alto que evalúa la capacidad de los candidatos para comunicarse en inglés en situaciones cotidianas y laborales. El examen abarca las cuatro habilidades lingüísticas: comprensión auditiva, expresión oral, comprensión lectora y expresión escrita. Obtener el FCE demuestra que el candidato puede utilizar el inglés cotidiano escrito y hablado con confianza y precisión en un entorno laboral o académico.`,
+};
+
 // Global Object
 export const cv = {
   EXPERIENCE: 'Experiencia Profesional',
@@ -86,12 +107,17 @@ export const cv = {
   SKILLS: 'Habilidades',
 
   WEB_SITE: 'Sitio Web',
+  Certificate: 'Certificado',
 
   // Experience
   ...LBS,
   ...GRAL,
   ...QWERTY,
   ...LIFIA,
+
+  // Education
+  ...APU,
+  ...LICENCIATURA,
 
   // Projects
   ...TFD,

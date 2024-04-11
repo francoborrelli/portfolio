@@ -10,12 +10,13 @@ import { useTranslation } from 'react-i18next';
 import type { FC } from 'react';
 import type { Song } from '../../../interfaces/types';
 
+import { PiCertificateFill } from 'react-icons/pi';
 import { FaGithub, FaLink, FaYoutube } from 'react-icons/fa6';
 
 const Profile: FC<{ song: Song }> = ({ song }) => {
   const [t] = useTranslation(['cv']);
 
-  const hasButtons = song.link || song.github || song.youtube;
+  const hasButtons = song.link || song.github || song.youtube || song.certificate;
 
   return (
     <NowPlayingCard title={t(song.name)!} subtitle={t(song.artist || '')} image={song.imageUrl}>
@@ -25,6 +26,19 @@ const Profile: FC<{ song: Song }> = ({ song }) => {
             <Tooltip title={t('WEB_SITE')} placement='top'>
               <a target={'_blank'} href={song.link} className='link-social-button' rel='noreferrer'>
                 <FaLink />
+              </a>
+            </Tooltip>
+          ) : null}
+
+          {song.certificate ? (
+            <Tooltip title={t('Certificate')} placement='top'>
+              <a
+                target={'_blank'}
+                href={song.certificate}
+                className='link-social-button'
+                rel='noreferrer'
+              >
+                <PiCertificateFill />
               </a>
             </Tooltip>
           ) : null}
