@@ -153,6 +153,11 @@ h3 {
     user-select: none;
     width: 100%;
   }
+
+  .ant-dropdown-menu-item-selected {
+    background: transparent !important;
+    color: #1db954 !important;
+  }
 }
 
 .ant-dropdown-menu-title-content {

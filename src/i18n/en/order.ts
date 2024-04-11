@@ -3,9 +3,7 @@ export const order = {
   EXAM: 'Exams',
   DEGREE: 'Degrees',
   JOB: 'Jobs',
-  PERSONAL_PROJECT: 'Personal Projects',
-  QWERTY: 'Qwertysoft SRL',
-  GRAL: 'Gral Saneamiento SA',
-  UNLP: 'LIFIA - UNLP',
+  WEB: 'Websites',
+  MOBILE: 'Mobile Apps',
   ALL: 'All',
 };

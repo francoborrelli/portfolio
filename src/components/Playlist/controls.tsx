@@ -27,6 +27,7 @@ export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
   const items = filters.map((filter) => ({
     key: filter,
     label: tor(filter),
+
     onClick: () => dispatch(playlistActions.setOrder({ order: filter })),
   }));
 
@@ -42,7 +43,10 @@ export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
         <Col>
           <Space>
             <Tooltip title={t('Filter')}>
-              <Dropdown menu={{ items }}>
+              <Dropdown
+                placement='bottomRight'
+                menu={{ items, selectedKeys: [order].filter((o) => o !== 'ALL') }}
+              >
                 <button className='order-button'>
                   <Space align='center'>
                     <span style={{ color: order !== 'ALL' ? 'inherit' : 'transparent' }}>

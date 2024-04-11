@@ -42,7 +42,8 @@ import {
   PostgresqlOriginal,
   ExpressOriginal,
 } from 'devicons-react';
-import { FaSpotify, FaSymfony, FaArrowsSpin, FaTelegram, FaAws } from 'react-icons/fa6';
+import { FaSpotify, FaSymfony, FaArrowsSpin, FaTelegram, FaAws, FaApple } from 'react-icons/fa6';
+import { PiGooglePlayLogo } from 'react-icons/pi';
 
 export const tags = {
   LinuxPlain: {
@@ -50,6 +51,12 @@ export const tags = {
     color: '#FCC624',
     icon: <LinuxPlain />,
     link: 'https://www.linux.org/',
+  },
+  GooglePlay: {
+    text: 'Google Play Console',
+    color: '#414141',
+    icon: <PiGooglePlayLogo />,
+    link: 'https://play.google.com/console/about/',
   },
   Heroku: {
     text: 'Heroku',
@@ -330,6 +337,12 @@ export const tags = {
     color: '#000000',
     icon: <AndroidOriginal />,
     link: 'https://developer.android.com/',
+  },
+  IOS: {
+    text: 'iOS',
+    color: '#000000',
+    icon: <FaApple />,
+    link: 'https://developer.apple.com/',
   },
   Telegram: {
     text: 'Telegram Bot Api',

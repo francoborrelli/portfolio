@@ -10,8 +10,8 @@ enum JobTypesEnum {
 }
 
 const LBS = {
-  name: 'LBS_JOB_TITLE',
-  length: 'LBS_JOB_DURATION',
+  name: 'LBS_JOB_NAME',
+  length: 'LBS_JOB_LENGTH',
   artist: 'LBS Informática',
   type: JobTypesEnum.JOB,
   link: 'https://www.lbsinformatica.com.ar/',
@@ -21,8 +21,8 @@ const LBS = {
 } as Song;
 
 const GRAL = {
-  name: 'GRAL_JOB_TITLE',
-  length: 'GRAL_JOB_DURATION',
+  name: 'GRAL_JOB_NAME',
+  length: 'GRAL_JOB_LENGTH',
   artist: 'Gral Saneamiento SA',
   experience: 'GRAL_JOB_DESCRIPTION',
   type: JobTypesEnum.JOB,
@@ -52,10 +52,10 @@ const GRAL = {
 } as Song;
 
 const QWERTY = {
-  name: 'QWERTY_JOB_TITLE',
+  name: 'QWERTY_JOB_NAME',
   link: 'https://qwertysoft.ar/',
   artist: 'Qwertysoft SRL',
-  length: 'QWERTY_JOB_DURATION',
+  length: 'QWERTY_JOB_LENGTH',
   type: JobTypesEnum.JOB,
   experience: 'QWERTY_JOB_DESCRIPTION',
   imageUrl: publicURL('/images/experience/qwerty.png'),
@@ -80,8 +80,8 @@ const QWERTY = {
 
 const LIFIA = {
   artist: 'LIFIA - UNLP',
-  name: 'LIFIA_JOB_TITLE',
-  length: 'LIFIA_JOB_DURATION',
+  name: 'LIFIA_JOB_NAME',
+  length: 'LIFIA_JOB_LENGTH',
   type: JobTypesEnum.JOB,
   experience: 'LIFIA_JOB_DESCRIPTION',
   link: 'https://lifia.info.unlp.edu.ar/',

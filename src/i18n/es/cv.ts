@@ -1,29 +1,80 @@
 // Experience
 
 export const LBS = {
-  LBS_JOB_TITLE: 'Software Engineer',
-  LBS_JOB_DURATION: 'La Plata, Jun 2023 - Presente',
+  LBS_JOB_NAME: 'Software Engineer',
+  LBS_JOB_LENGTH: 'La Plata, Jun 2023 - Presente',
   LBS_JOB_DESCRIPTION:
     'En LBS Informática, contribuí en diversos proyectos utilizando React para el frontend y Laravel para el backend.',
 };
 
 export const GRAL = {
-  GRAL_JOB_TITLE: 'Software Engineer',
-  GRAL_JOB_DURATION: 'La Plata, Oct 2019 - Presente',
+  GRAL_JOB_NAME: 'Software Engineer',
+  GRAL_JOB_LENGTH: 'La Plata, Oct 2019 - Presente',
   GRAL_JOB_DESCRIPTION: `Durante mi experiencia laboral, participé en la implementación de diversos sistemas web para la gestión interna de la empresa. En este puesto, trabajé con una variedad de frameworks y lenguajes de programación, incluyendo Typescript (React, Express.js), Python (Django) y PHP (Laravel y Symfony), permitiendo así un desarrollo ágil y eficiente. \n Además, me encargué de manejar tanto bases de datos relacionales, como Mysql y Postgres, así como bases de datos no relacionales, incluyendo Mongodb y Dynamodb, asegurando la integridad y eficacia de los sistemas. \nOtro aspecto destacado de mi trabajo fue la implementación de aplicaciones móviles utilizando React Native. Además, gestioné activamente estas aplicaciones en la Google Play Console.\nComo parte de mis responsabilidades, establecí y mantuve pipelines de Integración Continua/Despliegue Continuo (CI/CD).\nAdemás, tuve la oportunidad de adquirir experiencia en la gestión de infraestructura y servicios en AWS, incluyendo S3, EC2, ECS, Cloudwatch, Cloudfront, AWS Lambda y SQS.`,
 };
 
 export const QWERTY = {
-  QWERTY_JOB_TITLE: 'Software Developer',
-  QWERTY_JOB_DURATION: 'La Plata, Feb 2019 - May 2022',
+  QWERTY_JOB_NAME: 'Software Developer',
+  QWERTY_JOB_LENGTH: 'La Plata, Feb 2019 - May 2022',
   QWERTY_JOB_DESCRIPTION: `Tuve el privilegio de participar la implementación de diversos sistemas web y móviles para clientes externos. Esta experiencia me permitió trabajar con una amplia gama de tecnologías, incluyendo frameworks de Javascript como Angular, React, Express, React Native y Ionic así como el uso de Python con Django, lo que contribuyó al desarrollo de soluciones versátiles y eficientes para nuestros clientes.\nAdemás, me encargué de la gestión de servicios utilizando Kubernetes, aprovechando la plataforma Rancher para garantizar la escalabilidad y confiabilidad de nuestras aplicaciones en entornos de producción.`,
 };
 
 export const LIFIA = {
-  LIFIA_JOB_TITLE: 'Pasante I+D',
-  LIFIA_JOB_DURATION: 'La Plata, May 2017 - Oct 2021',
+  LIFIA_JOB_NAME: 'Pasante I+D',
+  LIFIA_JOB_LENGTH: 'La Plata, May 2017 - Oct 2021',
   LIFIA_JOB_DESCRIPTION:
     'Participación como pasante en los proyectos de alumno orientados a la investigación en temáticas de innovación y a la formación profesional.',
+};
+
+// Education
+
+export const APU = {
+  APU_NAME: 'Analista Programador Universitario',
+  APU_ARTIST: 'Facultad de Informática | UNLP',
+  APU_LENGTH: 'Feb 2015 - Nov 2019',
+  APU_DESCRIPTION: `Promedio de la carrera: 9.19\nLa carrera Analista Programador Universitario tiene como objetivo la formación de un graduado con conocimientos básicos de los fundamentos de la disciplina y de las tecnologías actuales, a fin de resultar capacitado para el trabajo profesional en sistemas de pequeña y mediana complejidad.\nLa realidad laboral en la Facultad indica que un número importante de alumnos se vuelca al mercado antes de egresar, fundamentalmente en desarrollo de programas y sistemas, para lo cual se requiere un conocimiento básico de los fundamentos de la disciplina y un desarrollo de aptitudes para la resolución de problemas, mediante asignaturas con intensa práctica. Este es el perfil buscado con el APU, de modo de aumentar la competencia de los alumnos. Además, el egresado puede continuar la carrera de Licenciatura en Sistemas o Informática sin mayores dificultades.`,
+};
+
+export const LICENCIATURA = {
+  LICENCIATURA_NAME: 'Licenciatura en Sistemas',
+  LICENCIATURA_ARTIST: 'Facultad de Informática | UNLP',
+  LICENCIATURA_LENGTH: 'Feb 2015 - Mar 2021',
+  LICENCIATURA_DESCRIPTION: `Promedio de la carrera: 9.35\nLa Licenciatura en Sistemas se encuentra certificada Internacionalmente por EUROINF.\nEl perfil del graduado en la Licenciatura en Sistemas es el de un profesional orientado especialmente al mercado vinculado con los sistemas informáticos, en particular los aspectos propios del manejo de software y datos dentro de una organización. La formación básica permite también una participación en actividades de Investigación, Desarrollo e Innovación dentro de la disciplina.`,
+};
+
+export const ENGLISH_CAMBRIDGE = {
+  ENGLISH_CAMBRIDGE_NAME: 'Cambridge English: First (FCE) – CEFR level C1',
+  ENGLISH_CAMBRIDGE_ARTIST: 'Cambridge University Press & Assessment English',
+  ENGLISH_CAMBRIDGE_LENGTH: 'Dic 2014',
+  ENGLISH_CAMBRIDGE_DESCRIPTION: `Nota: A\nEl Cambridge English: First (FCE) es un examen de nivel intermedio alto que evalúa la capacidad de los candidatos para comunicarse en inglés en situaciones cotidianas y laborales. El examen abarca las cuatro habilidades lingüísticas: comprensión auditiva, expresión oral, comprensión lectora y expresión escrita. Obtener el FCE demuestra que el candidato puede utilizar el inglés cotidiano escrito y hablado con confianza y precisión en un entorno laboral o académico.`,
+};
+
+export const MIKROWAYS_KUBERNETES = {
+  MIKROWAYS_KUBERNETES_NAME: 'Fundamentos de Kubernetes',
+  MIKROWAYS_KUBERNETES_ARTIST: 'Mikroways',
+  MIKROWAYS_KUBERNETES_LENGTH: 'Feb 2020',
+  MIKROWAYS_KUBERNETES_DESCRIPTION: `Este curso me proporcionó una comprensión integral de Kubernetes, una potente plataforma de orquestación de contenedores. Aprendí a implementar, administrar y escalar aplicaciones contenerizadas utilizando Kubernetes, lo que me permitió optimizar el rendimiento y la confiabilidad de mis aplicaciones.`,
+};
+
+export const REACT_UDEMY = {
+  REACT_UDEMY_NAME: 'React - La guía completa',
+  REACT_UDEMY_ARTIST: 'Udemy',
+  REACT_UDEMY_LENGTH: 'Mar 2018',
+  REACT_UDEMY_DESCRIPTION: `Este curso me proporcionó las habilidades para desarrollar aplicaciones web modernas y dinámicas utilizando React. Aprendí a construir componentes reutilizables, gestionar el estado de la aplicación con React Hooks e integrar enrutamiento y gestión de estado utilizando React Router y Redux. Esta formación fue fundamental para mejorar mi competencia en el desarrollo frontend y ampliar mi conjunto de tecnologías y frameworks.`,
+};
+
+export const FISCALIA = {
+  FISCALIA_NAME: 'Desarrollo Web sobre arquitectura REST',
+  FISCALIA_ARTIST: 'Fiscalía de Estado | Provincia de Buenos Aires',
+  FISCALIA_LENGTH: 'Feb 2019',
+  FISCALIA_DESCRIPTION: `El curso se centró en enseñarme el desarrollo utilizando la arquitectura REST, con una introducción al desarrollo backend con .NET y al desarrollo frontend con Angular. Aprendí a crear servicios web eficientes con .NET y a construir aplicaciones web con Angular. Al final del curso, adquirí habilidades para desarrollar aplicaciones web modernas y escalables que cumplen con los estándares de la industria.`,
+};
+
+export const ANGULAR_UDEMY = {
+  ANGULAR_UDEMY_NAME: 'Angular: De cero a experto',
+  ANGULAR_UDEMY_ARTIST: 'Udemy',
+  ANGULAR_UDEMY_LENGTH: 'Jun 2018',
+  ANGULAR_UDEMY_DESCRIPTION: `Este curso me proporcionó una comprensión profunda de Angular, un framework de desarrollo frontend ampliamente utilizado. Aprendí a construir aplicaciones web dinámicas y escalables utilizando Angular, lo que me permitió mejorar mi competencia en el desarrollo frontend y ampliar mi conjunto de habilidades técnicas.`,
 };
 
 // Projects
@@ -59,7 +110,7 @@ export const TFD = {
 export const CALM_COVID = {
   CALM_COVID_NAME: 'CALM covid',
   CALM_COVID_ARTIST: 'Qwertysoft SRL',
-  CALM_COVID_LENGTH: '202O',
+  CALM_COVID_LENGTH: '2020',
   CALM_COVID_DESCRIPTION: `Una aplicación diseñada para ayudar a contener la propagación de COVID-19 notificando a los contactos cercanos de individuos infectados.\nEsta aplicación fue concebida con un propósito claro: ofrecer una solución efectiva y ágil para identificar y notificar a las personas que pueden haber estado expuestas al virus. En un momento de incertidumbre y necesidad de solidaridad, esta herramienta se convirtió en una forma crucial de mitigar la propagación del contagio.\nLa aplicación permite a los usuarios registrar sus contactos cercanos y recibir notificaciones instantáneas en caso de que alguno de ellos sea diagnosticado como positivo en COVID-19. Esto les brinda la oportunidad de tomar medidas preventivas rápidamente, como la cuarentena y las pruebas, para proteger su salud y la de quienes los rodean.\nAdemás de proporcionar alertas de contacto de COVID-19, la aplicación también ofrece la capacidad de informar los resultados de las pruebas de hisopado. Esta función adicional es crucial para mantener informados a los usuarios sobre su estado de salud y tomar decisiones informadas sobre cómo proceder.`,
 };
 
@@ -77,53 +128,32 @@ export const AUTHORING_TOOL = {
   AUTHORING_TOOL_DESCRIPTION: `Desarrollé este proyecto como parte de mi tesis de grado en la Facultad Nacional de La Plata.\nEste proyecto representa una investigación en el diseño colaborativo in-situ de aplicaciones móviles sensibles al contexto. En un entorno donde el GPS presenta limitaciones en espacios interiores, exploré el posicionamiento de usuarios en estos espacios, un área de estudio en constante evolución.\nEn particular, investigué tecnologías de fingerprint de WiFi para lograr la ubicación precisa de los usuarios en el espacio. Esta exploración condujo al desarrollo de una herramienta especializada para co-diseñar in-situ juegos de preguntas posicionadas.\nCon esta herramienta, los usuarios tienen la capacidad de mapear físicamente un espacio interior y registrar preguntas en ubicaciones estratégicas dentro del mismo. Estas aplicaciones, co-diseñadas, luego pueden utilizarse, invitando a otros participantes a explorar el espacio y participar en un juego interactivo.`,
 };
 
-export const APU = {
-  APU_TITLE: 'Analista Programador Universitario',
-  APU_ARTIST: 'Facultad de Informática | UNLP',
-  APU_DURATION: 'Feb 2015 - Nov 2019',
-  APU_DESCRIPTION: `Promedio de la carrera: 9.19\nLa carrera Analista Programador Universitario tiene como objetivo la formación de un graduado con conocimientos básicos de los fundamentos de la disciplina y de las tecnologías actuales, a fin de resultar capacitado para el trabajo profesional en sistemas de pequeña y mediana complejidad.\nLa realidad laboral en la Facultad indica que un número importante de alumnos se vuelca al mercado antes de egresar, fundamentalmente en desarrollo de programas y sistemas, para lo cual se requiere un conocimiento básico de los fundamentos de la disciplina y un desarrollo de aptitudes para la resolución de problemas, mediante asignaturas con intensa práctica. Este es el perfil buscado con el APU, de modo de aumentar la competencia de los alumnos. Además, el egresado puede continuar la carrera de Licenciatura en Sistemas o Informática sin mayores dificultades.`,
+export const GRAL_LECTURAS = {
+  GRAL_LECTURAS_NAME: 'Gral | Lecturas de medidores',
+  GRAL_LECTURAS_ARTIST: 'GRAL Saneamiento SRL',
+  GRAL_LECTURAS_LENGTH: '2019 - 2020',
+  GRAL_LECTURAS_DESCRIPTION: `Esta es una aplicación interna de la empresa destinada a facilitar la tarea de los lecturistas de medidores de agua en la provincia de Buenos Aires, Argentina. La aplicación permite el registro de lecturas de medidores de agua y permite relecturas y auditorías, además de permitir a los usuarios capturar y adjuntar fotos de los medidores.`,
 };
 
-export const LICENCIATURA = {
-  LICENCIATURA_TITLE: 'Licenciatura en Sistemas',
-  LICENCIATURA_ARTIST: 'Facultad de Informática | UNLP',
-  LICENCIATURA_DURATION: 'Feb 2015 - Mar 2021',
-  LICENCIATURA_DESCRIPTION: `Promedio de la carrera: 9.35\nLa Licenciatura en Sistemas se encuentra certificada Internacionalmente por EUROINF.\nEl perfil del graduado en la Licenciatura en Sistemas es el de un profesional orientado especialmente al mercado vinculado con los sistemas informáticos, en particular los aspectos propios del manejo de software y datos dentro de una organización. La formación básica permite también una participación en actividades de Investigación, Desarrollo e Innovación dentro de la disciplina.`,
+export const GRAL_VEHICLES = {
+  GRAL_VEHICLES_NAME: 'Gral | Vehículos',
+  GRAL_VEHICLES_ARTIST: 'GRAL Saneamiento SRL',
+  GRAL_VEHICLES_LENGTH: '2019 - 2020',
+  GRAL_VEHICLES_DESCRIPTION: `Esta aplicación interna de la empresa está diseñada para gestionar la flota de vehículos de la empresa. Permite a los usuarios registrar y monitorear los vehículos, incluidos los detalles de mantenimiento, los registros de viaje y la asignación de vehículos a los empleados.`,
 };
 
-export const ENGLISH_CAMBRIDGE = {
-  ENGLISH_CAMBRIDGE_TITLE: 'Cambridge English: First (FCE) – CEFR level C1',
-  ENGLISH_CAMBRIDGE_ARTIST: 'Cambridge University Press & Assessment English',
-  ENGLISH_CAMBRIDGE_DURATION: 'Dic 2014',
-  ENGLISH_CAMBRIDGE_DESCRIPTION: `Nota: A\nEl Cambridge English: First (FCE) es un examen de nivel intermedio alto que evalúa la capacidad de los candidatos para comunicarse en inglés en situaciones cotidianas y laborales. El examen abarca las cuatro habilidades lingüísticas: comprensión auditiva, expresión oral, comprensión lectora y expresión escrita. Obtener el FCE demuestra que el candidato puede utilizar el inglés cotidiano escrito y hablado con confianza y precisión en un entorno laboral o académico.`,
+export const MAS_EFECTIVO = {
+  MAS_EFECTIVO_NAME: 'Mas Efectivo',
+  MAS_EFECTIVO_ARTIST: 'Qwertysoft SRL',
+  MAS_EFECTIVO_LENGTH: '2020',
+  MAS_EFECTIVO_DESCRIPTION: `Este proyecto implicó el desarrollo de una landing page para una empresa de servicios financieros especializada en préstamos. La landing page fue diseñada para atraer a posibles clientes y proporcionarles información sobre los servicios de la empresa, las opciones de préstamos y el proceso de solicitud. El objetivo era crear una plataforma fácil de usar e informativa que animara a los visitantes a explorar las ofertas de la empresa y dar los siguientes pasos para asegurar un préstamo.`,
 };
 
-export const MIKROWAYS_KUBERNETES = {
-  MIKROWAYS_KUBERNETES_TITLE: 'Fundamentos de Kubernetes',
-  MIKROWAYS_KUBERNETES_ARTIST: 'Mikroways',
-  MIKROWAYS_KUBERNETES_DURATION: 'Feb 2020',
-  MIKROWAYS_KUBERNETES_DESCRIPTION: `Este curso me proporcionó una comprensión integral de Kubernetes, una potente plataforma de orquestación de contenedores. Aprendí a implementar, administrar y escalar aplicaciones contenerizadas utilizando Kubernetes, lo que me permitió optimizar el rendimiento y la confiabilidad de mis aplicaciones.`,
-};
-
-export const REACT_UDEMY = {
-  REACT_UDEMY_TITLE: 'React - La guía completa',
-  REACT_UDEMY_ARTIST: 'Udemy',
-  REACT_UDEMY_DURATION: 'Mar 2018',
-  REACT_UDEMY_DESCRIPTION: `Este curso me proporcionó las habilidades para desarrollar aplicaciones web modernas y dinámicas utilizando React. Aprendí a construir componentes reutilizables, gestionar el estado de la aplicación con React Hooks e integrar enrutamiento y gestión de estado utilizando React Router y Redux. Esta formación fue fundamental para mejorar mi competencia en el desarrollo frontend y ampliar mi conjunto de tecnologías y frameworks.`,
-};
-
-export const FISCALIA = {
-  FISCALIA_TITLE: 'Desarrollo Web sobre arquitectura REST',
-  FISCALIA_ARTIST: 'Fiscalía de Estado | Provincia de Buenos Aires',
-  FISCALIA_DURATION: 'Feb 2019',
-  FISCALIA_DESCRIPTION: `El curso se centró en enseñarme el desarrollo utilizando la arquitectura REST, con una introducción al desarrollo backend con .NET y al desarrollo frontend con Angular. Aprendí a crear servicios web eficientes con .NET y a construir aplicaciones web con Angular. Al final del curso, adquirí habilidades para desarrollar aplicaciones web modernas y escalables que cumplen con los estándares de la industria.`,
-};
-
-export const ANGULAR_UDEMY = {
-  ANGULAR_UDEMY_TITLE: 'Angular: De cero a experto',
-  ANGULAR_UDEMY_ARTIST: 'Udemy',
-  ANGULAR_UDEMY_DURATION: 'Jun 2018',
-  ANGULAR_UDEMY_DESCRIPTION: `Este curso me proporcionó una comprensión profunda de Angular, un framework de desarrollo frontend ampliamente utilizado. Aprendí a construir aplicaciones web dinámicas y escalables utilizando Angular, lo que me permitió mejorar mi competencia en el desarrollo frontend y ampliar mi conjunto de habilidades técnicas.`,
+export const GO4CLIC = {
+  GO4CLIC_NAME: 'Go4Clic',
+  GO4CLIC_ARTIST: 'Qwertysoft SRL',
+  GO4CLIC_LENGTH: '2019',
+  GO4CLIC_DESCRIPTION: `Go4clic es una plataforma innovadora de aprendizaje social que impulsa el crecimiento y la colaboración. Fundamentada en el concepto de aprendizaje social, fomenta la interacción entre usuarios para potenciar el conocimiento colectivo. Con una amplia gama de funciones diseñadas para promover la participación y el intercambio de ideas, Go4clic ofrece una experiencia única de aprendizaje en línea.\nEntre sus características principales se encuentran los desafíos, donde los usuarios pueden crear y unirse a actividades de aprendizaje individualmente o en equipo, incentivando así el compromiso y la superación personal. Los foros proporcionan un espacio dinámico para discutir temas relevantes relacionados con el trabajo o el contenido de la formación, permitiendo a los usuarios intercambiar perspectivas y enriquecer su comprensión. Además, los grupos facilitan la conexión entre usuarios con intereses similares, creando una comunidad activa y colaborativa.\nGo4clic ofrece una amplia gama de opciones de contenido para adaptarse a las necesidades de aprendizaje de cada empresa. Desde lecciones con texto hasta videos instructivos, la plataforma permite la creación de diversos tipos de contenido para garantizar una experiencia de aprendizaje rica y envolvente. También es posible diseñar diferentes desafíos para poner a prueba el conocimiento y fomentar la participación activa de los usuarios.\nAdemás trabajar en el desarrollo del frontend y del backend, se participó en el desarrollo de una función de transmisión de video utilizando tecnologías como WebRTC y Simple Peer. Esta función permite una interacción más dinámica y en tiempo real, mejorando aún más la experiencia de aprendizaje social en línea.`,
 };
 
 // Global Object
@@ -154,7 +184,11 @@ export const cv = {
   // Projects
   ...TFD,
   ...LOTTIE,
+  ...GO4CLIC,
   ...CALM_COVID,
+  ...MAS_EFECTIVO,
+  ...GRAL_LECTURAS,
+  ...GRAL_VEHICLES,
   ...SPOTIFY_CLONE,
   ...AUTHORING_TOOL,
   ...QWERTY_LANDING_PAGE,

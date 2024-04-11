@@ -1,29 +1,80 @@
 // Experience
 
 export const LBS = {
-  LBS_JOB_TITLE: 'Software Engineer',
-  LBS_JOB_DURATION: 'La Plata, Jun 2023 - Present',
+  LBS_JOB_NAME: 'Software Engineer',
+  LBS_JOB_LENGTH: 'La Plata, Jun 2023 - Present',
   LBS_JOB_DESCRIPTION:
     'At LBS Informática, I worked on several projects using React for frontend development and Laravel for backend development. This experience helped me build strong skills in both areas and deliver efficient solutions for our clients.',
 };
 
 export const GRAL = {
-  GRAL_JOB_TITLE: 'Software Engineer',
-  GRAL_JOB_DURATION: 'La Plata, Oct 2019 - Present',
+  GRAL_JOB_NAME: 'Software Engineer',
+  GRAL_JOB_LENGTH: 'La Plata, Oct 2019 - Present',
   GRAL_JOB_DESCRIPTION: `During my work experience, I was involved in the implementation of various web systems for internal company management. In this role, I worked with a variety of frameworks and programming languages, including Typescript (React, Express.js), Python (Django), and PHP (Laravel and Symfony), thus enabling agile and efficient development.\nFurthermore, I was responsible for handling both relational databases, such as MySQL and PostgreSQL, and non-relational databases, including MongoDB and DynamoDB, ensuring the integrity and effectiveness of the systems.\nAnother notable aspect of my work was the implementation of mobile applications using React Native. Additionally, I actively managed these applications on the Google Play Console.\nAs part of my responsibilities, I established and maintained Continuous Integration/Continuous Deployment (CI/CD) pipelines.\nMoreover, I had the opportunity to gain experience in managing infrastructure and services on AWS, including S3, EC2, ECS, CloudWatch, CloudFront, AWS Lambda, and SQS.`,
 };
 
 export const QWERTY = {
-  QWERTY_JOB_TITLE: 'Software Developer',
-  QWERTY_JOB_DURATION: 'La Plata, Feb 2019 - May 2022',
+  QWERTY_JOB_NAME: 'Software Developer',
+  QWERTY_JOB_LENGTH: 'La Plata, Feb 2019 - May 2022',
   QWERTY_JOB_DESCRIPTION: `
 I had the privilege of participating in the implementation of various web and mobile systems for external clients. This experience allowed me to work with a wide range of technologies, including JavaScript frameworks such as Angular, React, Express, React Native, and Ionic, as well as the use of Python with Django, contributing to the development of versatile and efficient solutions for our clients.\nAdditionally, I was responsible for managing services using Kubernetes, leveraging the Rancher platform to ensure scalability and reliability of our applications in production environments.`,
 };
 
 export const LIFIA = {
-  LIFIA_JOB_TITLE: 'Intern | Researcher',
-  LIFIA_JOB_DURATION: 'La Plata, May 2017 - Oct 2021',
+  LIFIA_JOB_NAME: 'Intern | Researcher',
+  LIFIA_JOB_LENGTH: 'La Plata, May 2017 - Oct 2021',
   LIFIA_JOB_DESCRIPTION: `Participation as an intern in student-led research projects focused on innovation topics and professional development.`,
+};
+
+// Education
+
+export const APU = {
+  APU_NAME: 'Analyst Programmer',
+  APU_ARTIST: 'Facultad de Informática | UNLP',
+  APU_LENGTH: 'Feb 2015 - Nov 2019',
+  APU_DESCRIPTION: `Degree GPA: 9.19/10\nThe Analyst Programmer career aims to train graduates with basic knowledge of the discipline's fundamentals and current technologies, enabling them to be qualified for professional work in systems of small and medium complexity.\nThe labor reality at the Faculty indicates that a significant number of students enter the market before graduating, primarily in program and system development, for which a basic understanding of the discipline's fundamentals and the development of problem-solving skills through subjects with intense practice are required. This is the profile sought with the UAP, aiming to enhance students' competitiveness. Additionally, graduates can continue their studies in Systems or Informatics without major difficulties.`,
+};
+
+export const LICENCIATURA = {
+  LICENCIATURA_NAME: `Bachelor's Degree in Systems`,
+  LICENCIATURA_ARTIST: 'Facultad de Informática | UNLP',
+  LICENCIATURA_LENGTH: 'Feb 2015 - Mar 2021',
+  LICENCIATURA_DESCRIPTION: `Degree GPA: 9.35/10\nThe Bachelor's Degree in Systems is internationally certified by EUROINF.\nThe profile of the graduate in the Bachelor's Degree in Systems is that of a professional specially oriented towards the market linked with computer systems, particularly the aspects related to software and data management within an organization. The basic training also allows for participation in Research, Development, and Innovation activities within the discipline.`,
+};
+
+export const ENGLISH_CAMBRIDGE = {
+  ENGLISH_CAMBRIDGE_NAME: 'Cambridge English: First (FCE) – CEFR level C1',
+  ENGLISH_CAMBRIDGE_ARTIST: 'Cambridge University Press & Assessment English',
+  ENGLISH_CAMBRIDGE_LENGTH: 'Dic 2014',
+  ENGLISH_CAMBRIDGE_DESCRIPTION: `Grade: A\nThe Cambridge English: Advanced (CAE) certification is proof of high-level English language skills for academic and professional purposes. It is recognized by universities and employers worldwide as a demonstration of proficiency in English.`,
+};
+
+export const MIKROWAYS_KUBERNETES = {
+  MIKROWAYS_KUBERNETES_NAME: 'Foundations of Kubernetes',
+  MIKROWAYS_KUBERNETES_ARTIST: 'Mikroways',
+  MIKROWAYS_KUBERNETES_LENGTH: 'Feb 2020',
+  MIKROWAYS_KUBERNETES_DESCRIPTION: `This course provided me with a comprehensive understanding of Kubernetes, a powerful container orchestration platform. I learned how to deploy, manage, and scale containerized applications using Kubernetes, enabling me to optimize the performance and reliability of my applications.`,
+};
+
+export const REACT_UDEMY = {
+  REACT_UDEMY_NAME: 'React - The Complete Guide',
+  REACT_UDEMY_ARTIST: 'Udemy',
+  REACT_UDEMY_LENGTH: 'Mar 2018',
+  REACT_UDEMY_DESCRIPTION: `This course equipped me with the skills to develop modern, dynamic web applications using React. I learned how to build reusable components, manage application state with React Hooks, and integrate routing and state management using React Router and Redux. This training was instrumental in enhancing my proficiency in frontend development and expanding my toolkit of technologies and frameworks.`,
+};
+
+export const FISCALIA = {
+  FISCALIA_NAME: 'Web Development with REST Architecture',
+  FISCALIA_ARTIST: 'Fiscalía de Estado | Provincia de Buenos Aires',
+  FISCALIA_LENGTH: 'Feb 2019',
+  FISCALIA_DESCRIPTION: `The course focused on teaching me development using the REST architecture, with an introduction to backend development with .NET and frontend development with Angular. I learned to create efficient web services with .NET and to build web applications with Angular. By the end of the course, I acquired skills to develop modern and scalable web applications that meet industry standards.`,
+};
+
+export const ANGULAR_UDEMY = {
+  ANGULAR_UDEMY_NAME: 'Angular: From Zero to Expert',
+  ANGULAR_UDEMY_ARTIST: 'Udemy',
+  ANGULAR_UDEMY_LENGTH: 'May 2019',
+  ANGULAR_UDEMY_DESCRIPTION: `This course provided me with a comprehensive understanding of Angular, a powerful frontend framework. I learned how to build dynamic web applications using Angular, including creating reusable components, managing application state, and integrating routing and state management. This training was instrumental in enhancing my proficiency in frontend development and expanding my toolkit of technologies and frameworks.`,
 };
 
 // Projects
@@ -77,55 +128,32 @@ export const AUTHORING_TOOL = {
   AUTHORING_TOOL_DESCRIPTION: `I developed this project as part of my undergraduate thesis at the National University of La Plata.\nThis project represents research into the collaborative, in-situ design of context-aware mobile applications. In an environment where GPS has limitations in indoor spaces, I explored user positioning within these areas, an area of study in constant evolution.\nIn particular, I investigated WiFi fingerprinting technologies to achieve precise user location in space. This exploration led to the development of a specialized tool for co-designing in-situ location-based question games.\nWith this tool, users have the ability to physically map an indoor space and record questions at strategic locations within it. These co-designed applications can then be utilized, inviting other participants to explore the space and engage in an interactive game.`,
 };
 
-// Education
-
-export const APU = {
-  APU_TITLE: 'Analyst Programmer',
-  APU_ARTIST: 'Facultad de Informática | UNLP',
-  APU_DURATION: 'Feb 2015 - Nov 2019',
-  APU_DESCRIPTION: `Degree GPA: 9.19/10\nThe Analyst Programmer career aims to train graduates with basic knowledge of the discipline's fundamentals and current technologies, enabling them to be qualified for professional work in systems of small and medium complexity.\nThe labor reality at the Faculty indicates that a significant number of students enter the market before graduating, primarily in program and system development, for which a basic understanding of the discipline's fundamentals and the development of problem-solving skills through subjects with intense practice are required. This is the profile sought with the UAP, aiming to enhance students' competitiveness. Additionally, graduates can continue their studies in Systems or Informatics without major difficulties.`,
+export const GRAL_LECTURAS = {
+  GRAL_LECTURAS_NAME: 'Gral | Meter Readings',
+  GRAL_LECTURAS_ARTIST: 'GRAL Saneamiento SRL',
+  GRAL_LECTURAS_LENGTH: '2019 - 2020',
+  GRAL_LECTURAS_DESCRIPTION: `This is an internal application of the company aimed at facilitating the task of water meter readers within the province of Buenos Aires, Argentina. The application allows for the recording of water meter readings and enables re-readings and audits, while also allowing users to capture and attach photos of the meters.`,
 };
 
-export const LICENCIATURA = {
-  LICENCIATURA_TITLE: `Bachelor's Degree in Systems`,
-  LICENCIATURA_ARTIST: 'Facultad de Informática | UNLP',
-  LICENCIATURA_DURATION: 'Feb 2015 - Mar 2021',
-  LICENCIATURA_DESCRIPTION: `Degree GPA: 9.35/10\nThe Bachelor's Degree in Systems is internationally certified by EUROINF.\nThe profile of the graduate in the Bachelor's Degree in Systems is that of a professional specially oriented towards the market linked with computer systems, particularly the aspects related to software and data management within an organization. The basic training also allows for participation in Research, Development, and Innovation activities within the discipline.`,
+export const GRAL_VEHICLES = {
+  GRAL_VEHICLES_NAME: 'Gral | Vehicles',
+  GRAL_VEHICLES_ARTIST: 'GRAL Saneamiento SRL',
+  GRAL_VEHICLES_LENGTH: '2022',
+  GRAL_VEHICLES_DESCRIPTION: `This is an internal application of the company aimed at managing the vehicle fleet. The application allows for the registration of vehicles, tracking of maintenance tasks, and monitoring of fuel consumption.`,
 };
 
-export const ENGLISH_CAMBRIDGE = {
-  ENGLISH_CAMBRIDGE_TITLE: 'Cambridge English: First (FCE) – CEFR level C1',
-  ENGLISH_CAMBRIDGE_ARTIST: 'Cambridge University Press & Assessment English',
-  ENGLISH_CAMBRIDGE_DURATION: 'Dic 2014',
-  ENGLISH_CAMBRIDGE_DESCRIPTION: `Grade: A\nThe Cambridge English: Advanced (CAE) certification is proof of high-level English language skills for academic and professional purposes. It is recognized by universities and employers worldwide as a demonstration of proficiency in English.`,
+export const MAS_EFECTIVO = {
+  MAS_EFECTIVO_NAME: 'Más Efectivo',
+  MAS_EFECTIVO_ARTIST: 'Qwertysoft SRL',
+  MAS_EFECTIVO_LENGTH: '2020',
+  MAS_EFECTIVO_DESCRIPTION: `This project involved the development of a landing page for a financial services company specializing in loans. The landing page was designed to attract potential clients and provide them with information about the company's services, loan options, and application process. The goal was to create a user-friendly and informative platform that would encourage visitors to explore the company's offerings and take the next steps towards securing a loan.`,
 };
 
-export const MIKROWAYS_KUBERNETES = {
-  MIKROWAYS_KUBERNETES_TITLE: 'Foundations of Kubernetes',
-  MIKROWAYS_KUBERNETES_ARTIST: 'Mikroways',
-  MIKROWAYS_KUBERNETES_DURATION: 'Feb 2020',
-  MIKROWAYS_KUBERNETES_DESCRIPTION: `This course provided me with a comprehensive understanding of Kubernetes, a powerful container orchestration platform. I learned how to deploy, manage, and scale containerized applications using Kubernetes, enabling me to optimize the performance and reliability of my applications.`,
-};
-
-export const REACT_UDEMY = {
-  REACT_UDEMY_TITLE: 'React - The Complete Guide',
-  REACT_UDEMY_ARTIST: 'Udemy',
-  REACT_UDEMY_DURATION: 'Mar 2018',
-  REACT_UDEMY_DESCRIPTION: `This course equipped me with the skills to develop modern, dynamic web applications using React. I learned how to build reusable components, manage application state with React Hooks, and integrate routing and state management using React Router and Redux. This training was instrumental in enhancing my proficiency in frontend development and expanding my toolkit of technologies and frameworks.`,
-};
-
-export const FISCALIA = {
-  FISCALIA_TITLE: 'Web Development with REST Architecture',
-  FISCALIA_ARTIST: 'Fiscalía de Estado | Provincia de Buenos Aires',
-  FISCALIA_DURATION: 'Feb 2019',
-  FISCALIA_DESCRIPTION: `The course focused on teaching me development using the REST architecture, with an introduction to backend development with .NET and frontend development with Angular. I learned to create efficient web services with .NET and to build web applications with Angular. By the end of the course, I acquired skills to develop modern and scalable web applications that meet industry standards.`,
-};
-
-export const ANGULAR_UDEMY = {
-  ANGULAR_UDEMY_TITLE: 'Angular: From Zero to Expert',
-  ANGULAR_UDEMY_ARTIST: 'Udemy',
-  ANGULAR_UDEMY_DURATION: 'May 2019',
-  ANGULAR_UDEMY_DESCRIPTION: `This course provided me with a comprehensive understanding of Angular, a powerful frontend framework. I learned how to build dynamic web applications using Angular, including creating reusable components, managing application state, and integrating routing and state management. This training was instrumental in enhancing my proficiency in frontend development and expanding my toolkit of technologies and frameworks.`,
+export const GO4CLIC = {
+  GO4CLIC_NAME: 'Go4Clic',
+  GO4CLIC_ARTIST: 'Qwertysoft SRL',
+  GO4CLIC_LENGTH: '2020',
+  GO4CLIC_DESCRIPTION: `Go4clic is an innovative platform for social learning that drives growth and collaboration. Grounded in the concept of social learning, it fosters user interaction to enhance collective knowledge. With a wide range of features designed to promote participation and the exchange of ideas, Go4clic offers a unique online learning experience.\nAmong its key features are challenges, where users can create and join learning activities individually or as a team, thus encouraging personal commitment and improvement. Forums provide a dynamic space to discuss relevant topics related to work or training content, allowing users to exchange perspectives and enrich their understanding. Additionally, groups facilitate connections among users with similar interests, creating an active and collaborative community.\nMoreover, Go4clic offers a wide range of content options to adapt to the learning needs of each company. From text-based lessons to instructional videos, the platform enables the creation of diverse content types to ensure a rich and engaging learning experience. It is also possible to design different challenges to test knowledge and encourage active user participation.\nIn addition to working on frontend and backend development, efforts were made to develop a video streaming feature using technologies such as WebRTC and Simple Peer. This feature enables more dynamic and real-time interaction, further enhancing the online social learning experience.`,
 };
 
 // Global Object
@@ -159,8 +187,12 @@ export const cv = {
   // Projects
   ...TFD,
   ...LOTTIE,
+  ...GO4CLIC,
   ...CALM_COVID,
+  ...MAS_EFECTIVO,
   ...SPOTIFY_CLONE,
+  ...GRAL_LECTURAS,
+  ...GRAL_VEHICLES,
   ...AUTHORING_TOOL,
   ...QWERTY_LANDING_PAGE,
   ...TENSORFLOW_REACT_NATIVE,

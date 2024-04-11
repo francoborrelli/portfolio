@@ -4,8 +4,7 @@ export const order = {
   DEGREE: 'Títulos',
   JOB: 'Trabajos',
   ALL: 'Todos',
-  PERSONAL_PROJECT: 'Proyectos Personales',
-  QWERTY: 'Qwertysoft SRL',
-  GRAL: 'Gral Saneamiento SA',
+  WEB: 'Sitios Web',
+  MOBILE: 'Aplicaciones Móviles',
   UNLP: 'LIFIA - UNLP',
 };
