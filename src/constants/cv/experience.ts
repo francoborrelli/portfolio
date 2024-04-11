@@ -17,7 +17,16 @@ const LBS = {
   link: 'https://www.lbsinformatica.com.ar/',
   imageUrl: publicURL('/images/experience/logo_lbs.svg'),
   experience: 'LBS_JOB_DESCRIPTION',
-  skills: [tags.React, tags.Docker, tags.TypeScript, tags.Laravel, tags['CI/CD'], tags.GitLab],
+  skills: [
+    tags.React,
+    tags.Docker,
+    tags.TypeScript,
+    tags.Laravel,
+    tags['CI/CD'],
+    tags.GitLab,
+    tags.Postman,
+    tags.Redash,
+  ],
 } as Song;
 
 const GRAL = {
@@ -48,6 +57,8 @@ const GRAL = {
     tags.Symfony,
     tags.Redis,
     tags.Telegram,
+    tags.AppCenter,
+    tags.Postgres,
   ],
 } as Song;
 

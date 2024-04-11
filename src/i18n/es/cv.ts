@@ -174,7 +174,7 @@ export const RUKIR = {
 export const GRAL_STORES = {
   GRAL_STORES_NAME: 'Gral | Stores & Stock',
   GRAL_STORES_ARTIST: 'GRAL Saneamiento SA',
-  GRAL_STORES_LENGTH: '2022',
+  GRAL_STORES_LENGTH: '2020 - 2022',
   GRAL_STORES_DESCRIPTION: `Esta aplicación representa un activo fundamental dentro de la infraestructura de la empresa, dedicada a la gestión eficiente de sus tiendas y almacenes. Sus funciones versátiles permiten el registro sin problemas de almacenes en toda la red de la empresa, fomentando una organización y control logístico mejorados.\nAdemás, la aplicación cuenta con capacidades sólidas para monitorear meticulosamente los niveles de stock, abarcando operaciones de entrada y salida. Este seguimiento meticuloso garantiza una gestión óptima del inventario, permitiendo la toma de decisiones proactivas para satisfacer las fluctuaciones de la demanda y mantener la continuidad operativa.\nAdemás, la aplicación facilita auditorías exhaustivas, proporcionando un marco sistemático para evaluar la precisión e integridad del inventario. Estas auditorías desempeñan un papel crítico en el mantenimiento del cumplimiento normativo, la identificación de discrepancias y la implementación de acciones correctivas según sea necesario.`,
 };
 
@@ -183,6 +183,20 @@ export const GRAL_STATISTICS = {
   GRAL_STATISTICS_ARTIST: 'GRAL Saneamiento SA',
   GRAL_STATISTICS_LENGTH: '2022',
   GRAL_STATISTICS_DESCRIPTION: `Esta aplicación sirve como una central para el análisis estadístico y la generación de informes de la empresa, ofreciendo una amplia gama de herramientas para extraer información accionable de los datos operativos. Al aprovechar técnicas avanzadas de visualización de datos, la aplicación permite a los interesados identificar tendencias, patrones y anomalías, lo que facilita la toma de decisiones informadas y la planificación estratégica.\nAdemás, la aplicación proporciona un panel de control dinámico que muestra indicadores clave de rendimiento (KPI) y métricas de rendimiento en tiempo real. Esta función mejora la transparencia operativa y facilita la toma de decisiones basada en datos, fomentando una cultura de mejora continua y responsabilidad dentro de la organización.\nAdemás, la aplicación admite la generación de informes personalizables y exportaciones de datos, lo que permite a los interesados adaptar la información a sus necesidades y preferencias específicas. Esta flexibilidad garantiza que los usuarios puedan extraer información relevante de manera eficiente y efectiva, mejorando la utilidad y el valor de la aplicación.`,
+};
+
+export const GRAL_TASKS_WEB = {
+  GRAL_TASKS_WEB_NAME: 'Gral | Tareas (Web)',
+  GRAL_TASKS_WEB_ARTIST: 'GRAL Saneamiento SA',
+  GRAL_TASKS_WEB_LENGTH: '2020 - 2022',
+  GRAL_TASKS_WEB_DESCRIPTION: `Esta aplicación web interna de la empresa está diseñada para gestionar y asignar tareas que realizan las cuadrillas en la calle. Permite a los usuarios crear, asignar y monitorear tareas. La aplicación facilita la comunicación y la colaboración entre los miembros del equipo, mejorando la eficiencia y la coordinación.`,
+};
+
+export const GRAL_TASKS_MOBILE = {
+  GRAL_TASKS_MOBILE_NAME: 'Gral | Tareas (App)',
+  GRAL_TASKS_MOBILE_ARTIST: 'GRAL Saneamiento SA',
+  GRAL_TASKS_MOBILE_LENGTH: '2020',
+  GRAL_TASKS_MOBILE_DESCRIPTION: `La aplicación permite a las cuadrillas recibir en la calle de manera instantánea las tareas de obra y reparación que tienen programadas (las cuales fueron asignadas previamente desde un sistema web). Esto asegura una comunicación fluida y precisa entre la oficina y el campo, optimizando la ejecución de las tareas.\nMediante la integración de funciones de geolocalización, los miembros de la cuadrilla pueden visualizar las tareas asignadas en un mapa, lo que facilita la planificación de rutas y la optimización de los desplazamientos.\nLa aplicación permite a las cuadrillas registrar el avance del trabajo al marcar las tareas como completadas, cargar fotos del trabajo realizado y listar los materiales utilizados. Además, los usuarios tienen la posibilidad de añadir observaciones pertinentes para un registro detallado de cada tarea.\nUna de las características destacadas de esta aplicación es su integración con AppCenter, que utiliza CodePush para enviar actualizaciones automáticas a las cuadrillas. Esto garantiza que siempre estén utilizando la última versión de la aplicación, sin necesidad de intervención manual.\nPara mejorar la gestión del presentismo de las cuadrillas, se implementó un sistema de reconocimiento facial utilizando el servicio AWS Rekognition Liveness Detection. Esta funcionalidad garantiza una verificación precisa y segura de la presencia de los trabajadores en el lugar de trabajo.`,
 };
 
 // Global Object
@@ -222,8 +236,10 @@ export const cv = {
   ...GRAL_VEHICLES,
   ...SPOTIFY_CLONE,
   ...AUTHORING_TOOL,
+  ...GRAL_TASKS_WEB,
   ...GRAL_STATISTICS,
   ...GRAL_LECTURAS_WEB,
+  ...GRAL_TASKS_MOBILE,
   ...QWERTY_LANDING_PAGE,
   ...TENSORFLOW_REACT_NATIVE,
 } as const;

@@ -323,6 +323,65 @@ export const GralStatistics = {
   ],
 } as Song;
 
+export const GralTasks = {
+  name: 'GRAL_TASKS_WEB_NAME',
+  artist: 'GRAL_TASKS_WEB_ARTIST',
+  length: 'GRAL_TASKS_WEB_LENGTH',
+  type: ProjectTypesEnum.WEB,
+  description: 'GRAL_TASKS_WEB_DESCRIPTION',
+  imageUrl: getExperiencePath('gral.jpg'),
+  skills: [
+    tags.React,
+    tags.Graphql,
+    tags.Telegram,
+    tags.Laravel,
+    tags.TypeScript,
+    tags.SASS,
+    tags.Mysql,
+    tags['Ant design'],
+    tags.Docker,
+    tags.Sentry,
+    tags['CI/CD'],
+    tags.Keycloak,
+  ],
+  images: [
+    getProjectPath('gral_tareas_web/1.png'),
+    getProjectPath('gral_tareas_web/2.png'),
+    getProjectPath('gral_tareas_web/3.png'),
+    getProjectPath('gral_tareas_web/4.png'),
+    getProjectPath('gral_tareas_web/5.png'),
+  ],
+} as Song;
+
+export const GralTasksMobile = {
+  name: 'GRAL_TASKS_MOBILE_NAME',
+  artist: 'GRAL_TASKS_MOBILE_ARTIST',
+  length: 'GRAL_TASKS_MOBILE_LENGTH',
+  type: ProjectTypesEnum.MOBILE,
+  description: 'GRAL_TASKS_MOBILE_DESCRIPTION',
+  imageUrl: getExperiencePath('gral.jpg'),
+  images: [
+    getProjectPath('gral_tareas_mobile/1.jpg'),
+    getProjectPath('gral_tareas_mobile/2.jpg'),
+    getProjectPath('gral_tareas_mobile/3.jpg'),
+    getProjectPath('gral_tareas_mobile/4.jpg'),
+    getProjectPath('gral_tareas_mobile/5.jpg'),
+  ],
+  skills: [
+    tags.ReactNative,
+    tags.Laravel,
+    tags.AWS,
+    tags.TypeScript,
+    tags['Ant design'],
+    tags.SASS,
+    tags.Android,
+    tags.Sentry,
+    tags.Docker,
+    tags.AppCenter,
+    tags['CI/CD'],
+  ],
+} as Song;
+
 export const PersonalProjects = {
   name: 'PROJECTS',
   color: '#113066',
@@ -331,9 +390,11 @@ export const PersonalProjects = {
     LottieReactNative,
     GralVehicles,
     GralStatistics,
+    GralTasksMobile,
+    GralTasks,
+    GralStores,
     TFD,
     CalmCovid,
-    GralStores,
     AuthoringTool,
     QwertyLandingPage,
     MasEfectivo,

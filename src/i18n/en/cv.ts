@@ -136,7 +136,7 @@ export const GRAL_LECTURAS = {
 };
 
 export const GRAL_LECTURAS_WEB = {
-  GRAL_LECTURAS_WEB_NAME: 'Gral | Meter Readings (App)',
+  GRAL_LECTURAS_WEB_NAME: 'Gral | Meter Readings (Web)',
   GRAL_LECTURAS_WEB_ARTIST: 'GRAL Saneamiento SA',
   GRAL_LECTURAS_WEB_LENGTH: '2020',
   GRAL_LECTURAS_WEB_DESCRIPTION: `This system, crucial for the internal management of the company, serves as the starting point from which the data used by meter readers in the application to carry out their routes for water meter readings are fed. In addition to its primary function, this system also serves as a platform for viewing the information and photographs captured by the meter readers from their devices.\nAmong its capabilities, the assignment of routes, the visualization of statistical data related to readings, and the management of audits and rereadings of the routes stand out.\nOne of the most outstanding features is the implementation of a connection via websocket, allowing for real-time data updates. This innovation ensures a smooth and up-to-date experience for users, thereby improving efficiency and accuracy in the process of meter reading.\nTo host the site, S3 and CloudFront were used, ensuring optimal availability and speed. The system was developed in React, offering a dynamic and responsive user interface, while the API was implemented as a series of Lambda functions, ensuring exceptional scalability and efficiency.`,
@@ -174,7 +174,7 @@ export const RUKIR = {
 export const GRAL_STORES = {
   GRAL_STORES_NAME: 'Gral | Stores & Stock',
   GRAL_STORES_ARTIST: 'GRAL Saneamiento SA',
-  GRAL_STORES_LENGTH: '2022',
+  GRAL_STORES_LENGTH: '2020 - 2022',
   GRAL_STORES_DESCRIPTION: `This application represents a pivotal asset within the company's infrastructure, dedicated to the efficient management of its stores and warehouses. Its versatile features enable seamless registration of warehouses across the company's network, fostering enhanced organization and logistical control.\nFurthermore, the application boasts robust capabilities for meticulously monitoring stock levels, encompassing both inbound and outbound operations. This meticulous tracking ensures optimal inventory management, allowing for proactive decision-making to meet demand fluctuations and maintain operational continuity.\nMoreover, the application facilitates comprehensive audits, providing a systematic framework for evaluating inventory accuracy and integrity. These audits play a critical role in maintaining regulatory compliance, identifying discrepancies, and implementing corrective actions as needed.`,
 };
 
@@ -183,6 +183,20 @@ export const GRAL_STATISTICS = {
   GRAL_STATISTICS_ARTIST: 'GRAL Saneamiento SA',
   GRAL_STATISTICS_LENGTH: '2022',
   GRAL_STATISTICS_DESCRIPTION: `This application serves as a central hub for the company's statistical analysis and reporting, offering a comprehensive suite of tools to extract actionable insights from operational data. By leveraging advanced data visualization techniques, the application empowers stakeholders to identify trends, patterns, and anomalies, enabling informed decision-making and strategic planning.\nMoreover, the application provides a dynamic dashboard interface that displays key performance indicators (KPIs) and performance metrics in real time. This feature enhances operational transparency and facilitates data-driven decision-making, fostering a culture of continuous improvement and accountability within the organization.\nAdditionally, the application supports the generation of customizable reports and data exports, enabling stakeholders to tailor insights to their specific needs and preferences. This flexibility ensures that users can extract relevant information efficiently and effectively, enhancing the utility and value of the application.`,
+};
+
+export const GRAL_TASKS_WEB = {
+  GRAL_TASKS_WEB_NAME: 'Gral | Tasks (Web)',
+  GRAL_TASKS_WEB_ARTIST: 'GRAL Saneamiento SA',
+  GRAL_TASKS_WEB_LENGTH: '2020 - 2022',
+  GRAL_TASKS_WEB_DESCRIPTION: `This internal web application of the company is designed to manage and assign tasks performed by field crews. It allows users to create, assign, and monitor tasks. The application facilitates communication and collaboration among team members, improving efficiency and coordination.`,
+};
+
+export const GRAL_TASKS_MOBILE = {
+  GRAL_TASKS_MOBILE_NAME: 'Gral | Tasks (App)',
+  GRAL_TASKS_MOBILE_ARTIST: 'GRAL Saneamiento SA',
+  GRAL_TASKS_MOBILE_LENGTH: '2020 - 2022',
+  GRAL_TASKS_MOBILE_DESCRIPTION: `The application allows teams to instantly receive construction and repair tasks scheduled for the street (which were previously assigned from a web system). This ensures smooth and accurate communication between the office and the field, optimizing task execution.\nThrough the integration of geolocation functions, team members can visualize assigned tasks on a map, facilitating route planning and travel optimization.\nThe application enables teams to track progress by marking tasks as completed, uploading photos of the work done, and listing materials used. Additionally, users have the ability to add relevant observations for a detailed record of each task.\nOne of the standout features of this application is its integration with AppCenter, which utilizes CodePush to automatically push updates to teams. This ensures they are always using the latest version of the application without manual intervention.\nTo enhance attendance management for teams, a facial recognition system using AWS Rekognition Liveness Detection was implemented. This functionality ensures precise and secure verification of workers' presence at the workplace.`,
 };
 
 // Global Object
@@ -224,8 +238,10 @@ export const cv = {
   ...SPOTIFY_CLONE,
   ...GRAL_LECTURAS,
   ...GRAL_VEHICLES,
+  ...GRAL_TASKS_WEB,
   ...AUTHORING_TOOL,
   ...GRAL_STATISTICS,
+  ...GRAL_TASKS_MOBILE,
   ...GRAL_LECTURAS_WEB,
   ...QWERTY_LANDING_PAGE,
   ...TENSORFLOW_REACT_NATIVE,
