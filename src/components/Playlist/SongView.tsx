@@ -1,31 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+
 import { Avatar } from 'antd';
+import { Play } from '../Icons';
 import { Tooltip } from '../Common/Tooltip';
 import { useCallback, useState } from 'react';
 
+// Interfaces
 import type { Song } from '../../interfaces/types';
-import { Play } from '../Icons';
+
+// Redux
 import { useAppDispatch } from '../../store/store';
 import { libraryActions } from '../../store/slices/library';
-import { useTranslation } from 'react-i18next';
 
-// const GitHubButton = ({ song }: { song: Song }) => {
-//   return (
-//     <a
-//       target='_blank'
-//       className='ml-2'
-//       href={song.github}
-//       rel='noopener noreferrer'
-//       onClick={(e) => e.stopPropagation()}
-//     >
-//       <img
-//         alt='GitHub Logo'
-//         className='w-4 h-4'
-//         src='https://github.githubassets.com/favicons/favicon-dark.png'
-//       />
-//     </a>
-//   );
-// };
+// Utils
+import { useTranslation } from 'react-i18next';
 
 const SongData = ({ song, index }: { song: Song; isOpen: boolean; index: number }) => {
   const dispatch = useAppDispatch();

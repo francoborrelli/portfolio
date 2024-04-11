@@ -8,11 +8,19 @@ import {
 import { tags } from '../tags';
 import type { Song } from '../../interfaces/types';
 
+enum ProjectTypesEnum {
+  PERSONAL_PROJECT = 'PERSONAL_PROJECT',
+  QWERTY = 'QWERTY',
+  GRAL = 'GRAL',
+  UNLP = 'UNLP',
+}
+
 export const SpotifyClone = {
   name: 'SPOTIFY_CLONE_NAME',
   artist: 'SPOTIFY_CLONE_ARTIST',
   length: 'SPOTIFY_CLONE_LENGTH',
   description: 'SPOTIFY_CLONE_DESCRIPTION',
+  type: ProjectTypesEnum.PERSONAL_PROJECT,
   imageUrl: getSocialNetworkPath('spotify.png'),
   link: 'https://spotify-react-web-client.onrender.com/',
   github: 'https://github.com/francoborrelli/spotify-react-web-client',
@@ -26,12 +34,12 @@ export const SpotifyClone = {
     tags.Heroku,
   ],
   images: [
+    getProjectPath('spotify_clone/3.png'),
+    getProjectPath('spotify_clone/6.png'),
     getProjectPath('spotify_clone/1.png'),
     getProjectPath('spotify_clone/2.png'),
-    getProjectPath('spotify_clone/3.png'),
     getProjectPath('spotify_clone/4.png'),
     getProjectPath('spotify_clone/5.png'),
-    getProjectPath('spotify_clone/6.png'),
     getProjectPath('spotify_clone/7.png'),
   ],
 } as Song;
@@ -41,6 +49,7 @@ export const LottieReactNative = {
   artist: 'LOTTIE_ARTIST',
   length: 'LOTTIE_LENGTH',
   description: 'LOTTIE_DESCRIPTION',
+  type: ProjectTypesEnum.PERSONAL_PROJECT,
   imageUrl: getProjectPath('lottie/logo.png'),
   link: 'https://expo.dev/@francoborrelli/react-native-lottie?serviceType=classic&distribution=expo-go/',
   github: 'https://github.com/francoborrelli/react-native-lottie-prototype',
@@ -52,6 +61,7 @@ export const TensorflowReactNative = {
   artist: 'TENSORFLOW_REACT_NATIVE_ARTIST',
   length: 'TENSORFLOW_REACT_NATIVE_LENGTH',
   description: 'TENSORFLOW_DESCRIPTION',
+  type: ProjectTypesEnum.PERSONAL_PROJECT,
   imageUrl: getProjectPath('tensorflowjs/logo.png'),
   github: 'https://github.com/francoborrelli/react-native-tensorflowjs',
   skills: [tags.TensorFlow, tags.ReactNative, tags.Expo, tags.TypeScript],
@@ -63,6 +73,7 @@ export const TFD = {
   artist: 'TFD_ARTIST',
   length: 'TFD_LENGTH',
   description: 'TFD_DESCRIPTION',
+  type: ProjectTypesEnum.QWERTY,
   imageUrl: getProjectPath('tfd/logo.png'),
   link: 'https://tufacturadigital.com.ar/',
   youtube: 'https://www.youtube.com/channel/UCA8witVr88Wj5sA8c9sI8qg',
@@ -89,15 +100,16 @@ export const CalmCovid = {
   name: 'CALM_COVID_NAME',
   artist: 'CALM_COVID_ARTIST',
   length: 'CALM_COVID_LENGTH',
+  type: ProjectTypesEnum.QWERTY,
   description: 'CALM_COVID_DESCRIPTION',
   imageUrl: getProjectPath('calm_covid/logo.png'),
   github: '',
   skills: [tags.ReactNative, tags.TypeScript, tags.Firebase, tags.Android],
   images: [
+    getProjectPath('calm_covid/4.jpg'),
     getProjectPath('calm_covid/1.jpg'),
     getProjectPath('calm_covid/2.jpg'),
     getProjectPath('calm_covid/3.jpg'),
-    getProjectPath('calm_covid/4.jpg'),
     getProjectPath('calm_covid/5.jpg'),
     getProjectPath('calm_covid/6.jpg'),
   ],
@@ -107,6 +119,7 @@ export const QwertyLandingPage = {
   name: 'QWERTY_LANDING_PAGE_NAME',
   artist: 'QWERTY_LANDING_PAGE_ARTIST',
   length: 'QWERTY_LANDING_PAGE_LENGTH',
+  type: ProjectTypesEnum.QWERTY,
   description: 'QWERTY_LANDING_PAGE_DESCRIPTION',
   imageUrl: getExperiencePath('qwerty.png'),
   link: 'http://qwertysoft.ar/',
@@ -124,11 +137,12 @@ export const AuthoringTool = {
   name: 'AUTHORING_TOOL_NAME',
   artist: 'AUTHORING_TOOL_ARTIST',
   length: 'AUTHORING_TOOL_LENGTH',
+  type: ProjectTypesEnum.UNLP,
   description: 'AUTHORING_TOOL_DESCRIPTION',
   imageUrl: getProjectPath('authoring_tool/logo.png'),
   images: [
-    getProjectPath('authoring_tool/1.jpg'),
     getProjectPath('authoring_tool/2.jpg'),
+    getProjectPath('authoring_tool/1.jpg'),
     getProjectPath('authoring_tool/3.jpg'),
     getProjectPath('authoring_tool/4.jpg'),
     getProjectPath('authoring_tool/5.jpg'),
@@ -151,5 +165,6 @@ export const PersonalProjects = {
     TFD,
     SpotifyClone,
   ],
+  filters: [ProjectTypesEnum.PERSONAL_PROJECT, ProjectTypesEnum.QWERTY, ProjectTypesEnum.UNLP],
   imageUrl: getAlbumPath('wallows.jpg'),
 };

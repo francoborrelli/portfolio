@@ -10,6 +10,7 @@ export const playingBar = {
   Next: 'Next',
   Skills: 'Skills',
   Experience: 'Experience',
+  Description: 'Description',
   Images: 'Images',
   'Exit full screen': 'Salir de pantalla completa',
 };

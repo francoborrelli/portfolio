@@ -3,5 +3,5 @@ export const playlist = {
   songs: 'canciones',
   Name: 'Nombre',
   Skills: 'Habilidades',
-  Order: 'Ordenar',
+  Filter: 'Filtrar',
 };

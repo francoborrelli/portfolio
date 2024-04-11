@@ -1,9 +1,13 @@
-import { FC } from 'react';
-import SongView from './SongView';
-import type { Playlist } from '../../interfaces/types';
 import { Clock } from '../Icons';
+import SongView from './SongView';
 import { PlaylistControls } from './controls';
+
+// Utils
 import { useTranslation } from 'react-i18next';
+
+// Interfaces
+import type { FC } from 'react';
+import type { Playlist } from '../../interfaces/types';
 
 interface PlaylistListProps {
   playlist: Playlist;
@@ -19,7 +23,7 @@ export const PlaylistList: FC<PlaylistListProps> = ({ playlist }) => {
         background: `linear-gradient(${playlist.color} -10%, rgb(18, 18, 18) 35%)`,
       }}
     >
-      <PlaylistControls />
+      <PlaylistControls playlist={playlist} />
       <div className='playlist-table'>
         <div className='mobile-hidden flex justify-between items-center py-2'>
           <div style={{ flex: 1 }}>

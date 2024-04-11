@@ -124,6 +124,47 @@ h3 {
       color: #1ed760 !important;
     }
   }
+
+  .ant-dropdown-menu-item {
+    border: 0;
+    border-radius: 2px;
+    color: hsla(0, 0%, 100%, 0.9);
+    cursor: default;
+    gap: 12px;
+    text-decoration: none;
+    padding: 12px;
+    -webkit-padding-end: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    padding-inline-end: 8px;
+    position: relative;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: start;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+  }
+}
+
+.ant-dropdown-menu-title-content {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.ant-dropdown-menu-item:hover {
+  background: #ffffff17 !important;
+  .ant-dropdown-menu-title-content {
+    color: #1db954 !important;
+  }
 }
 
 @media (max-width: $desktop-breakpoint) {

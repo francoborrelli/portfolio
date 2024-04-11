@@ -1,17 +1,22 @@
 import { getAlbumPath } from '../../utils/getPublicPath';
 import { tags } from '../tags';
 
-import type { Song } from '../../interfaces/types';
+import type { Playlist, Song } from '../../interfaces/types';
 
 const publicURL = (url: string) => process.env.PUBLIC_URL + url;
+
+enum JobTypesEnum {
+  JOB = 'JOB',
+}
 
 const LBS = {
   name: 'LBS_JOB_TITLE',
   length: 'LBS_JOB_DURATION',
   artist: 'LBS Informática',
+  type: JobTypesEnum.JOB,
   link: 'https://www.lbsinformatica.com.ar/',
   imageUrl: publicURL('/images/experience/logo_lbs.svg'),
-  description: 'LBS_JOB_DESCRIPTION',
+  experience: 'LBS_JOB_DESCRIPTION',
   skills: [tags.React, tags.Docker, tags.TypeScript, tags.Laravel, tags['CI/CD'], tags.GitLab],
 } as Song;
 
@@ -19,7 +24,8 @@ const GRAL = {
   name: 'GRAL_JOB_TITLE',
   length: 'GRAL_JOB_DURATION',
   artist: 'Gral Saneamiento SA',
-  description: 'GRAL_JOB_DESCRIPTION',
+  experience: 'GRAL_JOB_DESCRIPTION',
+  type: JobTypesEnum.JOB,
   link: 'https://www.gralsaneamiento.com.ar/',
   imageUrl: publicURL('/images/experience/gral.jpg'),
   skills: [
@@ -50,7 +56,8 @@ const QWERTY = {
   link: 'https://qwertysoft.ar/',
   artist: 'Qwertysoft SRL',
   length: 'QWERTY_JOB_DURATION',
-  description: 'QWERTY_JOB_DESCRIPTION',
+  type: JobTypesEnum.JOB,
+  experience: 'QWERTY_JOB_DESCRIPTION',
   imageUrl: publicURL('/images/experience/qwerty.png'),
   skills: [
     tags.Angular,
@@ -75,7 +82,8 @@ const LIFIA = {
   artist: 'LIFIA - UNLP',
   name: 'LIFIA_JOB_TITLE',
   length: 'LIFIA_JOB_DURATION',
-  description: 'LIFIA_JOB_DESCRIPTION',
+  type: JobTypesEnum.JOB,
+  experience: 'LIFIA_JOB_DESCRIPTION',
   link: 'https://lifia.info.unlp.edu.ar/',
   imageUrl: publicURL('/images/experience/lifia.jpg'),
   skills: [
@@ -91,6 +99,7 @@ const LIFIA = {
 export const ProfessionalExperience = {
   name: 'EXPERIENCE',
   color: '#c45f23',
+  filters: [JobTypesEnum.JOB],
   songs: [LBS, GRAL, QWERTY, LIFIA],
   imageUrl: getAlbumPath('ed.jpg'),
-};
+} as Playlist;

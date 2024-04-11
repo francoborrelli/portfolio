@@ -78,10 +78,29 @@ const Experience: FC<{ song: Song }> = ({ song }) => {
   const [t] = useTranslation(['playingBar']);
   const [tcv] = useTranslation(['cv']);
 
-  if (!song.description) return null;
+  if (!song.experience) return null;
 
   return (
     <NowPlayingCard title={t('Experience')}>
+      {tcv(song.experience)
+        .split('\n')
+        .map((bullet, index) => (
+          <div className='playing-now-card-body' key={index}>
+            {bullet}
+          </div>
+        ))}
+    </NowPlayingCard>
+  );
+};
+
+const Description: FC<{ song: Song }> = ({ song }) => {
+  const [t] = useTranslation(['playingBar']);
+  const [tcv] = useTranslation(['cv']);
+
+  if (!song.description) return null;
+
+  return (
+    <NowPlayingCard title={t('Description')}>
       {tcv(song.description)
         .split('\n')
         .map((bullet, index) => (
@@ -132,6 +151,7 @@ export const Details = () => {
     <NowPlayingLayout>
       <Profile song={song} />
       <Skills song={song} />
+      <Description song={song} />
       <Experience song={song} />
       <Images song={song} />
     </NowPlayingLayout>

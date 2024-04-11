@@ -5,6 +5,9 @@ export type Song = {
   imageUrl?: string;
   skills: TagType[];
   description?: string;
+  experience?: string;
+
+  type?: string;
 
   link?: string;
   github?: string;
@@ -19,6 +22,7 @@ export type Playlist = {
   songs: Song[];
   imageUrl?: string;
   color: string;
+  filters?: string[];
 };
 
 export type Description = {

@@ -32,7 +32,12 @@ export const NowPlayingCard: FC<NowPlayingCardProps> = (props) => {
       <div className='playing-now-card-text'>
         <Row align='middle' justify='space-between'>
           <Col span={props.extra ? 14 : 24}>
-            <div className='playing-now-card-title'>{props.title}</div>
+            <div
+              className='playing-now-card-title'
+              style={props.image ? undefined : { marginTop: 10 }}
+            >
+              {props.title}
+            </div>
             <div className='playing-now-card-subtitle'>{props.subtitle}</div>
           </Col>
           {props.extra ? <Col span={10}>{props.extra}</Col> : null}
