@@ -183,3 +183,12 @@
     background-color: #242424 !important;
   }
 }
+
+.order-button {
+  color: #bababa;
+  font-weight: 400;
+  font-size: 0.8rem;
+  &:hover {
+    color: white;
+  }
+}

@@ -164,6 +164,13 @@
 .ant-image {
   border-radius: 5px;
   overflow: hidden;
+  max-height: 250px;
+
+  img {
+    max-height: 250px;
+    object-fit: contain;
+    background: #00000066;
+  }
 }
 
 .ant-image-preview-wrap {

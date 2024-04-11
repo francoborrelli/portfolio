@@ -22,7 +22,7 @@ const SongData = ({ song, index }: { song: Song; isOpen: boolean; index: number 
   const image = <img src={song.imageUrl} alt='song cover' className='w-10 h-10 mr-4 rounded-md' />;
 
   const title = (
-    <div className='flex flex-col' style={{ flex: 5 }}>
+    <div className='flex flex-col' style={{ flex: 6 }}>
       <div className='flex flex-row items-center'>
         <p className='title text-left'>{t(song.name)}</p>
         {/* {song.github ? <GitHubButton song={song} /> : null} */}
@@ -42,7 +42,7 @@ const SongData = ({ song, index }: { song: Song; isOpen: boolean; index: number 
 
   const tags = (
     <div
-      style={{ flex: 5 }}
+      style={{ flex: 4 }}
       className='tablet-hidden flex flex-row items-center justify-start flex-wrap space-x-2'
     >
       <Avatar.Group

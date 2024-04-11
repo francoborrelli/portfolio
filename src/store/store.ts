@@ -15,11 +15,13 @@ import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 // Reducers
 import libraryReducer from './slices/library';
 import languageReducer from './slices/language';
+import playlistReducer from './slices/playlist';
 import playingBarReducer from './slices/playingBar';
 
 const appReducer = combineReducers({
   library: libraryReducer,
   language: languageReducer,
+  playlist: playlistReducer,
   playingBar: playingBarReducer,
 });
 

@@ -51,6 +51,7 @@ export const LottieReactNative = {
   description: 'LOTTIE_DESCRIPTION',
   type: ProjectTypesEnum.PERSONAL_PROJECT,
   imageUrl: getProjectPath('lottie/logo.png'),
+  images: [getProjectPath('lottie/1.jpg'), getProjectPath('lottie/2.jpg')],
   link: 'https://expo.dev/@francoborrelli/react-native-lottie?serviceType=classic&distribution=expo-go/',
   github: 'https://github.com/francoborrelli/react-native-lottie-prototype',
   skills: [tags.ReactNative, tags.Expo, tags.TypeScript, tags.Android],

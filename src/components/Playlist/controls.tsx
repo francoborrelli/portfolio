@@ -8,7 +8,8 @@ import { MenuDots, OrderListIcon } from '../Icons';
 import { useTranslation } from 'react-i18next';
 
 // Redux
-import { useAppDispatch } from '../../store/store';
+import { playlistActions } from '../../store/slices/playlist';
+import { useAppDispatch, useAppSelector } from '../../store/store';
 
 // Interfaces
 import type { FC } from 'react';
@@ -16,6 +17,7 @@ import type { Playlist } from '../../interfaces/types';
 
 export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
   const dispatch = useAppDispatch();
+  const order = useAppSelector((state) => state.playlist.order);
 
   const [tor] = useTranslation(['order']);
   const [t] = useTranslation(['playlist']);
@@ -25,7 +27,7 @@ export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
   const items = filters.map((filter) => ({
     key: filter,
     label: tor(filter),
-    onClick: () => dispatch({ type: 'playlist/setFilter', payload: filter }),
+    onClick: () => dispatch(playlistActions.setOrder({ order: filter })),
   }));
 
   return (
@@ -41,8 +43,13 @@ export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
           <Space>
             <Tooltip title={t('Filter')}>
               <Dropdown menu={{ items }}>
-                <button>
-                  <OrderListIcon />
+                <button className='order-button'>
+                  <Space align='center'>
+                    <span style={{ color: order !== 'ALL' ? 'inherit' : 'transparent' }}>
+                      {tor(order)}
+                    </span>
+                    <OrderListIcon />
+                  </Space>
                 </button>
               </Dropdown>
             </Tooltip>

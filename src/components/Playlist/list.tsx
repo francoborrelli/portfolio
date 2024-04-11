@@ -6,15 +6,22 @@ import { PlaylistControls } from './controls';
 import { useTranslation } from 'react-i18next';
 
 // Interfaces
-import type { FC } from 'react';
+import { memo, type FC } from 'react';
 import type { Playlist } from '../../interfaces/types';
+import { useAppSelector } from '../../store/store';
 
 interface PlaylistListProps {
   playlist: Playlist;
 }
 
-export const PlaylistList: FC<PlaylistListProps> = ({ playlist }) => {
+export const PlaylistList: FC<PlaylistListProps> = memo(({ playlist }) => {
   const { t } = useTranslation(['playlist']);
+  const order = useAppSelector((state) => state.playlist.order);
+
+  const songs = playlist.songs.filter((song) => {
+    if (order === 'ALL') return true;
+    return song.type === order;
+  });
 
   return (
     <div
@@ -49,10 +56,10 @@ export const PlaylistList: FC<PlaylistListProps> = ({ playlist }) => {
         </div>
       </div>
       <div>
-        {playlist.songs.map((song, index) => (
+        {songs.map((song, index) => (
           <SongView song={song} index={index} />
         ))}
       </div>
     </div>
   );
-};
+});
