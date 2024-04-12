@@ -34,9 +34,11 @@ export const getCurrentDuration = () => {
   return AudioPlayer.duration;
 };
 
-export const play = (index: number) => {
+export const play = (index: number, volume?: number) => {
   AudioPlayer.src = getSongPath(AVAILABLE_SONGS[index].file);
-  console.log(AudioPlayer.duration);
+  if (volume) {
+    AudioPlayer.volume = volume;
+  }
   // @ts-ignore
   AudioPlayer.play();
 };
@@ -49,6 +51,25 @@ AudioPlayer.ondurationchange = (e) => {
   if (value) {
     store.dispatch({ type: 'playingBar/setDuration', payload: value });
   }
+};
+
+const onPlayNext = () => {
+  store.dispatch({ type: 'playingBar/nextSong' });
+};
+
+// @ts-ignore
+AudioPlayer.addEventListener('ended', onPlayNext);
+
+export const onLoop = () => {
+  AudioPlayer.loop = true;
+  // @ts-ignore
+  AudioPlayer.removeEventListener('ended', onPlayNext);
+};
+
+export const onRemoveLoop = () => {
+  AudioPlayer.loop = false;
+  // @ts-ignore
+  AudioPlayer.addEventListener('ended', onPlayNext);
 };
 
 export const setCurrentTimeForPlayer = (value: number) => {

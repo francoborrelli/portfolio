@@ -1,4 +1,12 @@
-import { mute, pauseAudio, play, setPlayerVolume, startAudio } from '../../player';
+import {
+  mute,
+  onLoop,
+  onRemoveLoop,
+  pauseAudio,
+  play,
+  setPlayerVolume,
+  startAudio,
+} from '../../player';
 
 // Constants
 import { AVAILABLE_SONGS } from '../../constants/songs';
@@ -16,7 +24,7 @@ const initialState: {
   duration: number;
   currentTime: number;
 } = {
-  looping: true,
+  looping: false,
   muted: false,
   currentSong: 0,
   playing: false,
@@ -31,6 +39,11 @@ const playingBarSlice = createSlice({
   reducers: {
     toggleLooping(state) {
       state.looping = !state.looping;
+      if (state.looping) {
+        onLoop();
+      } else {
+        onRemoveLoop();
+      }
     },
     setPlaying(state) {
       state.playing = true;
@@ -45,6 +58,7 @@ const playingBarSlice = createSlice({
       pauseAudio();
     },
     setTime(state, action: PayloadAction<{ time: number }>) {
+      if (!state.duration) return;
       state.currentTime = action.payload.time;
       if (!state.playing) {
         startAudio();
@@ -64,15 +78,13 @@ const playingBarSlice = createSlice({
         state.currentSong = 0;
       }
       state.playing = true;
-      play(state.currentSong);
-      setPlayerVolume(state.volume);
+      play(state.currentSong, state.volume);
     },
     setSong(state, action: PayloadAction<{ song: number }>) {
       state.currentTime = 0;
       state.currentSong = action.payload.song;
       state.playing = true;
-      play(action.payload.song);
-      setPlayerVolume(state.volume);
+      play(action.payload.song, state.volume);
     },
     previousSong(state) {
       state.currentTime = 0;
@@ -81,8 +93,7 @@ const playingBarSlice = createSlice({
         state.currentSong = AVAILABLE_SONGS.length - 1;
       }
       state.playing = true;
-      play(state.currentSong);
-      setPlayerVolume(state.volume);
+      play(state.currentSong, state.volume);
     },
     setDuration(state, action: PayloadAction<number>) {
       state.duration = action.payload;
