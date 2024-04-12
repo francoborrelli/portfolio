@@ -15,14 +15,23 @@ import { libraryActions } from '../../store/slices/library';
 // Utils
 import { useTranslation } from 'react-i18next';
 
-const SongData = ({ song, index }: { song: Song; isOpen: boolean; index: number }) => {
+interface SongViewProps {
+  song: Song;
+  index: number;
+  hasSkills: boolean;
+}
+interface SongDataProps extends SongViewProps {
+  isOpen: boolean;
+}
+
+const SongData = ({ song, index, hasSkills }: SongDataProps) => {
   const dispatch = useAppDispatch();
   const [t] = useTranslation(['cv']);
 
   const image = <img src={song.imageUrl} alt='song cover' className='w-10 h-10 mr-4 rounded-md' />;
 
   const title = (
-    <div className='flex flex-col' style={{ flex: 6 }}>
+    <div className='flex flex-col' style={{ flex: hasSkills ? 6 : 10 }}>
       <div className='flex flex-row items-center'>
         <p className='title text-left'>{t(song.name)}</p>
         {/* {song.github ? <GitHubButton song={song} /> : null} */}
@@ -92,7 +101,7 @@ const SongData = ({ song, index }: { song: Song; isOpen: boolean; index: number 
   );
 };
 
-const SongView = ({ song, index }: { song: Song; index: number }) => {
+const SongView = ({ song, index, hasSkills }: SongViewProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = useCallback(() => {
@@ -107,7 +116,7 @@ const SongView = ({ song, index }: { song: Song; index: number }) => {
       }`}
       onClick={toggleOpen}
     >
-      <SongData song={song} isOpen={isOpen} index={index} />
+      <SongData song={song} hasSkills={hasSkills} isOpen={isOpen} index={index} />
     </button>
   );
 };

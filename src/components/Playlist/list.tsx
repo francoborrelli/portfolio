@@ -18,6 +18,8 @@ export const PlaylistList: FC<PlaylistListProps> = memo(({ playlist }) => {
   const { t } = useTranslation(['playlist']);
   const order = useAppSelector((state) => state.playlist.order);
 
+  const hasSkills = playlist.songs.some((song) => song.skills.length > 0);
+
   const songs = playlist.songs.filter((song) => {
     if (order === 'ALL') return true;
     return song.type === order;
@@ -57,7 +59,7 @@ export const PlaylistList: FC<PlaylistListProps> = memo(({ playlist }) => {
       </div>
       <div>
         {songs.map((song, index) => (
-          <SongView song={song} index={index} />
+          <SongView song={song} index={index} hasSkills={hasSkills} />
         ))}
       </div>
     </div>

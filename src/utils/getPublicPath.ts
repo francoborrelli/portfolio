@@ -12,3 +12,6 @@ export const getProjectPath = (project: string) => getPath(`images/projects/${pr
 export const getExperiencePath = (experience: string) => getPath(`images/experience/${experience}`);
 
 export const getEducationPath = (education: string) => getPath(`images/education/${education}`);
+
+export const getPublicationPath = (publication: string) =>
+  getPath(`images/publications/${publication}`);
