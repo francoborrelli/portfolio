@@ -28,13 +28,14 @@ const SongData = ({ song, index, hasSkills }: SongDataProps) => {
   const dispatch = useAppDispatch();
   const [t] = useTranslation(['cv']);
 
-  const image = <img src={song.imageUrl} alt='song cover' className='w-10 h-10 mr-4 rounded-md' />;
+  const image = song.avatar || (
+    <img src={song.imageUrl} alt='song cover' className='w-10 h-10 mr-4 rounded-md' />
+  );
 
   const title = (
     <div className='flex flex-col' style={{ flex: hasSkills ? 6 : 10 }}>
       <div className='flex flex-row items-center'>
         <p className='title text-left'>{t(song.name)}</p>
-        {/* {song.github ? <GitHubButton song={song} /> : null} */}
       </div>
       <a
         target='_blank'

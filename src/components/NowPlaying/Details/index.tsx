@@ -20,6 +20,15 @@ const Profile: FC<{ song: Song }> = ({ song }) => {
 
   return (
     <NowPlayingCard title={t(song.name)!} subtitle={t(song.artist || '')} image={song.imageUrl}>
+      {song.explanation
+        ? t(song.explanation || '')
+            .split('\n')
+            .map((bullet, index) => (
+              <div className='playing-now-card-body' key={index}>
+                {bullet}
+              </div>
+            ))
+        : null}
       {hasButtons ? (
         <Space style={{ marginTop: 10 }}>
           {song.link ? (

@@ -6,4 +6,7 @@ export const order = {
   WEB: 'Websites',
   MOBILE: 'Mobile Apps',
   ALL: 'All',
+  THESIS: 'Thesis',
+  JOURNAL: 'Journal',
+  CONFERENCE: 'Conference',
 };

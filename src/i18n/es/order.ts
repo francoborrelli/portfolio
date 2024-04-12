@@ -7,4 +7,7 @@ export const order = {
   WEB: 'Sitios Web',
   MOBILE: 'Aplicaciones Móviles',
   UNLP: 'LIFIA - UNLP',
+  THESIS: 'Tesis',
+  JOURNAL: 'Revistas',
+  CONFERENCE: 'Conferencias',
 };

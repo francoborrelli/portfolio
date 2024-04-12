@@ -1,25 +1,16 @@
 import {
   ReactOriginal,
-  DockerPlain,
   JavascriptPlain,
   LaravelOriginal,
   DjangoPlain,
   GithubOriginal,
   GitlabOriginal,
-  Html5Plain,
-  Css3Plain,
-  PythonPlain,
   TensorflowOriginal,
   GitPlain,
   IonicOriginal,
-  ReactOriginalWordmark,
   ConfluencePlain,
-  RxjsPlain,
   GraphqlPlain,
   GatsbyOriginal,
-  HadoopPlain,
-  HerokuPlain,
-  LinuxPlain,
   AngularOriginal,
   TerraformOriginal,
   SlackOriginal,
@@ -36,14 +27,16 @@ import {
   MongodbOriginal,
   SassOriginal,
   ReduxOriginal,
-  PostmanPlain,
   AndroidOriginal,
   PostgresqlOriginal,
-  DynamodbPlain,
   MysqlOriginal,
+  DockerOriginal,
+  HerokuOriginal,
+  LinuxOriginal,
+  PostmanOriginal,
+  PythonOriginal,
 } from 'devicons-react';
-import { FaSpotify, FaSymfony, FaArrowsSpin, FaTelegram, FaAws, FaApple } from 'react-icons/fa6';
-import { PiGooglePlayLogo } from 'react-icons/pi';
+import { FaSpotify, FaSymfony, FaTelegram, FaAws, FaApple, FaReact } from 'react-icons/fa6';
 
 import type { TagType } from '../interfaces/types';
 
@@ -51,14 +44,16 @@ export const tags: Record<string, TagType> = {
   LinuxPlain: {
     text: 'Linux',
     color: '#FCC624',
-    icon: <LinuxPlain />,
+    icon: <LinuxOriginal />,
     years: '+7 years',
     link: 'https://www.linux.org/',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Linux-Libre_3.0.66-1_Boot.png',
   },
   Keycloak: {
     text: 'Keycloak',
-    color: '#EB5424',
+    color: '#607D8B',
     years: '+3 years',
+    image: 'https://romeralvarez.me/assets/keycloak/keycloak-logo.png',
     link: 'https://www.keycloak.org/',
     icon: (
       <svg xmlns='http://www.w3.org/2000/svg' width='800px' height='800px' viewBox='0 0 1024 1024'>
@@ -71,67 +66,85 @@ export const tags: Record<string, TagType> = {
   },
   Mysql: {
     text: 'MySQL',
-    color: '#4479A1',
+    color: 'white',
     link: 'https://www.mysql.com/',
     icon: <MysqlOriginal />,
+    image: 'https://blog.interfell.com/hubfs/MySQL%20un%20gestor%20de%20base%20de%20datos.jpg',
   },
   GooglePlay: {
     text: 'Google Play Console',
     color: '#414141',
-    icon: <PiGooglePlayLogo />,
+    icon: (
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        width='256px'
+        height='283px'
+        viewBox='0 0 256 283'
+        version='1.1'
+        preserveAspectRatio='xMidYMid'
+      >
+        <g>
+          <path
+            d='M0,251.172514 L0,31.3252701 C0,7.24403011 26.3675454,-7.80674488 47.4739401,4.24270254 L240.176825,114.161911 C261.274392,126.202531 261.274392,156.286426 240.176825,168.318218 L47.4739401,278.246254 C26.3763728,290.286874 0,275.244927 0,251.172514 Z'
+            fill='#2F80ED'
+          />
+          <path
+            d='M192.941225,87.2205822 L91.6905571,145.525784 L72.3584766,111.27534 C70.190947,107.425885 66.5737479,104.603325 62.3128567,103.436579 C58.0466395,102.239185 53.4799324,102.778685 49.6101791,104.937242 L0,132.478836 L0,166.252599 L52.7527456,136.954345 L72.1731005,171.381338 C74.3446492,175.221272 78.0521715,178.090188 82.3423044,179.255409 C86.6652503,180.417606 91.2723262,179.824271 95.1597386,177.604679 L222.663195,104.169256 L192.941225,87.2205822 Z'
+            fill='#CCF6FF'
+          />
+        </g>
+      </svg>
+    ),
     link: 'https://play.google.com/console/about/',
+    image: `https://appsquesipagan.com/wp-content/uploads/2022/07/google-play-console-1.png`,
   },
   Heroku: {
     text: 'Heroku',
-    color: '#430098',
-    icon: <HerokuPlain />,
+    color: 'white',
+    icon: <HerokuOriginal />,
     link: 'https://www.heroku.com/',
-  },
-  Hadoop: {
-    text: 'Hadoop',
-    color: '#FBC02D',
-    icon: <HadoopPlain />,
-    link: 'https://hadoop.apache.org/',
+    image: `https://i0.wp.com/unaaldia.hispasec.com/wp-content/uploads/2022/05/heroku.png?resize=800%2C302&ssl=1`,
   },
   Gatsby: {
     text: 'Gatsby',
-    color: '#663399',
+    color: 'white',
     icon: <GatsbyOriginal />,
     link: 'https://www.gatsbyjs.com/',
+    image: 'https://www.dongee.com/tutoriales/content/images/2023/02/gatsby-js.png',
   },
   Postman: {
     text: 'Postman',
     color: '#FF6C37',
-    icon: <PostmanPlain />,
+    icon: <PostmanOriginal />,
     link: 'https://www.postman.com/',
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHSwnJd9dMkqCaPp0g5wjqSYQp5z0hh9qwjR5rfgGaTg&s',
   },
   Graphql: {
     text: 'GraphQL',
-    color: '#E535AB',
+    color: 'white',
     icon: <GraphqlPlain />,
     link: 'https://graphql.org/',
-  },
-  Rxjs: {
-    text: 'Rxjs',
-    color: '#B7178C',
-    icon: <RxjsPlain />,
-    link: 'https://rxjs-dev.firebaseapp.com/',
+    image: 'https://www.dongee.com/tutoriales/content/images/2023/11/image-31.png',
   },
   Redis: {
     text: 'Redis',
-    color: '#DC382D',
+    color: '#202020',
     icon: <RedisOriginal />,
     link: 'https://redis.io/',
+    image: 'https://proximahost.es/blog/wp-content/uploads/2021/05/redis.png',
   },
   Bootstrap: {
     text: 'Bootstrap',
-    color: '#7952B3',
+    color: 'white',
     icon: <BootstrapOriginal />,
     link: 'https://getbootstrap.com/',
+    image: 'https://designmodo.com/wp-content/uploads/2021/03/bootstrap-5-layout.jpg',
   },
   Sentry: {
     text: 'Sentry',
-    color: 'black',
+    color: '#574873',
+    image: 'https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2022/05/sentry.png',
     icon: (
       <svg
         viewBox='0 0 128 128'
@@ -152,152 +165,147 @@ export const tags: Record<string, TagType> = {
   },
   React: {
     text: 'React',
-    color: 'black',
+    color: '#2a2c2e',
     icon: <ReactOriginal />,
     link: 'https://reactjs.org/',
+    image:
+      'https://images.hive.blog/DQmatbJXsYA6v6YocPZ5yvpW2Dbmg287XNYohtmyA46HrNg/reactjs-introduccion-workshop-visual-enginerring.png',
   },
   Firebase: {
     text: 'Firebase',
-    color: '#FFCA28',
+    color: '#663399',
     icon: <FirebaseOriginal />,
     link: 'https://firebase.google.com/',
+    image: 'https://developers.google.com/static/learn/images/firebase/firebase-hero.jpg',
   },
   TypeScript: {
     text: 'TypeScript',
     color: '#e6e6e6',
     icon: <TypescriptOriginal />,
     link: 'https://www.typescriptlang.org/',
+    image: 'https://img-c.udemycdn.com/course/750x422/986406_89c5_3.jpg',
   },
   JavaScript: {
     text: 'JavaScript',
     color: '#F0DB4F',
     icon: <JavascriptPlain />,
     link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-  },
-  HTML: {
-    text: 'HTML 5',
-    color: '#E34F26',
-    icon: <Html5Plain />,
-    link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-  },
-  CSS: {
-    text: 'CSS',
-    color: '#264DE4',
-    icon: <Css3Plain />,
-    link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    image: `https://blog.interfell.com/hubfs/JavaScript%20un%20lenguaje%20de%20programaci%C3%B3n.jpg`,
   },
   'Ant design': {
     text: 'Ant design',
     color: '#e6e6e6',
     icon: <AntdesignOriginal />,
     link: 'https://ant.design/',
+    image: `https://blog.openreplay.com/images/building-react-components-with-ant-design/images/hero.png`,
   },
   Python: {
     text: 'Python',
-    color: '#3776AB',
-    icon: <PythonPlain />,
+    color: '#24262d',
+    icon: <PythonOriginal />,
     link: 'https://www.python.org/',
+    image: 'https://www.dongee.com/tutoriales/content/images/2023/01/image-47.png',
   },
   'Node.js': {
     text: 'Node.js',
-    color: '#68A063',
+    color: '#3b3533',
     icon: <NodejsOriginal />,
     link: 'https://nodejs.org/',
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxT3I3S05wanE1dhd109jlO-1ujb4wZt4ibsclFJ7YnQ&s',
   },
   TensorFlow: {
     text: 'TensorFlow',
-    color: '#FF6F00',
+    color: 'white',
     icon: <TensorflowOriginal />,
     link: 'https://www.tensorflow.org/',
-  },
-  ML: {
-    text: 'ML',
-    color: '#FF6F00',
-  },
-  AI: {
-    text: 'AI',
-    color: '#FF6F00',
+    image:
+      'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVyX9h9jqUfN0LpVCwPg0iWNd4XDkKWd5hL7Wn9CwGLBZ5NyrEFTHHXu6yCxCaLL2szdaQMCkDuRdV4-JapbV329DYTjaH6ThpbzJlbvgunZK9dUgii1kAqcs-4zhyphenhyphenccaLsfffj7K3-8HFLybyOeaHjVl_n7jdPmD33o0TERamUgTdH7H3qhBLS2GuwtY/s1600/Tensorflow-septmber-update-social%20%282%29%20%281%29.png',
   },
   Django: {
     text: 'Django',
     color: '#092E20',
     icon: <DjangoPlain />,
     link: 'https://www.djangoproject.com/',
+    image: `https://thewhitecode.com/public/uploaded_images/7484_6723093675`,
   },
   Git: {
     text: 'Git',
-    color: '#F05032',
+    color: 'white',
     icon: <GitPlain />,
     link: 'https://git-scm.com/',
+    image: 'https://nodd3r.com/media/blog/Portadas_blog_21.png',
   },
   GitHub: {
     text: 'GitHub',
-    color: '#181717',
+    color: 'white',
     icon: <GithubOriginal />,
     link: 'https://github.com/',
+    image: `https://www.bew-web-agency.fr/wp-content/uploads/2024/02/GitHub.jpg`,
   },
   GitLab: {
     text: 'GitLab',
-    color: '#FCA326',
+    color: '#483a73',
     icon: <GitlabOriginal />,
     link: 'https://about.gitlab.com/',
-  },
-  'Data Science': {
-    text: 'Data Science',
-    color: '#F37726',
+    image: `https://i.blogs.es/a18540/gitlab/1366_2000.png`,
   },
   AWS: {
     text: 'AWS',
     color: '#232F3E',
     icon: <FaAws />,
     link: 'https://aws.amazon.com/',
-  },
-  Agile: {
-    text: 'Agile',
-    color: '#000000',
-    icon: <FaArrowsSpin />,
-    link: 'https://agilemanifesto.org/',
+    image: `https://assets.intersystems.com/26/bd/6a6aa762425f87ad7d5c2fe65f8c/awslogo-image.jpg`,
   },
   JIRA: {
     text: 'Jira',
     color: '#00599C',
     icon: <JiraOriginal />,
     link: 'https://www.atlassian.com/software/jira',
+    image: `https://assets-global.website-files.com/619cef5c40cb8925cd33ece3/637648a1090aeed11875e39c_what-is-jira-and-how-agile-teams-use-it.jpg`,
   },
   Slack: {
     text: 'Slack',
-    color: '#0078D4',
+    color: 'white',
     icon: <SlackOriginal />,
     link: 'https://slack.com/',
+    image:
+      'https://conexion-hr.com/wp-content/uploads/2020/07/2019-01-brandrefresh-slack-brand-refresh-unfurl-1.png',
   },
   Terraform: {
     text: 'Terraform',
-    color: '#FA7343',
+    color: 'white',
     icon: <TerraformOriginal />,
     link: 'https://www.terraform.io/',
+    image: 'https://miro.medium.com/v2/resize:fit:1400/1*QMk06VBnuiZgumwBJTAGpw.png',
   },
   'CI/CD': {
     text: 'CI/CD',
-    color: '#007AFF',
+    color: 'white',
     icon: <GithubactionsOriginal />,
     link: 'https://www.redhat.com/es/topics/devops/what-is-ci-cd',
+    image: `https://cd.foundation/wp-content/uploads/sites/78/2020/09/devops.png`,
   },
   Laravel: {
     text: 'Laravel',
-    color: '#A4C639',
+    color: 'white',
     icon: <LaravelOriginal />,
     link: 'https://laravel.com/',
+    image:
+      'https://codersfree.nyc3.cdn.digitaloceanspaces.com/posts/conoce-las-6-principales-diferencias-entre-laravel-9-y-laravel-10.jpg',
   },
   Confluence: {
     text: 'Confluence',
     color: '#172B4D',
     icon: <ConfluencePlain />,
     link: 'https://www.atlassian.com/software/confluence',
+    image: 'https://cms.rootstack.com/sites/default/files/inline-images/confluence-vector-logo.png',
   },
   Redash: {
     text: 'Redash',
     color: '#007396',
     link: 'https://redash.io/',
+    image: 'https://www.arsys.es/blog/file/uploads/2018/07/redash-01.png',
     icon: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -332,8 +340,9 @@ export const tags: Record<string, TagType> = {
   },
   AppCenter: {
     text: 'AppCenter',
-    color: '#00b1ea',
+    color: 'white',
     link: 'https://appcenter.ms/',
+    image: `https://www.vectorlogo.zone/logos/appcenterms/appcenterms-ar21.png`,
     icon: (
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -386,32 +395,39 @@ export const tags: Record<string, TagType> = {
   },
   Docker: {
     text: 'Docker',
-    color: '#06213f',
-    icon: <DockerPlain />,
+    color: 'white',
+    icon: <DockerOriginal />,
     link: 'https://www.docker.com/',
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVHVrKWyaZgsOz0GNQQjy5LpnhuwVJ0h5WSNc-yAcNEQ&s',
   },
   Angular: {
     text: 'Angular',
-    color: '#000000',
+    color: '#015aa6',
     icon: <AngularOriginal />,
     link: 'https://angular.io/',
+    image: `https://c4.wallpaperflare.com/wallpaper/10/887/781/angular-javascript-html-wallpaper-preview.jpg`,
   },
   IONIC: {
     text: 'Ionic',
-    color: '#EE4C2C',
+    color: 'white',
     icon: <IonicOriginal />,
     link: 'https://ionicframework.com/',
+    image: 'https://profile.es/wp-content/media/ionic-min.png',
   },
   ReactNative: {
     text: 'React Native',
-    color: '#009688',
-    icon: <ReactOriginalWordmark />,
+    color: '#01a4d3',
+    icon: <FaReact />,
     link: 'https://reactnative.dev/',
+    image: 'https://miro.medium.com/v2/1*AjesIvV-kkwk6LLvNf1t4A.png',
   },
   Serverless: {
     text: 'Serverless',
-    color: '#6DB33F',
+    color: 'black',
     link: 'https://www.serverless.com/',
+    image:
+      'https://assets.serverless-extras.com/website/general/social-card-serverless-company.png',
     icon: (
       <svg xmlns='http://www.w3.org/2000/svg' width='800px' height='800px' viewBox='-9.5 0 50 31'>
         <path
@@ -426,19 +442,48 @@ export const tags: Record<string, TagType> = {
   },
   Dynamo: {
     text: 'DynamoDB',
-    color: '#4053D6',
+    color: 'white',
     link: 'https://aws.amazon.com/dynamodb/',
-    icon: <DynamodbPlain />,
+    icon: (
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        width='2215'
+        height='2500'
+        viewBox='0 0 256 289'
+        preserveAspectRatio='xMidYMid'
+      >
+        <path
+          d='M165.258 288.501h3.508l57.261-28.634.953-1.347V29.964l-.953-1.354L168.766 0h-3.551l.043 288.501'
+          fill='#5294CF'
+        />
+        <path
+          d='M90.741 288.501h-3.557l-57.212-28.634-1.161-1.997-.589-226.742 1.75-2.518L87.184 0h3.601l-.044 288.501'
+          fill='#1F5B98'
+        />
+        <path d='M87.285 0h81.426v288.501H87.285V0z' fill='#2D72B8' />
+        <path
+          d='M256 137.769l-1.935-.429-27.628-2.576-.41.204-57.312-2.292h-81.43l-57.313 2.292V91.264l-.06.032.06-.128 57.313-13.28h81.43l57.312 13.28 21.069 11.199v-7.2l8.904-.974-.922-1.798-28.192-20.159-.859.279-57.312-17.759h-81.43L29.972 72.515V28.61L0 63.723v30.666l.232-.168 8.672.946v7.348L0 107.28v30.513l.232-.024 8.672.128v12.807l-7.482.112L0 150.68v30.525l8.904 4.788v7.433l-8.531.942-.373-.28v30.661l29.972 35.118v-43.901l57.313 17.759h81.43l57.481-17.811.764.335 27.821-19.862 1.219-1.979-8.904-.982v-7.284l-1.167-.466-19.043 10.265-.69 1.44-57.481 13.203v.016h-81.43v-.016l-57.313-13.259v-43.864l57.313 2.284v.056h81.43l57.312-2.34 1.305.6 26.779-2.306 1.889-.923-8.904-.128v-12.807l8.904-.128'
+          fill='#1A476F'
+        />
+        <path
+          d='M226.027 215.966v43.901L256 224.749v-30.461l-29.8 21.626-.173.052M226.027 197.421l.173-.04 29.8-16.028v-30.649l-29.973 2.757v43.96M226.2 91.208l-.173-.04v43.8L256 137.769v-30.634l-29.8-15.927M226.2 72.687L256 94.193V63.731L226.027 28.61v43.905l.173.06v.112'
+          fill='#2D72B8'
+        />
+      </svg>
+    ),
+    image: 'https://awsnewbies.com/wp-content/uploads/2018/08/dynamodb.jpg',
   },
   Rancher: {
     text: 'Rancher',
-    color: '#0075A8',
+    color: 'white',
     icon: <RancherOriginal />,
     link: 'https://rancher.com/',
+    image: 'https://www.devopsschool.com/blog/wp-content/uploads/2022/03/Rancher.jpg',
   },
   Kubernetes: {
     text: 'Kubernetes',
-    color: '#E09F3E',
+    color: 'white',
+    image: `https://www.strsistemas.com/sites/default/files/logo_kubernetes_copia.jpg`,
     icon: <KubernetesOriginal />,
     link: 'https://kubernetes.io/',
   },
@@ -447,59 +492,70 @@ export const tags: Record<string, TagType> = {
     color: '#000000',
     icon: <FaSymfony />,
     link: 'https://symfony.com/',
+    image: 'https://www.coriaweb.hosting/wp-content/uploads/2016/11/symfony_logo.png',
   },
   Mongo: {
     text: 'MongoDB',
-    color: '#47A248',
+    color: 'white',
     icon: <MongodbOriginal />,
     link: 'https://www.mongodb.com/',
+    image: 'https://i.blogs.es/a49483/logo-mongodb-tagline-2/650_1200.png',
   },
   Spotify: {
     text: 'Spotify API',
-    color: '#1DB954',
+    color: 'black',
     icon: <FaSpotify fill='#1ed760' />,
     link: 'https://developer.spotify.com/',
+    image: 'https://www.markhneedham.com/blog//uploads/2020/01/spotify-logo.png',
   },
   REDUX: {
     text: 'Redux',
-    color: '#764ABC',
+    color: 'white',
     icon: <ReduxOriginal />,
     link: 'https://redux.js.org/',
+    image:
+      'https://i1.wp.com/blog.enriqueoriol.com/wp-content/uploads/2018/08/reduxLogo.png?fit=1024%2C684',
   },
   SASS: {
     text: 'Sass',
-    color: '#CC6699',
+    color: 'white',
     icon: <SassOriginal />,
     link: 'https://sass-lang.com/',
+    image: 'https://miro.medium.com/v2/resize:fit:1400/1*MCiNLBzUI-LWK_PhVwq0xA.png',
   },
   Android: {
     text: 'Android',
-    color: '#000000',
+    color: 'white',
     icon: <AndroidOriginal />,
     link: 'https://developer.android.com/',
+    image: 'https://graffica.info/wp-content/uploads/2017/07/logo-Android-Andy.jpg',
   },
   IOS: {
     text: 'iOS',
     color: '#000000',
     icon: <FaApple />,
     link: 'https://developer.apple.com/',
+    image: `https://developer.apple.com/news/images/og/apple-developer-og.png`,
   },
   Telegram: {
-    text: 'Telegram Bot Api',
+    text: 'Telegram Bot API',
     color: '#0088cc',
     link: 'https://core.telegram.org/bots/api',
     icon: <FaTelegram />,
+    image: 'https://i.blogs.es/9f5efd/titulo/650_1200.png',
   },
   Postgres: {
     text: 'PostgreSQL',
-    color: '#336791',
+    color: 'white',
     link: 'https://www.postgresql.org/',
     icon: <PostgresqlOriginal />,
+    image: 'https://kinsta.com/wp-content/uploads/2022/02/postgres-logo.png',
   },
   Express: {
     text: 'Express',
     color: '#000000',
     link: 'https://expressjs.com/',
+    image: `https://www.dongee.com/tutoriales/content/images/2023/11/image-59.png`,
     icon: (
       <svg
         viewBox='0 0 128 128'
@@ -519,8 +575,10 @@ export const tags: Record<string, TagType> = {
   },
   Mercadopago: {
     text: 'Mercado Pago API',
-    color: '#3484A1',
+    color: 'white',
     link: 'https://www.mercadopago.com.ar/developers/es/guides',
+    image:
+      'https://newpap.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/05/12193626/mercado-pago.jpg',
     icon: (
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='-16 0 120 60'>
         <title>Mercado Pago logo - Brandlogos.net</title>
@@ -569,5 +627,7 @@ export const tags: Record<string, TagType> = {
         <path d='M24.292 15.547c1.968 0.131 3.729-1.213 4.115-3.145-0.475-0.735-1.287-1.177-2.161-1.177-2.272-0.052-3.491 2.651-1.953 4.323zM15.115 4.697l5.359-3.104-1.708-0.963-7.391 4.281 0.589 0.328 1.119 0.629 2.032-1.176zM21.161 1.307c0.089 0.027 0.161 0.1 0.188 0.188l2.484 7.593c0.047 0.131-0.005 0.272-0.125 0.344-1.968 1.156-2.916 3.489-2.317 5.693 0.656 2.391 2.937 3.953 5.401 3.703 0.135-0.011 0.265 0.073 0.307 0.203l2.563 7.803c0.041 0.131-0.011 0.271-0.125 0.344l-7.859 4.771c-0.037 0.021-0.084 0.036-0.131 0.036-0.068 0.016-0.14 0-0.203-0.041l-2.765-1.797c-0.048-0.031-0.084-0.077-0.109-0.129l-5.396-12.896-8.219 4.875c-0.016 0.011-0.037 0.021-0.052 0.032-0.084 0.036-0.183 0.025-0.261-0.021l-1.859-1.093c-0.136-0.073-0.188-0.245-0.115-0.381l7.953-15.749c0.025-0.057 0.077-0.104 0.135-0.131l7.959-4.609c0.088-0.052 0.197-0.057 0.292-0.005zM12.839 6.407l-1.932-1.089-7.693 15.229 1.396 0.823 6.631-9.015c0.063-0.089 0.167-0.136 0.271-0.12 0.104 0.011 0.192 0.077 0.235 0.177l7.228 17.296 1.933 1.251-8.063-24.552zM26.245 16.964c-2.256 0-3.787-2.292-2.923-4.376 0.86-2.083 3.563-2.619 5.156-1.025 0.595 0.593 0.928 1.396 0.928 2.235 0.005 1.749-1.412 3.167-3.161 3.167z' />
       </svg>
     ),
+    image:
+      'https://strapi.dhiwise.com/uploads/618fa90c201104b94458e1fb_64fec43a0e499e8f8b132acb_expo_git_OG_Image_cb3dfa26e3.jpg',
   },
 };

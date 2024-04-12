@@ -7,6 +7,9 @@ export type Song = {
   description?: string;
   experience?: string;
 
+  explanation?: string;
+  avatar?: any;
+
   type?: string;
 
   link?: string;
@@ -42,10 +45,11 @@ export type User = {
 export type TagType = {
   text: string;
   color: string;
-  help?: string;
   icon?: any;
   link?: string;
   years?: string;
+  experience?: string;
+  image?: string;
 };
 
 export type SocialNetwork = {
