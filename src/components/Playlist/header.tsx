@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 
 // Utils
 import tinycolor from 'tinycolor2';
+import { useAppSelector } from '../../store/store';
 
 interface PlaylistHeaderProps {
   playlist: Playlist;
@@ -23,6 +24,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
 
   const [headerWidth, setHeaderWidth] = useState(0);
   const [activeHeader, setActiveHeader] = useState(false);
+  const detailsOpen = useAppSelector((state) => state.library.detailsOpen);
 
   useEffect(() => {
     const ref = container.current;
@@ -45,7 +47,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
       window.onresize = null;
       ref?.removeEventListener('scroll', handleScroll);
     };
-  }, [container]);
+  }, [container, detailsOpen]);
 
   return (
     <div
