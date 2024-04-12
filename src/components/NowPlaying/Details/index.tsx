@@ -15,6 +15,11 @@ import { FaGithub, FaLink, FaYoutube } from 'react-icons/fa6';
 import { libraryActions } from '../../../store/slices/library';
 import { SKILLS_SONGS } from '../../../constants/cv/skills';
 
+import shuffle from 'lodash/shuffle';
+
+import parse from 'html-react-parser';
+import { RelatedSong } from './related';
+
 const Profile: FC<{ song: Song }> = ({ song }) => {
   const [t] = useTranslation(['cv']);
 
@@ -27,7 +32,7 @@ const Profile: FC<{ song: Song }> = ({ song }) => {
             .split('\n')
             .map((bullet, index) => (
               <div className='playing-now-card-body' key={index}>
-                {bullet}
+                {parse(bullet)}
               </div>
             ))
         : null}
@@ -116,7 +121,7 @@ const Description: FC<{ song: Song }> = ({ song }) => {
         .split('\n')
         .map((bullet, index) => (
           <div className='playing-now-card-body' key={index}>
-            {bullet}
+            {parse(bullet)}
           </div>
         ))}
     </NowPlayingCard>
@@ -161,6 +166,21 @@ const Images: FC<{ song: Song }> = ({ song }) => {
   );
 };
 
+const RelatedSongs: FC<{ song: Song }> = ({ song }) => {
+  const [t] = useTranslation(['playingBar']);
+  if (!song.relatedSongs || !song.relatedSongs.length) return null;
+
+  return (
+    <NowPlayingCard title={t('Related projects')}>
+      {shuffle(song.relatedSongs)
+        .slice(0, 3)
+        .map((relatedSong) => (
+          <RelatedSong key={relatedSong.name} song={relatedSong} />
+        ))}
+    </NowPlayingCard>
+  );
+};
+
 export const Details = () => {
   const song = useAppSelector((state) => state.library.songPlaying);
 
@@ -173,6 +193,7 @@ export const Details = () => {
       <Description song={song} />
       <Experience song={song} />
       <Images song={song} />
+      <RelatedSongs song={song} />
     </NowPlayingLayout>
   );
 };

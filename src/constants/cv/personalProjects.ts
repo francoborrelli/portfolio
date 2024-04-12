@@ -153,26 +153,6 @@ export const AuthoringTool = {
   skills: [tags.IONIC, tags.Firebase, tags.Android],
 } as Song;
 
-export const GralLecturas = {
-  name: 'GRAL_LECTURAS_NAME',
-  artist: 'GRAL_LECTURAS_ARTIST',
-  length: 'GRAL_LECTURAS_LENGTH',
-  type: ProjectTypesEnum.MOBILE,
-  description: 'GRAL_LECTURAS_DESCRIPTION',
-  imageUrl: getExperiencePath('gral.jpg'),
-  skills: [tags.ReactNative, tags.Android, tags.Docker, tags['CI/CD'], tags.GooglePlay],
-  link: 'https://play.google.com/store/apps/details?id=com.gral.lecturas',
-  images: [
-    getProjectPath('gral_lecturas/1.jpg'),
-    getProjectPath('gral_lecturas/2.jpg'),
-    getProjectPath('gral_lecturas/3.jpg'),
-    getProjectPath('gral_lecturas/4.jpg'),
-    getProjectPath('gral_lecturas/5.jpg'),
-    getProjectPath('gral_lecturas/6.jpg'),
-    getProjectPath('gral_lecturas/7.jpg'),
-  ],
-} as Song;
-
 export const GralLecturasWeb = {
   name: 'GRAL_LECTURAS_WEB_NAME',
   artist: 'GRAL_LECTURAS_WEB_ARTIST',
@@ -194,6 +174,27 @@ export const GralLecturasWeb = {
     getProjectPath('gral_lecturas_web/3.png'),
     getProjectPath('gral_lecturas_web/4.png'),
     getProjectPath('gral_lecturas_web/5.png'),
+  ],
+} as Song;
+
+export const GralLecturas = {
+  name: 'GRAL_LECTURAS_NAME',
+  artist: 'GRAL_LECTURAS_ARTIST',
+  length: 'GRAL_LECTURAS_LENGTH',
+  type: ProjectTypesEnum.MOBILE,
+  description: 'GRAL_LECTURAS_DESCRIPTION',
+  imageUrl: getExperiencePath('gral.jpg'),
+  skills: [tags.ReactNative, tags.Android, tags.Docker, tags['CI/CD'], tags.GooglePlay],
+  link: 'https://play.google.com/store/apps/details?id=com.gral.lecturas',
+  relatedSongs: [GralLecturasWeb],
+  images: [
+    getProjectPath('gral_lecturas/1.jpg'),
+    getProjectPath('gral_lecturas/2.jpg'),
+    getProjectPath('gral_lecturas/3.jpg'),
+    getProjectPath('gral_lecturas/4.jpg'),
+    getProjectPath('gral_lecturas/5.jpg'),
+    getProjectPath('gral_lecturas/6.jpg'),
+    getProjectPath('gral_lecturas/7.jpg'),
   ],
 } as Song;
 
@@ -358,6 +359,7 @@ export const GralTasksMobile = {
   artist: 'GRAL_TASKS_MOBILE_ARTIST',
   length: 'GRAL_TASKS_MOBILE_LENGTH',
   type: ProjectTypesEnum.MOBILE,
+  relatedSongs: [GralTasks],
   description: 'GRAL_TASKS_MOBILE_DESCRIPTION',
   imageUrl: getExperiencePath('gral.jpg'),
   images: [

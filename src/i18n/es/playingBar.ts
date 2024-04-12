@@ -15,5 +15,6 @@ export const playingBar = {
   Experience: 'Experiencia',
   Description: 'Descripción',
   Images: 'Imágenes',
+  'Related projects': 'Proyectos relacionados',
   'Exit full screen': 'Salir de pantalla completa',
 };

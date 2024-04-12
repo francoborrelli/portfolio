@@ -6,7 +6,7 @@ export type Song = {
   skills: TagType[];
   description?: string;
   experience?: string;
-
+  relatedSongs?: Song[];
   explanation?: string;
   avatar?: any;
 

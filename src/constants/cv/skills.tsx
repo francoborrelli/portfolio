@@ -8,10 +8,11 @@ import { tags } from '../tags';
 
 // Interfaces
 import type { Song } from '../../interfaces/types';
+import { PersonalProjects } from './personalProjects';
 
 export const SKILLS_SONGS = Object.values(tags)
   .map((tag) => {
-    const key = tag.text.toUpperCase().replace(' ', '_');
+    const key = tag.text.toUpperCase().replaceAll(' ', '_');
     return {
       skills: [],
       link: tag.link,
@@ -21,7 +22,9 @@ export const SKILLS_SONGS = Object.values(tags)
       length: `${key}_YEARS`,
       explanation: `${key}_HELP`,
       description: `${key}_EXPERIENCE`,
-
+      relatedSongs: PersonalProjects.songs.filter((song) =>
+        song.skills.some((s) => s.text === tag.text)
+      ),
       avatar: (
         <Avatar
           shape='square'

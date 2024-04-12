@@ -117,8 +117,7 @@ export const tags: Record<string, TagType> = {
     color: '#FF6C37',
     icon: <PostmanOriginal />,
     link: 'https://www.postman.com/',
-    image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHSwnJd9dMkqCaPp0g5wjqSYQp5z0hh9qwjR5rfgGaTg&s',
+    image: 'https://miro.medium.com/v2/resize:fit:1400/1*UjfpcPx0p410o13vpB7mlQ.png',
   },
   Graphql: {
     text: 'GraphQL',
