@@ -45,16 +45,20 @@ import {
 import { FaSpotify, FaSymfony, FaArrowsSpin, FaTelegram, FaAws, FaApple } from 'react-icons/fa6';
 import { PiGooglePlayLogo } from 'react-icons/pi';
 
-export const tags = {
+import type { TagType } from '../interfaces/types';
+
+export const tags: Record<string, TagType> = {
   LinuxPlain: {
     text: 'Linux',
     color: '#FCC624',
     icon: <LinuxPlain />,
+    years: '+7 years',
     link: 'https://www.linux.org/',
   },
   Keycloak: {
     text: 'Keycloak',
     color: '#EB5424',
+    years: '+3 years',
     link: 'https://www.keycloak.org/',
     icon: (
       <svg xmlns='http://www.w3.org/2000/svg' width='800px' height='800px' viewBox='0 0 1024 1024'>
@@ -304,7 +308,7 @@ export const tags = {
       >
         <desc>Created with Sketch.</desc>
         <defs />
-        <g id='redash-logo' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
+        <g id='redash-logo' stroke='none' strokeWidth='1' fill='none' fill-rule='evenodd'>
           <g id='Group-5' transform='translate(6.000000, 1.000000)' fill-rule='nonzero'>
             <path
               d='M12,25.3846154 C20.7263387,20.2114164 24.8265686,18.2206014 24.3006897,19.4121704 C23.7748108,20.6037394 19.6745809,25.133016 12,33 L12,25.3846154 Z'

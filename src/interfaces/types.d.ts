@@ -45,6 +45,7 @@ export type TagType = {
   help?: string;
   icon?: any;
   link?: string;
+  years?: string;
 };
 
 export type SocialNetwork = {

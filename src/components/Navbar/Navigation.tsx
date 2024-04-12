@@ -38,7 +38,7 @@ const Navigation: FC<NavigationProps> = ({ playlists = [] }) => {
       <Col span={24}>
         <Buttons />
       </Col>
-      <Col span={24} flex={1} style={{ height: `calc(97vh - ${collapsed ? '188px' : '195px'})` }}>
+      <Col span={24} flex={1} style={{ height: `calc(97vh - ${collapsed ? '199px' : '206px'})` }}>
         <YourLibrary playlists={playlists} />
       </Col>
     </Row>

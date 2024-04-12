@@ -36,7 +36,7 @@ h3 {
 .Main-section {
   border-radius: $container-border-radius;
   background-color: $background-color;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 115px);
   width: 100%;
   overflow: scroll;
 }
@@ -220,5 +220,23 @@ h3 {
     transform: translateX(-50%);
     width: 4px;
     inline-size: 4px !important;
+  }
+}
+
+.nav-header {
+  padding: 20px;
+  z-index: 1000;
+  position: fixed;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+
+  @media (max-width: $desktop-breakpoint) {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  &.active {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   }
 }

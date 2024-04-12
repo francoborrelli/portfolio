@@ -29,7 +29,7 @@ export const PlaylistList: FC<PlaylistListProps> = memo(({ playlist }) => {
     <div
       className='playlist-list'
       style={{
-        background: `linear-gradient(${playlist.color} -10%, rgb(18, 18, 18) 35%)`,
+        background: `linear-gradient(${playlist.color} -10%, #121212 35%)`,
       }}
     >
       <PlaylistControls playlist={playlist} />

@@ -48,7 +48,7 @@ const RootComponent = () => {
 
       <Router basename='portfolio'>
         <div style={{ padding: 10 }}>
-          <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(98vh - 90px)' }}>
+          <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(98vh - 105px)' }}>
             <Col
               xs={0}
               md={libraryCollapsed || !!hasDetails ? 3 : 6}
@@ -65,7 +65,7 @@ const RootComponent = () => {
               className='Main-section-col'
             >
               {/* Home | Playlists */}
-              <MainSection playlists={playlists} />
+              <MainSection />
             </Col>
 
             {/* Queue | Song details */}

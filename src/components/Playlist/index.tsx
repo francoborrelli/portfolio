@@ -3,8 +3,8 @@ import { PlaylistList } from './list';
 import { PlaylistHeader } from './header';
 
 // Utils
-import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { FC, RefObject, useEffect } from 'react';
 
 // Constants
 import { playlists } from '../../constants/cv';
@@ -13,7 +13,7 @@ import { playlists } from '../../constants/cv';
 import { useAppDispatch } from '../../store/store';
 import { playlistActions } from '../../store/slices/playlist';
 
-const PlaylistView = () => {
+const PlaylistView: FC<{ container: RefObject<HTMLDivElement> }> = (props) => {
   const dispatch = useAppDispatch();
   const { playlistId } = useParams();
 
@@ -25,7 +25,7 @@ const PlaylistView = () => {
 
   return (
     <div className='Playlist-section'>
-      <PlaylistHeader playlist={playlist} />
+      <PlaylistHeader playlist={playlist} container={props.container} />
       <PlaylistList playlist={playlist} />
     </div>
   );
