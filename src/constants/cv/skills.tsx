@@ -9,7 +9,7 @@ import { tags } from '../tags';
 // Interfaces
 import type { Song } from '../../interfaces/types';
 
-const songs = Object.values(tags)
+export const SKILLS_SONGS = Object.values(tags)
   .map((tag) => {
     const key = tag.text.toUpperCase().replace(' ', '_');
     return {
@@ -38,7 +38,7 @@ const songs = Object.values(tags)
 export const Skills = {
   name: 'SKILLS',
   color: '#4b4b4b',
+  songs: SKILLS_SONGS,
   description: 'Description 5',
-  songs: songs,
   imageUrl: getAlbumPath('artic-monkeys.jpeg'),
 };

@@ -1,7 +1,7 @@
 import { Avatar, Image, Space } from 'antd';
 import { NowPlayingCard } from './card';
 import { Tooltip } from '../../Common/Tooltip';
-import { useAppSelector } from '../../../store/store';
+import { useAppDispatch, useAppSelector } from '../../../store/store';
 
 import { NowPlayingLayout } from '../layout';
 import { useTranslation } from 'react-i18next';
@@ -12,6 +12,8 @@ import type { Song } from '../../../interfaces/types';
 
 import { PiCertificateFill } from 'react-icons/pi';
 import { FaGithub, FaLink, FaYoutube } from 'react-icons/fa6';
+import { libraryActions } from '../../../store/slices/library';
+import { SKILLS_SONGS } from '../../../constants/cv/skills';
 
 const Profile: FC<{ song: Song }> = ({ song }) => {
   const [t] = useTranslation(['cv']);
@@ -122,16 +124,24 @@ const Description: FC<{ song: Song }> = ({ song }) => {
 };
 
 const Skills: FC<{ song: Song }> = ({ song }) => {
+  const dispatch = useAppDispatch();
   const [t] = useTranslation(['playingBar']);
+
   if (!song.skills || !song.skills.length) return null;
 
   return (
     <NowPlayingCard title={t('Skills')}>
       {(song.skills || []).map((tag) => (
         <Tooltip title={tag.text} placement='top' key={tag.text}>
-          <a href={tag.link} target='_blank' rel='noreferrer'>
+          <button
+            onClick={() => {
+              dispatch(
+                libraryActions.setSongPlaying(SKILLS_SONGS.find((s) => s.name === tag.text))
+              );
+            }}
+          >
             <Avatar style={{ backgroundColor: '#5c5c5c26' }} icon={tag.icon} />
-          </a>
+          </button>
         </Tooltip>
       ))}
     </NowPlayingCard>
