@@ -47,8 +47,8 @@ const RootComponent = () => {
       <PlayingNowDrawer />
 
       <Router basename='portfolio'>
-        <div style={{ padding: 10 }}>
-          <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(98vh - 105px)' }}>
+        <div className='main-container'>
+          <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(100vh - 115px)' }}>
             <Col
               xs={0}
               md={libraryCollapsed || !!hasDetails ? 3 : 6}

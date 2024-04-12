@@ -254,3 +254,11 @@ h3 {
     height: 1.5rem !important;
   }
 }
+
+.main-container {
+  padding: 10px;
+
+  @media (max-width: $desktop-breakpoint) {
+    padding: 0;
+  }
+}
