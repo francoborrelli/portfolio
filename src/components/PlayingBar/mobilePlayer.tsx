@@ -30,6 +30,8 @@ const QueueButton = () => {
 
 const NowPlayingBarMobile = () => {
   const currentSongData = useAppSelector(getCurrentSongData);
+  const duration = useAppSelector((state) => state.playingBar.duration);
+  const currentTime = useAppSelector((state) => state.playingBar.currentTime);
 
   return (
     <div>
@@ -58,6 +60,14 @@ const NowPlayingBarMobile = () => {
             </div>
           </Col>
         </Row>
+        <div className='time-line'>
+          <div
+            className='current-time'
+            style={{
+              width: `${(currentTime / duration) * 100}%`,
+            }}
+          ></div>
+        </div>
       </div>
     </div>
   );

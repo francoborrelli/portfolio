@@ -263,6 +263,20 @@
     svg {
       fill: white !important;
     }
+
+    .time-line {
+      height: 4px;
+      width: 100%;
+      overflow: hidden;
+      margin-top: 10px;
+      margin-bottom: -10px;
+      background: rgb(0 0 0 / 24%);
+
+      .current-time {
+        height: 3px;
+        background: white;
+      }
+    }
   }
 
   .mobile-menu {
