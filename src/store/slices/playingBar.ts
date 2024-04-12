@@ -14,12 +14,14 @@ const initialState: {
   playing: boolean;
   currentSong: number;
   duration: number;
+  currentTime: number;
 } = {
   looping: true,
   muted: false,
   currentSong: 0,
   playing: false,
   duration: 0,
+  currentTime: 0,
   volume: INITIAL_VOLUME,
 };
 
@@ -42,7 +44,21 @@ const playingBarSlice = createSlice({
       state.playing = false;
       pauseAudio();
     },
+    setTime(state, action: PayloadAction<{ time: number }>) {
+      state.currentTime = action.payload.time;
+      if (!state.playing) {
+        startAudio();
+        state.playing = true;
+      }
+    },
+    increaseTime(state) {
+      state.currentTime += 0.5;
+      if (state.currentTime >= state.duration) {
+        state.currentTime = 0;
+      }
+    },
     nextSong(state) {
+      state.currentTime = 0;
       state.currentSong++;
       if (state.currentSong >= AVAILABLE_SONGS.length) {
         state.currentSong = 0;
@@ -52,12 +68,14 @@ const playingBarSlice = createSlice({
       setPlayerVolume(state.volume);
     },
     setSong(state, action: PayloadAction<{ song: number }>) {
+      state.currentTime = 0;
       state.currentSong = action.payload.song;
       state.playing = true;
       play(action.payload.song);
       setPlayerVolume(state.volume);
     },
     previousSong(state) {
+      state.currentTime = 0;
       state.currentSong--;
       if (state.currentSong < 0) {
         state.currentSong = AVAILABLE_SONGS.length - 1;
@@ -68,6 +86,7 @@ const playingBarSlice = createSlice({
     },
     setDuration(state, action: PayloadAction<number>) {
       state.duration = action.payload;
+      state.currentTime = 0;
     },
     setVolume(state, action: PayloadAction<{ volume: number }>) {
       state.volume = action.payload.volume;

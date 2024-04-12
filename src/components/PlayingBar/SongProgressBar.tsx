@@ -1,49 +1,41 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 // Components
 import { Slider } from '../Common/Slider/Slider';
 
 // Utils
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { secondsToTime } from '../../utils';
 
 // Redux
-import { useAppSelector } from '../../store/store';
 import { setCurrentTimeForPlayer } from '../../player';
+import { useAppDispatch, useAppSelector } from '../../store/store';
+import { playingBarActions } from '../../store/slices/playingBar';
 
 const SongProgressBar = () => {
-  const [current, setCurrent] = useState(0);
-
+  const dispatch = useAppDispatch();
+  const playing = useAppSelector((state) => state.playingBar.playing);
   const duration = useAppSelector((state) => state.playingBar.duration);
+  const currentTime = useAppSelector((state) => state.playingBar.currentTime);
 
   useEffect(() => {
-    setCurrent(0);
-  }, [duration]);
-
-  useEffect(() => {
-    const id = setInterval(
-      () =>
-        setCurrent((oldCount) => {
-          if (oldCount >= duration) {
-            return 0;
-          }
-          return oldCount + 1;
-        }),
-      1000
-    );
+    const id = setInterval(() => {
+      if (playing) dispatch(playingBarActions.increaseTime());
+    }, 1000);
     return () => {
       clearInterval(id);
     };
-  }, [duration]);
+  }, [playing, duration]);
 
   return (
     <div className='flex items-center justify-between w-full'>
-      <div className='text-white mr-2 text-xs'>{secondsToTime(current)}</div>
+      <div className='text-white mr-2 text-xs'>{secondsToTime(currentTime)}</div>
       <div style={{ width: '100%' }}>
         <Slider
-          value={current / duration}
+          value={currentTime / duration}
           isEnabled
           onChange={(value) => {
             const seconds = Math.floor(value * duration);
-            setCurrent(seconds);
+            dispatch(playingBarActions.setTime({ time: seconds }));
             setCurrentTimeForPlayer(seconds);
           }}
         />
