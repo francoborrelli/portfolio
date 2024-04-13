@@ -82,7 +82,7 @@ const YourLibrary = ({ playlists }: { playlists: Playlist[] }) => {
                   key={playlist.name}
                   playlist={playlist}
                   onClick={() => {
-                    onClick(index.toString());
+                    onClick(playlist.name);
                   }}
                 />
               );

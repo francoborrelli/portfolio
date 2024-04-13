@@ -16,9 +16,15 @@
 
 .avatar:hover,
 .hoverable-icon:hover {
-  cursor: pointer;
-  transform: scale(1.1);
   fill: white !important;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(1);
+  }
 }
 
 .contact-me {
@@ -43,5 +49,8 @@
 
   &:hover {
     transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(1);
   }
 }

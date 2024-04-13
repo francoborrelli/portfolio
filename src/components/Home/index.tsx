@@ -43,8 +43,8 @@ const Playlists: FC<PlaylistListProps> = ({ playlists, onSetColor }) => {
   const { t } = useTranslation(['home']);
 
   const onClick = useCallback(
-    (index: number) => {
-      navigate(`/playlist/${index}`);
+    (name: string) => {
+      navigate(`/playlist/${name}`);
     },
     [navigate]
   );
@@ -61,7 +61,7 @@ const Playlists: FC<PlaylistListProps> = ({ playlists, onSetColor }) => {
                 onSetColor(playlist.color);
               }}
             >
-              <PlaylistCard playlist={playlist} onClick={() => onClick(index)} />
+              <PlaylistCard playlist={playlist} onClick={() => onClick(playlist.name)} />
             </div>
           );
         })}

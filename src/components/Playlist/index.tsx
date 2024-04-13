@@ -21,7 +21,7 @@ const PlaylistView: FC<{ container: RefObject<HTMLDivElement> }> = (props) => {
     dispatch(playlistActions.resetOrder());
   }, [dispatch, playlistId]);
 
-  const playlist = playlists[parseInt(playlistId || '0')];
+  const playlist = playlists.find((playlist) => playlist.name === playlistId)!;
 
   return (
     <div className='Playlist-section'>
