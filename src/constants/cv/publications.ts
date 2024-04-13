@@ -83,7 +83,7 @@ const SADIO_2022 = {
   type: PublicationsTypesEnum.JOURNAL,
   length: 'SADIO_2022_LENGTH',
   description: 'SADIO_2022_DESCRIPTION',
-  imageUrl: getPublicationPath('sadio/LOGO.jpeg'),
+  imageUrl: getPublicationPath('sadio/logo.jpeg'),
   link: 'https://sedici.unlp.edu.ar/bitstream/handle/10915/142895/Documento_completo.pdf?sequence=1',
   skills: [],
 } as Song;
