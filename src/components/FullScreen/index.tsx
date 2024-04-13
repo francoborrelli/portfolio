@@ -1,13 +1,13 @@
 import { Col, Row, Space } from 'antd';
 import AlbumSongDetails from './Album';
 import { ExpandOutIcon } from '../Icons';
-import VolumeControls from '../PlayingBar/Volume';
-import ControlButtons from '../PlayingBar/ControlButtons';
-import SongProgressBar from '../PlayingBar/SongProgressBar';
+import VolumeControls from '../Layout/components/PlayingBar/Volume';
+import ControlButtons from '../Layout/components/PlayingBar/ControlButtons';
+import SongProgressBar from '../Layout/components/PlayingBar/SongProgressBar';
 
 import type { FC } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Tooltip } from '../Common/Tooltip';
+import { Tooltip } from '../Tooltip';
 
 interface FullScreenPlayerProps {
   onExit: () => Promise<void>;

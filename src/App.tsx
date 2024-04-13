@@ -1,28 +1,24 @@
 import './styles/App.scss';
 
-import { Col, ConfigProvider, Row } from 'antd';
-import { BrowserRouter as Router } from 'react-router-dom';
-
 // Components
-import PlayingBar from './components/PlayingBar';
-import MainSection from './components/MainSection';
-import { PlayingNow } from './components/NowPlaying';
-import Navigation from './components/Navbar/Navigation';
-import { LanguageModal } from './components/Common/LanguageModal';
-import { PlayingNowDrawer } from './components/Common/PlayingNowDrawer';
+import { ConfigProvider } from 'antd';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 // Utils
 import i18next from 'i18next';
-import { useEffect } from 'react';
-
-// Constants
-import { playlists } from './constants/cv';
+import { Suspense, lazy, useEffect, useRef } from 'react';
 
 // Redux
 import { Provider } from 'react-redux';
 import { libraryActions } from './store/slices/library';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store, useAppSelector } from './store/store';
+import { AppLayout } from './components/Layout';
+
+// Pages
+const Home = lazy(() => import('./pages/Home'));
+const Profile = lazy(() => import('./pages/Profile'));
+const PlaylistView = lazy(() => import('./pages/Playlist'));
 
 window.addEventListener('resize', () => {
   const vh = window.innerWidth;
@@ -32,53 +28,38 @@ window.addEventListener('resize', () => {
 });
 
 const RootComponent = () => {
+  const container = useRef<HTMLDivElement>(null);
   const language = useAppSelector((state) => state.language.language);
-  const hasDetails = useAppSelector((state) => state.library.detailsOpen);
-  const libraryCollapsed = useAppSelector((state) => state.library.collapsed);
 
   useEffect(() => {
     document.documentElement.setAttribute('lang', language);
     i18next.changeLanguage(language);
   }, [language]);
 
+  const routes = [
+    { path: '', element: <Home /> },
+    { path: '/profile', element: <Profile /> },
+    { path: '/playlist/:playlistId', element: <PlaylistView container={container} /> },
+  ];
+
   return (
     <>
-      <LanguageModal />
-      <PlayingNowDrawer />
-
       <Router basename='portfolio'>
-        <div className='main-container'>
-          <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(100vh - 125px)' }}>
-            <Col
-              xs={0}
-              md={libraryCollapsed || !!hasDetails ? 3 : 6}
-              xl={libraryCollapsed || !!hasDetails ? 2 : 6}
-            >
-              {/* Left panel - Navigation */}
-              <Navigation playlists={playlists} />
-            </Col>
-
-            <Col
-              xs={24}
-              md={!!hasDetails ? 15 : libraryCollapsed ? 21 : 18}
-              xl={!!hasDetails ? 16 : libraryCollapsed ? 22 : 18}
-              className='Main-section-col'
-            >
-              {/* Home | Playlists */}
-              <MainSection />
-            </Col>
-
-            {/* Queue | Song details */}
-            <Col xs={0} md={!!hasDetails ? 6 : 0}>
-              <PlayingNow />
-            </Col>
-          </Row>
-        </div>
-
-        {/* Player bar */}
-        <footer>
-          <PlayingBar />
-        </footer>
+        <AppLayout>
+          <div className='Main-section' ref={container}>
+            <div style={{ minHeight: 'calc(100vh - 200px)', width: '100%' }}>
+              <Routes>
+                {routes.map((route) => (
+                  <Route
+                    key={route.path}
+                    path={route.path}
+                    element={<Suspense>{route.element}</Suspense>}
+                  />
+                ))}
+              </Routes>
+            </div>
+          </div>
+        </AppLayout>
       </Router>
     </>
   );
