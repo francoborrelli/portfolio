@@ -38,10 +38,8 @@ import {
 } from 'devicons-react';
 import { FaSpotify, FaSymfony, FaTelegram, FaAws, FaApple, FaReact } from 'react-icons/fa6';
 
-import type { TagType } from '../interfaces/types';
-
-export const tags: Record<string, TagType> = {
-  LinuxPlain: {
+export const tags = {
+  Linux: {
     text: 'Linux',
     color: '#FCC624',
     icon: <LinuxOriginal />,
@@ -164,7 +162,7 @@ export const tags: Record<string, TagType> = {
   },
   React: {
     text: 'React',
-    color: '#2a2c2e',
+    color: '#474747',
     icon: <ReactOriginal />,
     link: 'https://reactjs.org/',
     image:
@@ -397,8 +395,7 @@ export const tags: Record<string, TagType> = {
     color: 'white',
     icon: <DockerOriginal />,
     link: 'https://www.docker.com/',
-    image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVHVrKWyaZgsOz0GNQQjy5LpnhuwVJ0h5WSNc-yAcNEQ&s',
+    image: 'https://miro.medium.com/v2/resize:fit:1000/1*sJrhAmlqJlW24ahHz-L8pQ.png',
   },
   Angular: {
     text: 'Angular',
@@ -552,7 +549,7 @@ export const tags: Record<string, TagType> = {
   },
   Express: {
     text: 'Express',
-    color: '#000000',
+    color: '#2c2c2c',
     link: 'https://expressjs.com/',
     image: `https://www.dongee.com/tutoriales/content/images/2023/11/image-59.png`,
     icon: (

@@ -17,11 +17,11 @@ const PlaylistView: FC<{ container: RefObject<HTMLDivElement> }> = (props) => {
   const dispatch = useAppDispatch();
   const { playlistId } = useParams();
 
-  useEffect(() => {
-    dispatch(playlistActions.resetOrder());
-  }, [dispatch, playlistId]);
-
   const playlist = playlists.find((playlist) => playlist.name.toLowerCase() === playlistId)!;
+
+  useEffect(() => {
+    dispatch(playlistActions.resetOrder({ order: playlist.defaultFilter || '' }));
+  }, [dispatch, playlist]);
 
   return (
     <div className='Playlist-section'>

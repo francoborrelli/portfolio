@@ -26,6 +26,7 @@ export type Playlist = {
   imageUrl?: string;
   color: string;
   filters?: string[];
+  defaultFilter?: string;
 };
 
 export type Description = {

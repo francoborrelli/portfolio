@@ -11,8 +11,8 @@ const playlistSlice = createSlice({
     setOrder(state, action: PayloadAction<{ order: string }>) {
       state.order = action.payload.order;
     },
-    resetOrder(state) {
-      state.order = 'ALL';
+    resetOrder(state, action: PayloadAction<{ order?: string }>) {
+      state.order = action.payload.order || 'ALL';
     },
   },
 });

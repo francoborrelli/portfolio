@@ -10,4 +10,7 @@ export const order = {
   THESIS: 'Tesis',
   JOURNAL: 'Revistas',
   CONFERENCE: 'Conferencias',
+  CURRENT: 'Actualmente usando',
+  PAST_FREQUENTLY: 'Usé en el pasado',
+  PAST_OCCASIONALLY: 'Algo de conocimiento en',
 };
