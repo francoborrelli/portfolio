@@ -65,7 +65,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
             : tinycolor(playlist.color).darken(10).toRgbString(),
         }}
       >
-        <Header opacity={1} />
+        <Header opacity={1} title={cvt(playlist.name)} />
       </div>
 
       <div style={{ padding: 40, paddingTop: 80 }}>

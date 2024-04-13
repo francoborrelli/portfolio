@@ -11,7 +11,6 @@ import type { Playlist } from '../../interfaces/types';
 
 // i18n
 import { useTranslation } from 'react-i18next';
-import { useAppSelector } from '../../store/store';
 
 interface NavigationProps {
   playlists: Playlist[];
@@ -32,13 +31,12 @@ const Buttons = () => {
 };
 
 const Navigation: FC<NavigationProps> = ({ playlists = [] }) => {
-  const collapsed = useAppSelector((state) => state.library.collapsed);
   return (
-    <Row gutter={[8, 8]} align='stretch'>
-      <Col span={24}>
+    <Row gutter={[8, 8]} style={{ height: '100%' }}>
+      <Col span={24} style={{ maxHeight: 110 }}>
         <Buttons />
       </Col>
-      <Col span={24} flex={1} style={{ height: `calc(97vh - ${collapsed ? '199px' : '206px'})` }}>
+      <Col span={24} style={{ height: 'calc(100vh - 234px)' }}>
         <YourLibrary playlists={playlists} />
       </Col>
     </Row>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import HistoryNavigation from '../Navbar/HistoryNavigation';
 
-const Header = ({ opacity }: { opacity: number }) => {
+const Header = ({ opacity }: { opacity: number; title?: string }) => {
   const { t } = useTranslation(['navbar']);
 
   return (
@@ -11,7 +11,10 @@ const Header = ({ opacity }: { opacity: number }) => {
       className={`flex r-0 w-full flex-row items-center justify-between bg-gray-900 rounded-t-md z-10`}
       style={{ backgroundColor: `rgba(12, 12, 12, ${opacity}%)` }}
     >
-      <HistoryNavigation />
+      <Space size={20}>
+        <HistoryNavigation />
+        {/* <h3 className='header-title'>{title}</h3> */}
+      </Space>
 
       <div className='flex flex-row items-center'>
         <Space>

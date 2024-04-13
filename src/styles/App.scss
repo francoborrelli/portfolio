@@ -231,12 +231,23 @@ h3 {
   border-top-left-radius: 10px;
   transition: background-color 0.3s ease-in-out;
 
+  .header-title {
+    display: none;
+    transition: display 0.3s ease-in-out;
+  }
+
   @media (max-width: $desktop-breakpoint) {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+    .header-title {
+      display: none !important;
+    }
   }
 
   &.active {
+    .header-title {
+      display: block;
+    }
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   }
 }
