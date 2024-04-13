@@ -212,7 +212,7 @@ const Gitlab = {
   \n<b>•Streamlined Issue Tracking:</b> I am proficient in using GitLab's issue tracking features to create, assign, and track issues efficiently. This enables streamlined project management and clear communication between developers and other stakeholders.
   \n<b>•Collaborative Workflow Champion:</b> My experience fosters a collaborative development environment. I can effectively use features like code reviews, merge requests, and discussions to ensure code quality and knowledge sharing within teams.
   \n<b>•Automated Workflows with GitLab CI/CD:</b> I am well-versed in GitLab CI/CD, allowing me to automate software delivery pipelines. This includes building, testing, and deploying applications in a reliable and efficient manner. My skills encompass:
-  \n<b>•Configuration File Creation: I can effectively write and maintain GitLab CI/CD configuration files (YAML) to define build stages, jobs, and deployment strategies.
+  \n<b>•Configuration File Creation:</b> I can effectively write and maintain GitLab CI/CD configuration files (YAML) to define build stages, jobs, and deployment strategies.
   \n<b>•Cache and Artifact Management:</b> I understand the importance of optimizing CI/CD pipelines by leveraging caching mechanisms and managing build artifacts efficiently.
   \n<b>•Kubernetes Integration for Deployments:</b> I have experience integrating GitLab with Kubernetes for containerized application deployments. This demonstrates my ability to manage modern development workflows effectively.`,
   GITLAB_YEARS: '5 years',

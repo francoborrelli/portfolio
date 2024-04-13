@@ -1,22 +1,23 @@
 import './styles/App.scss';
 
-// Components
-import { ConfigProvider } from 'antd';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-
 // Utils
 import i18next from 'i18next';
 import { Suspense, lazy, useEffect, useRef } from 'react';
+
+// Components
+import { ConfigProvider } from 'antd';
+import { AppLayout } from './components/Layout';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 
 // Redux
 import { Provider } from 'react-redux';
 import { libraryActions } from './store/slices/library';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store, useAppSelector } from './store/store';
-import { AppLayout } from './components/Layout';
 
 // Pages
 const Home = lazy(() => import('./pages/Home'));
+const Page404 = lazy(() => import('./pages/404'));
 const Profile = lazy(() => import('./pages/Profile'));
 const PlaylistView = lazy(() => import('./pages/Playlist'));
 
@@ -40,6 +41,7 @@ const RootComponent = () => {
     { path: '', element: <Home /> },
     { path: '/profile', element: <Profile /> },
     { path: '/playlist/:playlistId', element: <PlaylistView container={container} /> },
+    { path: '*', element: <Page404 /> },
   ];
 
   return (
