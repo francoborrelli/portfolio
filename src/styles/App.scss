@@ -241,6 +241,7 @@ h3 {
   }
 
   @media (max-width: $desktop-breakpoint) {
+    top: 0px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     .header-title {
