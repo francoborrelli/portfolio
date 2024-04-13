@@ -20,7 +20,7 @@ const PlaylistCard = ({ playlist, onClick }: { playlist: Playlist; onClick: () =
         style={{ position: 'relative' }}
         className='aspect-square md:aspect-w-1 md:aspect-h-1/2 lg:aspect-w-1 lg:aspect-h-3/4 xl:aspect-w-1 xl:aspect-h-4/5 p-4'
       >
-        <img src={playlist.imageUrl} alt='' style={{ borderRadius: 5, height: '100%' }} />
+        <img src={playlist.imageUrl} alt='' style={{ borderRadius: 5, width: '100%' }} />
         <div className='circle-play-div transition translate-y-1/4'>
           <PlayCircle />
         </div>
