@@ -3,8 +3,8 @@ import { PlaylistList } from './list';
 import { PlaylistHeader } from './header';
 
 // Utils
-import { useParams } from 'react-router-dom';
 import { FC, RefObject, useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
 // Constants
 import { playlists } from '../../constants/cv';
@@ -14,14 +14,20 @@ import { useAppDispatch } from '../../store/store';
 import { playlistActions } from '../../store/slices/playlist';
 
 const PlaylistView: FC<{ container: RefObject<HTMLDivElement> }> = (props) => {
+  const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const { playlistId } = useParams();
 
-  const playlist = playlists.find((playlist) => playlist.name.toLowerCase() === playlistId)!;
+  const playlist = playlists.find((playlist) => playlist.name.toLowerCase() === playlistId);
 
   useEffect(() => {
-    dispatch(playlistActions.resetOrder({ order: playlist.defaultFilter || '' }));
+    dispatch(playlistActions.resetOrder({ order: playlist?.defaultFilter || '' }));
   }, [dispatch, playlist]);
+
+  if (!playlist) {
+    navigate('/404');
+    return null;
+  }
 
   return (
     <div className='Playlist-section'>
