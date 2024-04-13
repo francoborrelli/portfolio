@@ -1,5 +1,8 @@
 import { Modal } from 'antd';
 
+import { memo } from 'react';
+
+// Constants
 import { AVAILABLE_LANGUAGES } from '../constants/languages';
 
 // Redux
@@ -9,7 +12,7 @@ import { useAppDispatch, useAppSelector } from '../store/store';
 // Interfaces
 import type { Languages } from '../interfaces/languages';
 
-export const LanguageModal = () => {
+export const LanguageModal = memo(() => {
   const dispatch = useAppDispatch();
   const open = useAppSelector((state) => state.language.isModalOpen);
 
@@ -51,4 +54,6 @@ export const LanguageModal = () => {
       </Modal>
     </>
   );
-};
+});
+
+LanguageModal.displayName = 'LanguageModal';

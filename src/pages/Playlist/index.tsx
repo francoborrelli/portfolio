@@ -37,4 +37,6 @@ const PlaylistView: FC<{ container: RefObject<HTMLDivElement> }> = (props) => {
   );
 };
 
+PlaylistView.displayName = 'PlaylistView';
+
 export default PlaylistView;

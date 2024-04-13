@@ -1,18 +1,21 @@
-import { Col, Row } from 'antd';
+// Redux
 import { useAppSelector } from '../../store/store';
 
 // Components
+import { Col, Row } from 'antd';
 import PlayingBar from './components/PlayingBar';
-import { PlayingNow } from './components/NowPlaying';
-import Navigation from './components/Navbar/Navigation';
 import { LanguageModal } from '../LanguageModal';
+import { PlayingNow } from './components/NowPlaying';
 import { PlayingNowDrawer } from '../PlayingNowDrawer';
+import Navigation from './components/Navbar/Navigation';
 
 // Constants
 import { playlists } from '../../constants/cv';
-import React, { FC } from 'react';
 
-export const AppLayout: FC<{ children: React.ReactElement }> = (props) => {
+// Interfaces
+import type { FC, ReactElement } from 'react';
+
+export const AppLayout: FC<{ children: ReactElement }> = (props) => {
   const hasDetails = useAppSelector((state) => state.library.detailsOpen);
   const libraryCollapsed = useAppSelector((state) => state.library.collapsed);
 
@@ -58,3 +61,5 @@ export const AppLayout: FC<{ children: React.ReactElement }> = (props) => {
     </>
   );
 };
+
+AppLayout.displayName = 'AppLayout';

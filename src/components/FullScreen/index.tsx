@@ -51,3 +51,5 @@ export const FullScreenPlayer: FC<FullScreenPlayerProps> = (props) => {
     </div>
   );
 };
+
+FullScreenPlayer.displayName = 'FullScreenPlayer';

@@ -24,4 +24,6 @@ const AlbumSongDetails = memo(() => {
   );
 });
 
+AlbumSongDetails.displayName = 'FullScreenAlbumSongDetails';
+
 export default AlbumSongDetails;

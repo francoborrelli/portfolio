@@ -1,7 +1,11 @@
+import { memo } from 'react';
+
+// Components
 import { Drawer } from 'antd';
 import { PlayingNow } from './Layout/components/NowPlaying';
+
+// Redux
 import { useAppSelector } from '../store/store';
-import { memo } from 'react';
 
 export const PlayingNowDrawer = memo(() => {
   const open = useAppSelector((state) => state.library.detailsOpen);
@@ -14,3 +18,5 @@ export const PlayingNowDrawer = memo(() => {
     </div>
   );
 });
+
+PlayingNowDrawer.displayName = 'PlayingNowDrawer';
