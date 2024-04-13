@@ -61,7 +61,10 @@ const Playlists: FC<PlaylistListProps> = ({ playlists, onSetColor }) => {
                 onSetColor(playlist.color);
               }}
             >
-              <PlaylistCard playlist={playlist} onClick={() => onClick(playlist.name)} />
+              <PlaylistCard
+                playlist={playlist}
+                onClick={() => onClick(playlist.name.toLowerCase())}
+              />
             </div>
           );
         })}

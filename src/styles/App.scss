@@ -62,6 +62,7 @@ h3 {
 
 .library {
   height: 100%;
+  overflow: hidden;
   justify-content: flex-start;
 }
 
@@ -189,7 +190,7 @@ h3 {
     transform: scale(1.1);
   }
   &:active {
-    transform: scale(0.9);
+    transform: scale(1);
   }
 }
 

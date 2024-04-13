@@ -1,13 +1,17 @@
 @use './variables.scss' as *;
 
 .Navigation-section {
-  padding: 20px 10px;
+  padding: 20px 20px;
   border-radius: $container-border-radius;
   background-color: $background-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+
+  @media (max-width: 950px) {
+    padding: 20px 10px;
+  }
 
   @media (max-width: 800px) {
     padding: 20px 5px;

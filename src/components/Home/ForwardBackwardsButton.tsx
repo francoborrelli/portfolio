@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const ForwardBackwardsButton = ({ flip }: { flip: boolean }) => {
