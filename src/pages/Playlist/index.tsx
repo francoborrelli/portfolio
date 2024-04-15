@@ -21,11 +21,14 @@ const PlaylistView: FC<{ container: RefObject<HTMLDivElement> }> = (props) => {
   const playlist = playlists.find((playlist) => playlist.name.toLowerCase() === playlistId);
 
   useEffect(() => {
+    if (!playlist) {
+      navigate('/404');
+    }
+
     dispatch(playlistActions.resetOrder({ order: playlist?.defaultFilter || '' }));
-  }, [dispatch, playlist]);
+  }, [dispatch, playlist, navigate]);
 
   if (!playlist) {
-    navigate('/404');
     return null;
   }
 
