@@ -6,7 +6,7 @@ import {
 } from '../../utils/getPublicPath';
 
 import { tags } from '../tags';
-import type { Song } from '../../interfaces/types';
+import type { Playlist, Song } from '../../interfaces/types';
 
 enum ProjectTypesEnum {
   WEB = 'WEB',
@@ -386,7 +386,7 @@ export const GralTasksMobile = {
 
 export const PersonalProjects = {
   name: 'PROJECTS',
-  color: '#113066',
+  color: '#204850',
   songs: [
     TensorflowReactNative,
     LottieReactNative,
@@ -407,5 +407,7 @@ export const PersonalProjects = {
     SpotifyClone,
   ],
   filters: [ProjectTypesEnum.WEB, ProjectTypesEnum.MOBILE],
-  imageUrl: getAlbumPath('wallows.jpg'),
-};
+  getImage(lang) {
+    return getAlbumPath('Projects-cover', lang, 'png');
+  },
+} as Playlist;

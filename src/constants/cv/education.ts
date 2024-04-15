@@ -104,7 +104,9 @@ export const Education = {
     REACT_UDEMY,
     ENGLISH_CAMBRIDGE,
   ],
-  color: '#181432',
-  imageUrl: getAlbumPath('imagine-dragons.jpg'),
+  color: '#6a6960',
+  getImage(lang) {
+    return getAlbumPath('Education-cover', lang, 'png');
+  },
   filters: [EducationTypesEnum.DEGREE, EducationTypesEnum.COURSE, EducationTypesEnum.EXAM],
 } as Playlist;

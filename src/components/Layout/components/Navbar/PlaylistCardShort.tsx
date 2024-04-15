@@ -4,8 +4,9 @@ import { useAppSelector } from '../../../../store/store';
 import { Tooltip } from '../../../Tooltip';
 
 const PlaylistCardShort = ({ playlist, onClick }: { playlist: Playlist; onClick: () => void }) => {
-  const { t } = useTranslation(['playlist', 'cv']);
   const { t: cvt } = useTranslation(['cv']);
+  const { t } = useTranslation(['playlist']);
+  const language = useAppSelector((state) => state.language.language);
   const collapsed = useAppSelector((state) => state.library.collapsed);
 
   if (collapsed) {
@@ -27,7 +28,7 @@ const PlaylistCardShort = ({ playlist, onClick }: { playlist: Playlist; onClick:
           onClick={onClick}
         >
           <div className='image aspect-square h-full items-center'>
-            <img src={playlist.imageUrl} alt='' style={{ width: 52 }} />
+            <img src={playlist.getImage(language)} alt='' style={{ width: 52 }} />
           </div>
         </button>
       </Tooltip>
@@ -37,7 +38,7 @@ const PlaylistCardShort = ({ playlist, onClick }: { playlist: Playlist; onClick:
   return (
     <button style={{ borderRadius: 10 }} className='library-card' onClick={onClick}>
       <div className='image aspect-square p-2 h-full items-center'>
-        <img src={playlist.imageUrl} alt='' style={{ width: 52 }} />
+        <img src={playlist.getImage(language)} alt='' style={{ width: 52 }} />
       </div>
       <div id='playlist-song-and-artist-name'>
         <h3 className='text-md font-semibold text-white' style={{ fontSize: 15, marginBottom: -5 }}>

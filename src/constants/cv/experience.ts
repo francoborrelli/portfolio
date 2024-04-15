@@ -109,8 +109,10 @@ const LIFIA = {
 
 export const ProfessionalExperience = {
   name: 'EXPERIENCE',
-  color: '#c45f23',
+  color: '#3d5255',
   filters: [JobTypesEnum.JOB],
   songs: [LBS, GRAL, QWERTY, LIFIA],
-  imageUrl: getAlbumPath('ed.jpg'),
+  getImage(lang) {
+    return getAlbumPath('Experience-cover', lang, 'png');
+  },
 } as Playlist;

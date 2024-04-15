@@ -23,10 +23,10 @@ export type Playlist = {
   name: string;
   description?: string;
   songs: Song[];
-  imageUrl?: string;
   color: string;
   filters?: string[];
   defaultFilter?: string;
+  getImage: (lang: string) => string;
 };
 
 export type Description = {

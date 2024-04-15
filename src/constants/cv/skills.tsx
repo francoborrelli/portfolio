@@ -109,10 +109,12 @@ export const SKILLS_SONGS = Object.entries(AVALIABLE_SKILLS)
 
 export const Skills = {
   name: 'SKILLS',
-  color: '#4b4b4b',
+  color: '#4f596e',
   songs: SKILLS_SONGS,
   defaultFilter: 'CURRENT',
   description: 'Description 5',
   filters: ['CURRENT', 'PAST_FREQUENTLY', 'PAST_OCCASIONALLY'],
-  imageUrl: getAlbumPath('artic-monkeys.jpeg'),
+  getImage(lang) {
+    return getAlbumPath('Skills-cover', lang, 'png');
+  },
 } as Playlist;

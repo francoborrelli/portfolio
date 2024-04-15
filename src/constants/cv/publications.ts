@@ -111,11 +111,13 @@ export const Publications = {
     INCISCOS_2019,
     CACIC_2018,
   ],
-  color: '#574e25',
+  color: '#746453',
   filters: [
     PublicationsTypesEnum.THESIS,
     PublicationsTypesEnum.JOURNAL,
     PublicationsTypesEnum.CONFERENCE,
   ],
-  imageUrl: getAlbumPath('kooks.jpg'),
+  getImage(lang) {
+    return getAlbumPath('Publications-cover', lang, 'png');
+  },
 } as Playlist;

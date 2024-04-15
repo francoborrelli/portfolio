@@ -24,6 +24,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
 
   const [headerWidth, setHeaderWidth] = useState(0);
   const [activeHeader, setActiveHeader] = useState(false);
+  const language = useAppSelector((state) => state.language.language);
   const detailsOpen = useAppSelector((state) => state.library.detailsOpen);
 
   useEffect(() => {
@@ -72,7 +73,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
       <div style={{ padding: 40, paddingTop: 80 }}>
         <Row gutter={[24, 24]} align={'middle'}>
           <Col xs={24} sm={6} lg={5}>
-            <img src={playlist.imageUrl} alt='' className='playlist-img' />
+            <img src={playlist.getImage(language)} alt='' className='playlist-img' />
           </Col>
           <Col xs={24} sm={18} lg={19}>
             <Row justify='space-between'>
