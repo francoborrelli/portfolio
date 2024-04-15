@@ -6,7 +6,7 @@ import { PUBLICATIONS } from './publications';
 
 export const cv = {
   // Titles
-  EXPERIENCE: 'Professional Experience',
+  EXPERIENCE: 'Experience',
   EDUCATION: 'Education',
   PROJECTS: 'Projects',
   PUBLICATIONS: 'Publications',
