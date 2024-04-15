@@ -14,6 +14,7 @@ import { useAppDispatch, useAppSelector } from '../../store/store';
 // Interfaces
 import type { FC } from 'react';
 import type { Playlist } from '../../interfaces/types';
+import { playingBarActions } from '../../store/slices/playingBar';
 
 export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
   const dispatch = useAppDispatch();
@@ -23,11 +24,11 @@ export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
   const [t] = useTranslation(['playlist']);
 
   const filters = ['ALL', ...(playlist.filters || [])];
+  const playing = useAppSelector((state) => state.playingBar.playing);
 
   const items = filters.map((filter) => ({
     key: filter,
     label: tor(filter),
-
     onClick: () => dispatch(playlistActions.setOrder({ order: filter })),
   }));
 
@@ -36,7 +37,18 @@ export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
       <Row justify='space-between' align='middle'>
         <Col>
           <Space>
-            <PlayCircle size={30} big />
+            <PlayCircle
+              size={30}
+              big
+              playing={playing}
+              onClick={() => {
+                if (playing) {
+                  dispatch(playingBarActions.setPause());
+                } else {
+                  dispatch(playingBarActions.setPlaying());
+                }
+              }}
+            />
             <MenuDots />
           </Space>
         </Col>
