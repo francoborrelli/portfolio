@@ -111,7 +111,7 @@ export const Publications = {
     INCISCOS_2019,
     CACIC_2018,
   ],
-  color: '#746453',
+  color: '#3d5255',
   filters: [
     PublicationsTypesEnum.THESIS,
     PublicationsTypesEnum.JOURNAL,

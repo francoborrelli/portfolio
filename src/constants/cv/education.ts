@@ -104,7 +104,7 @@ export const Education = {
     REACT_UDEMY,
     ENGLISH_CAMBRIDGE,
   ],
-  color: '#6a6960',
+  color: '#74725f',
   getImage(lang) {
     return getAlbumPath('Education-cover', lang, 'png');
   },

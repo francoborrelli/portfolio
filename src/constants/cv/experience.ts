@@ -109,7 +109,7 @@ const LIFIA = {
 
 export const ProfessionalExperience = {
   name: 'EXPERIENCE',
-  color: '#3d5255',
+  color: '#422023',
   filters: [JobTypesEnum.JOB],
   songs: [LBS, GRAL, QWERTY, LIFIA],
   getImage(lang) {

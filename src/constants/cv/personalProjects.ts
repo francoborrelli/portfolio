@@ -386,7 +386,7 @@ export const GralTasksMobile = {
 
 export const PersonalProjects = {
   name: 'PROJECTS',
-  color: '#204850',
+  color: '#2e3f43',
   songs: [
     TensorflowReactNative,
     LottieReactNative,
