@@ -11,5 +11,5 @@ export const order = {
   CONFERENCE: 'Conference',
   CURRENT: 'Currently using',
   PAST_FREQUENTLY: 'I used in the past',
-  PAST_OCCASIONALLY: 'Some knowledge in',
+  PAST_OCCASIONALLY: 'I know a few things about',
 };
