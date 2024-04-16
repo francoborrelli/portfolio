@@ -43,8 +43,9 @@
     padding-top: 20px;
     margin-bottom: 50px;
 
-    button {
+    button:not(.circle-button) {
       margin-bottom: 7px;
+
       background-color: transparent !important;
       &:active {
         transform: scale(0.99);
