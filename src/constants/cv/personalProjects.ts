@@ -420,7 +420,7 @@ export const GralTasksMobile = {
   ],
 } as Song;
 
-const PUERTOS = {
+export const PUERTOS = {
   name: 'PUERTOS_NAME',
   artist: 'PUERTOS_ARTIST',
   length: 'PUERTOS_LENGTH',

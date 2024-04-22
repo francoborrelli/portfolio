@@ -2,6 +2,20 @@ import { getAlbumPath } from '../../utils/getPublicPath';
 import { tags } from '../tags';
 
 import type { Playlist, Song } from '../../interfaces/types';
+import {
+  AuthoringTool,
+  GO4Clic,
+  GralLecturas,
+  GralLecturasWeb,
+  GralStatistics,
+  GralTasks,
+  GralVehicles,
+  MasEfectivo,
+  PUERTOS,
+  QwertyLandingPage,
+  RUKIR,
+  TFD,
+} from './personalProjects';
 
 const publicURL = (url: string) => process.env.PUBLIC_URL + url;
 
@@ -27,6 +41,7 @@ const LBS = {
     tags.Postman,
     tags.Redash,
   ],
+  relatedSongs: [PUERTOS],
 } as Song;
 
 const GRAL = {
@@ -60,6 +75,7 @@ const GRAL = {
     tags.AppCenter,
     tags.Postgres,
   ],
+  relatedSongs: [GralVehicles, GralLecturas, GralLecturasWeb, GralTasks],
 } as Song;
 
 const QWERTY = {
@@ -86,6 +102,7 @@ const QWERTY = {
     tags.Sentry,
     tags.Postman,
   ],
+  relatedSongs: [QwertyLandingPage, TFD, RUKIR, GO4Clic, MasEfectivo],
 } as Song;
 
 const LIFIA = {
@@ -105,6 +122,7 @@ const LIFIA = {
     tags.ReactNative,
     tags.Mongo,
   ],
+  relatedSongs: [AuthoringTool],
 } as Song;
 
 export const ProfessionalExperience = {
