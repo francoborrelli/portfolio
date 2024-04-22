@@ -120,11 +120,20 @@ const GRAL_TASKS_MOBILE = {
   GRAL_TASKS_MOBILE_DESCRIPTION: `La aplicación permite a las cuadrillas recibir en la calle de manera instantánea las tareas de obra y reparación que tienen programadas (las cuales fueron asignadas previamente desde un sistema web). Esto asegura una comunicación fluida y precisa entre la oficina y el campo, optimizando la ejecución de las tareas.\nMediante la integración de funciones de geolocalización, los miembros de la cuadrilla pueden visualizar las tareas asignadas en un mapa, lo que facilita la planificación de rutas y la optimización de los desplazamientos.\nLa aplicación permite a las cuadrillas registrar el avance del trabajo al marcar las tareas como completadas, cargar fotos del trabajo realizado y listar los materiales utilizados. Además, los usuarios tienen la posibilidad de añadir observaciones pertinentes para un registro detallado de cada tarea.\nUna de las características destacadas de esta aplicación es su integración con AppCenter, que utiliza CodePush para enviar actualizaciones automáticas a las cuadrillas. Esto garantiza que siempre estén utilizando la última versión de la aplicación, sin necesidad de intervención manual.\nPara mejorar la gestión del presentismo de las cuadrillas, se implementó un sistema de reconocimiento facial utilizando el servicio AWS Rekognition Liveness Detection. Esta funcionalidad garantiza una verificación precisa y segura de la presencia de los trabajadores en el lugar de trabajo.`,
 };
 
+const DPAS = {
+  DPAS_NAME: 'Sistema afiliatorio',
+  DPAS_ARTIST: 'Dirección provincial de acción social',
+  DPAS_LENGTH: '2021',
+  DPAS_DESCRIPTION:
+    'El sistema afiliatorio es una aplicación web desarrollada para la Dirección Provincial de Acción Social de la provincia de Buenos Aires, Argentina. La aplicación tiene como objetivo facilitar la gestión de los afiliados y los servicios que reciben.',
+};
+
 // Global Object
 
 export const PROJECTS = {
   // Projects
   ...TFD,
+  ...DPAS,
   ...RUKIR,
   ...LOTTIE,
   ...GO4CLIC,

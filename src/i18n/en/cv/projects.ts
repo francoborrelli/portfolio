@@ -119,11 +119,18 @@ const GRAL_TASKS_MOBILE = {
   GRAL_TASKS_MOBILE_DESCRIPTION: `The application allows teams to instantly receive construction and repair tasks scheduled for the street (which were previously assigned from a web system). This ensures smooth and accurate communication between the office and the field, optimizing task execution.\nThrough the integration of geolocation functions, team members can visualize assigned tasks on a map, facilitating route planning and travel optimization.\nThe application enables teams to track progress by marking tasks as completed, uploading photos of the work done, and listing materials used. Additionally, users have the ability to add relevant observations for a detailed record of each task.\nOne of the standout features of this application is its integration with AppCenter, which utilizes CodePush to automatically push updates to teams. This ensures they are always using the latest version of the application without manual intervention.\nTo enhance attendance management for teams, a facial recognition system using AWS Rekognition Liveness Detection was implemented. This functionality ensures precise and secure verification of workers' presence at the workplace.`,
 };
 
-// Global Object
+const DPAS = {
+  DPAS_NAME: 'Affiliation System',
+  DPAS_ARTIST: 'Dirección provincial de acción social',
+  DPAS_LENGTH: '2021',
+  DPAS_DESCRIPTION:
+    'The affiliation system is a web application developed for the Provincial Directorate of Social Action of the province of Buenos Aires, Argentina. The application aims to facilitate the management of affiliates and the services they receive.',
+};
 
 export const PROJECTS = {
   // Projects
   ...TFD,
+  ...DPAS,
   ...RUKIR,
   ...LOTTIE,
   ...GO4CLIC,

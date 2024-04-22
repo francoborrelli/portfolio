@@ -96,6 +96,31 @@ export const TFD = {
   ],
 } as Song;
 
+export const DPAS = {
+  name: 'DPAS_NAME',
+  artist: 'DPAS_ARTIST',
+  length: 'DPAS_LENGTH',
+  type: ProjectTypesEnum.WEB,
+  description: 'DPAS_DESCRIPTION',
+  imageUrl: getProjectPath('dpas/logo.png'),
+  link: 'https://sistema.accionsocialspb.org.ar/ingresar',
+  youtube: 'https://www.youtube.com/@DPASSPB',
+  skills: [tags.React, tags.Django, tags.Postgres, tags.Docker, tags.SASS],
+  images: [
+    getProjectPath('dpas/1.png'),
+    getProjectPath('dpas/2.png'),
+    getProjectPath('dpas/3.png'),
+    getProjectPath('dpas/4.png'),
+    getProjectPath('dpas/5.png'),
+    getProjectPath('dpas/6.png'),
+    getProjectPath('dpas/7.png'),
+    getProjectPath('dpas/8.png'),
+    getProjectPath('dpas/9.png'),
+    getProjectPath('dpas/10.png'),
+    getProjectPath('dpas/11.png'),
+  ],
+} as Song;
+
 export const CalmCovid = {
   name: 'CALM_COVID_NAME',
   artist: 'CALM_COVID_ARTIST',
@@ -397,6 +422,7 @@ export const PersonalProjects = {
     GralStores,
     TFD,
     CalmCovid,
+    DPAS,
     AuthoringTool,
     QwertyLandingPage,
     MasEfectivo,
