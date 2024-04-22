@@ -128,10 +128,18 @@ const DPAS = {
     'El sistema afiliatorio es una aplicación web desarrollada para la Dirección Provincial de Acción Social de la provincia de Buenos Aires, Argentina. La aplicación tiene como objetivo facilitar la gestión de los afiliados y los servicios que reciben.',
 };
 
+const OTI = {
+  OTI_NAME: 'Declaraciones juradas',
+  OTI_ARTIST: 'Provincia de Buenos Aires',
+  OTI_LENGTH: '2021',
+  OTI_DESCRIPTION: `Desarrollé un sistema interno para la Oficina de Transparencia Institucional de la provincia de Buenos Aires. El sistema se comunica con la Administración Federal de Ingresos Públicos (AFIP) para recibir información sobre declaraciones juradas de bienes patrimoniales y permite su posterior apertura y publicación generando PDFs con sus respectivas firmas digitales.`,
+};
+
 // Global Object
 
 export const PROJECTS = {
   // Projects
+  ...OTI,
   ...TFD,
   ...DPAS,
   ...RUKIR,

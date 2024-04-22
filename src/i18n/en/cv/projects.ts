@@ -127,8 +127,16 @@ const DPAS = {
     'The affiliation system is a web application developed for the Provincial Directorate of Social Action of the province of Buenos Aires, Argentina. The application aims to facilitate the management of affiliates and the services they receive.',
 };
 
+const OTI = {
+  OTI_NAME: 'Asset Declarations System',
+  OTI_ARTIST: 'Buenos Aires Province',
+  OTI_LENGTH: '2021',
+  OTI_DESCRIPTION: `I developed an internal system for the Office of Institutional Transparency of the province of Buenos Aires. The system communicates with the Federal Public Revenue Administration (AFIP) to receive information on asset declarations and allows for their subsequent opening and publication by generating PDFs with their respective digital signatures.`,
+};
+
 export const PROJECTS = {
   // Projects
+  ...OTI,
   ...TFD,
   ...DPAS,
   ...RUKIR,

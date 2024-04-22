@@ -121,6 +121,17 @@ export const DPAS = {
   ],
 } as Song;
 
+const OTI = {
+  name: 'OTI_NAME',
+  artist: 'OTI_ARTIST',
+  length: 'OTI_LENGTH',
+  type: ProjectTypesEnum.WEB,
+  description: 'OTI_DESCRIPTION',
+  imageUrl: getProjectPath('oti/logo.jpg'),
+  link: 'https://www.oti.com.ar/',
+  skills: [tags.Django, tags.Postgres, tags.Docker, tags['CI/CD']],
+};
+
 export const CalmCovid = {
   name: 'CALM_COVID_NAME',
   artist: 'CALM_COVID_ARTIST',
@@ -421,6 +432,7 @@ export const PersonalProjects = {
     GralTasks,
     GralStores,
     TFD,
+    OTI,
     CalmCovid,
     DPAS,
     AuthoringTool,
