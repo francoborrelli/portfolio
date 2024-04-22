@@ -129,8 +129,8 @@ const OTI = {
   description: 'OTI_DESCRIPTION',
   imageUrl: getProjectPath('oti/logo.jpg'),
   link: 'https://www.oti.com.ar/',
-  skills: [tags.Django, tags.Postgres, tags.Docker, tags['CI/CD']],
-};
+  skills: [tags.Django, tags.Postgres, tags.Docker, tags['CI/CD'], tags['Ant design']],
+} as Song;
 
 export const CalmCovid = {
   name: 'CALM_COVID_NAME',
@@ -420,10 +420,38 @@ export const GralTasksMobile = {
   ],
 } as Song;
 
+const PUERTOS = {
+  name: 'PUERTOS_NAME',
+  artist: 'PUERTOS_ARTIST',
+  length: 'PUERTOS_LENGTH',
+  type: ProjectTypesEnum.WEB,
+  description: 'PUERTOS_DESCRIPTION',
+  imageUrl: getProjectPath('puertos/logo.jpg'),
+  skills: [
+    tags.React,
+    tags.Laravel,
+    tags.Mysql,
+    tags.Docker,
+    tags['CI/CD'],
+    tags.GitLab,
+    tags.Redash,
+    tags['Ant design'],
+  ],
+  images: [
+    getProjectPath('puertos/1.png'),
+    getProjectPath('puertos/2.png'),
+    getProjectPath('puertos/3.png'),
+    getProjectPath('puertos/4.png'),
+    getProjectPath('puertos/5.png'),
+    getProjectPath('puertos/6.png'),
+  ],
+} as Song;
+
 export const PersonalProjects = {
   name: 'PROJECTS',
   color: '#2e3f43',
   songs: [
+    PUERTOS,
     TensorflowReactNative,
     LottieReactNative,
     GralVehicles,

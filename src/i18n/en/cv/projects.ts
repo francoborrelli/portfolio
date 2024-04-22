@@ -134,6 +134,13 @@ const OTI = {
   OTI_DESCRIPTION: `I developed an internal system for the Office of Institutional Transparency of the province of Buenos Aires. The system communicates with the Federal Public Revenue Administration (AFIP) to receive information on asset declarations and allows for their subsequent opening and publication by generating PDFs with their respective digital signatures.`,
 };
 
+const PUERTOS = {
+  PUERTOS_NAME: 'Ports',
+  PUERTOS_ARTIST: 'LBS Informática',
+  PUERTOS_LENGTH: '2024',
+  PUERTOS_DESCRIPTION: `The Ports project is a system for managing the entry and exit of ships in the ports of the province of Buenos Aires. The system allows for the registration of the validity period in the port, billing to the ships, maintenance tasks performed, and the operations of entry and exit of merchandise.`,
+};
+
 export const PROJECTS = {
   // Projects
   ...OTI,
@@ -142,6 +149,7 @@ export const PROJECTS = {
   ...RUKIR,
   ...LOTTIE,
   ...GO4CLIC,
+  ...PUERTOS,
   ...CALM_COVID,
   ...GRAL_STORES,
   ...MAS_EFECTIVO,

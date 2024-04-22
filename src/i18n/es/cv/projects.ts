@@ -135,6 +135,13 @@ const OTI = {
   OTI_DESCRIPTION: `Desarrollé un sistema interno para la Oficina de Transparencia Institucional de la provincia de Buenos Aires. El sistema se comunica con la Administración Federal de Ingresos Públicos (AFIP) para recibir información sobre declaraciones juradas de bienes patrimoniales y permite su posterior apertura y publicación generando PDFs con sus respectivas firmas digitales.`,
 };
 
+const PUERTOS = {
+  PUERTOS_NAME: 'Puertos',
+  PUERTOS_ARTIST: 'LBS Informática',
+  PUERTOS_LENGTH: '2024',
+  PUERTOS_DESCRIPTION: `Es un sistema para gestionar la entrada y salida de barcos en los puertos de la provincia de Buenos Aires. El sistema permite el registro del período de validez en el puerto, la facturación a los barcos, las tareas de mantenimiento realizadas y las operaciones de entrada y salida de mercancías.`,
+};
+
 // Global Object
 
 export const PROJECTS = {
@@ -145,6 +152,7 @@ export const PROJECTS = {
   ...RUKIR,
   ...LOTTIE,
   ...GO4CLIC,
+  ...PUERTOS,
   ...CALM_COVID,
   ...GRAL_STORES,
   ...MAS_EFECTIVO,
