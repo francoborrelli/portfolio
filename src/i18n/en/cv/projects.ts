@@ -141,6 +141,24 @@ const PUERTOS = {
   PUERTOS_DESCRIPTION: `The Ports project is a system for managing the entry and exit of ships in the ports of the province of Buenos Aires. The system allows for the registration of the validity period in the port, billing to the ships, maintenance tasks performed, and the operations of entry and exit of merchandise.`,
 };
 
+const COOPERATIVAS = {
+  COOPERATIVAS_NAME: 'Cooperatives',
+  COOPERATIVAS_ARTIST: 'LBS Informática',
+  COOPERATIVAS_LENGTH: '2024',
+  COOPERATIVAS_DESCRIPTION: `The cooperative system allows you to manage information about cooperatives in the province of Buenos Aires. Being able to register their activity, partners, balances, and assemblies. As well as possible subsidies granted and inspections.`,
+};
+
+const OBJECT_DETECTION_LOCATION_APP = {
+  OBJECT_DETECTION_LOCATION_APP_NAME: 'Object Detection Location App',
+  OBJECT_DETECTION_LOCATION_APP_ARTIST: 'Personal project',
+  OBJECT_DETECTION_LOCATION_APP_LENGTH: '2024',
+  OBJECT_DETECTION_LOCATION_APP_DESCRIPTION: `
+    This implementation is part of my master's thesis work for the National University of La Plata.
+  \n For this project, I developed an authoring tool that facilitates users in the co-design and co-testing of context-aware mobile applications using object positioning technologies.
+  \n This object positioning solution combines phone sensor data, such as GPS and gyroscope, with information from object recognition models that run locally on the devices. This way, the user's location can be identified and contextual information can be provided accurately.
+  \n This tool allows the creation of multiple workspaces where multiple collaborators can be invited. Additionally, it provides statistical information about the co-created content.`,
+};
+
 export const PROJECTS = {
   // Projects
   ...OTI,
@@ -153,6 +171,7 @@ export const PROJECTS = {
   ...CALM_COVID,
   ...GRAL_STORES,
   ...MAS_EFECTIVO,
+  ...COOPERATIVAS,
   ...SPOTIFY_CLONE,
   ...GRAL_LECTURAS,
   ...GRAL_VEHICLES,
@@ -163,4 +182,5 @@ export const PROJECTS = {
   ...GRAL_LECTURAS_WEB,
   ...QWERTY_LANDING_PAGE,
   ...TENSORFLOW_REACT_NATIVE,
+  ...OBJECT_DETECTION_LOCATION_APP,
 } as const;

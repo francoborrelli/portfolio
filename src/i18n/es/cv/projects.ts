@@ -142,6 +142,24 @@ const PUERTOS = {
   PUERTOS_DESCRIPTION: `Es un sistema para gestionar la entrada y salida de barcos en los puertos de la provincia de Buenos Aires. El sistema permite el registro del período de validez en el puerto, la facturación a los barcos, las tareas de mantenimiento realizadas y las operaciones de entrada y salida de mercancías.`,
 };
 
+const COOPERATIVAS = {
+  COOPERATIVAS_NAME: 'Cooperativas',
+  COOPERATIVAS_ARTIST: 'LBS Informática',
+  COOPERATIVAS_LENGTH: '2024',
+  COOPERATIVAS_DESCRIPTION: `El sistema de cooperativas permite gestionar la información de las cooperativas de la provincia de Buenos Aires. Pudiendo registrar su actividad, los socios, los balances y las asambleas. Así también como posibles subsidios otorgados y fiscalizaciones.`,
+};
+
+const OBJECT_DETECTION_LOCATION_APP = {
+  OBJECT_DETECTION_LOCATION_APP_NAME: 'Herramienta de autor con posicionamiento por objetos',
+  OBJECT_DETECTION_LOCATION_APP_ARTIST: 'Proyecto personal',
+  OBJECT_DETECTION_LOCATION_APP_LENGTH: '2024',
+  OBJECT_DETECTION_LOCATION_APP_DESCRIPTION: `
+    Esta implementación forma parte de mi trabajo de tesis de maestría para la Universidad Nacional de La Plata.
+  \n Para este proyecto desarrollé una herramienta de autor que facilita a los usuarios el co-diseño y co-testeo in-situ de aplicaciones móviles sensibles al contexto mediante tecnologías de posicionamiento por objetos.
+  \n Esta solución de posicionamiento por objetos combina datos de sensores del teléfono, como el GPS y el giroscopio, con información de modelos de reconocimiento de objetos que se ejecutan localmente en los dispositivos. De esta manera, se puede identificar la ubicación del usuario y proporcionar información contextual de manera precisa.
+  \n La herramienta permite crear varios espacios de trabajo donde se pueden invitar a múltiples colaboradores. Además, ofrece información estadística sobre lo co-creado.`,
+};
+
 // Global Object
 
 export const PROJECTS = {
@@ -156,6 +174,7 @@ export const PROJECTS = {
   ...CALM_COVID,
   ...GRAL_STORES,
   ...MAS_EFECTIVO,
+  ...COOPERATIVAS,
   ...SPOTIFY_CLONE,
   ...GRAL_LECTURAS,
   ...GRAL_VEHICLES,
@@ -166,4 +185,5 @@ export const PROJECTS = {
   ...GRAL_LECTURAS_WEB,
   ...QWERTY_LANDING_PAGE,
   ...TENSORFLOW_REACT_NATIVE,
+  ...OBJECT_DETECTION_LOCATION_APP,
 } as const;

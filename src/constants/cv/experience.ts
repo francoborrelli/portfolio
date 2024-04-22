@@ -4,10 +4,10 @@ import { tags } from '../tags';
 import type { Playlist, Song } from '../../interfaces/types';
 import {
   AuthoringTool,
+  COOPERATIVAS,
   GO4Clic,
   GralLecturas,
   GralLecturasWeb,
-  GralStatistics,
   GralTasks,
   GralVehicles,
   MasEfectivo,
@@ -41,7 +41,7 @@ const LBS = {
     tags.Postman,
     tags.Redash,
   ],
-  relatedSongs: [PUERTOS],
+  relatedSongs: [PUERTOS, COOPERATIVAS],
 } as Song;
 
 const GRAL = {

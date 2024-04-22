@@ -447,10 +447,74 @@ export const PUERTOS = {
   ],
 } as Song;
 
+export const COOPERATIVAS = {
+  name: 'COOPERATIVAS_NAME',
+  artist: 'COOPERATIVAS_ARTIST',
+  length: 'COOPERATIVAS_LENGTH',
+  type: ProjectTypesEnum.WEB,
+  description: 'COOPERATIVAS_DESCRIPTION',
+  imageUrl: getProjectPath('puertos/logo.jpg'),
+  skills: [
+    tags.React,
+    tags.Laravel,
+    tags.Mysql,
+    tags.Docker,
+    tags['CI/CD'],
+    tags.GitLab,
+    tags.Redash,
+    tags['Ant design'],
+  ],
+  images: [
+    getProjectPath('cooperativas/1.png'),
+    getProjectPath('cooperativas/2.png'),
+    getProjectPath('cooperativas/3.png'),
+    getProjectPath('cooperativas/4.png'),
+    getProjectPath('cooperativas/5.png'),
+    // getProjectPath('cooperativas/6.png'),
+    getProjectPath('cooperativas/7.png'),
+    getProjectPath('cooperativas/8.png'),
+  ],
+} as Song;
+
+export const ObjectDetectionLocationApp = {
+  name: 'OBJECT_DETECTION_LOCATION_APP_NAME',
+  artist: 'OBJECT_DETECTION_LOCATION_APP_ARTIST',
+  length: 'OBJECT_DETECTION_LOCATION_APP_LENGTH',
+  type: ProjectTypesEnum.MOBILE,
+  description: 'OBJECT_DETECTION_LOCATION_APP_DESCRIPTION',
+  imageUrl: getProjectPath('object_detection_location/logo.png'),
+  skills: [
+    tags.ReactNative,
+    tags.TensorFlow,
+    tags.Expo,
+    tags.TypeScript,
+    tags.Firebase,
+    tags.Android,
+  ],
+  images: [
+    getProjectPath('object_detection_location/0.jpg'),
+    getProjectPath('object_detection_location/1.jpg'),
+    getProjectPath('object_detection_location/2.jpg'),
+    getProjectPath('object_detection_location/3.jpg'),
+    getProjectPath('object_detection_location/4.jpg'),
+    getProjectPath('object_detection_location/5.jpg'),
+    getProjectPath('object_detection_location/6.jpg'),
+    getProjectPath('object_detection_location/7.jpg'),
+    getProjectPath('object_detection_location/8.jpg'),
+    getProjectPath('object_detection_location/9.jpg'),
+    getProjectPath('object_detection_location/10.jpg'),
+    getProjectPath('object_detection_location/11.jpg'),
+    getProjectPath('object_detection_location/12.jpg'),
+    getProjectPath('object_detection_location/13.jpg'),
+  ],
+};
+
 export const PersonalProjects = {
   name: 'PROJECTS',
   color: '#2e3f43',
   songs: [
+    // ObjectDetectionLocationApp,
+    COOPERATIVAS,
     PUERTOS,
     TensorflowReactNative,
     LottieReactNative,
