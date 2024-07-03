@@ -56,12 +56,14 @@ const SongData = ({ song, index, hasSkills }: SongDataProps) => {
       className='tablet-hidden flex flex-row items-center justify-start flex-wrap space-x-2'
     >
       <Avatar.Group
-        maxCount={2}
-        maxStyle={{
-          color: '1cb955',
-          fontWeight: 700,
-          cursor: 'pointer',
-          backgroundColor: '#1d1d1d',
+        max={{
+          count: 2,
+          style: {
+            color: '1cb955',
+            fontWeight: 700,
+            cursor: 'pointer',
+            backgroundColor: '#1d1d1d',
+          },
         }}
       >
         {(song.skills || []).map((tag) => (

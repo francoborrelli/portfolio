@@ -59,7 +59,7 @@ export const PlaylistList: FC<PlaylistListProps> = memo(({ playlist }) => {
       </div>
       <div>
         {songs.map((song, index) => (
-          <SongView song={song} index={index} hasSkills={hasSkills} />
+          <SongView song={song} key={song.name} index={index} hasSkills={hasSkills} />
         ))}
       </div>
     </div>

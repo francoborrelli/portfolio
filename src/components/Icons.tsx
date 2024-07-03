@@ -137,19 +137,22 @@ export const SkipNext = () => {
   );
 };
 
-export const Replay = (props: { active: boolean }) => (
-  <svg
-    {...props}
-    style={ControlStyle}
-    role='img'
-    aria-hidden='true'
-    viewBox='0 0 16 16'
-    data-encore-id='icon'
-    className={`hoverable-icon replay ${props.active ? 'active' : ''}`}
-  >
-    <path d='M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z'></path>
-  </svg>
-);
+export const Replay = (props: { active: boolean }) => {
+  const { active, ...otherProps } = props;
+  return (
+    <svg
+      {...otherProps}
+      style={ControlStyle}
+      role='img'
+      aria-hidden='true'
+      viewBox='0 0 16 16'
+      data-encore-id='icon'
+      className={`hoverable-icon replay ${active ? 'active' : ''}`}
+    >
+      <path d='M0 4.75A3.75 3.75 0 0 1 3.75 1h8.5A3.75 3.75 0 0 1 16 4.75v5a3.75 3.75 0 0 1-3.75 3.75H9.81l1.018 1.018a.75.75 0 1 1-1.06 1.06L6.939 12.75l2.829-2.828a.75.75 0 1 1 1.06 1.06L9.811 12h2.439a2.25 2.25 0 0 0 2.25-2.25v-5a2.25 2.25 0 0 0-2.25-2.25h-8.5A2.25 2.25 0 0 0 1.5 4.75v5A2.25 2.25 0 0 0 3.75 12H5v1.5H3.75A3.75 3.75 0 0 1 0 9.75v-5z'></path>
+    </svg>
+  );
+};
 
 export const Pause = () => (
   <svg
@@ -284,20 +287,23 @@ export const Heart = () => (
   </svg>
 );
 
-export const DetailsIcon = (props: { active: boolean }) => (
-  <svg
-    {...props}
-    style={SongExtraControlStyle}
-    data-encore-id='icon'
-    role='img'
-    aria-hidden='true'
-    viewBox='0 0 16 16'
-    className={`hoverable-icon replay ${props.active ? 'active' : ''}`}
-  >
-    <path d='M11.196 8 6 5v6l5.196-3z'></path>
-    <path d='M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25h10.5z'></path>
-  </svg>
-);
+export const DetailsIcon = (props: { active: boolean }) => {
+  const { active, ...otherProps } = props;
+  return (
+    <svg
+      {...otherProps}
+      style={SongExtraControlStyle}
+      data-encore-id='icon'
+      role='img'
+      aria-hidden='true'
+      viewBox='0 0 16 16'
+      className={`hoverable-icon replay ${active ? 'active' : ''}`}
+    >
+      <path d='M11.196 8 6 5v6l5.196-3z'></path>
+      <path d='M15.002 1.75A1.75 1.75 0 0 0 13.252 0h-10.5a1.75 1.75 0 0 0-1.75 1.75v12.5c0 .966.783 1.75 1.75 1.75h10.5a1.75 1.75 0 0 0 1.75-1.75V1.75zm-1.75-.25a.25.25 0 0 1 .25.25v12.5a.25.25 0 0 1-.25.25h-10.5a.25.25 0 0 1-.25-.25V1.75a.25.25 0 0 1 .25-.25h10.5z'></path>
+    </svg>
+  );
+};
 
 export const MicrophoneIcon = () => (
   <svg
@@ -312,18 +318,22 @@ export const MicrophoneIcon = () => (
   </svg>
 );
 
-export const ListIcon = (props: { active?: boolean }) => (
-  <svg
-    data-encore-id='icon'
-    role='img'
-    aria-hidden='true'
-    viewBox='0 0 16 16'
-    style={SongExtraControlStyle}
-    className={`hoverable-icon replay ${props.active ? 'active' : ''}`}
-  >
-    <path d='M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z'></path>
-  </svg>
-);
+export const ListIcon = (props: { active?: boolean }) => {
+  const { active, ...otherProps } = props;
+  return (
+    <svg
+      {...otherProps}
+      data-encore-id='icon'
+      role='img'
+      aria-hidden='true'
+      viewBox='0 0 16 16'
+      style={SongExtraControlStyle}
+      className={`hoverable-icon replay ${active ? 'active' : ''}`}
+    >
+      <path d='M15 15H1v-1.5h14V15zm0-4.5H1V9h14v1.5zm-14-7A2.5 2.5 0 0 1 3.5 1h9a2.5 2.5 0 0 1 0 5h-9A2.5 2.5 0 0 1 1 3.5zm2.5-1a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2h-9z'></path>
+    </svg>
+  );
+};
 
 export const DeviceIcon = () => (
   <svg
