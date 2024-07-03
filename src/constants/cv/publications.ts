@@ -88,22 +88,22 @@ const SADIO_2022 = {
   skills: [],
 } as Song;
 
-// const CC_BB_ET_2023 = {
-//   name: 'CC_BB_ET_2023_NAME',
-//   artist: 'CC_BB_ET_2023_ARTIST',
-//   type: PublicationsTypesEnum.CONFERENCE,
-//   length: 'CC_BB_ET_2023_LENGTH',
-//   description: 'CC_BB_ET_2023_DESCRIPTION',
-//   imageUrl: getPublicationPath('ccbbet/logo.png'),
-//   link: 'https://sedici.unlp.edu.ar/bitstream/handle/10915/155432/Documento_completo.pdf?sequence=1',
-//   skills: [],
-// } as Song;
+const CC_BB_ET_2023 = {
+  name: 'CC_BB_ET_2023_NAME',
+  artist: 'CC_BB_ET_2023_ARTIST',
+  type: PublicationsTypesEnum.CONFERENCE,
+  length: 'CC_BB_ET_2023_LENGTH',
+  description: 'CC_BB_ET_2023_DESCRIPTION',
+  imageUrl: getPublicationPath('ccbbet/logo.png'),
+  link: 'https://sedici.unlp.edu.ar/bitstream/handle/10915/155432/Documento_completo.pdf?sequence=1',
+  skills: [],
+} as Song;
 
 export const Publications = {
   name: 'PUBLICATIONS',
   description: 'Description 4',
   songs: [
-    // CC_BB_ET_2023,
+    CC_BB_ET_2023,
     SADIO_2022,
     JAIIO_2021,
     THESIS_SYSTEMS,

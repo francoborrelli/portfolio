@@ -92,10 +92,22 @@ const ANGULAR_UDEMY = {
   skills: [],
 } as Song;
 
+const MAGISTER_DATA_ANALYSIS = {
+  type: EducationTypesEnum.DEGREE,
+  name: 'MAGISTER_DATA_ANALYSIS_NAME',
+  artist: 'MAGISTER_DATA_ANALYSIS_ARTIST',
+  length: 'MAGISTER_DATA_ANALYSIS_LENGTH',
+  description: 'MAGISTER_DATA_ANALYSIS_DESCRIPTION',
+  link: 'https://postgrado.info.unlp.edu.ar/inteligencia-de-datos-orientada-a-big-data/',
+  imageUrl: getEducationPath('unlp/logo.jpg'),
+  skills: [],
+} as Song;
+
 export const Education = {
   name: 'EDUCATION',
   description: 'Description 3',
   songs: [
+    MAGISTER_DATA_ANALYSIS,
     LICENCIATURA,
     MIKROWAYS_KUBERNETES,
     APU,
