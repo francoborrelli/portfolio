@@ -25,6 +25,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
   const [headerWidth, setHeaderWidth] = useState(0);
   const [activeHeader, setActiveHeader] = useState(false);
   const language = useAppSelector((state) => state.language.language);
+  const collapsed = useAppSelector((state) => state.library.collapsed);
   const detailsOpen = useAppSelector((state) => state.library.detailsOpen);
 
   useEffect(() => {
@@ -48,7 +49,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
       window.onresize = null;
       ref?.removeEventListener('scroll', handleScroll);
     };
-  }, [container, detailsOpen]);
+  }, [container, detailsOpen, collapsed]);
 
   return (
     <div
