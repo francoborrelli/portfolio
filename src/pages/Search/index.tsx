@@ -37,10 +37,10 @@ export const SearchPage = () => {
       const results = data.filter((item) =>
         searchableKeys.some(
           (key) =>
-            item.skills.some((skill) => skill.text.toLowerCase().includes(search)) ||
             t(item[key] || '')
               .toLowerCase()
-              .includes(search)
+              .includes(search) ||
+            item.skills.some((skill) => skill.text.toLowerCase().includes(search))
         )
       );
 
