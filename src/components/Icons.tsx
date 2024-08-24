@@ -100,8 +100,8 @@ export const LibraryCollapsedIcon = () => (
   <svg
     data-encore-id='icon'
     role='img'
-    width='30'
-    height='30'
+    width='25'
+    height='25'
     aria-hidden='true'
     viewBox='0 0 24 24'
     stroke='#b3b3b3'

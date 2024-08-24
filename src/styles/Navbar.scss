@@ -7,7 +7,7 @@
 }
 
 .Navigation-section {
-  padding: 20px 20px;
+  padding: 20px 0px;
   border-radius: $container-border-radius;
   background-color: $background-color;
   display: flex;
@@ -21,6 +21,11 @@
 
   @media (max-width: 800px) {
     padding: 20px 5px;
+  }
+
+  &.open {
+    min-width: 260px;
+    padding: 20px 20px;
   }
 }
 

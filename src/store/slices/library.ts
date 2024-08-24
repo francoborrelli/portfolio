@@ -25,15 +25,12 @@ const librarySlice = createSlice({
       state.collapsed = true;
     },
     toggleLibrary(state) {
-      if (!state.detailsOpen) {
-        state.collapsed = !state.collapsed;
-      }
+      state.collapsed = !state.collapsed;
     },
     setSongPlaying(state, action) {
       state.songPlaying = action.payload;
       state.detailsOpen = true;
       state.queue = false;
-      state.collapsed = true;
     },
     toggleSongPlaying(state) {
       if (state.queue) {
@@ -44,11 +41,11 @@ const librarySlice = createSlice({
     },
     removeSongPlaying(state) {
       state.detailsOpen = false;
+      state.songPlaying = null;
       state.queue = false;
     },
     openQueue(state) {
       state.queue = true;
-      state.collapsed = true;
       state.detailsOpen = true;
     },
     closeQueue(state) {

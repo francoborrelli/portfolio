@@ -66,7 +66,7 @@ const YourLibrary = ({ playlists }: { playlists: Playlist[] }) => {
   );
 
   return (
-    <div className='Navigation-section library'>
+    <div className={`Navigation-section library ${!collapsed ? 'open' : ''}`}>
       <Title />
 
       <div className='library-list-container'>
