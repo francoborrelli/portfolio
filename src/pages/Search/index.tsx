@@ -17,7 +17,12 @@ const data = playlists
 
 export type SearchResult = (typeof data)[number];
 
-const searchableKeys = ['name', 'artist', 'playlist'] as const;
+const searchableKeys: (keyof SearchResult)[] = [
+  'name',
+  'artist',
+  'playlist',
+  'description',
+] as const;
 
 export const SearchPage = () => {
   const { t } = useTranslation(['cv']);
@@ -29,13 +34,14 @@ export const SearchPage = () => {
   useEffect(() => {
     if (params.search) {
       const search = params.search.toLowerCase();
-      const results = data.filter(
-        (item) =>
-          searchableKeys.some((key) =>
+      const results = data.filter((item) =>
+        searchableKeys.some(
+          (key) =>
+            item.skills.some((skill) => skill.text.toLowerCase().includes(search)) ||
             t(item[key] || '')
               .toLowerCase()
               .includes(search)
-          ) || item.skills.some((skill) => skill.text.toLowerCase().includes(search))
+        )
       );
 
       searchItems(results);
