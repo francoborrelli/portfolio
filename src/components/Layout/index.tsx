@@ -1,6 +1,3 @@
-// Redux
-import { useAppSelector } from '../../store/store';
-
 // Components
 import { Col, Flex, Row } from 'antd';
 import { Navbar } from './components/Navbar';
