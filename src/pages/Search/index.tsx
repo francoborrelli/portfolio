@@ -17,12 +17,7 @@ const data = playlists
 
 export type SearchResult = (typeof data)[number];
 
-const searchableKeys: (keyof SearchResult)[] = [
-  'name',
-  'artist',
-  'playlist',
-  'description',
-] as const;
+const searchableKeys: (keyof SearchResult)[] = ['name', 'artist', 'playlist', 'description'];
 
 export const SearchPage = () => {
   const { t } = useTranslation(['cv']);
