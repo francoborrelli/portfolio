@@ -15,6 +15,8 @@ export const cv = {
   WEB_SITE: 'Sitio Web',
   Certificate: 'Certificado',
 
+  Skill: 'Habilidad',
+
   // Experience
   ...SKILLS,
   ...PROJECTS,

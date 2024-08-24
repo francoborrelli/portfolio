@@ -14,6 +14,7 @@ import { Provider } from 'react-redux';
 import { libraryActions } from './store/slices/library';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store, useAppSelector } from './store/store';
+import { SearchPage } from './pages/Search';
 
 // Pages
 const Home = lazy(() => import('./pages/Home'));
@@ -40,6 +41,7 @@ const RootComponent = () => {
   const routes = [
     { path: '', element: <Home /> },
     { path: '/profile', element: <Profile /> },
+    { path: '/search/:search', element: <SearchPage /> },
     { path: '/playlist/:playlistId', element: <PlaylistView container={container} /> },
     { path: '*', element: <Page404 /> },
   ];

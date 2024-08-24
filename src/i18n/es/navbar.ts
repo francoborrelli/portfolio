@@ -7,6 +7,5 @@ export const navbar = {
   Language: 'Idioma',
   'Contact me': 'Contactame',
   'Source code': 'Código fuente',
-  // SearchPlaceholder: 'What do you want to play?',
-  SearchPlaceholder: '¿Qué quieres escuchar?',
+  SearchPlaceholder: '¿Qué querés reproducir?',
 };

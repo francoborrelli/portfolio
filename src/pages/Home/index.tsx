@@ -1,12 +1,10 @@
 // Components
 import { Col, Row } from 'antd';
-import PlaylistCard from './PlaylistCard';
 import { PlaylistHorizontal } from './PlaylistHorizontal';
 
 // Utils
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
-import { FC, useCallback, useState } from 'react';
+import { FC, useState } from 'react';
 
 // Constants
 import { playlists } from '../../constants/cv';
@@ -14,6 +12,7 @@ import { SOCIAL_NETWORKS } from '../../constants/socialNetworks';
 
 // Interfaces
 import type { Playlist } from '../../interfaces/types';
+import { PlaylistsSection } from './playlists';
 
 interface HomeProps {
   playlists: Playlist[];
@@ -38,36 +37,11 @@ const HorizontalPlaylists: FC<PlaylistListProps> = (props) => {
 };
 
 const Playlists: FC<PlaylistListProps> = ({ playlists, onSetColor }) => {
-  const navigate = useNavigate();
   const { t } = useTranslation(['home']);
-
-  const onClick = useCallback(
-    (name: string) => {
-      navigate(`/playlist/${name}`);
-    },
-    [navigate]
-  );
 
   return (
     <div className='home'>
-      <h1 className='playlist-header'>{t('Made for')} Franco Borrelli</h1>
-      <div className='grid grid-cols-3 xxs:grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
-        {playlists.map((playlist: Playlist, index: number) => {
-          return (
-            <div
-              key={playlist.name}
-              onMouseEnter={() => {
-                onSetColor(playlist.color);
-              }}
-            >
-              <PlaylistCard
-                playlist={playlist}
-                onClick={() => onClick(playlist.name.toLowerCase())}
-              />
-            </div>
-          );
-        })}
-      </div>
+      <PlaylistsSection title={`${t('Made for')} Franco Borrelli`} />
     </div>
   );
 };

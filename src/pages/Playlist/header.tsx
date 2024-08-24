@@ -75,7 +75,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
         </Space>
       </div>
 
-      <div style={{ padding: 40, paddingTop: 40 }}>
+      <div style={{ padding: 30, paddingTop: 30 }}>
         <Row gutter={[24, 24]} align={'middle'}>
           <Col xs={24} sm={6} lg={5}>
             <img src={playlist.getImage(language)} alt='' className='playlist-img' />

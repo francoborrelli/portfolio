@@ -1,12 +1,9 @@
 .wrapper {
-  display: block;
-  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 32px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  vertical-align: middle;
+  height: calc(100vh - 150px);
   width: 100%;
 
   .container {

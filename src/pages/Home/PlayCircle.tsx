@@ -4,7 +4,7 @@ interface PlayCircleProps {
   size?: number;
   big?: boolean;
   playing?: boolean;
-  onClick?: () => void;
+  onClick?: (e?: any) => void;
 }
 
 export const PlayCircle: FC<PlayCircleProps> = ({ size = 20, big, playing, onClick }) => {
