@@ -7,9 +7,9 @@ import { PersonalProjects } from './personalProjects';
 import { ProfessionalExperience } from './experience';
 
 export const playlists: Playlist[] = [
-  Skills,
   ProfessionalExperience,
   PersonalProjects,
   Education,
   Publications,
+  Skills,
 ];
