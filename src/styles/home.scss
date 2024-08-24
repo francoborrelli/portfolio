@@ -67,8 +67,10 @@
 }
 
 .song-artist {
+  margin-top: -2px;
   font-size: 0.8rem;
   opacity: 0.6;
+  // color: #b3b3b3;
   cursor: pointer;
   @media (max-width: 800px) {
     font-size: 0.7rem;
