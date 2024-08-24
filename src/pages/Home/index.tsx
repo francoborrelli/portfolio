@@ -1,5 +1,4 @@
 // Components
-import Header from './Header';
 import { Col, Row } from 'antd';
 import PlaylistCard from './PlaylistCard';
 import { PlaylistHorizontal } from './PlaylistHorizontal';
@@ -84,10 +83,6 @@ const Home = () => {
       }}
     >
       <Row gutter={[16, 16]}>
-        <Col span={24} style={{ maxHeight: 40 }}>
-          <Header opacity={1} />
-        </Col>
-
         <Col span={24}>
           <HorizontalPlaylists playlists={playlists} onSetColor={setColor} />
         </Col>

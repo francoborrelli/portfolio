@@ -1,10 +1,3 @@
-const MenuStyle = {
-  height: '1.5em',
-  overflow: 'visible',
-  verticalAlign: '-.125em',
-  transformOrigin: 'center',
-} as React.CSSProperties;
-
 const ControlStyle = {
   cursor: 'pointer',
   fill: '#bababa',
@@ -22,42 +15,67 @@ const SongExtraControlStyle = {
 
 export const HomeIcon = () => (
   <svg
-    style={MenuStyle}
-    className='hoverable-icon'
-    viewBox='0 0 576 512'
-    aria-hidden='true'
+    data-encore-id='icon'
     role='img'
+    aria-hidden='true'
+    viewBox='0 0 24 24'
     width='24'
     height='24'
     stroke='#b3b3b3'
     fill='#b3b3b3'
-    xmlns='http://www.w3.org/2000/svg'
+    strokeWidth='0'
   >
-    <g transform='translate(288 256)' transform-origin='144 0'>
-      <g transform='translate(0,0) scale(1,1)'>
-        <path
-          d='M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z'
-          fill='#b3b3b3'
-          transform='translate(-288 -256)'
-        ></path>
-      </g>
-    </g>
+    <path d='M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z'></path>
+  </svg>
+);
+
+export const ActiveHomeIcon = () => (
+  <svg
+    data-encore-id='icon'
+    role='img'
+    aria-hidden='true'
+    viewBox='0 0 24 24'
+    width='24'
+    height='24'
+    stroke='#fff'
+    fill='#fff'
+    strokeWidth='0'
+  >
+    <path d='M13.5 1.515a3 3 0 0 0-3 0L3 5.845a2 2 0 0 0-1 1.732V21a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6h4v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V7.577a2 2 0 0 0-1-1.732l-7.5-4.33z'></path>
+  </svg>
+);
+
+export const BrowseIcon = () => (
+  <svg
+    data-encore-id='icon'
+    role='img'
+    aria-hidden='true'
+    viewBox='0 0 24 24'
+    width='24'
+    height='24'
+    stroke='#b3b3b3'
+    fill='#b3b3b3'
+    strokeWidth='0'
+    className='hoverable-icon'
+  >
+    <path d='M15 15.5c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2z'></path>
+    <path d='M1.513 9.37A1 1 0 0 1 2.291 9h19.418a1 1 0 0 1 .979 1.208l-2.339 11a1 1 0 0 1-.978.792H4.63a1 1 0 0 1-.978-.792l-2.339-11a1 1 0 0 1 .201-.837zM3.525 11l1.913 9h13.123l1.913-9H3.525zM4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4h-2V3H6v3H4V2z'></path>
   </svg>
 );
 
 export const SearchIcon = () => (
   <svg
-    xmlns='http://www.w3.org/2000/svg'
-    x='0px'
-    y='0px'
+    data-encore-id='icon'
+    role='img'
+    aria-hidden='true'
+    viewBox='0 0 24 24'
     width='24'
     height='24'
-    viewBox='0 0 30 30'
     stroke='#b3b3b3'
     fill='#b3b3b3'
-    className='hoverable-icon'
+    strokeWidth='0'
   >
-    <path d='M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z'></path>
+    <path d='M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z'></path>
   </svg>
 );
 
@@ -82,8 +100,8 @@ export const LibraryCollapsedIcon = () => (
   <svg
     data-encore-id='icon'
     role='img'
-    width='24'
-    height='24'
+    width='30'
+    height='30'
     aria-hidden='true'
     viewBox='0 0 24 24'
     stroke='#b3b3b3'

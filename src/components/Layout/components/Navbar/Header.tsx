@@ -1,7 +1,6 @@
-import { Space } from 'antd';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import HistoryNavigation from '../../components/Layout/components/Navbar/HistoryNavigation';
+import { Space } from 'antd';
 
 const Header = ({ opacity }: { opacity: number; title?: string }) => {
   const { t } = useTranslation(['navbar']);
@@ -11,11 +10,6 @@ const Header = ({ opacity }: { opacity: number; title?: string }) => {
       className={`flex r-0 w-full flex-row items-center justify-between bg-gray-900 rounded-t-md z-10`}
       style={{ backgroundColor: `rgba(12, 12, 12, ${opacity}%)` }}
     >
-      <Space size={20}>
-        <HistoryNavigation />
-        {/* <h3 className='header-title'>{title}</h3> */}
-      </Space>
-
       <div className='flex flex-row items-center'>
         <Space>
           <a
@@ -32,14 +26,17 @@ const Header = ({ opacity }: { opacity: number; title?: string }) => {
             <News />
           </div> */}
 
-          <Link to='/profile'>
-            <img
-              className='avatar'
-              id='user-avatar'
-              alt='User Avatar'
-              src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}
-            />
-          </Link>
+          <div className='avatar-container'>
+            <Link to='/profile'>
+              <img
+                className='avatar'
+                id='user-avatar'
+                alt='User Avatar'
+                style={{ marginTop: -1 }}
+                src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}
+              />
+            </Link>
+          </div>
         </Space>
       </div>
     </div>

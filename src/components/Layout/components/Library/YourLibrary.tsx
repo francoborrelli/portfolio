@@ -7,17 +7,19 @@ import { useNavigate } from 'react-router-dom';
 
 // Components
 import { Col, Space } from 'antd';
+import { Tooltip } from '../../../Tooltip';
 import PlaylistCardShort from './PlaylistCardShort';
 
 // I18n
 import { LanguageButton } from './Language';
 import { useTranslation } from 'react-i18next';
 
+// Redux
+import { libraryActions } from '../../../../store/slices/library';
+import { useAppDispatch, useAppSelector } from '../../../../store/store';
+
 // Interfaces
 import type { Playlist } from '../../../../interfaces/types';
-import { useAppDispatch, useAppSelector } from '../../../../store/store';
-import { libraryActions } from '../../../../store/slices/library';
-import { Tooltip } from '../../../Tooltip';
 
 const Title = memo(() => {
   const dispatch = useAppDispatch();

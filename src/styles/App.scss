@@ -11,6 +11,39 @@
 @use './FullScreen.scss';
 @use './PlaylistPage.scss';
 
+@font-face {
+  font-family: SpotifyMixUITitle;
+  src: url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2);
+}
+
+@font-face {
+  font-family: SpotifyMixUITitle;
+  font-weight: bold;
+  src: url(https://encore.scdn.co/fonts/SpotifyMixUITitle-Bold-37290f1de77f297fcc26d71e9afcf43f.woff2);
+}
+
+@font-face {
+  font-family: SpotifyMixUITitle;
+  font-weight: bolder;
+  src: url(https://encore.scdn.co/fonts/SpotifyMixUITitle-Extrabold-ba6c73cd7f82c81e49cf2204017803ed.woff2);
+}
+
+@font-face {
+  font-family: SpotifyMixUI;
+  src: url(https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2);
+}
+
+@font-face {
+  font-family: SpotifyMixUI;
+  font-weight: bold;
+  src: url(https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2);
+}
+
+html,
+body {
+  font-family: SpotifyMixUI !important;
+}
+
 /* hide scrollbar but allow scrolling */
 .Main-section,
 .playing-section {
@@ -36,7 +69,7 @@ h3 {
 .Main-section {
   border-radius: $container-border-radius;
   background-color: $background-color;
-  height: calc(100vh - 115px);
+  height: calc(100vh - 160px);
   width: 100%;
   overflow: scroll;
 }
@@ -272,7 +305,7 @@ h3 {
 }
 
 .main-container {
-  padding: 10px;
+  padding: 7px;
 
   @media (max-width: $desktop-breakpoint) {
     padding: 0;

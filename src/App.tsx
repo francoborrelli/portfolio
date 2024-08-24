@@ -49,7 +49,7 @@ const RootComponent = () => {
       <Router basename='portfolio'>
         <AppLayout>
           <div className='Main-section' ref={container}>
-            <div style={{ minHeight: 'calc(100vh - 200px)', width: '100%' }}>
+            <div style={{ minHeight: 'calc(100vh - 230px)', width: '100%' }}>
               <Routes>
                 {routes.map((route) => (
                   <Route
@@ -69,7 +69,7 @@ const RootComponent = () => {
 
 function App() {
   return (
-    <ConfigProvider>
+    <ConfigProvider theme={{ token: { fontFamily: 'SpotifyMixUI' } }}>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <RootComponent />

@@ -3,11 +3,12 @@ import { useAppSelector } from '../../store/store';
 
 // Components
 import { Col, Row } from 'antd';
+import { Navbar } from './components/Navbar';
+import { Library } from './components/Library';
 import PlayingBar from './components/PlayingBar';
 import { LanguageModal } from '../LanguageModal';
 import { PlayingNow } from './components/NowPlaying';
 import { PlayingNowDrawer } from '../PlayingNowDrawer';
-import Navigation from './components/Navbar/Navigation';
 
 // Constants
 import { playlists } from '../../constants/cv';
@@ -28,13 +29,16 @@ export const AppLayout: FC<{ children: ReactElement }> = (props) => {
       {/* Main Component */}
       <div className='main-container'>
         <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(100vh - 125px)' }}>
+          <Col span={24}>
+            <Navbar />
+          </Col>
           <Col
             xs={0}
             md={libraryCollapsed || !!hasDetails ? 3 : 6}
             xl={libraryCollapsed || !!hasDetails ? 2 : 6}
           >
             {/* Left panel - Navigation */}
-            <Navigation playlists={playlists} />
+            <Library playlists={playlists} />
           </Col>
 
           <Col

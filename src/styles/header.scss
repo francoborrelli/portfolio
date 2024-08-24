@@ -1,10 +1,33 @@
 @use './variables.scss' as *;
 
-.avatar {
-  border: 2px solid black;
+.avatar-container {
   border-radius: 50%;
-  width: 30px;
+  background-color: #1f1f1f;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   cursor: pointer;
+
+  .avatar {
+    border-radius: 50%;
+    width: 30px;
+  }
+
+  &:hover,
+  .hoverable-icon:hover {
+    fill: white !important;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(1);
+    }
+  }
 }
 
 .news {
@@ -14,21 +37,9 @@
   border: 2px solid $background-color;
 }
 
-.avatar:hover,
-.hoverable-icon:hover {
-  fill: white !important;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-  &:active {
-    transform: scale(1);
-  }
-}
-
 .contact-me {
-  font-size: 13px;
+  font-size: 0.875rem;
+  font-weight: 700;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   position: relative;

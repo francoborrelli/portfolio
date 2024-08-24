@@ -1,5 +1,5 @@
 import { Col, Row, Space } from 'antd';
-import Header from '../Home/Header';
+import Header from '../../components/Layout/components/Navbar/Header';
 
 // I18n
 import { useTranslation } from 'react-i18next';
@@ -67,7 +67,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
             : tinycolor(playlist.color).darken(10).toRgbString(),
         }}
       >
-        <Header opacity={1} title={cvt(playlist.name)} />
+        <div>s</div>
       </div>
 
       <div style={{ padding: 40, paddingTop: 80 }}>
@@ -85,7 +85,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
                 <Space className='owner'>
                   <Link to='/profile'>
                     <img
-                      className='avatar'
+                      className='playlist-avatar'
                       id='user-avatar'
                       alt='User Avatar'
                       src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}

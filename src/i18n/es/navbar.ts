@@ -6,4 +6,5 @@ export const navbar = {
   'Expand your library': 'Expandir tu biblioteca',
   Language: 'Idioma',
   'Contact me': 'Contactame',
+  'Source code': 'Código fuente',
 };
