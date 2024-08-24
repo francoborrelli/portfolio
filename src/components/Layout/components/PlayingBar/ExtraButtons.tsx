@@ -120,7 +120,7 @@ const ExtraControlButtons = () => {
   const { t } = useTranslation(['playingBar']);
 
   return (
-    <div style={{ marginBottom: 10 }}>
+    <div>
       <Row gutter={18} align='middle'>
         <DetailsButton />
 

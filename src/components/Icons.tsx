@@ -1,7 +1,7 @@
 const ControlStyle = {
   cursor: 'pointer',
   fill: '#bababa',
-  height: '1.45em',
+  height: '1.15em',
   verticalAlign: '-.125em',
   transformOrigin: 'center',
   overflow: 'visible',

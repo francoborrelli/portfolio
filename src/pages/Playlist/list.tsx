@@ -51,7 +51,7 @@ export const PlaylistList: FC<PlaylistListProps> = memo(({ playlist }) => {
               justifyContent: 'flex-end',
             }}
           >
-            <h3 className='text-center' style={{ marginRight: 50 }}>
+            <h3 style={{ marginRight: 10, textAlign: 'right' }}>
               <Clock />
             </h3>
           </div>
