@@ -1,5 +1,4 @@
 import { Col, Row, Space } from 'antd';
-import Header from '../../components/Layout/components/Navbar/Header';
 
 // I18n
 import { useTranslation } from 'react-i18next';
@@ -12,6 +11,7 @@ import { Link } from 'react-router-dom';
 // Utils
 import tinycolor from 'tinycolor2';
 import { useAppSelector } from '../../store/store';
+import { PlayCircleButton } from './playCircle';
 
 interface PlaylistHeaderProps {
   playlist: Playlist;
@@ -32,7 +32,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
 
     const handleScroll = () => {
       if (ref) {
-        setActiveHeader(ref.scrollTop > 150);
+        setActiveHeader(ref.scrollTop > 260);
       }
     };
 
@@ -67,10 +67,13 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
             : tinycolor(playlist.color).darken(10).toRgbString(),
         }}
       >
-        <div>s</div>
+        <Space>
+          <PlayCircleButton size={20} />
+          <h1 className='nav-header-playlist-title'>{cvt(playlist.name)}</h1>
+        </Space>
       </div>
 
-      <div style={{ padding: 40, paddingTop: 80 }}>
+      <div style={{ padding: 40, paddingTop: 40 }}>
         <Row gutter={[24, 24]} align={'middle'}>
           <Col xs={24} sm={6} lg={5}>
             <img src={playlist.getImage(language)} alt='' className='playlist-img' />

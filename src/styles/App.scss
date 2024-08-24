@@ -41,7 +41,8 @@
 
 html,
 body {
-  font-family: SpotifyMixUI !important;
+  font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek,
+    CircularSp-Deva, var(sans-serif) !important;
 }
 
 /* hide scrollbar but allow scrolling */
@@ -261,17 +262,21 @@ h3 {
 }
 
 .nav-header {
-  padding: 20px;
-  z-index: 1000;
+  z-index: 2;
   position: fixed;
-  border-top-right-radius: 10px;
+  margin-top: -1px;
+  visibility: hidden;
+  padding: 10px 20px;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   border-top-left-radius: 10px;
-  transition: background-color 0.3s ease-in-out;
+  border-top-right-radius: 10px;
+  overscroll-behavior: contain;
 
-  .header-title {
-    display: none;
-    transition: display 0.3s ease-in-out;
-  }
+  overscroll-behavior-y: contain;
+  overflow-y: auto;
+  transition: background-color 0.3s ease-in-out, visibility 0.2s ease-in-out;
 
   @media (max-width: $desktop-breakpoint) {
     top: 0px;
@@ -283,10 +288,22 @@ h3 {
   }
 
   &.active {
+    visibility: visible;
+
     .header-title {
       display: block;
     }
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-header-playlist-title {
+    font-size: 1.6rem;
+    white-space: nowrap;
+    margin-block: 0px;
+    font-weight: 600;
+    color: $text-primary-color;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 
