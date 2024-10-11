@@ -62,6 +62,14 @@ const CC_BB_ET_2023 = {
   CC_BB_ET_2023_DESCRIPTION: `Sentiment analysis is a process of identifying and extracting personal information from textual data. It has become essential for businesses and organizations to understand customers' opinions, emotions, and attitudes toward their products, services, or brands. While creating a custom sentiment analysis model can provide tailored results for specific datasets, it can also be time-consuming, resource-intensive, and require a high level of expertise in machine learning. Some tools offer a faster and more accessible alternative to users without a background in machine learning to create a custom model. However, researchers and practitioners usually do not know how to choose the best tool for each domain. This paper compares and evaluates some sentiment analysis tools' differences, considering how they were built and how suitable they are for analyzing sentiments on some specific topics. In particular, this paper focuses on four popular sentiment analysis tools for Python: TextBlob, Vader, Flair, and HuggingFace Transformers.`,
 };
 
+const CC_BB_ET_2024 = {
+  CC_BB_ET_2024_NAME: 'Object Recognition Models for Indoor Users’ Location',
+  CC_BB_ET_2024_ARTIST:
+    'Cloud Computing, Big Data and Emerging Topics. JCC-BD&ET 2024. Communications in Computer and Information Science, vol 2189. Springer, Cham.',
+  CC_BB_ET_2024_LENGTH: '2024',
+  CC_BB_ET_2024_DESCRIPTION: `Despite technological advances, precise positioning within buildings remains a considerable challenge. In this context, the present paper explores the research of user location in indoor spaces, embracing object recognition models executed directly on mobile devices. Our proposal is based on designing a generic solution architecture adaptable to any physical environment, enabling the definition and usage of relevant generic objects within the environment to determine the users’ current location. This proposal uses Computer Vision, employing object recognition models for positioning. This kind of indoor positioning benefits from the growth of smartphones’ functionalities and capabilities, thus avoiding the need to install additional infrastructures in physical spaces. A specific implementation of this architecture for React Native is presented, using the TensorFlow platform to support object recognition. This implementation allows demonstrating how this positioning works through concrete use cases. In addition, some lessons learned are discussed, which we hope will contribute to this topic.`,
+};
+
 // Global Object
 
 export const PUBLICATIONS = {
@@ -69,6 +77,7 @@ export const PUBLICATIONS = {
   ...CACIC_2018,
   ...JAIIO_2021,
   ...CC_BB_ET_2023,
+  ...CC_BB_ET_2024,
   ...INCISCOS_2019,
   ...THESIS_SYSTEMS,
   ...ENFOQUE_UTE_2020,

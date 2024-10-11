@@ -64,11 +64,20 @@ const CC_BB_ET_2023 = {
   CC_BB_ET_2023_DESCRIPTION: `El análisis de sentimientos es un proceso de identificación y extracción de información personal de datos textuales. Se ha vuelto esencial para empresas y organizaciones entender las opiniones, emociones y actitudes de los clientes hacia sus productos, servicios o marcas. Si bien crear un modelo personalizado de análisis de sentimientos puede proporcionar resultados adaptados para conjuntos de datos específicos, también puede ser un proceso que requiere mucho tiempo, recursos y un alto nivel de experiencia en aprendizaje automático. Algunas herramientas ofrecen una alternativa más rápida y accesible para los usuarios sin experiencia en aprendizaje automático para crear un modelo personalizado. Sin embargo, los investigadores y profesionales generalmente no saben cómo elegir la mejor herramienta para cada dominio. Este documento compara y evalúa las diferencias entre algunas herramientas de análisis de sentimientos, considerando cómo fueron construidas y qué tan adecuadas son para analizar sentimientos sobre temas específicos. En particular, este documento se centra en cuatro herramientas populares de análisis de sentimientos para Python: TextBlob, Vader, Flair y HuggingFace Transformers.`,
 };
 
+const CC_BB_ET_2024 = {
+  CC_BB_ET_2024_NAME: 'Object Recognition Models for Indoor Users’ Location',
+  CC_BB_ET_2024_ARTIST:
+    'Congreso de Ciencias de la Computación, Bases de Datos y Educación en Tecnología. Communications in Computer and Information Science, vol 2189. Springer, Cham',
+  CC_BB_ET_2024_LENGTH: '2024',
+  CC_BB_ET_2024_DESCRIPTION: `A pesar de los avances tecnológicos, la localización precisa dentro de los edificios sigue siendo un desafío considerable. En este contexto, el presente artículo explora la investigación de la ubicación de usuarios en espacios interiores, utilizando modelos de reconocimiento de objetos ejecutados directamente en dispositivos móviles. Nuestra propuesta se basa en diseñar una arquitectura de solución genérica, adaptable a cualquier entorno físico, que permita la definición y uso de objetos genéricos relevantes dentro del entorno para determinar la ubicación actual de los usuarios. Esta propuesta utiliza Visión por Computadora, empleando modelos de reconocimiento de objetos para la localización. Este tipo de posicionamiento en interiores se beneficia del crecimiento de las funcionalidades y capacidades de los smartphones, evitando así la necesidad de instalar infraestructuras adicionales en los espacios físicos. Se presenta una implementación específica de esta arquitectura para React Native, utilizando la plataforma TensorFlow para soportar el reconocimiento de objetos. Esta implementación permite demostrar cómo funciona este posicionamiento a través de casos de uso concretos. Además, se discuten algunas lecciones aprendidas, que esperamos contribuyan a este tema.`,
+};
+
 // Global Object
 export const PUBLICATIONS = {
   ...SADIO_2022,
   ...CACIC_2018,
   ...JAIIO_2021,
+  ...CC_BB_ET_2024,
   ...CC_BB_ET_2023,
   ...INCISCOS_2019,
   ...THESIS_SYSTEMS,

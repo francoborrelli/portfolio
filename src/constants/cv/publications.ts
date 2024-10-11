@@ -99,10 +99,22 @@ const CC_BB_ET_2023 = {
   skills: [],
 } as Song;
 
+const CC_BB_ET_2024 = {
+  name: 'CC_BB_ET_2024_NAME',
+  artist: 'CC_BB_ET_2024_ARTIST',
+  type: PublicationsTypesEnum.CONFERENCE,
+  length: 'CC_BB_ET_2024_LENGTH',
+  description: 'CC_BB_ET_2024_DESCRIPTION',
+  imageUrl: getPublicationPath('springer/logo.png'),
+  link: 'https://link.springer.com/chapter/10.1007/978-3-031-70807-7_3',
+  skills: [],
+} as Song;
+
 export const Publications = {
   name: 'PUBLICATIONS',
   description: 'Description 4',
   songs: [
+    CC_BB_ET_2024,
     CC_BB_ET_2023,
     SADIO_2022,
     JAIIO_2021,
