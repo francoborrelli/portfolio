@@ -15,7 +15,7 @@ import { PlayCircleButton } from './playCircle';
 
 interface PlaylistHeaderProps {
   playlist: Playlist;
-  container: RefObject<HTMLDivElement>;
+  container: RefObject<HTMLDivElement | null>;
 }
 
 export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container }) => {

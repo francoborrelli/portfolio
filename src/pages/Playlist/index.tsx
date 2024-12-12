@@ -13,7 +13,7 @@ import { playlists } from '../../constants/cv';
 import { useAppDispatch } from '../../store/store';
 import { playlistActions } from '../../store/slices/playlist';
 
-const PlaylistView: FC<{ container: RefObject<HTMLDivElement> }> = (props) => {
+const PlaylistView: FC<{ container: RefObject<HTMLDivElement | null> }> = (props) => {
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
   const { playlistId } = useParams();

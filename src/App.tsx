@@ -30,7 +30,7 @@ window.addEventListener('resize', () => {
 });
 
 const RootComponent = () => {
-  const container = useRef<HTMLDivElement>(null);
+  const container = useRef<HTMLDivElement | null>(null);
   const language = useAppSelector((state) => state.language.language);
 
   useEffect(() => {
