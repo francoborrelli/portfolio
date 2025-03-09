@@ -4,6 +4,7 @@ import type { Playlist, Song } from '../../interfaces/types';
 import { getAlbumPath, getEducationPath, getPublicationPath } from '../../utils/getPublicPath';
 
 export enum PublicationsTypesEnum {
+  ALL = 'ALL',
   THESIS = 'THESIS',
   JOURNAL = 'JOURNAL',
   CONFERENCE = 'CONFERENCE',
