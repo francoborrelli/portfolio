@@ -420,7 +420,7 @@ export const GralTasksMobile = {
   ],
 } as Song;
 
-export const PUERTOS = {
+export const Puertos = {
   name: 'PUERTOS_NAME',
   artist: 'PUERTOS_ARTIST',
   length: 'PUERTOS_LENGTH',
@@ -447,7 +447,7 @@ export const PUERTOS = {
   ],
 } as Song;
 
-export const COOPERATIVAS = {
+export const Cooperativas = {
   name: 'COOPERATIVAS_NAME',
   artist: 'COOPERATIVAS_ARTIST',
   length: 'COOPERATIVAS_LENGTH',
@@ -509,13 +509,44 @@ export const ObjectDetectionLocationApp = {
   ],
 };
 
+export const RondasDeNegocio = {
+  name: 'RONDAS_DE_NEGOCIO_NAME',
+  artist: 'RONDAS_DE_NEGOCIO_ARTIST',
+  length: 'RONDAS_DE_NEGOCIO_LENGTH',
+  type: ProjectTypesEnum.WEB,
+  description: 'RONDAS_DE_NEGOCIO_DESCRIPTION',
+  imageUrl: getProjectPath('puertos/logo.jpg'),
+  skills: [
+    tags.React,
+    tags['Node.js'],
+    tags.Mysql,
+    tags.Docker,
+    tags['CI/CD'],
+    tags.GitLab,
+    tags['Ant design'],
+  ],
+  images: [
+    getProjectPath('rondas/2.png'),
+    getProjectPath('rondas/1.png'),
+    getProjectPath('rondas/3.png'),
+    getProjectPath('rondas/4.png'),
+    getProjectPath('rondas/5.png'),
+    getProjectPath('rondas/6.png'),
+    getProjectPath('rondas/7.png'),
+    getProjectPath('rondas/8.png'),
+    getProjectPath('rondas/9.png'),
+    getProjectPath('rondas/10.png'),
+  ],
+} as Song;
+
 export const PersonalProjects = {
   name: 'PROJECTS',
   color: '#2e3f43',
   songs: [
-    // ObjectDetectionLocationApp,
-    COOPERATIVAS,
-    PUERTOS,
+    RondasDeNegocio,
+    ObjectDetectionLocationApp,
+    Cooperativas,
+    Puertos,
     TensorflowReactNative,
     LottieReactNative,
     GralVehicles,

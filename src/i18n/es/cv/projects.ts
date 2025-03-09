@@ -136,14 +136,14 @@ const OTI = {
 };
 
 const PUERTOS = {
-  PUERTOS_NAME: 'Puertos',
+  PUERTOS_NAME: 'Puertos | Provincia de Buenos Aires',
   PUERTOS_ARTIST: 'LBS Informática',
   PUERTOS_LENGTH: '2024',
   PUERTOS_DESCRIPTION: `Es un sistema para gestionar la entrada y salida de barcos en los puertos de la provincia de Buenos Aires. El sistema permite el registro del período de validez en el puerto, la facturación a los barcos, las tareas de mantenimiento realizadas y las operaciones de entrada y salida de mercancías.`,
 };
 
 const COOPERATIVAS = {
-  COOPERATIVAS_NAME: 'Cooperativas',
+  COOPERATIVAS_NAME: 'Cooperativas | Provincia de Buenos Aires',
   COOPERATIVAS_ARTIST: 'LBS Informática',
   COOPERATIVAS_LENGTH: '2024',
   COOPERATIVAS_DESCRIPTION: `El sistema de cooperativas permite gestionar la información de las cooperativas de la provincia de Buenos Aires. Pudiendo registrar su actividad, los socios, los balances y las asambleas. Así también como posibles subsidios otorgados y fiscalizaciones.`,
@@ -158,6 +158,14 @@ const OBJECT_DETECTION_LOCATION_APP = {
   \n Para este proyecto desarrollé una herramienta de autor que facilita a los usuarios el co-diseño y co-testeo in-situ de aplicaciones móviles sensibles al contexto mediante tecnologías de posicionamiento por objetos.
   \n Esta solución de posicionamiento por objetos combina datos de sensores del teléfono, como el GPS y el giroscopio, con información de modelos de reconocimiento de objetos que se ejecutan localmente en los dispositivos. De esta manera, se puede identificar la ubicación del usuario y proporcionar información contextual de manera precisa.
   \n La herramienta permite crear varios espacios de trabajo donde se pueden invitar a múltiples colaboradores. Además, ofrece información estadística sobre lo co-creado.`,
+};
+
+const RONDAS_DE_NEGOCIO = {
+  RONDAS_DE_NEGOCIO_NAME: 'Rondas de negocio | Provincia de Buenos Aires',
+  RONDAS_DE_NEGOCIO_ARTIST: 'LBS Informática',
+  RONDAS_DE_NEGOCIO_LENGTH: '2025',
+  RONDAS_DE_NEGOCIO_DESCRIPTION:
+    'Desarrollo del frontend y backend del sistema de Rondas de Negocio, una plataforma diseñada para la provincia de Buenos Aires que busca facilitar el intercambio comercial entre PyMEs, grandes empresas y cooperativas. El sistema permite gestionar de manera eficiente la inscripción de participantes, la programación de reuniones y el seguimiento de oportunidades comerciales, fomentando un entorno propicio para la concreción de negocios y alianzas estratégicas.',
 };
 
 // Global Object
@@ -183,6 +191,7 @@ export const PROJECTS = {
   ...GRAL_STATISTICS,
   ...GRAL_TASKS_MOBILE,
   ...GRAL_LECTURAS_WEB,
+  ...RONDAS_DE_NEGOCIO,
   ...QWERTY_LANDING_PAGE,
   ...TENSORFLOW_REACT_NATIVE,
   ...OBJECT_DETECTION_LOCATION_APP,

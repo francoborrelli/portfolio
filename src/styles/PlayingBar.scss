@@ -227,6 +227,10 @@
   }
 }
 
+#song-and-artist-name {
+  display: grid;
+}
+
 .replay {
   &:after {
     background-color: currentcolor;

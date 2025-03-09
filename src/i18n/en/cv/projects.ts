@@ -135,17 +135,25 @@ const OTI = {
 };
 
 const PUERTOS = {
-  PUERTOS_NAME: 'Ports',
+  PUERTOS_NAME: 'Ports | Buenos Aires Province',
   PUERTOS_ARTIST: 'LBS Informática',
   PUERTOS_LENGTH: '2024',
   PUERTOS_DESCRIPTION: `The Ports project is an app for managing the entry and exit of ships in the ports of the province of Buenos Aires. The system allows for the registration of the validity period in the port, billing to the ships, maintenance tasks performed, and the operations of entry and exit of merchandise.`,
 };
 
 const COOPERATIVAS = {
-  COOPERATIVAS_NAME: 'Cooperatives',
+  COOPERATIVAS_NAME: 'Cooperatives | Buenos Aires Province',
   COOPERATIVAS_ARTIST: 'LBS Informática',
   COOPERATIVAS_LENGTH: '2024',
   COOPERATIVAS_DESCRIPTION: `This app for cooperatives allows you to manage information about cooperatives in the province of Buenos Aires. Being able to register their activity, partners, balances, and assemblies. As well as possible subsidies granted and inspections.`,
+};
+
+const RONDAS_DE_NEGOCIO = {
+  RONDAS_DE_NEGOCIO_NAME: 'Business Rounds | Buenos Aires Province',
+  RONDAS_DE_NEGOCIO_ARTIST: 'LBS Informática',
+  RONDAS_DE_NEGOCIO_LENGTH: '2025',
+  RONDAS_DE_NEGOCIO_DESCRIPTION:
+    'Development of the frontend and backend for the Business Rounds app, a platform designed for the province of Buenos Aires aimed at facilitating commercial exchange between SMEs, large companies, and cooperatives. The system efficiently manages participant registration, meeting scheduling, and commercial opportunity tracking, fostering a conducive environment for business deals and strategic alliances.',
 };
 
 const OBJECT_DETECTION_LOCATION_APP = {
@@ -178,6 +186,7 @@ export const PROJECTS = {
   ...GRAL_TASKS_WEB,
   ...AUTHORING_TOOL,
   ...GRAL_STATISTICS,
+  ...RONDAS_DE_NEGOCIO,
   ...GRAL_TASKS_MOBILE,
   ...GRAL_LECTURAS_WEB,
   ...QWERTY_LANDING_PAGE,

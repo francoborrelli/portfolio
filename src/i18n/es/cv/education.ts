@@ -52,7 +52,7 @@ const MAGISTER_DATA_ANALYSIS = {
   MAGISTER_DATA_ANALYSIS_NAME: `Maestría en Inteligencia de Datos orientada a Big Data`,
   MAGISTER_DATA_ANALYSIS_ARTIST: 'Facultad de Informática | UNLP',
   MAGISTER_DATA_ANALYSIS_LENGTH: 'Mar 2021 - Jul 2024',
-  MAGISTER_DATA_ANALYSIS_DESCRIPTION: `La Maestría en Inteligencia de Datos orientada a Big Data está dirigida a egresados universitarios de Informática y/o carreras afines. Otorga el título de Magister en Inteligencia de Datos orientada a Big Data.
+  MAGISTER_DATA_ANALYSIS_DESCRIPTION: `Promedio de la carrera: 9.6/10\nLa Maestría en Inteligencia de Datos orientada a Big Data está dirigida a egresados universitarios de Informática y/o carreras afines. Otorga el título de Magister en Inteligencia de Datos orientada a Big Data.
 \nTiene por objetivo formar profesionales capaces diseñar e implementar sistemas inteligentes para procesar Big Data (Datos Masivos) extrayendo y comunicando en forma clara y eficiente, patrones y/o relaciones relevantes de suma utilidad para la toma de decisiones.
 \nSe busca que el graduado obtenga conocimientos actualizados de los fundamentos del tema y de las tecnologías actualmente en uso en Inteligencia de Datos.
 \nAl mismo tiempo se trata de formar graduados con capacidad de I+D+I que puedan completar el Doctorado en Cs Informáticas, continuando los ejes temáticos de la Maestría.

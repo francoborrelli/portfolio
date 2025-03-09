@@ -2,6 +2,8 @@ import type { Playlist, Song } from '../../interfaces/types';
 
 import { getAlbumPath, getEducationPath } from '../../utils/getPublicPath';
 
+import { THESIS_MASTER_2024, THESIS_SYSTEMS } from '../cv/publications';
+
 enum EducationTypesEnum {
   COURSE = 'COURSE',
   EXAM = 'EXAM',
@@ -32,6 +34,7 @@ const LICENCIATURA = {
     'https://media.licdn.com/dms/image/C562DAQGoK0otbQBOFA/profile-treasury-document-images_1280/1/1638312707731?e=1714003200&v=beta&t=aSVjxWuddbRJkURndnWW5U4pO4B-jpInkczMh5RTxI0',
   link: 'https://www.info.unlp.edu.ar/licenciatura-en-sistemas/',
   imageUrl: getEducationPath('unlp/logo.jpg'),
+  relatedSongs: [THESIS_SYSTEMS],
   skills: [],
 } as Song;
 
@@ -101,6 +104,7 @@ const MAGISTER_DATA_ANALYSIS = {
   link: 'https://postgrado.info.unlp.edu.ar/inteligencia-de-datos-orientada-a-big-data/',
   imageUrl: getEducationPath('unlp/logo.jpg'),
   skills: [],
+  relatedSongs: [THESIS_MASTER_2024],
 } as Song;
 
 export const Education = {

@@ -53,7 +53,7 @@ const MAGISTER_DATA_ANALYSIS = {
   MAGISTER_DATA_ANALYSIS_NAME: `Master's Degree in Data Intelligence with a focus on Big Data`,
   MAGISTER_DATA_ANALYSIS_ARTIST: 'Facultad de Informática | UNLP',
   MAGISTER_DATA_ANALYSIS_LENGTH: 'Mar 2021 - Jul 2024',
-  MAGISTER_DATA_ANALYSIS_DESCRIPTION: `
+  MAGISTER_DATA_ANALYSIS_DESCRIPTION: `Degree GPA: 9.6/10\n
 The Master's Degree in Data Intelligence with a focus on Big Data is aimed at university graduates in Computer Science and/or related fields. It awards the title of Master in Data Intelligence with a focus on Big Data.
 \nThe objective is to train professionals capable of designing and implementing intelligent systems to process Big Data, clearly and efficiently extracting and communicating relevant patterns and/or relationships that are highly useful for decision-making.
 \nThe program aims to ensure that graduates acquire up-to-date knowledge of the fundamentals of the field and the technologies currently in use in Data Intelligence. At the same time, it seeks to train graduates with R&D&I capabilities who can complete a PhD in Computer Science, continuing the thematic axes of the Master's program.

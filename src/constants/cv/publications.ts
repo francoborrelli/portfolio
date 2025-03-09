@@ -54,7 +54,7 @@ const ENFOQUE_UTE_2020 = {
   skills: [],
 } as Song;
 
-const THESIS_SYSTEMS = {
+export const THESIS_SYSTEMS = {
   name: 'THESIS_SYSTEMS_NAME',
   artist: 'THESIS_SYSTEMS_ARTIST',
   length: 'THESIS_SYSTEMS_LENGTH',
@@ -110,7 +110,7 @@ const CC_BB_ET_2024 = {
   skills: [],
 } as Song;
 
-const THESIS_MASTER_2024 = {
+export const THESIS_MASTER_2024 = {
   name: 'THESIS_MASTER_2024_NAME',
   artist: 'THESIS_MASTER_2024_ARTIST',
   length: 'THESIS_MASTER_2024_LENGTH',

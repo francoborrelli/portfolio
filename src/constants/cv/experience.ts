@@ -2,20 +2,11 @@ import { getAlbumPath } from '../../utils/getPublicPath';
 import { tags } from '../tags';
 
 import type { Playlist, Song } from '../../interfaces/types';
-import {
-  AuthoringTool,
-  COOPERATIVAS,
-  GO4Clic,
-  GralLecturas,
-  GralLecturasWeb,
-  GralTasks,
-  GralVehicles,
-  MasEfectivo,
-  PUERTOS,
-  QwertyLandingPage,
-  RUKIR,
-  TFD,
-} from './personalProjects';
+
+import { AuthoringTool } from './personalProjects';
+import { RondasDeNegocio, Cooperativas, Puertos } from './personalProjects';
+import { RUKIR, GO4Clic, MasEfectivo, QwertyLandingPage, TFD } from './personalProjects';
+import { GralLecturas, GralLecturasWeb, GralTasks, GralVehicles } from './personalProjects';
 
 const publicURL = (url: string) => process.env.PUBLIC_URL + url;
 
@@ -64,7 +55,7 @@ const LBS = {
     tags.Postman,
     tags.Redash,
   ],
-  relatedSongs: [PUERTOS, COOPERATIVAS],
+  relatedSongs: [Puertos, Cooperativas, RondasDeNegocio],
 } as Song;
 
 const GRAL = {
