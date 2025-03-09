@@ -8,9 +8,10 @@ import {
 import { tags } from '../tags';
 import type { Playlist, Song } from '../../interfaces/types';
 
-enum ProjectTypesEnum {
+export enum ProjectTypesEnum {
   WEB = 'WEB',
   MOBILE = 'MOBILE',
+  PERSONAL_PROJECTS = 'PERSONAL_PROJECTS',
 }
 
 export const SpotifyClone = {
@@ -18,7 +19,7 @@ export const SpotifyClone = {
   artist: 'SPOTIFY_CLONE_ARTIST',
   length: 'SPOTIFY_CLONE_LENGTH',
   description: 'SPOTIFY_CLONE_DESCRIPTION',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB, ProjectTypesEnum.PERSONAL_PROJECTS],
   imageUrl: getSocialNetworkPath('spotify.png'),
   link: 'https://spotify-react-web-client.onrender.com/',
   github: 'https://github.com/francoborrelli/spotify-react-web-client',
@@ -47,7 +48,7 @@ export const LottieReactNative = {
   artist: 'LOTTIE_ARTIST',
   length: 'LOTTIE_LENGTH',
   description: 'LOTTIE_DESCRIPTION',
-  type: ProjectTypesEnum.MOBILE,
+  types: [ProjectTypesEnum.MOBILE, ProjectTypesEnum.PERSONAL_PROJECTS],
   imageUrl: getProjectPath('lottie/logo.png'),
   images: [getProjectPath('lottie/1.jpg'), getProjectPath('lottie/2.jpg')],
   link: 'https://expo.dev/@francoborrelli/react-native-lottie?serviceType=classic&distribution=expo-go/',
@@ -60,7 +61,7 @@ export const TensorflowReactNative = {
   artist: 'TENSORFLOW_REACT_NATIVE_ARTIST',
   length: 'TENSORFLOW_REACT_NATIVE_LENGTH',
   description: 'TENSORFLOW_DESCRIPTION',
-  type: ProjectTypesEnum.MOBILE,
+  types: [ProjectTypesEnum.MOBILE, ProjectTypesEnum.PERSONAL_PROJECTS],
   imageUrl: getProjectPath('tensorflowjs/logo.png'),
   github: 'https://github.com/francoborrelli/react-native-tensorflowjs',
   skills: [tags.TensorFlow, tags.ReactNative, tags.Expo, tags.TypeScript],
@@ -72,7 +73,7 @@ export const TFD = {
   artist: 'TFD_ARTIST',
   length: 'TFD_LENGTH',
   description: 'TFD_DESCRIPTION',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   imageUrl: getProjectPath('tfd/logo.png'),
   link: 'https://tufacturadigital.com.ar/',
   youtube: 'https://www.youtube.com/channel/UCA8witVr88Wj5sA8c9sI8qg',
@@ -100,7 +101,7 @@ export const DPAS = {
   name: 'DPAS_NAME',
   artist: 'DPAS_ARTIST',
   length: 'DPAS_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'DPAS_DESCRIPTION',
   imageUrl: getProjectPath('dpas/logo.png'),
   link: 'https://sistema.accionsocialspb.org.ar/ingresar',
@@ -125,7 +126,7 @@ const OTI = {
   name: 'OTI_NAME',
   artist: 'OTI_ARTIST',
   length: 'OTI_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'OTI_DESCRIPTION',
   imageUrl: getProjectPath('oti/logo.jpg'),
   link: 'https://www.oti.com.ar/',
@@ -136,7 +137,7 @@ export const CalmCovid = {
   name: 'CALM_COVID_NAME',
   artist: 'CALM_COVID_ARTIST',
   length: 'CALM_COVID_LENGTH',
-  type: ProjectTypesEnum.MOBILE,
+  types: [ProjectTypesEnum.MOBILE],
   description: 'CALM_COVID_DESCRIPTION',
   imageUrl: getProjectPath('calm_covid/logo.png'),
   github: '',
@@ -155,7 +156,7 @@ export const QwertyLandingPage = {
   name: 'QWERTY_LANDING_PAGE_NAME',
   artist: 'QWERTY_LANDING_PAGE_ARTIST',
   length: 'QWERTY_LANDING_PAGE_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'QWERTY_LANDING_PAGE_DESCRIPTION',
   imageUrl: getProjectPath('qwertysite/logo.png'),
   link: 'http://qwertysoft.ar/',
@@ -173,7 +174,7 @@ export const AuthoringTool = {
   name: 'AUTHORING_TOOL_NAME',
   artist: 'AUTHORING_TOOL_ARTIST',
   length: 'AUTHORING_TOOL_LENGTH',
-  type: ProjectTypesEnum.MOBILE,
+  types: [ProjectTypesEnum.MOBILE, ProjectTypesEnum.PERSONAL_PROJECTS],
   description: 'AUTHORING_TOOL_DESCRIPTION',
   imageUrl: getProjectPath('authoring_tool/logo.png'),
   images: [
@@ -193,7 +194,7 @@ export const GralLecturasWeb = {
   name: 'GRAL_LECTURAS_WEB_NAME',
   artist: 'GRAL_LECTURAS_WEB_ARTIST',
   length: 'GRAL_LECTURAS_WEB_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'GRAL_LECTURAS_WEB_DESCRIPTION',
   imageUrl: getExperiencePath('gral.jpg'),
   skills: [
@@ -217,7 +218,7 @@ export const GralLecturas = {
   name: 'GRAL_LECTURAS_NAME',
   artist: 'GRAL_LECTURAS_ARTIST',
   length: 'GRAL_LECTURAS_LENGTH',
-  type: ProjectTypesEnum.MOBILE,
+  types: [ProjectTypesEnum.MOBILE],
   description: 'GRAL_LECTURAS_DESCRIPTION',
   imageUrl: getExperiencePath('gral.jpg'),
   skills: [tags.ReactNative, tags.Android, tags.Docker, tags['CI/CD'], tags.GooglePlay],
@@ -238,7 +239,7 @@ export const GralVehicles = {
   name: 'GRAL_VEHICLES_NAME',
   artist: 'GRAL_VEHICLES_ARTIST',
   length: 'GRAL_VEHICLES_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'GRAL_VEHICLES_DESCRIPTION',
   imageUrl: getExperiencePath('gral.jpg'),
   skills: [
@@ -266,7 +267,7 @@ export const MasEfectivo = {
   name: 'MAS_EFECTIVO_NAME',
   artist: 'MAS_EFECTIVO_ARTIST',
   length: 'MAS_EFECTIVO_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'MAS_EFECTIVO_DESCRIPTION',
   imageUrl: getProjectPath('mas_efectivo/logo.webp'),
   skills: [tags.Express, tags.SASS, tags.Docker],
@@ -277,7 +278,7 @@ export const GO4Clic = {
   name: 'GO4CLIC_NAME',
   artist: 'GO4CLIC_ARTIST',
   length: 'GO4CLIC_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'GO4CLIC_DESCRIPTION',
   imageUrl: getProjectPath('go4clic/logo.jpg'),
   link: 'https://go4clic.com/',
@@ -298,7 +299,7 @@ export const RUKIR = {
   name: 'RUKIR_NAME',
   artist: 'RUKIR_ARTIST',
   length: 'RUKIR_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'RUKIR_DESCRIPTION',
   imageUrl: getProjectPath('rukir/logo.jpg'),
   skills: [tags.Angular, tags.Django, tags.Postgres, tags.Docker, tags['CI/CD']],
@@ -309,7 +310,7 @@ export const GralStores = {
   name: 'GRAL_STORES_NAME',
   artist: 'GRAL_STORES_ARTIST',
   length: 'GRAL_STORES_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'GRAL_STORES_DESCRIPTION',
   imageUrl: getExperiencePath('gral.jpg'),
   skills: [
@@ -337,7 +338,7 @@ export const GralStatistics = {
   name: 'GRAL_STATISTICS_NAME',
   artist: 'GRAL_STATISTICS_ARTIST',
   length: 'GRAL_STATISTICS_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'GRAL_STATISTICS_DESCRIPTION',
   imageUrl: getExperiencePath('gral.jpg'),
   skills: [
@@ -364,7 +365,7 @@ export const GralTasks = {
   name: 'GRAL_TASKS_WEB_NAME',
   artist: 'GRAL_TASKS_WEB_ARTIST',
   length: 'GRAL_TASKS_WEB_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'GRAL_TASKS_WEB_DESCRIPTION',
   imageUrl: getExperiencePath('gral.jpg'),
   skills: [
@@ -394,7 +395,7 @@ export const GralTasksMobile = {
   name: 'GRAL_TASKS_MOBILE_NAME',
   artist: 'GRAL_TASKS_MOBILE_ARTIST',
   length: 'GRAL_TASKS_MOBILE_LENGTH',
-  type: ProjectTypesEnum.MOBILE,
+  types: [ProjectTypesEnum.MOBILE],
   relatedSongs: [GralTasks],
   description: 'GRAL_TASKS_MOBILE_DESCRIPTION',
   imageUrl: getExperiencePath('gral.jpg'),
@@ -424,7 +425,7 @@ export const Puertos = {
   name: 'PUERTOS_NAME',
   artist: 'PUERTOS_ARTIST',
   length: 'PUERTOS_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'PUERTOS_DESCRIPTION',
   imageUrl: getProjectPath('puertos/logo.jpg'),
   skills: [
@@ -451,7 +452,7 @@ export const Cooperativas = {
   name: 'COOPERATIVAS_NAME',
   artist: 'COOPERATIVAS_ARTIST',
   length: 'COOPERATIVAS_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'COOPERATIVAS_DESCRIPTION',
   imageUrl: getProjectPath('puertos/logo.jpg'),
   skills: [
@@ -480,7 +481,7 @@ export const ObjectDetectionLocationApp = {
   name: 'OBJECT_DETECTION_LOCATION_APP_NAME',
   artist: 'OBJECT_DETECTION_LOCATION_APP_ARTIST',
   length: 'OBJECT_DETECTION_LOCATION_APP_LENGTH',
-  type: ProjectTypesEnum.MOBILE,
+  types: [ProjectTypesEnum.MOBILE, ProjectTypesEnum.PERSONAL_PROJECTS],
   description: 'OBJECT_DETECTION_LOCATION_APP_DESCRIPTION',
   imageUrl: getProjectPath('object_detection_location/logo.png'),
   skills: [
@@ -513,7 +514,7 @@ export const RondasDeNegocio = {
   name: 'RONDAS_DE_NEGOCIO_NAME',
   artist: 'RONDAS_DE_NEGOCIO_ARTIST',
   length: 'RONDAS_DE_NEGOCIO_LENGTH',
-  type: ProjectTypesEnum.WEB,
+  types: [ProjectTypesEnum.WEB],
   description: 'RONDAS_DE_NEGOCIO_DESCRIPTION',
   imageUrl: getProjectPath('puertos/logo.jpg'),
   skills: [
@@ -545,6 +546,7 @@ export const PersonalProjects = {
   songs: [
     RondasDeNegocio,
     ObjectDetectionLocationApp,
+    SpotifyClone,
     Cooperativas,
     Puertos,
     TensorflowReactNative,
@@ -565,9 +567,8 @@ export const PersonalProjects = {
     GralLecturas,
     GralLecturasWeb,
     RUKIR,
-    SpotifyClone,
   ],
-  filters: [ProjectTypesEnum.WEB, ProjectTypesEnum.MOBILE],
+  filters: [ProjectTypesEnum.PERSONAL_PROJECTS, ProjectTypesEnum.WEB, ProjectTypesEnum.MOBILE],
   getImage(lang) {
     return getAlbumPath('Projects-cover', lang, 'png');
   },

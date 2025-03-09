@@ -10,7 +10,7 @@ import { GralLecturas, GralLecturasWeb, GralTasks, GralVehicles } from './person
 
 const publicURL = (url: string) => process.env.PUBLIC_URL + url;
 
-enum JobTypesEnum {
+export enum JobTypesEnum {
   JOB = 'JOB',
 }
 
@@ -18,7 +18,7 @@ const TFD_JOB = {
   name: 'TFD_JOB_NAME',
   length: 'TFD_JOB_LENGTH',
   artist: 'TFD | Tufacturadigital',
-  type: JobTypesEnum.JOB,
+  types: [JobTypesEnum.JOB],
   link: 'https://tufacturadigital.com.ar/',
   imageUrl: publicURL('/images/projects/tfd/logo.png'),
   experience: 'TFD_JOB_DESCRIPTION',
@@ -41,7 +41,7 @@ const LBS = {
   name: 'LBS_JOB_NAME',
   length: 'LBS_JOB_LENGTH',
   artist: 'LBS Informática',
-  type: JobTypesEnum.JOB,
+  types: [JobTypesEnum.JOB],
   link: 'https://www.lbsinformatica.com.ar/',
   imageUrl: publicURL('/images/experience/logo_lbs.svg'),
   experience: 'LBS_JOB_DESCRIPTION',
@@ -63,7 +63,7 @@ const GRAL = {
   length: 'GRAL_JOB_LENGTH',
   artist: 'Gral Saneamiento SA',
   experience: 'GRAL_JOB_DESCRIPTION',
-  type: JobTypesEnum.JOB,
+  types: [JobTypesEnum.JOB],
   link: 'https://www.gralsaneamiento.com.ar/',
   imageUrl: publicURL('/images/experience/gral.jpg'),
   skills: [
@@ -97,7 +97,7 @@ const QWERTY = {
   link: 'https://qwertysoft.ar/',
   artist: 'Qwertysoft SRL',
   length: 'QWERTY_JOB_LENGTH',
-  type: JobTypesEnum.JOB,
+  types: [JobTypesEnum.JOB],
   experience: 'QWERTY_JOB_DESCRIPTION',
   imageUrl: publicURL('/images/experience/qwerty.png'),
   skills: [
@@ -123,7 +123,7 @@ const LIFIA = {
   artist: 'LIFIA - UNLP',
   name: 'LIFIA_JOB_NAME',
   length: 'LIFIA_JOB_LENGTH',
-  type: JobTypesEnum.JOB,
+  types: [JobTypesEnum.JOB],
   experience: 'LIFIA_JOB_DESCRIPTION',
   link: 'https://lifia.info.unlp.edu.ar/',
   imageUrl: publicURL('/images/experience/lifia.jpg'),

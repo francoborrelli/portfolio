@@ -5,10 +5,10 @@ import { getAlbumPath } from '../../utils/getPublicPath';
 
 // Constants
 import { tags } from '../tags';
+import { PersonalProjects } from './personalProjects';
 
 // Interfaces
 import type { Playlist, Song } from '../../interfaces/types';
-import { PersonalProjects } from './personalProjects';
 
 const CURRENT = [
   tags.React,
@@ -76,7 +76,7 @@ const AVALIABLE_SKILLS = {
 const mapTag = (tag: (typeof AVALIABLE_SKILLS)['CURRENT'][number], type: string) => {
   const key = tag.text.toUpperCase().replaceAll(' ', '_');
   return {
-    type,
+    types: [type],
     skills: [],
     link: tag.link,
     name: tag.text,

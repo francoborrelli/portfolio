@@ -3,7 +3,7 @@ import type { Playlist, Song } from '../../interfaces/types';
 // Utils
 import { getAlbumPath, getEducationPath, getPublicationPath } from '../../utils/getPublicPath';
 
-enum PublicationsTypesEnum {
+export enum PublicationsTypesEnum {
   THESIS = 'THESIS',
   JOURNAL = 'JOURNAL',
   CONFERENCE = 'CONFERENCE',
@@ -12,7 +12,7 @@ enum PublicationsTypesEnum {
 const CACIC_2018 = {
   name: 'CACIC_2018_NAME',
   artist: 'CACIC_2018_ARTIST',
-  type: PublicationsTypesEnum.CONFERENCE,
+  types: [PublicationsTypesEnum.CONFERENCE],
   length: 'CACIC_2018_LENGTH',
   description: 'CACIC_2018_DESCRIPTION',
   imageUrl: getPublicationPath('cacic/2018.png'),
@@ -24,7 +24,7 @@ const CACIC_2018 = {
 const ENFOQUE_UTE_2019 = {
   name: 'ENFOQUE_UTE_2019_NAME',
   artist: 'ENFOQUE_UTE_2019_ARTIST',
-  type: PublicationsTypesEnum.JOURNAL,
+  types: [PublicationsTypesEnum.JOURNAL],
   length: 'ENFOQUE_UTE_2019_LENGTH',
   description: 'ENFOQUE_UTE_2019_DESCRIPTION',
   imageUrl: getPublicationPath('enfoqueUte/logo.jpg'),
@@ -35,7 +35,7 @@ const ENFOQUE_UTE_2019 = {
 const INCISCOS_2019 = {
   name: 'INCISCOS_2019_NAME',
   artist: 'INCISCOS_2019_ARTIST',
-  type: PublicationsTypesEnum.CONFERENCE,
+  types: [PublicationsTypesEnum.CONFERENCE],
   length: 'INCISCOS_2019_LENGTH',
   description: 'INCISCOS_2019_DESCRIPTION',
   imageUrl: getPublicationPath('inciscos/logo.jpg'),
@@ -46,7 +46,7 @@ const INCISCOS_2019 = {
 const ENFOQUE_UTE_2020 = {
   name: 'ENFOQUE_UTE_2020_NAME',
   artist: 'ENFOQUE_UTE_2020_ARTIST',
-  type: PublicationsTypesEnum.JOURNAL,
+  types: [PublicationsTypesEnum.JOURNAL],
   length: 'ENFOQUE_UTE_2020_LENGTH',
   description: 'ENFOQUE_UTE_2020_DESCRIPTION',
   imageUrl: getPublicationPath('enfoqueUte/logo.jpg'),
@@ -58,7 +58,7 @@ export const THESIS_SYSTEMS = {
   name: 'THESIS_SYSTEMS_NAME',
   artist: 'THESIS_SYSTEMS_ARTIST',
   length: 'THESIS_SYSTEMS_LENGTH',
-  type: PublicationsTypesEnum.THESIS,
+  types: [PublicationsTypesEnum.THESIS],
   description: 'THESIS_SYSTEMS_DESCRIPTION',
   imageUrl: getEducationPath('unlp/logo.jpg'),
   link: 'https://sedici.unlp.edu.ar/bitstream/handle/10915/118826/Documento_completo.pdf?sequence=1',
@@ -68,7 +68,7 @@ export const THESIS_SYSTEMS = {
 const JAIIO_2021 = {
   name: 'JAIIO_2021_NAME',
   artist: 'JAIIO_2021_ARTIST',
-  type: PublicationsTypesEnum.CONFERENCE,
+  types: [PublicationsTypesEnum.CONFERENCE],
   length: 'JAIIO_2021_LENGTH',
   description: 'JAIIO_2021_DESCRIPTION',
   imageUrl: getPublicationPath('jaiio/2021.png'),
@@ -80,7 +80,7 @@ const JAIIO_2021 = {
 const SADIO_2022 = {
   name: 'SADIO_2022_NAME',
   artist: 'SADIO_2022_ARTIST',
-  type: PublicationsTypesEnum.JOURNAL,
+  types: [PublicationsTypesEnum.JOURNAL],
   length: 'SADIO_2022_LENGTH',
   description: 'SADIO_2022_DESCRIPTION',
   imageUrl: getPublicationPath('sadio/logo.jpeg'),
@@ -91,7 +91,7 @@ const SADIO_2022 = {
 const CC_BB_ET_2023 = {
   name: 'CC_BB_ET_2023_NAME',
   artist: 'CC_BB_ET_2023_ARTIST',
-  type: PublicationsTypesEnum.CONFERENCE,
+  types: [PublicationsTypesEnum.CONFERENCE],
   length: 'CC_BB_ET_2023_LENGTH',
   description: 'CC_BB_ET_2023_DESCRIPTION',
   imageUrl: getPublicationPath('ccbbet/logo.png'),
@@ -102,7 +102,7 @@ const CC_BB_ET_2023 = {
 const CC_BB_ET_2024 = {
   name: 'CC_BB_ET_2024_NAME',
   artist: 'CC_BB_ET_2024_ARTIST',
-  type: PublicationsTypesEnum.CONFERENCE,
+  types: [PublicationsTypesEnum.CONFERENCE],
   length: 'CC_BB_ET_2024_LENGTH',
   description: 'CC_BB_ET_2024_DESCRIPTION',
   imageUrl: getPublicationPath('springer/logo.png'),
@@ -114,7 +114,7 @@ export const THESIS_MASTER_2024 = {
   name: 'THESIS_MASTER_2024_NAME',
   artist: 'THESIS_MASTER_2024_ARTIST',
   length: 'THESIS_MASTER_2024_LENGTH',
-  type: PublicationsTypesEnum.THESIS,
+  types: [PublicationsTypesEnum.THESIS],
   description: 'THESIS_MASTER_2024_DESCRIPTION',
   imageUrl: getEducationPath('unlp/logo.jpg'),
   link: 'https://sedici.unlp.edu.ar/handle/10915/174739',

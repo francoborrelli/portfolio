@@ -10,7 +10,7 @@ export type Song = {
   explanation?: string;
   avatar?: any;
 
-  type?: string;
+  types?: string[];
 
   link?: string;
   github?: string;

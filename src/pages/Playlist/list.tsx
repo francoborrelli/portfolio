@@ -22,7 +22,7 @@ export const PlaylistList: FC<PlaylistListProps> = memo(({ playlist }) => {
 
   const songs = playlist.songs.filter((song) => {
     if (order === 'ALL') return true;
-    return song.type === order;
+    return song.types?.includes(order);
   });
 
   return (

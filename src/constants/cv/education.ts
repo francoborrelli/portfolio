@@ -4,9 +4,9 @@ import { getAlbumPath, getEducationPath } from '../../utils/getPublicPath';
 
 import { THESIS_MASTER_2024, THESIS_SYSTEMS } from '../cv/publications';
 
-enum EducationTypesEnum {
-  COURSE = 'COURSE',
+export enum EducationTypesEnum {
   EXAM = 'EXAM',
+  COURSE = 'COURSE',
   DEGREE = 'DEGREE',
 }
 
@@ -15,7 +15,7 @@ const APU = {
   artist: 'APU_ARTIST',
   length: 'APU_LENGTH',
   description: 'APU_DESCRIPTION',
-  type: EducationTypesEnum.DEGREE,
+  types: [EducationTypesEnum.DEGREE],
   link: 'https://www.info.unlp.edu.ar/analista-programador-universitario/',
   certificate:
     'https://media.licdn.com/dms/image/C4E2DAQHa6nSBaAljJw/profile-treasury-document-images_1280/1/1635901593694?e=1714003200&v=beta&t=xAenJC3dNl5fY2K7tXhSNU9r0cp3jsSYdT847GaoCVw',
@@ -28,7 +28,7 @@ const LICENCIATURA = {
   name: 'LICENCIATURA_NAME',
   artist: 'LICENCIATURA_ARTIST',
   length: 'LICENCIATURA_LENGTH',
-  type: EducationTypesEnum.DEGREE,
+  types: [EducationTypesEnum.DEGREE],
   description: 'LICENCIATURA_DESCRIPTION',
   certificate:
     'https://media.licdn.com/dms/image/C562DAQGoK0otbQBOFA/profile-treasury-document-images_1280/1/1638312707731?e=1714003200&v=beta&t=aSVjxWuddbRJkURndnWW5U4pO4B-jpInkczMh5RTxI0',
@@ -42,7 +42,7 @@ const ENGLISH_CAMBRIDGE = {
   name: 'ENGLISH_CAMBRIDGE_NAME',
   artist: 'ENGLISH_CAMBRIDGE_ARTIST',
   length: 'ENGLISH_CAMBRIDGE_LENGTH',
-  type: EducationTypesEnum.EXAM,
+  types: [EducationTypesEnum.EXAM],
   description: 'ENGLISH_CAMBRIDGE_DESCRIPTION',
   link: 'https://www.cambridgeenglish.org/',
   imageUrl: getEducationPath('cambridge/logo.jpg'),
@@ -50,7 +50,7 @@ const ENGLISH_CAMBRIDGE = {
 } as Song;
 
 const MIKROWAYS_KUBERNETES = {
-  type: EducationTypesEnum.COURSE,
+  types: [EducationTypesEnum.COURSE],
   name: 'MIKROWAYS_KUBERNETES_NAME',
   artist: 'MIKROWAYS_KUBERNETES_ARTIST',
   length: 'MIKROWAYS_KUBERNETES_LENGTH',
@@ -65,7 +65,7 @@ const REACT_UDEMY = {
   name: 'REACT_UDEMY_NAME',
   artist: 'REACT_UDEMY_ARTIST',
   length: 'REACT_UDEMY_LENGTH',
-  type: EducationTypesEnum.COURSE,
+  types: [EducationTypesEnum.COURSE],
   description: 'REACT_UDEMY_DESCRIPTION',
   link: 'https://www.udemy.com/course/react-the-complete-guide-incl-redux/',
   imageUrl: getEducationPath('udemy/logo.png'),
@@ -76,7 +76,7 @@ const FISCALIA = {
   name: 'FISCALIA_NAME',
   artist: 'FISCALIA_ARTIST',
   length: 'FISCALIA_LENGTH',
-  type: EducationTypesEnum.COURSE,
+  types: [EducationTypesEnum.COURSE],
   description: 'FISCALIA_DESCRIPTION',
   link: 'https://www2.fepba.gov.ar/',
   imageUrl: getEducationPath('fiscalia/logo.jpg'),
@@ -87,7 +87,7 @@ const FISCALIA = {
 const ANGULAR_UDEMY = {
   name: 'ANGULAR_UDEMY_NAME',
   artist: 'ANGULAR_UDEMY_ARTIST',
-  type: EducationTypesEnum.COURSE,
+  types: [EducationTypesEnum.COURSE],
   length: 'ANGULAR_UDEMY_LENGTH',
   description: 'ANGULAR_UDEMY_DESCRIPTION',
   link: 'https://www.udemy.com/course/angular-fernando-herrera/',
@@ -96,7 +96,7 @@ const ANGULAR_UDEMY = {
 } as Song;
 
 const MAGISTER_DATA_ANALYSIS = {
-  type: EducationTypesEnum.DEGREE,
+  types: [EducationTypesEnum.DEGREE],
   name: 'MAGISTER_DATA_ANALYSIS_NAME',
   artist: 'MAGISTER_DATA_ANALYSIS_ARTIST',
   length: 'MAGISTER_DATA_ANALYSIS_LENGTH',

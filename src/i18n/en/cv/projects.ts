@@ -1,7 +1,7 @@
 // Project
 const SPOTIFY_CLONE = {
   SPOTIFY_CLONE_NAME: 'Spotify Clone',
-  SPOTIFY_CLONE_LENGTH: '2018',
+  SPOTIFY_CLONE_LENGTH: '2024',
   SPOTIFY_CLONE_ARTIST: 'Personal project',
   SPOTIFY_CLONE_DESCRIPTION: `This project is a Spotify Web Client developed using the Spotify Web API and Spotify Playback SDK. It was initiated with Create React App, providing a solid foundation for building the web application.\nThe client offers various features to enhance the user's music streaming experience. Firstly, users can enjoy full audio track playback directly from the Spotify platform. This includes comprehensive playback control options such as pausing, adjusting volume, and enabling shuffle mode, giving users complete control over their listening experience.\nFurthermore, the client allows users to manage their playlists effortlessly. They can create new playlists or edit existing ones seamlessly within the web interface. Additionally, users have access to their recent playback history and top artists, enabling them to discover new music or revisit their favorite tracks.\nAnother key feature is the ability to follow or unfollow playlists and artists directly from the web client. This simplifies playlist curation and artist discovery, allowing users to tailor their music library to their preferences.\nMoreover, users can manage their track library by adding or removing tracks as desired. The client also facilitates device management, enabling users to switch playback devices conveniently within the application.\nLastly, the client offers advanced search capabilities, allowing users to explore Spotify's extensive database by searching for tracks, albums, artists, and playlists.`,
 };
