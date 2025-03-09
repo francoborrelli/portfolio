@@ -7,6 +7,13 @@ const SPOTIFY_CLONE = {
   SPOTIFY_CLONE_DESCRIPTION: `Este proyecto es un Cliente Web de Spotify desarrollado utilizando la API Web de Spotify y el SDK de Reproducción de Spotify. Se inició con Create React App, proporcionando una sólida base para construir la aplicación web.\nEl cliente ofrece varias características para mejorar la experiencia de reproducción de música del usuario. En primer lugar, los usuarios pueden disfrutar de la reproducción completa de pistas de audio directamente desde la plataforma de Spotify. Esto incluye opciones completas de control de reproducción como pausar, ajustar el volumen y habilitar el modo de reproducción aleatoria, brindando a los usuarios un control total sobre su experiencia auditiva.\nAdemás, el cliente permite a los usuarios administrar sus listas de reproducción de manera sencilla. Pueden crear nuevas listas de reproducción o editar las existentes sin problemas dentro de la interfaz web. Además, los usuarios tienen acceso a su historial de reproducción reciente y a los principales artistas, lo que les permite descubrir nueva música o volver a escuchar sus pistas favoritas.\nOtra característica clave es la capacidad de seguir o dejar de seguir listas de reproducción y artistas directamente desde el cliente web. Esto simplifica la curación de listas de reproducción y el descubrimiento de artistas, permitiendo a los usuarios personalizar su biblioteca musical según sus preferencias.\nAdemás, los usuarios pueden administrar su biblioteca de pistas agregando o eliminando pistas según lo deseen. El cliente también facilita la gestión de dispositivos, permitiendo a los usuarios cambiar de dispositivo de reproducción de manera conveniente dentro de la aplicación.\nPor último, el cliente ofrece capacidades de búsqueda avanzadas, lo que permite a los usuarios explorar la extensa base de datos de Spotify buscando pistas, álbumes, artistas y listas de reproducción.`,
 };
 
+const SETLIST_TO_SPOTIFY = {
+  SETLIST_TO_SPOTIFY_NAME: 'Setlist.fm a Spotify',
+  SETLIST_TO_SPOTIFY_ARTIST: 'Proyecto personal',
+  SETLIST_TO_SPOTIFY_LENGTH: '2024',
+  SETLIST_TO_SPOTIFY_DESCRIPTION: `Este script de Node.js basado en TypeScript recupera la última lista de canciones de uno o varios artistas utilizando la API de Setlist.fm y la importa a una lista de reproducción de Spotify. Puedes elegir crear una nueva lista de reproducción o actualizar una existente. La integración con Spotify está impulsada por la API Web de Spotify.`,
+};
+
 const LOTTIE = {
   LOTTIE_NAME: 'Lottie React Native',
   LOTTIE_LENGTH: '2023',
@@ -192,6 +199,7 @@ export const PROJECTS = {
   ...GRAL_TASKS_MOBILE,
   ...GRAL_LECTURAS_WEB,
   ...RONDAS_DE_NEGOCIO,
+  ...SETLIST_TO_SPOTIFY,
   ...QWERTY_LANDING_PAGE,
   ...TENSORFLOW_REACT_NATIVE,
   ...OBJECT_DETECTION_LOCATION_APP,

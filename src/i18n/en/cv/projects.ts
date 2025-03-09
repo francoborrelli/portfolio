@@ -167,6 +167,13 @@ const OBJECT_DETECTION_LOCATION_APP = {
   \n This tool allows the creation of multiple workspaces where multiple collaborators can be invited. Additionally, it provides statistical information about the co-created content.`,
 };
 
+const SETLIST_TO_SPOTIFY = {
+  SETLIST_TO_SPOTIFY_LENGTH: '2024',
+  SETLIST_TO_SPOTIFY_ARTIST: 'Personal project',
+  SETLIST_TO_SPOTIFY_NAME: 'Setlist.fm to Spotify',
+  SETLIST_TO_SPOTIFY_DESCRIPTION: `This TypeScript-based Node.js script fetches the latest setlist from one or multiple artists using the Setlist.fm API and imports it into a Spotify playlist. You can choose to create a new playlist or update an existing one. The Spotify integration is powered by the Spotify Web API.`,
+};
+
 export const PROJECTS = {
   // Projects
   ...OTI,
@@ -189,6 +196,7 @@ export const PROJECTS = {
   ...RONDAS_DE_NEGOCIO,
   ...GRAL_TASKS_MOBILE,
   ...GRAL_LECTURAS_WEB,
+  ...SETLIST_TO_SPOTIFY,
   ...QWERTY_LANDING_PAGE,
   ...TENSORFLOW_REACT_NATIVE,
   ...OBJECT_DETECTION_LOCATION_APP,

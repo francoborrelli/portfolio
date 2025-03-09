@@ -11,8 +11,23 @@ import type { Playlist, Song } from '../../interfaces/types';
 export enum ProjectTypesEnum {
   WEB = 'WEB',
   MOBILE = 'MOBILE',
+  SCRIPTS = 'SCRIPTS',
   PERSONAL_PROJECTS = 'PERSONAL_PROJECTS',
 }
+
+export const SetlistToSpotify = {
+  name: 'SETLIST_TO_SPOTIFY_NAME',
+  artist: 'SETLIST_TO_SPOTIFY_ARTIST',
+  length: 'SETLIST_TO_SPOTIFY_LENGTH',
+  description: 'SETLIST_TO_SPOTIFY_DESCRIPTION',
+  skills: [tags['Node.js'], tags.Spotify, tags.TypeScript, tags.Docker],
+  types: [ProjectTypesEnum.SCRIPTS, ProjectTypesEnum.PERSONAL_PROJECTS],
+  imageUrl: getProjectPath('setlist_to_spotify/logo.jpg'),
+  images: [
+    'https://private-user-images.githubusercontent.com/17908233/365324431-864e5895-48dc-4afe-884c-44253e42db06.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE1NDQzNjEsIm5iZiI6MTc0MTU0NDA2MSwicGF0aCI6Ii8xNzkwODIzMy8zNjUzMjQ0MzEtODY0ZTU4OTUtNDhkYy00YWZlLTg4NGMtNDQyNTNlNDJkYjA2LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzA5VDE4MTQyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTAxYjdhNWQ0YWJhMWQyNGJkOGQ0ZTUwYTAyZWZhOTJiYWE0ZGViNmI5ZTNmMzUwOWMzNzc5NDFhMmJmYTk5NjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.vOYpRR2NqB5-ox9z29YPVWu_im4XAxsdFCjKSnxqH78',
+  ],
+  github: 'https://github.com/francoborrelli/setlistfm-2-spotify/tree/main',
+};
 
 export const SpotifyClone = {
   name: 'SPOTIFY_CLONE_NAME',
@@ -545,6 +560,7 @@ export const PersonalProjects = {
   color: '#2e3f43',
   songs: [
     RondasDeNegocio,
+    SetlistToSpotify,
     ObjectDetectionLocationApp,
     SpotifyClone,
     Cooperativas,
