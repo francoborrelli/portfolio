@@ -61,6 +61,7 @@
     "@types/tinycolor2": "^1.4.6",
     "gh-pages": "^6.3.0",
     "sass": "^1.85.1",
+    "sass-loader": "^16.0.5",
     "typescript": "^5.8.2",
     "web-vitals": "^4.2.4"
   }
