@@ -4,7 +4,7 @@ import { Slider } from '../../../Slider';
 
 // Utils
 import { useEffect } from 'react';
-import { secondsToTime } from '../../../../utils';
+import { secondsToTime } from '../../../../utils/secondsToTime';
 
 // Redux
 import { setCurrentTimeForPlayer } from '../../../../player';
