@@ -21,16 +21,16 @@ const CACIC_2018 = {
   skills: [],
 } as Song;
 
-// const ENFOQUE_UTE_2019 = {
-//   name: 'ENFOQUE_UTE_2019_NAME',
-//   artist: 'ENFOQUE_UTE_2019_ARTIST',
-//   type: PublicationsTypesEnum.JOURNAL,
-//   length: 'ENFOQUE_UTE_2019_LENGTH',
-//   description: 'ENFOQUE_UTE_2019_DESCRIPTION',
-//   imageUrl: getPublicationPath('enfoqueUte/logo.jpg'),
-//   link: 'https://notablesdelaciencia.conicet.gov.ar/bitstream/handle/11336/130607/CONICET_Digital_Nro.6eccdc24-082e-445e-a72d-e04d2ec8fc35_A.pdf?sequence=2&isAllowed=y',
-//   skills: [],
-// } as Song;
+const ENFOQUE_UTE_2019 = {
+  name: 'ENFOQUE_UTE_2019_NAME',
+  artist: 'ENFOQUE_UTE_2019_ARTIST',
+  type: PublicationsTypesEnum.JOURNAL,
+  length: 'ENFOQUE_UTE_2019_LENGTH',
+  description: 'ENFOQUE_UTE_2019_DESCRIPTION',
+  imageUrl: getPublicationPath('enfoqueUte/logo.jpg'),
+  link: 'https://notablesdelaciencia.conicet.gov.ar/bitstream/handle/11336/130607/CONICET_Digital_Nro.6eccdc24-082e-445e-a72d-e04d2ec8fc35_A.pdf?sequence=2&isAllowed=y',
+  skills: [],
+} as Song;
 
 const INCISCOS_2019 = {
   name: 'INCISCOS_2019_NAME',
@@ -110,10 +110,22 @@ const CC_BB_ET_2024 = {
   skills: [],
 } as Song;
 
+const THESIS_MASTER_2024 = {
+  name: 'THESIS_MASTER_2024_NAME',
+  artist: 'THESIS_MASTER_2024_ARTIST',
+  length: 'THESIS_MASTER_2024_LENGTH',
+  type: PublicationsTypesEnum.THESIS,
+  description: 'THESIS_MASTER_2024_DESCRIPTION',
+  imageUrl: getEducationPath('unlp/logo.jpg'),
+  link: 'https://sedici.unlp.edu.ar/handle/10915/174739',
+  skills: [],
+} as Song;
+
 export const Publications = {
   name: 'PUBLICATIONS',
   description: 'Description 4',
   songs: [
+    THESIS_MASTER_2024,
     CC_BB_ET_2024,
     CC_BB_ET_2023,
     SADIO_2022,
@@ -121,6 +133,7 @@ export const Publications = {
     THESIS_SYSTEMS,
     ENFOQUE_UTE_2020,
     INCISCOS_2019,
+    ENFOQUE_UTE_2019,
     CACIC_2018,
   ],
   color: '#3d5255',

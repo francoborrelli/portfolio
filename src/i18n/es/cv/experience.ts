@@ -15,7 +15,7 @@ const LBS = {
 
 const GRAL = {
   GRAL_JOB_NAME: 'Senior Software Engineer & Devops',
-  GRAL_JOB_LENGTH: 'La Plata, Oct 2019 - Mar 2024',
+  GRAL_JOB_LENGTH: 'La Plata, Oct 2019 - Nov 2024',
   GRAL_JOB_DESCRIPTION: `Durante mi experiencia laboral, participé en la implementación de diversos sistemas web para la gestión interna de la empresa. En este puesto, trabajé con una variedad de frameworks y lenguajes de programación, incluyendo Typescript (React, Express.js), Python (Django) y PHP (Laravel y Symfony), permitiendo así un desarrollo ágil y eficiente. \n Además, me encargué de manejar tanto bases de datos relacionales, como Mysql y Postgres, así como bases de datos no relacionales, incluyendo Mongodb y Dynamodb, asegurando la integridad y eficacia de los sistemas. \nOtro aspecto destacado de mi trabajo fue la implementación de aplicaciones móviles utilizando React Native. Además, gestioné activamente estas aplicaciones en la Google Play Console.\nComo parte de mis responsabilidades, establecí y mantuve pipelines de Integración Continua/Despliegue Continuo (CI/CD).\nAdemás, tuve la oportunidad de adquirir experiencia en la gestión de infraestructura y servicios en AWS, incluyendo S3, EC2, ECS, Cloudwatch, Cloudfront, AWS Lambda y SQS.`,
 };
 

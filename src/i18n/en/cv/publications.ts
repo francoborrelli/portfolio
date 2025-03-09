@@ -7,13 +7,13 @@ const CACIC_2018 = {
   CACIC_2018_DESCRIPTION: `In this paper, the exploration of two existing beacon APIs is presented, one for PhoneGap and another for React Native. For this exploration, two mobile applications were developed, one in PhoneGap and another in React Native; both of which utilize these APIs to detect proximity to beacons. Upon entering the proximity of a beacon, the information of the beacon is displayed on the screen. Different characteristics of these developed applications are detailed, with emphasis on the comparative analysis of these developments regarding what each API provides. Additionally, the work presents a discussion space to analyze the lessons learned in the conducted exploration, aiming to contribute to the theme related to the development of such applications.`,
 };
 
-// const ENFOQUE_UTE_2019 = {
-//   ENFOQUE_UTE_2019_NAME:
-//     'Co-diseño in situ de juegos móviles utilizando el enfoque de recursos de Design Thinking',
-//   ENFOQUE_UTE_2019_ARTIST: 'Enfoque UTE',
-//   ENFOQUE_UTE_2019_LENGTH: '2019',
-//   ENFOQUE_UTE_2019_DESCRIPTION: `The contribution of this paper is to explore how to approach in-situ co-design experiences of Mobile Games based on Positioning in enclosed spaces (for example: a building), describing the lessons learned on this topic. This work presents a conceptual framework for in-situ co-design of Mobile Games based on Positioning for enclosed spaces, aiming to assist facilitators in addressing such experiences with useful resources (e.g., Design Thinking resources). Using this framework, an in-situ co-design experience of a Mobile Game based on Positioning in an enclosed space is presented; for some stages, an authoring tool was used to co-design in-situ which places are relevant for an application. Based on this experience, the authoring tool was extended to create a particular type of Mobile Game based on Positioning. This paper presents this extension along with a proof of concept demonstrating how a co-designed game in-situ with this extension was used by end-users.`,
-// };
+const ENFOQUE_UTE_2019 = {
+  ENFOQUE_UTE_2019_NAME:
+    'Co-diseño in situ de juegos móviles utilizando el enfoque de recursos de Design Thinking',
+  ENFOQUE_UTE_2019_ARTIST: 'Enfoque UTE',
+  ENFOQUE_UTE_2019_LENGTH: '2019',
+  ENFOQUE_UTE_2019_DESCRIPTION: `The contribution of this paper is to explore how to approach in-situ co-design experiences of Mobile Games based on Positioning in enclosed spaces (for example: a building), describing the lessons learned on this topic. This work presents a conceptual framework for in-situ co-design of Mobile Games based on Positioning for enclosed spaces, aiming to assist facilitators in addressing such experiences with useful resources (e.g., Design Thinking resources). Using this framework, an in-situ co-design experience of a Mobile Game based on Positioning in an enclosed space is presented; for some stages, an authoring tool was used to co-design in-situ which places are relevant for an application. Based on this experience, the authoring tool was extended to create a particular type of Mobile Game based on Positioning. This paper presents this extension along with a proof of concept demonstrating how a co-designed game in-situ with this extension was used by end-users.`,
+};
 
 const INCISCOS_2019 = {
   INCISCOS_2019_NAME: `Design Thinking's Resources for in-situ Co-Design of Mobile Games`,
@@ -70,6 +70,15 @@ const CC_BB_ET_2024 = {
   CC_BB_ET_2024_DESCRIPTION: `Despite technological advances, precise positioning within buildings remains a considerable challenge. In this context, the present paper explores the research of user location in indoor spaces, embracing object recognition models executed directly on mobile devices. Our proposal is based on designing a generic solution architecture adaptable to any physical environment, enabling the definition and usage of relevant generic objects within the environment to determine the users’ current location. This proposal uses Computer Vision, employing object recognition models for positioning. This kind of indoor positioning benefits from the growth of smartphones’ functionalities and capabilities, thus avoiding the need to install additional infrastructures in physical spaces. A specific implementation of this architecture for React Native is presented, using the TensorFlow platform to support object recognition. This implementation allows demonstrating how this positioning works through concrete use cases. In addition, some lessons learned are discussed, which we hope will contribute to this topic.`,
 };
 
+const THESIS_MASTER_2024 = {
+  THESIS_MASTER_2024_NAME:
+    'Exploration of Indoor Positioning through Object Recognition for the Co-Design and Co-Testing of Context-Aware Mobile Applications',
+  THESIS_MASTER_2024_ARTIST: 'Facultad de Informática | UNLP',
+  THESIS_MASTER_2024_LENGTH: '2024',
+  THESIS_MASTER_2024_DESCRIPTION: `The evolution of mobile technology in recent years has had a significant impact on our lives, changing how we interact with our environment and carry out daily activities. This progress, driven by advancements in hardware, software, and connectivity, has enabled the development of increasingly advanced and sophisticated mobile applications. Despite these significant advancements, indoor positioning remains a challenge to be addressed. While outdoor positioning has become quite accurate thanks to the widespread use of GPS, the accuracy of indoor positioning is still limited.\nThe general objective of this work is to explore the use of object recognition models as a mechanism for achieving user positioning in indoor spaces using mobile devices. To achieve this, this thesis presents an architecture called Object-Based Positioning, which employs object recognition and detection models for indoor positioning in a generic and decoupled manner. Additionally, a concrete implementation is proposed that combines these models with GPS and gyroscope information. Furthermore, an additional architecture called Event Monitoring is introduced, whose primary purpose is to collect and store valuable information from devices. In addition to its theoretical presentation, a concrete implementation is proposed.\nFinally, to test these implementations (Object-Based Positioning and Event Monitoring), a prototype tool was developed, enabling the in-situ co-design and co-testing of a particular type of context-aware mobile application. The experiences conducted using the developed tool allowed for the analysis of Object-Based Positioning performance in different scenarios and realistic use cases, identifying areas for improvement and highlighting the importance of parameter tuning to ensure optimal performance.
+`,
+};
+
 // Global Object
 
 export const PUBLICATIONS = {
@@ -81,4 +90,6 @@ export const PUBLICATIONS = {
   ...INCISCOS_2019,
   ...THESIS_SYSTEMS,
   ...ENFOQUE_UTE_2020,
+  ...ENFOQUE_UTE_2019,
+  ...THESIS_MASTER_2024,
 } as const;
