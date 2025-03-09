@@ -1,3 +1,16 @@
+import { SkillsTypesEnum } from '../constants/cv/skills';
+import { JobTypesEnum } from '../constants/cv/experience';
+import { EducationTypesEnum } from '../constants/cv/education';
+import { ProjectTypesEnum } from '../constants/cv/personalProjects';
+import { PublicationsTypesEnum } from '../constants/cv/publications';
+
+type SongType =
+  | JobTypesEnum
+  | SkillsTypesEnum
+  | ProjectTypesEnum
+  | EducationTypesEnum
+  | PublicationsTypesEnum;
+
 export type Song = {
   name: string;
   length?: string;
@@ -10,7 +23,7 @@ export type Song = {
   explanation?: string;
   avatar?: any;
 
-  types?: string[];
+  types?: SongType[];
 
   link?: string;
   github?: string;

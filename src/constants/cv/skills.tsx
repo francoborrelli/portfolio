@@ -10,6 +10,12 @@ import { PersonalProjects } from './personalProjects';
 // Interfaces
 import type { Playlist, Song } from '../../interfaces/types';
 
+export enum SkillsTypesEnum {
+  CURRENT = 'CURRENT',
+  PAST_FREQUENTLY = 'PAST_FREQUENTLY',
+  PAST_OCCASIONALLY = 'PAST_OCCASIONALLY',
+}
+
 const CURRENT = [
   tags.React,
   tags.ReactNative,
@@ -113,7 +119,11 @@ export const Skills = {
   songs: SKILLS_SONGS,
   defaultFilter: 'CURRENT',
   description: 'Description 5',
-  filters: ['CURRENT', 'PAST_FREQUENTLY', 'PAST_OCCASIONALLY'],
+  filters: [
+    SkillsTypesEnum.CURRENT,
+    SkillsTypesEnum.PAST_FREQUENTLY,
+    SkillsTypesEnum.PAST_OCCASIONALLY,
+  ],
   getImage(lang) {
     return getAlbumPath('Skills-cover', lang, 'png');
   },
