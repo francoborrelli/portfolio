@@ -22,9 +22,9 @@ const TENSORFLOW_REACT_NATIVE = {
 
 const TFD = {
   TFD_NAME: 'tfd | Tu Factura Digital',
-  TFD_ARTIST: 'Qwertysoft SRL',
-  TFD_LENGTH: '2019 - 2022',
-  TFD_DESCRIPTION: `The project I collaborated on with the team focuses on developing a comprehensive Software as a Service (SaaS) solution for invoicing, catering to both businesses and individuals.\nI worked on both frontend and backend development, ensuring that users have a complete and effective experience. A notable aspect is the integration with the Federal Public Revenue Administration (AFIP), the Argentine tax authority, enabling users to fulfill their tax obligations accurately and efficiently.\nAdditionally, I implemented a flexible subscription system, allowing users to choose between monthly or yearly plans based on their needs and preferences.\nAnother crucial aspect is our platform's ability to communicate with various renowned external services such as MercadoLibre, MercadoPago, TiendaNube, and Mobbex. This integration streamlines users' access to and utilization of sales and invoicing data, simplifying their business operations.\nI also focused on implementing additional features, including automated generation of annual and monthly sales and invoicing reports, as well as customization of invoices.`,
+  TFD_ARTIST: 'tfd | Tu Factura Digital',
+  TFD_LENGTH: '2019 - Present',
+  TFD_DESCRIPTION: `The project I collaborated on with the team focuses on developing a comprehensive Software as a Service (SaaS) solution for invoicing, catering to both businesses and individuals.\nI worked on both frontend and backend development, ensuring that users have a complete and effective experience. A notable aspect is the integration with the Federal Public Revenue Administration (ARCA), the Argentine tax authority, enabling users to fulfill their tax obligations accurately and efficiently.\nAdditionally, I implemented a flexible subscription system, allowing users to choose between monthly or yearly plans based on their needs and preferences.\nAnother crucial aspect is our platform's ability to communicate with various renowned external services such as MercadoLibre, MercadoPago, TiendaNube, and Mobbex. This integration streamlines users' access to and utilization of sales and invoicing data, simplifying their business operations.\nI also focused on implementing additional features, including automated generation of annual and monthly sales and invoicing reports, as well as customization of invoices.`,
 };
 
 const CALM_COVID = {
@@ -59,7 +59,7 @@ const GRAL_LECTURAS_WEB = {
   GRAL_LECTURAS_WEB_NAME: 'Gral | Meter Readings (Web)',
   GRAL_LECTURAS_WEB_ARTIST: 'GRAL Saneamiento SA',
   GRAL_LECTURAS_WEB_LENGTH: '2020',
-  GRAL_LECTURAS_WEB_DESCRIPTION: `This system, crucial for the internal management of the company, serves as the starting point from which the data used by meter readers in the application to carry out their routes for water meter readings are fed. In addition to its primary function, this system also serves as a platform for viewing the information and photographs captured by the meter readers from their devices.\nAmong its capabilities, the assignment of routes, the visualization of statistical data related to readings, and the management of audits and rereadings of the routes stand out.\nOne of the most outstanding features is the implementation of a connection via websocket, allowing for real-time data updates. This innovation ensures a smooth and up-to-date experience for users, thereby improving efficiency and accuracy in the process of meter reading.\nTo host the site, S3 and CloudFront were used, ensuring optimal availability and speed. The system was developed in React, offering a dynamic and responsive user interface, while the API was implemented as a series of Lambda functions, ensuring exceptional scalability and efficiency.`,
+  GRAL_LECTURAS_WEB_DESCRIPTION: `This application, crucial for the internal management of the company, serves as the starting point from which the data used by meter readers in the application to carry out their routes for water meter readings are fed. In addition to its primary function, this application also serves as a platform for viewing the information and photographs captured by the meter readers from their devices.\nAmong its capabilities, the assignment of routes, the visualization of statistical data related to readings, and the management of audits and rereadings of the routes stand out.\nOne of the most outstanding features is the implementation of a connection via websocket, allowing for real-time data updates. This innovation ensures a smooth and up-to-date experience for users, thereby improving efficiency and accuracy in the process of meter reading.\nTo host the site, S3 and CloudFront were used, ensuring optimal availability and speed. The application was developed in React, offering a dynamic and responsive user interface, while the API was implemented as a series of Lambda functions, ensuring exceptional scalability and efficiency.`,
 };
 
 const GRAL_VEHICLES = {
@@ -116,36 +116,36 @@ const GRAL_TASKS_MOBILE = {
   GRAL_TASKS_MOBILE_NAME: 'Gral | Tasks (App)',
   GRAL_TASKS_MOBILE_ARTIST: 'GRAL Saneamiento SA',
   GRAL_TASKS_MOBILE_LENGTH: '2020 - 2022',
-  GRAL_TASKS_MOBILE_DESCRIPTION: `The application allows teams to instantly receive construction and repair tasks scheduled for the street (which were previously assigned from a web system). This ensures smooth and accurate communication between the office and the field, optimizing task execution.\nThrough the integration of geolocation functions, team members can visualize assigned tasks on a map, facilitating route planning and travel optimization.\nThe application enables teams to track progress by marking tasks as completed, uploading photos of the work done, and listing materials used. Additionally, users have the ability to add relevant observations for a detailed record of each task.\nOne of the standout features of this application is its integration with AppCenter, which utilizes CodePush to automatically push updates to teams. This ensures they are always using the latest version of the application without manual intervention.\nTo enhance attendance management for teams, a facial recognition system using AWS Rekognition Liveness Detection was implemented. This functionality ensures precise and secure verification of workers' presence at the workplace.`,
+  GRAL_TASKS_MOBILE_DESCRIPTION: `The application allows teams to instantly receive construction and repair tasks scheduled for the street (which were previously assigned from a web app). This ensures smooth and accurate communication between the office and the field, optimizing task execution.\nThrough the integration of geolocation functions, team members can visualize assigned tasks on a map, facilitating route planning and travel optimization.\nThe application enables teams to track progress by marking tasks as completed, uploading photos of the work done, and listing materials used. Additionally, users have the ability to add relevant observations for a detailed record of each task.\nOne of the standout features of this application is its integration with AppCenter, which utilizes CodePush to automatically push updates to teams. This ensures they are always using the latest version of the application without manual intervention.\nTo enhance attendance management for teams, a facial recognition app using AWS Rekognition Liveness Detection was implemented. This functionality ensures precise and secure verification of workers' presence at the workplace.`,
 };
 
 const DPAS = {
-  DPAS_NAME: 'Affiliation System',
+  DPAS_NAME: 'Affiliation app',
   DPAS_ARTIST: 'Dirección provincial de acción social',
   DPAS_LENGTH: '2021',
   DPAS_DESCRIPTION:
-    'The affiliation system is a web application developed for the Provincial Directorate of Social Action of the province of Buenos Aires, Argentina. The application aims to facilitate the management of affiliates and the services they receive.',
+    'The affiliation app is a web application developed for the Provincial Directorate of Social Action of the province of Buenos Aires, Argentina. The application aims to facilitate the management of affiliates and the services they receive.',
 };
 
 const OTI = {
-  OTI_NAME: 'Asset Declarations System',
+  OTI_NAME: 'Asset Declarations app',
   OTI_ARTIST: 'Buenos Aires Province',
   OTI_LENGTH: '2021',
-  OTI_DESCRIPTION: `I developed an internal system for the Office of Institutional Transparency of the province of Buenos Aires. The system communicates with the Federal Public Revenue Administration (AFIP) to receive information on asset declarations and allows for their subsequent opening and publication by generating PDFs with their respective digital signatures.`,
+  OTI_DESCRIPTION: `I developed an internal app for the Office of Institutional Transparency of the province of Buenos Aires. The system communicates with the Federal Public Revenue Administration (ARCA) to receive information on asset declarations and allows for their subsequent opening and publication by generating PDFs with their respective digital signatures.`,
 };
 
 const PUERTOS = {
   PUERTOS_NAME: 'Ports',
   PUERTOS_ARTIST: 'LBS Informática',
   PUERTOS_LENGTH: '2024',
-  PUERTOS_DESCRIPTION: `The Ports project is a system for managing the entry and exit of ships in the ports of the province of Buenos Aires. The system allows for the registration of the validity period in the port, billing to the ships, maintenance tasks performed, and the operations of entry and exit of merchandise.`,
+  PUERTOS_DESCRIPTION: `The Ports project is an app for managing the entry and exit of ships in the ports of the province of Buenos Aires. The system allows for the registration of the validity period in the port, billing to the ships, maintenance tasks performed, and the operations of entry and exit of merchandise.`,
 };
 
 const COOPERATIVAS = {
   COOPERATIVAS_NAME: 'Cooperatives',
   COOPERATIVAS_ARTIST: 'LBS Informática',
   COOPERATIVAS_LENGTH: '2024',
-  COOPERATIVAS_DESCRIPTION: `The cooperative system allows you to manage information about cooperatives in the province of Buenos Aires. Being able to register their activity, partners, balances, and assemblies. As well as possible subsidies granted and inspections.`,
+  COOPERATIVAS_DESCRIPTION: `This app for cooperatives allows you to manage information about cooperatives in the province of Buenos Aires. Being able to register their activity, partners, balances, and assemblies. As well as possible subsidies granted and inspections.`,
 };
 
 const OBJECT_DETECTION_LOCATION_APP = {

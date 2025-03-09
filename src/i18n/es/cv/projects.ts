@@ -23,9 +23,9 @@ const TENSORFLOW_REACT_NATIVE = {
 
 const TFD = {
   TFD_NAME: 'tfd | Tu Factura Digital',
-  TFD_ARTIST: 'Qwertysoft SRL',
-  TFD_LENGTH: '2019 - 2022',
-  TFD_DESCRIPTION: `El proyecto en el que colaboré, junto a un equipo de desarrollo, se centra en el desarrollo de una solución integral de Software como Servicio (SaaS) para la facturación, dirigida tanto a empresas como a particulares.\nTrabajé tanto en el desarrollo frontend como backend, asegurando que los usuarios tengan una experiencia completa y efectiva. Un aspecto destacado es la integración con la Administración Federal de Ingresos Públicos (AFIP), la autoridad tributaria argentina, que permite a los usuarios cumplir con sus obligaciones fiscales de manera precisa y eficiente.\nAdemás, implementé un sistema de suscripción flexible, que permite a los usuarios elegir entre planes mensuales o anuales según sus necesidades y preferencias.\nOtro aspecto crucial es la capacidad de nuestra plataforma para comunicarse con varios servicios externos de renombre como MercadoLibre, MercadoPago, TiendaNube y Mobbex. Esta integración facilita el acceso y la utilización de los datos de ventas y facturación por parte de los usuarios, simplificando sus operaciones comerciales.\nTambién me enfoqué en implementar funciones adicionales, incluida la generación automática de informes de ventas y facturación anuales y mensuales, así como la personalización de facturas.`,
+  TFD_ARTIST: 'tfd | Tu Factura Digital',
+  TFD_LENGTH: '2019 - Present',
+  TFD_DESCRIPTION: `El proyecto en el que colaboré, junto a un equipo de desarrollo, se centra en el desarrollo de una solución integral de Software como Servicio (SaaS) para la facturación, dirigida tanto a empresas como a particulares.\nTrabajé tanto en el desarrollo frontend como backend, asegurando que los usuarios tengan una experiencia completa y efectiva. Un aspecto destacado es la integración con la Agencia de Recaudación y Control Aduanero (ARCA), la autoridad tributaria argentina, que permite a los usuarios cumplir con sus obligaciones fiscales de manera precisa y eficiente.\nAdemás, implementé un sistema de suscripción flexible, que permite a los usuarios elegir entre planes mensuales o anuales según sus necesidades y preferencias.\nOtro aspecto crucial es la capacidad de nuestra plataforma para comunicarse con varios servicios externos de renombre como MercadoLibre, MercadoPago, TiendaNube y Mobbex. Esta integración facilita el acceso y la utilización de los datos de ventas y facturación por parte de los usuarios, simplificando sus operaciones comerciales.\nTambién me enfoqué en implementar funciones adicionales, incluida la generación automática de informes de ventas y facturación anuales y mensuales, así como la personalización de facturas.`,
 };
 
 const CALM_COVID = {
@@ -132,7 +132,7 @@ const OTI = {
   OTI_NAME: 'Declaraciones juradas',
   OTI_ARTIST: 'Provincia de Buenos Aires',
   OTI_LENGTH: '2021',
-  OTI_DESCRIPTION: `Desarrollé un sistema interno para la Oficina de Transparencia Institucional de la provincia de Buenos Aires. El sistema se comunica con la Administración Federal de Ingresos Públicos (AFIP) para recibir información sobre declaraciones juradas de bienes patrimoniales y permite su posterior apertura y publicación generando PDFs con sus respectivas firmas digitales.`,
+  OTI_DESCRIPTION: `Desarrollé un sistema interno para la Oficina de Transparencia Institucional de la provincia de Buenos Aires. El sistema se comunica con la Agencia de Recaudación y Control Aduanero (ARCA) para recibir información sobre declaraciones juradas de bienes patrimoniales y permite su posterior apertura y publicación generando PDFs con sus respectivas firmas digitales.`,
 };
 
 const PUERTOS = {

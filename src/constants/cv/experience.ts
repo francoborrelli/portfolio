@@ -23,6 +23,29 @@ enum JobTypesEnum {
   JOB = 'JOB',
 }
 
+const TFD_JOB = {
+  name: 'TFD_JOB_NAME',
+  length: 'TFD_JOB_LENGTH',
+  artist: 'TFD | Tufacturadigital',
+  type: JobTypesEnum.JOB,
+  link: 'https://tufacturadigital.com.ar/',
+  imageUrl: publicURL('/images/projects/tfd/logo.png'),
+  experience: 'TFD_JOB_DESCRIPTION',
+  skills: [
+    tags.AWS,
+    tags.Mercadopago,
+    tags.Angular,
+    tags.Docker,
+    tags.TypeScript,
+    tags.Django,
+    tags['CI/CD'],
+    tags.GitLab,
+    tags.Postman,
+    tags.Bootstrap,
+  ],
+  relatedSongs: [TFD],
+} as Song;
+
 const LBS = {
   name: 'LBS_JOB_NAME',
   length: 'LBS_JOB_LENGTH',
@@ -102,7 +125,7 @@ const QWERTY = {
     tags.Sentry,
     tags.Postman,
   ],
-  relatedSongs: [QwertyLandingPage, TFD, RUKIR, GO4Clic, MasEfectivo],
+  relatedSongs: [QwertyLandingPage, RUKIR, GO4Clic, MasEfectivo],
 } as Song;
 
 const LIFIA = {
@@ -129,7 +152,7 @@ export const ProfessionalExperience = {
   name: 'EXPERIENCE',
   color: '#422023',
   filters: [JobTypesEnum.JOB],
-  songs: [LBS, GRAL, QWERTY, LIFIA],
+  songs: [LBS, TFD_JOB, GRAL, QWERTY, LIFIA],
   getImage(lang) {
     return getAlbumPath('Experience-cover', lang, 'png');
   },
