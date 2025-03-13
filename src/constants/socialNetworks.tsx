@@ -1,4 +1,11 @@
-import { FaGithub, FaGitlab, FaLinkedin, FaSpotify, FaUnsplash } from 'react-icons/fa6';
+import {
+  FaGithub,
+  FaGitlab,
+  FaLinkedin,
+  FaSpotify,
+  FaUnsplash,
+  FaGoogleScholar,
+} from 'react-icons/fa6';
 import type { SocialNetwork } from '../interfaces/types';
 import { getSocialNetworkPath } from '../utils/getPublicPath';
 
@@ -31,6 +38,12 @@ export const SOCIAL_NETWORKS = [
 
 export const ALL_SOCIAL_NETWORKS = [
   ...SOCIAL_NETWORKS,
+  {
+    name: 'Google Scholar',
+    link: 'https://scholar.google.com/citations?user=Id9XmkoAAAAJ',
+    imageUrl: getSocialNetworkPath('gitlab.png'),
+    icon: <FaGoogleScholar />,
+  },
   {
     name: 'Unsplash',
     link: 'https://unsplash.com/@francoborrelli',
