@@ -24,6 +24,8 @@ const CURRENT = [
   tags.Docker,
   tags.Django,
   tags.Express,
+  tags.Vercel,
+  tags.Cloudflare,
   tags.Expo,
   tags.REDUX,
   tags.SASS,
@@ -32,6 +34,9 @@ const CURRENT = [
   tags['CI/CD'],
   tags['Ant design'],
   tags.Linux,
+  tags.GooglePlay,
+  tags.Android,
+  tags.IOS,
 ];
 
 const PAST_FREQUENTLY = [
@@ -64,9 +69,6 @@ const PAST_OCCASIONALLY = [
   tags.Heroku,
   tags.Rancher,
   tags.Keycloak,
-  tags.GooglePlay,
-  tags.Android,
-  tags.IOS,
   tags.TensorFlow,
   tags.Telegram,
   tags.Spotify,

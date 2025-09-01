@@ -498,9 +498,30 @@ const Expo = {
 
 const SpotifyApi = {
   SPOTIFY_API_HELP:
-    'The Spotify Web API is a set of web services that allow you to access the Spotify catalog and user data.',
-  SPOTIFY_API_EXPERIENCE: `I have been using the Spotify Web API for over 1 year now. I have experience with integrating Spotify's services into web and mobile applications, enabling users to access music and playlists.`,
+    "The Spotify Web API is a set of web services that allow you to access Spotify's catalog and user data.",
+  SPOTIFY_API_EXPERIENCE: `I have been using the Spotify Web API for more than 1 year. I have experience integrating Spotify services into web and mobile applications, allowing users to access music and playlists.`,
   SPOTIFY_API_YEARS: '1 year',
+};
+
+const Vercel = {
+  VERCEL_HELP:
+    'Vercel is a development and deployment platform for frontend web applications. It offers automatic deployment, serverless functions, and performance optimization.',
+  VERCEL_EXPERIENCE: `I have been using Vercel for more than 1 year. I have experience in automatic deployment of React, Next.js and other frontend applications. I have also used Vercel Functions to create serverless APIs and configured custom domains and SSL certificates.`,
+  VERCEL_YEARS: '1 year',
+};
+
+const Cloudflare = {
+  CLOUDFLARE_HELP:
+    'Cloudflare is a web services platform that offers CDN, DNS, DDoS protection, hosting and security services for websites and applications.',
+  CLOUDFLARE_EXPERIENCE: `I have been using Cloudflare for more than 1 year. I have experience in configuring CDN to improve web application performance, DNS management, implementing firewall rules and optimizing website loading speed.`,
+  CLOUDFLARE_YEARS: '1 year',
+};
+
+const Electron = {
+  ELECTRON_HELP:
+    'Electron is a framework that allows you to create cross-platform desktop applications using web technologies like HTML, CSS and JavaScript.',
+  ELECTRON_EXPERIENCE: `I have been using Electron for more than 1 year. I have experience in developing desktop applications for Windows, macOS and Linux. I have created applications with native operating system functionality, system process management and integration with system APIs.`,
+  ELECTRON_YEARS: '1 year',
 };
 
 export const SKILLS = {
@@ -556,4 +577,7 @@ export const SKILLS = {
   ...MercadoPago,
   ...Expo,
   ...SpotifyApi,
+  ...Vercel,
+  ...Cloudflare,
+  ...Electron,
 };

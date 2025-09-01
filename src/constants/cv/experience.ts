@@ -14,6 +14,31 @@ export enum JobTypesEnum {
   JOB = 'JOB',
 }
 
+const SpherzGmbH = {
+  name: 'SPHERZ_GMBH_JOB_NAME',
+  length: 'SPHERZ_GMBH_JOB_LENGTH',
+  artist: 'SPHERZ_GMBH_JOB_ARTIST',
+  types: [JobTypesEnum.JOB],
+  link: 'https://soundsuit.fm/',
+  imageUrl: publicURL('/images/experience/soundsuit.png'),
+  experience: 'SPHERZ_GMBH_JOB_DESCRIPTION',
+  skills: [
+    tags.React,
+    tags.ReactNative,
+    tags.Vercel,
+    tags.Cloudflare,
+    tags.GooglePlay,
+    tags.Android,
+    tags.IOS,
+    tags.Electron,
+    tags.Docker,
+    tags.TypeScript,
+    tags['Node.js'],
+    tags.JIRA,
+    tags.GitHub,
+  ],
+};
+
 const TFD_JOB = {
   name: 'TFD_JOB_NAME',
   length: 'TFD_JOB_LENGTH',
@@ -143,7 +168,7 @@ export const ProfessionalExperience = {
   name: 'EXPERIENCE',
   color: '#422023',
   filters: [JobTypesEnum.JOB],
-  songs: [LBS, TFD_JOB, GRAL, QWERTY, LIFIA],
+  songs: [SpherzGmbH, LBS, TFD_JOB, GRAL, QWERTY, LIFIA],
   getImage(lang) {
     return getAlbumPath('Experience-cover', lang, 'png');
   },

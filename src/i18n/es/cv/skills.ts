@@ -500,6 +500,27 @@ const SpotifyApi = {
   SPOTIFY_API_YEARS: '1 año',
 };
 
+const Vercel = {
+  VERCEL_HELP:
+    'Vercel es una plataforma de desarrollo y despliegue para aplicaciones web frontend. Ofrece despliegue automático, funciones serverless y optimización de rendimiento.',
+  VERCEL_EXPERIENCE: `He estado usando Vercel durante más de 1 año. Tengo experiencia en el despliegue automático de aplicaciones React, Next.js y otras aplicaciones frontend. También he utilizado Vercel Functions para crear APIs serverless y he configurado dominios personalizados y certificados SSL.`,
+  VERCEL_YEARS: '1 año',
+};
+
+const Cloudflare = {
+  CLOUDFLARE_HELP:
+    'Cloudflare es una plataforma de servicios web que ofrece CDN, DNS, protección DDoS, hosting y servicios de seguridad para sitios web y aplicaciones.',
+  CLOUDFLARE_EXPERIENCE: `He estado usando Cloudflare durante más de 1 año. Tengo experiencia en la configuración de CDN para mejorar el rendimiento de aplicaciones web, gestión de DNS, implementación de reglas de firewall y optimización de la velocidad de carga de sitios web.`,
+  CLOUDFLARE_YEARS: '1 año',
+};
+
+const Electron = {
+  ELECTRON_HELP:
+    'Electron es un framework que permite crear aplicaciones de escritorio multiplataforma usando tecnologías web como HTML, CSS y JavaScript.',
+  ELECTRON_EXPERIENCE: `He estado usando Electron durante más de 1 año. Tengo experiencia en el desarrollo de aplicaciones de escritorio para Windows, macOS y Linux. He creado aplicaciones con funcionalidades nativas del sistema operativo, gestión de procesos del sistema y integración con APIs del sistema.`,
+  ELECTRON_YEARS: '1 año',
+};
+
 export const SKILLS = {
   ...React,
   ...Redis,
@@ -553,4 +574,7 @@ export const SKILLS = {
   ...MercadoPago,
   ...Expo,
   ...SpotifyApi,
+  ...Vercel,
+  ...Cloudflare,
+  ...Electron,
 };

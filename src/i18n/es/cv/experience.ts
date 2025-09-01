@@ -32,10 +32,18 @@ const LIFIA = {
     'Participación como pasante en los proyectos de alumno orientados a la investigación en temáticas de innovación y a la formación profesional.',
 };
 
+const SPHERZ_GMBH = {
+  SPHERZ_GMBH_JOB_NAME: 'Senior Software Engineer',
+  SPHERZ_GMBH_JOB_LENGTH: 'Remoto, Mar 2025 - Presente',
+  SPHERZ_GMBH_JOB_ARTIST: 'Spherz GmbH',
+  SPHERZ_GMBH_JOB_DESCRIPTION: `Trabajo de forma remota desarrollando aplicaciones web, aplicaciones móviles y aplicaciones de escritorio usando React, React Native y Electron. Desarrollé una webapp para gestión de música la cual fue publicada en la tienda de Microsoft. Compilé aplicaciones nativas para macOS y diseñé aplicaciones móviles publicadas tanto en la tienda de Android como de iOS. Trabajé en proyectos con internacionalización. También trabajé con plataformas en la nube como Vercel y Cloudflare para despliegue y hosting.`,
+};
+
 export const EXPERIENCE = {
   ...LBS,
   ...TFD,
   ...GRAL,
   ...LIFIA,
   ...QWERTY,
+  ...SPHERZ_GMBH,
 };

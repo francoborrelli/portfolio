@@ -32,10 +32,18 @@ const LIFIA = {
   LIFIA_JOB_DESCRIPTION: `Participation as an intern in student-led research projects focused on innovation topics and professional development.`,
 };
 
+const SPHERZ_GMBH = {
+  SPHERZ_GMBH_JOB_NAME: 'Senior Software Engineer',
+  SPHERZ_GMBH_JOB_LENGTH: 'Remote, Mar 2025 - Present',
+  SPHERZ_GMBH_JOB_ARTIST: 'Spherz GmbH',
+  SPHERZ_GMBH_JOB_DESCRIPTION: `I work remotely developing web applications, mobile apps, and desktop applications using React, React Native, and Electron. I developed a music management webapp that was published in the Microsoft Store. I compiled native applications for macOS and designed mobile applications published in both the Android and iOS stores. I worked on projects with internationalization support. I also worked with cloud platforms like Vercel and Cloudflare for deployment and hosting.`,
+};
+
 export const EXPERIENCE = {
   ...TFD,
   ...LBS,
   ...GRAL,
   ...LIFIA,
   ...QWERTY,
+  ...SPHERZ_GMBH,
 };
