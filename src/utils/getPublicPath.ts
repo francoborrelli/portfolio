@@ -4,7 +4,7 @@ export const getSongPath = (song: string) => getPath(`/songs/${song}`);
 
 export const getAlbumPath = (album: string, lang: string, ext: string) => {
   // For French and Italian, use English images as fallback since we don't have specific images for these languages
-  const fallbackLang = ['fr', 'it'].includes(lang) ? 'en' : lang;
+  const fallbackLang = ['fr', 'it', 'de'].includes(lang) ? 'en' : lang;
   return getPath(`images/albums/${album}-${fallbackLang}.${ext}`);
 };
 

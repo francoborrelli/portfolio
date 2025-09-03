@@ -17,6 +17,11 @@ export const AVAILABLE_LANGUAGES = [
     label: 'Italiano',
     englishLabel: 'Italian',
   },
+  {
+    value: 'de',
+    label: 'Deutsch',
+    englishLabel: 'German',
+  },
 ] as {
   label: string;
   value: Languages;

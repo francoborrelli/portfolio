@@ -16,7 +16,7 @@ const Header = ({ opacity }: { opacity: number; title?: string }) => {
             target='_blank'
             rel='noreferrer'
             className='contact-me'
-            href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=francoborrelli96@gmail.com&su=SUBJECT'
+            href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=francomartinborrelli@gmail.com&su=Hi Franco'
           >
             <span>{t('Contact me')}</span>
           </a>
