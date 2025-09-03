@@ -636,7 +636,7 @@ export const tags = {
       </svg>
     ),
     image:
-      'https://assets.vercel.com/image/upload/q_auto/front/assets/design/vercel-triangle-black.svg',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHWvBRldr0qHYB-_UUDqEsXeeVw8Vq7LsePg&s',
   },
   Cloudflare: {
     text: 'Cloudflare',
@@ -655,7 +655,8 @@ export const tags = {
         />
       </svg>
     ),
-    image: 'https://www.cloudflare.com/img/logo-cloudflare-dark.svg',
+    image:
+      'https://cf-assets.www.cloudflare.com/slt3lc6tev37/2FNnxFZOBEha1W2MhF44EN/e9438de558c983ccce8129ddc20e1b8b/CF_MetaImage_1200x628.png',
   },
   Electron: {
     text: 'Electron',
@@ -699,6 +700,6 @@ export const tags = {
         />
       </svg>
     ),
-    image: 'https://www.electronjs.org/assets/img/logo.svg',
+    image: 'https://miro.medium.com/1*pZSdLbXSCEDZRFjTuapE5Q.png',
   },
 };

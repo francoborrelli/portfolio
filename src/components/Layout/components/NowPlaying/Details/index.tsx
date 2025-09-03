@@ -11,7 +11,7 @@ import type { FC } from 'react';
 import type { Song } from '../../../../../interfaces/types';
 
 import { PiCertificateFill } from 'react-icons/pi';
-import { FaGithub, FaLink, FaYoutube } from 'react-icons/fa6';
+import { FaApple, FaGithub, FaGooglePlay, FaLink, FaMicrosoft, FaYoutube } from 'react-icons/fa6';
 import { libraryActions } from '../../../../../store/slices/library';
 import { SKILLS_SONGS } from '../../../../../constants/cv/skills';
 
@@ -81,6 +81,45 @@ const Profile: FC<{ song: Song }> = ({ song }) => {
                 rel='noreferrer'
               >
                 <FaGithub />
+              </a>
+            </Tooltip>
+          ) : null}
+
+          {song.microsoft ? (
+            <Tooltip title={t('Microsoft Store')} placement='top'>
+              <a
+                target={'_blank'}
+                href={song.microsoft}
+                className='link-social-button'
+                rel='noreferrer'
+              >
+                <FaMicrosoft />
+              </a>
+            </Tooltip>
+          ) : null}
+
+          {song.playstore ? (
+            <Tooltip title={t('Google Play Store')} placement='top'>
+              <a
+                target={'_blank'}
+                href={song.playstore}
+                className='link-social-button'
+                rel='noreferrer'
+              >
+                <FaGooglePlay />
+              </a>
+            </Tooltip>
+          ) : null}
+
+          {song.appstore ? (
+            <Tooltip title={t('Apple App Store')} placement='top'>
+              <a
+                target={'_blank'}
+                href={song.appstore}
+                className='link-social-button'
+                rel='noreferrer'
+              >
+                <FaApple />
               </a>
             </Tooltip>
           ) : null}

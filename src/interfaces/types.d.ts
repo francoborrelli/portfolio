@@ -30,6 +30,9 @@ export type Song = {
   images?: string[];
   youtube?: string;
   certificate?: string;
+  microsoft?: string;
+  playstore?: string;
+  appstore?: string;
 };
 
 export type Playlist = {

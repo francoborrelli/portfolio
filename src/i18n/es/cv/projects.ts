@@ -175,6 +175,20 @@ const RONDAS_DE_NEGOCIO = {
     'Desarrollo del frontend y backend del sistema de Rondas de Negocio, una plataforma diseñada para la provincia de Buenos Aires que busca facilitar el intercambio comercial entre PyMEs, grandes empresas y cooperativas. El sistema permite gestionar de manera eficiente la inscripción de participantes, la programación de reuniones y el seguimiento de oportunidades comerciales, fomentando un entorno propicio para la concreción de negocios y alianzas estratégicas.',
 };
 
+const SOUNDSUIT_WEB_APP = {
+  SOUNDSUIT_WEB_APP_NAME: 'SoundSuit Web App',
+  SOUNDSUIT_WEB_APP_ARTIST: 'Franco Borrelli',
+  SOUNDSUIT_WEB_APP_LENGTH: '2025',
+  SOUNDSUIT_WEB_APP_DESCRIPTION: `Aplicación web para gestión de música desarrollada con React y TypeScript. La aplicación fue publicada en la Microsoft Store y ofrece funcionalidades completas de gestión de música, incluyendo biblioteca de canciones, playlists personalizadas y sincronización en la nube. Desplegada en Vercel con CDN de Cloudflare para optimización de rendimiento.`,
+};
+
+const SOUNDSUIT_MOBILE_APP = {
+  SOUNDSUIT_MOBILE_APP_NAME: 'SoundSuit Mobile App',
+  SOUNDSUIT_MOBILE_APP_ARTIST: 'Franco Borrelli',
+  SOUNDSUIT_MOBILE_APP_LENGTH: '2025',
+  SOUNDSUIT_MOBILE_APP_DESCRIPTION: `Aplicación móvil multiplataforma desarrollada con React Native y TypeScript. Publicada tanto en Google Play Store como en Apple App Store, ofrece una experiencia de usuario nativa para gestión de música con sincronización de playlists e integración con servicios de música.`,
+};
+
 // Global Object
 
 export const PROJECTS = {
@@ -203,4 +217,6 @@ export const PROJECTS = {
   ...QWERTY_LANDING_PAGE,
   ...TENSORFLOW_REACT_NATIVE,
   ...OBJECT_DETECTION_LOCATION_APP,
+  ...SOUNDSUIT_WEB_APP,
+  ...SOUNDSUIT_MOBILE_APP,
 } as const;
