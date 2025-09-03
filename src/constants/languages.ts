@@ -7,6 +7,16 @@ export const AVAILABLE_LANGUAGES = [
     label: 'Español (Argentina)',
     englishLabel: 'Spanish',
   },
+  {
+    value: 'fr',
+    label: 'Français',
+    englishLabel: 'French',
+  },
+  {
+    value: 'it',
+    label: 'Italiano',
+    englishLabel: 'Italian',
+  },
 ] as {
   label: string;
   value: Languages;

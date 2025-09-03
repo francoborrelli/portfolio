@@ -3,6 +3,8 @@ import { initReactI18next } from 'react-i18next';
 
 import * as en from './en';
 import * as es from './es';
+import * as fr from './fr';
+import * as it from './it';
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -13,6 +15,8 @@ i18n
     resources: {
       en,
       es,
+      fr,
+      it,
     },
     lng: 'en',
     fallbackLng: 'en',

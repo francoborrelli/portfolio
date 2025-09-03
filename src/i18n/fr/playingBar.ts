@@ -1,0 +1,17 @@
+export const playingBar = {
+  'Now playing view': 'Vue de lecture en cours',
+  Lyrics: 'Paroles',
+  Queue: "File d'attente",
+  'Connect to a device': 'Se connecter à un appareil',
+  Mute: 'Muet',
+  Unmute: 'Activer le son',
+  'Full Screen': 'Plein écran',
+  'Now playing': 'En cours de lecture',
+  Next: 'Suivant',
+  Skills: 'Compétences',
+  Experience: 'Expérience',
+  Description: 'Description',
+  Images: 'Images',
+  'Related projects': 'Projets connexes',
+  'Exit full screen': 'Quitter le plein écran',
+};

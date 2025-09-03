@@ -1,0 +1,17 @@
+export const playingBar = {
+  'Now playing view': 'Vista riproduzione in corso',
+  Lyrics: 'Testi',
+  Queue: 'Coda',
+  'Connect to a device': 'Connetti a un dispositivo',
+  Mute: 'Muto',
+  Unmute: 'Riattiva audio',
+  'Full Screen': 'Schermo intero',
+  'Now playing': 'In riproduzione',
+  Next: 'Avanti',
+  Skills: 'Competenze',
+  Experience: 'Esperienza',
+  Description: 'Descrizione',
+  Images: 'Immagini',
+  'Related projects': 'Progetti correlati',
+  'Exit full screen': 'Esci da schermo intero',
+};

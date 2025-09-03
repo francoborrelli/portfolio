@@ -7,4 +7,5 @@ export const navbar = {
   'Expand your library': 'Expand your library',
   Language: 'Language',
   'Contact me': 'Contact me',
+  'Choose a language': 'Choose a language',
 };
