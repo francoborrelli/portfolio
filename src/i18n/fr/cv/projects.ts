@@ -177,14 +177,14 @@ const RONDAS_DE_NEGOCIO = {
 
 const SOUNDSUIT_WEB_APP = {
   SOUNDSUIT_WEB_APP_NAME: 'Application Web SoundSuit',
-  SOUNDSUIT_WEB_APP_ARTIST: 'Franco Borrelli',
+  SOUNDSUIT_WEB_APP_ARTIST: 'Spherz GmbH',
   SOUNDSUIT_WEB_APP_LENGTH: '2025',
   SOUNDSUIT_WEB_APP_DESCRIPTION: `Application web de gestion musicale développée avec React et TypeScript. L'application a été publiée dans le Microsoft Store et offre des fonctionnalités complètes de gestion musicale, y compris la bibliothèque de chansons, les playlists personnalisées et la synchronisation cloud. Déployée sur Vercel avec Cloudflare CDN pour l'optimisation des performances.`,
 };
 
 const SOUNDSUIT_MOBILE_APP = {
   SOUNDSUIT_MOBILE_APP_NAME: 'Application Mobile SoundSuit',
-  SOUNDSUIT_MOBILE_APP_ARTIST: 'Franco Borrelli',
+  SOUNDSUIT_MOBILE_APP_ARTIST: 'Spherz GmbH',
   SOUNDSUIT_MOBILE_APP_LENGTH: '2025',
   SOUNDSUIT_MOBILE_APP_DESCRIPTION: `Application mobile multiplateforme développée avec React Native et TypeScript. Publiée à la fois dans Google Play Store et Apple App Store, offre une expérience utilisateur native pour la gestion musicale avec synchronisation des playlists et intégration des services musicaux.`,
 };
