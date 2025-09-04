@@ -18,7 +18,7 @@ const APU = {
   types: [EducationTypesEnum.DEGREE],
   link: 'https://www.info.unlp.edu.ar/analista-programador-universitario/',
   certificate:
-    'https://media.licdn.com/dms/image/C4E2DAQHa6nSBaAljJw/profile-treasury-document-images_1280/1/1635901593694?e=1714003200&v=beta&t=xAenJC3dNl5fY2K7tXhSNU9r0cp3jsSYdT847GaoCVw',
+    'https://media.licdn.com/dms/image/v2/C4E2DAQHa6nSBaAljJw/profile-treasury-document-images_1280/profile-treasury-document-images_1280/1/1635901593694?e=1758153600&v=beta&t=bobUDIh9LSAnWz00ezFbaiE5WscDjJfqA9VXz0VkiQo',
   imageUrl: getEducationPath('unlp/logo.jpg'),
   skills: [],
   youtube: 'https://youtu.be/1K9kQka8wCw?si=Y3igrp8prZ54u3Hg&t=1602',
@@ -30,8 +30,7 @@ const LICENCIATURA = {
   length: 'LICENCIATURA_LENGTH',
   types: [EducationTypesEnum.DEGREE],
   description: 'LICENCIATURA_DESCRIPTION',
-  certificate:
-    'https://media.licdn.com/dms/image/C562DAQGoK0otbQBOFA/profile-treasury-document-images_1280/1/1638312707731?e=1714003200&v=beta&t=aSVjxWuddbRJkURndnWW5U4pO4B-jpInkczMh5RTxI0',
+  certificate: 'https://drive.google.com/file/d/1k-wec2UzgiCbM52n1AieJNdfqWa-xOuM/view?usp=sharing',
   link: 'https://www.info.unlp.edu.ar/licenciatura-en-sistemas/',
   imageUrl: getEducationPath('unlp/logo.jpg'),
   relatedSongs: [THESIS_SYSTEMS],
@@ -101,6 +100,7 @@ const MAGISTER_DATA_ANALYSIS = {
   artist: 'MAGISTER_DATA_ANALYSIS_ARTIST',
   length: 'MAGISTER_DATA_ANALYSIS_LENGTH',
   description: 'MAGISTER_DATA_ANALYSIS_DESCRIPTION',
+  certificate: 'https://drive.google.com/file/d/1tMDxat3R6wt3KO-ulx1SF2_UxT-b-xRb/view?usp=sharing',
   link: 'https://postgrado.info.unlp.edu.ar/inteligencia-de-datos-orientada-a-big-data/',
   imageUrl: getEducationPath('unlp/logo.jpg'),
   skills: [],
