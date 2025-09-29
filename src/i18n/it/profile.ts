@@ -15,5 +15,5 @@ export const profile = {
 
 🔍 Sempre alla ricerca di nuove sfide e opportunità per applicare le mie competenze tecniche e la mia passione per la tecnologia in ambienti dinamici e collaborativi.
     `,
-  'Download CV': 'Scarica CV',
+  'Download CV': 'Scarica il CV',
 };
