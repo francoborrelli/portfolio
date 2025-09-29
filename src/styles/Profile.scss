@@ -61,8 +61,42 @@
     padding: 40px;
     background: linear-gradient(#222833 -10%, rgb(18, 18, 18) 35%);
 
-    .social-networks {
+    .social-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 20px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .social-networks {
+      margin-bottom: 0;
+    }
+
+    .download-cv-btn {
+      background: #fff;
+      color: #000;
+      border-radius: 9999px;
+      padding: 10px 20px;
+      font-weight: 700;
+      text-decoration: none;
+      line-height: 1;
+      border: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+
+      &:hover {
+        transform: scale(1.04);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
     }
 
     .about-me-title {
