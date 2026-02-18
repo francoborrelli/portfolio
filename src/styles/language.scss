@@ -55,43 +55,33 @@
   }
 }
 
-.ant-modal {
-  padding-bottom: 0 !important;
-  border-radius: 20px;
-  background-color: rgb(40 40 40) !important;
+// Forzar fondo oscuro en el modal y overlay de Ant Design
+.ant-modal,
+.ant-modal-content,
+.ant-modal-header,
+.ant-modal-body {
+  background-color: rgb(40, 40, 40) !important;
+  border-radius: 20px !important;
+  color: $text-primary-color !important;
+}
 
-  .ant-modal-header,
-  .ant-modal-content {
-    background-color: rgb(40 40 40) !important;
-  }
+.ant-modal-close-x {
+  align-self: flex-start;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 0;
+  border-radius: 32px;
+  color: hsla(0, 0%, 100%, 0.7);
+  display: flex;
+  grid-area: close-button;
+  height: 32px;
+  width: 32px;
+  justify-content: center;
+  align-items: center;
+}
 
-  .ant-modal-content {
-    border-radius: 20px;
-  }
-
-  .ant-modal-header {
-    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1) !important;
-  }
-
-  .ant-modal-close-x {
-    align-self: flex-start;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 0;
-    border-radius: 32px;
-    color: hsla(0, 0%, 100%, 0.7);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    grid-area: close-button;
-    height: 32px;
-    width: 32px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
+// Overlay oscuro
+.ant-modal-root .ant-modal-mask {
+  background: rgba(0, 0, 0, 0.85) !important;
 }
 
 .ant-divider {
@@ -138,4 +128,8 @@
       color: $text-secondary-color;
     }
   }
+}
+
+.ant-modal-container {
+  background-color: #282828 !important;
 }
