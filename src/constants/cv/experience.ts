@@ -3,8 +3,8 @@ import { tags } from '../tags';
 
 import type { Playlist, Song } from '../../interfaces/types';
 
-import { AuthoringTool } from './personalProjects';
 import { RondasDeNegocio, Cooperativas, Puertos } from './personalProjects';
+import { AuthoringTool, SoundSuitMobileApp, SoundSuitWebApp } from './personalProjects';
 import { RUKIR, GO4Clic, MasEfectivo, QwertyLandingPage, TFD } from './personalProjects';
 import { GralLecturas, GralLecturasWeb, GralTasks, GralVehicles } from './personalProjects';
 
@@ -37,7 +37,8 @@ const SpherzGmbH = {
     tags.JIRA,
     tags.GitHub,
   ],
-};
+  relatedSongs: [SoundSuitWebApp, SoundSuitMobileApp]
+} as Song;
 
 const TFD_JOB = {
   name: 'TFD_JOB_NAME',

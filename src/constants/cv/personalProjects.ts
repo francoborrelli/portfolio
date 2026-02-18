@@ -22,7 +22,7 @@ export const SoundSuitWebApp = {
   description: 'SOUNDSUIT_WEB_APP_DESCRIPTION',
   types: [ProjectTypesEnum.WEB],
   imageUrl: getExperiencePath('soundsuit.png'),
-  link: 'https://player.soundsuit.fm/',
+  link: 'https://app.soundsuit.fm/',
   microsoft: 'https://apps.microsoft.com/detail/9nzgb7gtb42k?hl=en-US&gl=US',
   skills: [
     tags.React,
@@ -54,7 +54,7 @@ export const SoundSuitMobileApp = {
   length: 'SOUNDSUIT_MOBILE_APP_LENGTH',
   description: 'SOUNDSUIT_MOBILE_APP_DESCRIPTION',
   types: [ProjectTypesEnum.MOBILE],
-  imageUrl: getExperiencePath('soundsuit.png'),
+  imageUrl: getExperiencePath('soundsuitDark.png'),
   link: 'https://soundsuit.fm/',
   playstore: 'https://play.google.com/store/apps/details?id=fm.soundsuit.app&hl=en',
   appstore: 'https://apps.apple.com/ar/app/soundsuit/id1526687751',

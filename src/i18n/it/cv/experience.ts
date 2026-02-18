@@ -2,7 +2,7 @@
 
 const TFD = {
   TFD_JOB_NAME: 'Ingegnere Software Senior & DevOps',
-  TFD_JOB_LENGTH: 'La Plata, Feb 2021 - Presente',
+  TFD_JOB_LENGTH: 'La Plata, Feb 2021 - Ott 2025',
   TFD_JOB_DESCRIPTION: `Lavoro sia sullo sviluppo frontend che backend, assicurandomi che gli utenti abbiano un'esperienza completa ed efficace.\n Una caratteristica chiave del progetto è l'integrazione con l'autorità fiscale argentina (ARCA), permettendo agli utenti di adempiere ai loro obblighi fiscali con precisione ed efficienza.\n Inoltre, ho implementato un sistema di abbonamento flessibile che permette agli utenti di scegliere tra piani mensili o annuali secondo i loro bisogni e preferenze.\n Un altro aspetto cruciale della piattaforma è la sua capacità di comunicare con vari servizi esterni ben noti come MercadoLibre, MercadoPago, TiendaNube e Mobbex. Questa integrazione facilita l'accesso degli utenti ai dati di vendita e fatturazione, semplificando le loro operazioni commerciali.\n Mi concentro anche sull'implementazione di funzionalità aggiuntive, inclusa la generazione automatica di rapporti di vendita e fatturazione annuali e mensili, nonché la personalizzazione delle fatture.`,
 };
 

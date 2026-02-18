@@ -2,7 +2,7 @@
 
 const TFD = {
   TFD_JOB_NAME: 'Senior Software Engineer & Devops',
-  TFD_JOB_LENGTH: 'La Plata, Feb 2021 - Presente',
+  TFD_JOB_LENGTH: 'La Plata, Feb 2021 - Oct 2025',
   TFD_JOB_DESCRIPTION: `El proyecto en el que colaboré, junto a un equipo de desarrollo, se centra en el desarrollo de una solución integral de Software como Servicio (SaaS) para la facturación, dirigida tanto a empresas como a particulares.\nTrabajé tanto en el desarrollo frontend como backend, asegurando que los usuarios tengan una experiencia completa y efectiva. Un aspecto destacado es la integración con la Agencia de Recaudación y Control Aduanero (ARCA), la autoridad tributaria argentina, que permite a los usuarios cumplir con sus obligaciones fiscales de manera precisa y eficiente.\nAdemás, implementé un sistema de suscripción flexible, que permite a los usuarios elegir entre planes mensuales o anuales según sus necesidades y preferencias.\nOtro aspecto crucial es la capacidad de nuestra plataforma para comunicarse con varios servicios externos de renombre como MercadoLibre, MercadoPago, TiendaNube y Mobbex. Esta integración facilita el acceso y la utilización de los datos de ventas y facturación por parte de los usuarios, simplificando sus operaciones comerciales.\nTambién me enfoqué en implementar funciones adicionales, incluida la generación automática de informes de ventas y facturación anuales y mensuales, así como la personalización de facturas.`,
 };
 
