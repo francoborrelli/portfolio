@@ -15,6 +15,7 @@ import { libraryActions } from './store/slices/library';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store, useAppSelector } from './store/store';
 import { SearchPage } from './pages/Search';
+import { setMediaSessionMetadata } from './player';
 
 // Pages
 const Home = lazy(() => import('./pages/Home'));
@@ -37,6 +38,10 @@ const RootComponent = () => {
     document.documentElement.setAttribute('lang', language);
     i18next.changeLanguage(language);
   }, [language]);
+
+  useEffect(() => {
+    setMediaSessionMetadata(0);
+  }, []);
 
   const routes = [
     { path: '', element: <Home /> },
