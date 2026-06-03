@@ -114,9 +114,8 @@ const SongView = ({ song, index, hasSkills }: SongViewProps) => {
   return (
     <button
       key={song.name}
-      className={`flex flex-col w-full hover:bg-spotify-gray-lightest items-center p-2 rounded-lg ${
-        isOpen ? 'expanded' : ''
-      }`}
+      className={`flex flex-col w-full hover:bg-spotify-gray-lightest items-center p-2 rounded-lg ${isOpen ? 'expanded' : ''
+        }`}
       onClick={toggleOpen}
     >
       <SongData song={song} hasSkills={hasSkills} isOpen={isOpen} index={index} />

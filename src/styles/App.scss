@@ -49,8 +49,10 @@ body {
 /* hide scrollbar but allow scrolling */
 .Main-section,
 .playing-section {
-  -ms-overflow-style: none !important; /* for Internet Explorer, Edge */
-  scrollbar-width: none !important; /* for Firefox */
+  -ms-overflow-style: none !important;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none !important;
+  /* for Firefox */
   overflow-y: scroll !important;
 }
 
@@ -203,13 +205,14 @@ h3 {
 
 .ant-dropdown-menu-item:hover {
   background: #ffffff17 !important;
+
   .ant-dropdown-menu-title-content {
     color: #1db954 !important;
   }
 }
 
 @media (max-width: $desktop-breakpoint) {
-  #root > div:first-child {
+  #root>div:first-child {
     padding: 0px !important;
   }
 }
@@ -221,9 +224,11 @@ h3 {
   color: white !important;
   background: #2d2d2d;
   font-size: 20px;
+
   &:hover {
     transform: scale(1.1);
   }
+
   &:active {
     transform: scale(1);
   }
@@ -231,6 +236,7 @@ h3 {
 
 .link-text {
   color: $text-primary-color !important;
+
   &:hover {
     text-decoration: underline;
   }
@@ -284,6 +290,7 @@ h3 {
     opacity: 0;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+
     .header-title {
       display: none !important;
     }
@@ -295,6 +302,7 @@ h3 {
     .header-title {
       display: block;
     }
+
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   }
 
@@ -344,4 +352,8 @@ h3 {
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+.ant-popover-container {
+  background-color: #242424 !important;
 }
