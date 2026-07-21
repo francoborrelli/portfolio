@@ -3,7 +3,7 @@ const Linux = {
     'Linux es un sistema operativo de código abierto basado en el núcleo de Linux. Se utiliza en muchos dispositivos diferentes, como servidores, computadoras de escritorio y dispositivos móviles.',
   LINUX_EXPERIENCE:
     'He estado usando Linux durante más de 6 años. Tengo experiencia con distribuciones tanto Debian como Arch. También he utilizado Linux en un entorno de servidor.',
-  LINUX_YEARS: '6 años',
+  LINUX_YEARS: '8 años',
 };
 
 const Keycloak = {
@@ -28,7 +28,7 @@ const GooglePlay = {
     'Google Play Console es una plataforma que permite a los desarrolladores publicar y gestionar sus aplicaciones Android en la Tienda Google Play.',
   GOOGLE_PLAY_CONSOLE_EXPERIENCE:
     'He estado usando Google Play Console durante más de 3 años. Tengo experiencia en publicar aplicaciones, gestionar listados de tiendas y analizar el rendimiento de la aplicación.',
-  GOOGLE_PLAY_CONSOLE_YEARS: '3 años',
+  GOOGLE_PLAY_CONSOLE_YEARS: '5 años',
 };
 
 const Heroku = {
@@ -65,7 +65,7 @@ const Graphql = {
   \n<b>•Desarrollo de Resolvers:</b> Tengo habilidades para escribir resolvers, el corazón de los servidores GraphQL. Mi experiencia abarca:
   <ul style="margin-left: 20px"><li><b>•Obtención de Datos:</b> Puedo obtener datos de varias fuentes como bases de datos, APIs u otros servicios dentro de resolvers para cumplir con las solicitudes de los clientes.</li><li><b>•Transformación de Datos:</b> Entiendo la importancia de transformar y manipular datos antes de devolverlos al cliente. Esto puede implicar filtrado, ordenamiento o aplicar lógica empresarial dentro de los resolvers.</li><li><b>•Optimización de Rendimiento:</b> Puedo considerar técnicas para optimizar resolvers para garantizar una obtención de datos eficiente y tiempos de respuesta.</li></ul>
   \n<b>•Creación de Consultas Efectivas:</b> Soy competente en escribir consultas GraphQL que recuperan eficientemente los datos específicos que necesitan los clientes. Esto incluye utilizar características como consultas anidadas, fragmentos y variables para construir consultas flexibles y reutilizables.`,
-  GRAPHQL_YEARS: '2 años',
+  GRAPHQL_YEARS: '4 años',
 };
 
 const Redis = {
@@ -88,7 +88,7 @@ const Sentry = {
     'Sentry es una herramienta de seguimiento de errores de código abierto que ayuda a los desarrolladores a supervisar y solucionar bloqueos en tiempo real. Proporciona información sobre el rendimiento de la aplicación y la experiencia del usuario.',
   SENTRY_EXPERIENCE:
     'He estado usando Sentry durante más de 3 años. Tengo experiencia en la configuración del seguimiento de errores, la supervisión del rendimiento de la aplicación y el análisis de informes de bloqueos.',
-  SENTRY_YEARS: '3 años',
+  SENTRY_YEARS: '5 años',
 };
 
 const React = {
@@ -104,7 +104,7 @@ const React = {
     \n<b>•Memorización con useMemo y useCallback:</b> Almacenamiento en caché de cálculos y funciones costosas para evitar re-renderizados innecesarios.
     \n<b>•Virtualización para Listas Grandes:</b> Implementación de técnicas como el desplazamiento virtual para renderizar solo elementos de lista visibles y mejorar el rendimiento con conjuntos de datos grandes.
     \n<b>•Aprovechamiento de Bibliotecas Comunes:</b> Estoy familiarizado y puedo usar de manera efectiva bibliotecas populares de React para mejorar la funcionalidad y la eficiencia de desarrollo.`,
-  REACT_YEARS: '6 años',
+  REACT_YEARS: '8 años',
 };
 
 const Firebase = {
@@ -125,7 +125,7 @@ const Typescript = {
     'TypeScript es un superset de JavaScript que agrega tipos estáticos al lenguaje. Se utiliza para construir aplicaciones a gran escala de manera más fácil y con menos errores.',
   TYPESCRIPT_EXPERIENCE:
     'He estado usando TypeScript durante más de 4 años. Tengo experiencia en escribir código seguro en cuanto a tipos, definir interfaces y utilizar características avanzadas como genéricos y decoradores.',
-  TYPESCRIPT_YEARS: '4 años',
+  TYPESCRIPT_YEARS: '6 años',
 };
 
 const Javascript = {
@@ -143,7 +143,7 @@ const AntDesign = {
   \n<b>•Utilización Extensiva de Componentes:</b> Poseo un conocimiento exhaustivo de la biblioteca de componentes completa de Ant Design. Esto me permite construir eficientemente interfaces de usuario con una amplia gama de características, desde botones y formularios básicos hasta tablas de datos y gráficos complejos.
   \n<b>Conocimiento en Tematización:</b> Puedo personalizar eficazmente los temas de Ant Design para que coincidan con las directrices de marca específicas o las necesidades de la aplicación. Esto incluye ajustar colores, fuentes, espaciado y otros elementos de diseño para crear una experiencia de usuario cohesiva y visualmente atractiva.
   \n<b>•Creación de Sistema de Diseño:</b> Mi experiencia se extiende a la creación de sistemas de diseño reutilizables basados en Ant Design. Esto implica definir patrones de diseño, componentes y directrices para garantizar la consistencia y mantenibilidad en todas las aplicaciones web. Aquí, puedo elaborar sobre aspectos específicos del proceso de creación de tu sistema de diseño, como definir una guía de estilo que documente el uso de componentes y las mejores prácticas, utilizar herramientas como Less o Sass para una gestión eficiente de temas e implementar un sistema de tokens de diseño para un control centralizado sobre los elementos de diseño.`,
-  ANT_DESIGN_YEARS: '4 años',
+  ANT_DESIGN_YEARS: '6 años',
 };
 
 const Python = {
@@ -151,15 +151,15 @@ const Python = {
     'Python es un lenguaje de programación de alto nivel e interpretado que se conoce por su simplicidad y legibilidad. Se utiliza para desarrollo web, análisis de datos, inteligencia artificial, y más.',
   PYTHON_EXPERIENCE:
     'He estado usando Python durante más de 5 años. Tengo experiencia en escribir scripts, desarrollar aplicaciones web y trabajar con bibliotecas de ciencia de datos como NumPy y Pandas.',
-  PYTHON_YEARS: '5 años',
+  PYTHON_YEARS: '7 años',
 };
 
 const Nodejs = {
-  NODE_JS_HELP:
+  'NODE.JS_HELP':
     'Node.js es un entorno de tiempo de ejecución de JavaScript de código abierto y multiplataforma que ejecuta código JavaScript fuera de un navegador web.',
-  NODE_JS_EXPERIENCE:
+  'NODE.JS_EXPERIENCE':
     'He estado usando Node.js durante más de 4 años. Tengo experiencia en la construcción de servidores web, la creación de APIs y el trabajo con paquetes de npm.',
-  NODE_JS_YEARS: '4 años',
+  'NODE.JS_YEARS': '6 años',
 };
 
 const Tensorflow = {
@@ -183,7 +183,7 @@ const Django = {
   \n<b>•Tareas en Segundo Plano:</b> Tengo experiencia con tareas en segundo plano de Django, lo que me permite descargar operaciones que consumen mucho tiempo a procesos asíncronos.
   \n<b>•Otras Funcionalidades Avanzadas de DRF:</b> Tengo experiencia con funcionalidades avanzadas de DRF como permisos personalizados, filtros, paginación o conjuntos de vistas.
   `,
-  DJANGO_YEARS: '4 años',
+  DJANGO_YEARS: '6 años',
 };
 
 const Git = {
@@ -191,7 +191,7 @@ const Git = {
     'Git es un sistema de control de versiones distribuido que se utiliza para rastrear cambios en el código fuente durante el desarrollo de software.',
   GIT_EXPERIENCE:
     'He estado usando Git durante más de 7 años. Tengo experiencia en la creación de repositorios, ramificación, fusión y resolución de conflictos.',
-  GIT_YEARS: '7 años',
+  GIT_YEARS: '9 años',
 };
 
 const Github = {
@@ -199,7 +199,7 @@ const Github = {
     'GitHub es una plataforma de alojamiento de código para control de versiones y colaboración. Te permite a ti y a otros trabajar juntos en proyectos desde cualquier lugar.',
   GITHUB_EXPERIENCE:
     'He estado usando GitHub durante más de 7 años. Tengo experiencia en la creación de repositorios, gestión de problemas y colaboración con otros desarrolladores. También he utilizado GitHub Actions para automatizar flujos de trabajo y GitHub Pages para alojar sitios web estáticos (como este).',
-  GITHUB_YEARS: '7 años',
+  GITHUB_YEARS: '9 años',
 };
 
 const Gitlab = {
@@ -213,7 +213,7 @@ const Gitlab = {
   \n<b>•Creación de Archivos de Configuración:</b> Puedo escribir y mantener eficazmente archivos de configuración de GitLab CI/CD (YAML) para definir etapas de construcción, trabajos y estrategias de implementación.
   \n<b>•Gestión de Caché y Artefactos:</b> Comprendo la importancia de optimizar las tuberías CI/CD mediante el aprovechamiento de mecanismos de almacenamiento en caché y la gestión eficiente de artefactos de construcción.
   \n<b>•Integración con Kubernetes para Implementaciones:</b> Tengo experiencia en la integración de GitLab con Kubernetes para implementaciones de aplicaciones en contenedores. Esto demuestra mi capacidad para gestionar flujos de trabajo de desarrollo modernos de manera efectiva.`,
-  GITLAB_YEARS: '5 años',
+  GITLAB_YEARS: '7 años',
 };
 
 const AWS = {
@@ -232,7 +232,7 @@ const AWS = {
   \n<b>•Amazon Route 53:</b> Soy competente en el uso de Amazon Route 53 para gestionar el enrutamiento DNS para mis aplicaciones. Esto garantiza que los usuarios sean dirigidos a los recursos correctos y ayuda a garantizar la disponibilidad de la aplicación.
   \n<b>•AWS IAM (Identity and Access Management):</b> Comprendo la importancia de la seguridad y puedo implementar AWS IAM para controlar el acceso a los recursos de AWS. Esto garantiza que solo los usuarios y aplicaciones autorizados puedan acceder a recursos específicos.
   \n<b>•Amazon Cognito:</b> Puedo utilizar Amazon Cognito para gestionar la autenticación de usuarios para aplicaciones web y móviles. Esto simplifica los procesos de inicio de sesión y registro de usuarios mientras se mantiene la seguridad.`,
-  AWS_YEARS: '4 años',
+  AWS_YEARS: '6 años',
 };
 
 const JIRA = {
@@ -242,7 +242,7 @@ const JIRA = {
   \n<b>•Gestión de Problemas:</b> Creación y gestión eficientes de problemas durante todo el ciclo de vida del proyecto. Esto incluye priorizar problemas, asignarlos a miembros del equipo y hacer seguimiento de su progreso hacia la resolución.
   \n<b>•Configuración y Personalización de Tableros Ágiles:</b> Configurar y personalizar tableros ágiles para satisfacer mejor las necesidades del proyecto. Esto puede implicar definir flujos de trabajo, crear estados y campos personalizados, y configurar swimlanes para una mejor visualización del proyecto.
   \n<b>•Seguimiento y Reporte del Progreso del Proyecto:</b> Utilizar las características de Jira para realizar un seguimiento efectivo del progreso del proyecto. Esto puede implicar monitorear métricas clave, generar informes (gráficos de reducción de esfuerzo, informes de sprint) e identificar posibles obstáculos para una mitigación proactiva.`,
-  JIRA_YEARS: '4 años',
+  JIRA_YEARS: '6 años',
 };
 
 const SLACK = {
@@ -253,7 +253,7 @@ const SLACK = {
     \n<b>•Comunicación Efectiva:</b> Tengo una amplia experiencia utilizando Slack como herramienta de comunicación principal dentro de equipos. Esto incluye la creación de canales, el envío de mensajes directos y la participación en discusiones grupales para facilitar una comunicación eficiente y transparente.
     \n<b>•Organización de Canales:</b> Puedo organizar eficazmente los canales según temas, proyectos o equipos para garantizar una comunicación clara y un fácil acceso a la información relevante.
     \n<b>•Integración con Otras Herramientas:</b> Soy competente en integrar Slack con otras herramientas y servicios para optimizar flujos de trabajo y aumentar la productividad. Esto incluye configurar notificaciones, alertas y mensajes automatizados para mantener informados y comprometidos a los miembros del equipo.`,
-  SLACK_YEARS: '5 años',
+  SLACK_YEARS: '7 años',
 };
 
 const Terraform = {
@@ -273,7 +273,7 @@ const CI_CD = {
   \n<b>•Automatización de Construcción:</b> Configuración de procesos de construcción automatizados para compilar, empaquetar y preparar aplicaciones para su implementación. Esto garantiza artefactos de construcción consistentes y confiables que pueden implementarse en diferentes entornos.
   \n<b>•Automatización de Implementación:</b> Automatizar procesos de implementación para agilizar el lanzamiento de nuevas funciones y actualizaciones. Esto incluye implementar aplicaciones en diversos entornos (desarrollo, pruebas, producción) con una intervención manual mínima.
   \n<b>•Monitoreo y Ciclos de Retroalimentación:</b> Integrar herramientas de monitoreo y mecanismos de retroalimentación dentro de las tuberías de CI/CD para rastrear métricas de rendimiento, detectar problemas y proporcionar información procesable para la mejora continua.`,
-  'CI/CD_YEARS': '3 años',
+  'CI/CD_YEARS': '5 años',
 };
 
 const Laravel = {
@@ -323,7 +323,7 @@ const Docker = {
   \n<b>•Redes de Docker:</b> He utilizado redes de Docker para conectar contenedores y gestionar su comunicación.
   \n<b>•Integración con CI/CD:</b> Tengo experiencia en la integración de Docker con tuberías de CI/CD para construcciones y despliegues automatizados de contenedores.
 `,
-  DOCKER_YEARS: '5 años',
+  DOCKER_YEARS: '7 años',
 };
 
 const Angular = {
@@ -358,7 +358,7 @@ const ReactNative = {
   \n<b>•Integraciones de terceros:</b> Tengo experiencia en la integración de bibliotecas de terceros y API en aplicaciones React Native para extender la funcionalidad y acceder a características adicionales.
   \n<b>•Optimización de rendimiento:</b> Entiendo la importancia de optimizar las aplicaciones React Native para el rendimiento. Esto incluye técnicas como la división de código, la carga perezosa y la optimización de imágenes para garantizar experiencias de usuario suaves.
   `,
-  REACT_NATIVE_YEARS: '4 años',
+  REACT_NATIVE_YEARS: '6 años',
 };
 
 const Serverless = {
@@ -406,7 +406,7 @@ const Mongo = {
   MONGODB_HELP:
     'MongoDB es un programa de base de datos orientado a documentos multiplataforma. Clasificado como un programa de base de datos NoSQL, MongoDB utiliza documentos JSON con esquemas opcionales.',
   MONGODB_EXPERIENCE: `He estado usando MongoDB durante más de 3 años. Tengo experiencia en la creación de bases de datos, la definición de colecciones y la consulta de datos utilizando la shell y controladores de MongoDB.`,
-  MONGODB_YEARS: '3 años',
+  MONGODB_YEARS: '5 años',
 };
 
 const Redux = {
@@ -419,7 +419,7 @@ const Redux = {
   \n<b>•Integración de Redux con React:</b> Competente en la integración de Redux con aplicaciones React utilizando bibliotecas como react-redux para conectar componentes a la tienda Redux y acceder al estado o despachar acciones.
   \n<b>•Saga de Redux para operaciones asíncronas:</b> Experimentado en el aprovechamiento de Redux Saga, un middleware para Redux, para gestionar acciones asíncronas y efectos secundarios dentro de tus aplicaciones React. Esto promueve una separación más limpia de preocupaciones y simplifica el manejo de lógica asíncrona compleja.
   \n<b>•Dominio de Redux Toolkit:</b> Familiarizado con Redux Toolkit, una colección de herramientas que simplifica tareas comunes de Redux como crear acciones, reductores y fragmentos. Esto permite escribir código Redux más conciso y mantenible.`,
-  REDUX_YEARS: '4 años',
+  REDUX_YEARS: '6 años',
 };
 
 const Sass = {
@@ -429,14 +429,14 @@ const Sass = {
   \n<b>•Escritura de hojas de estilo mantenibles:</b> Utilización de las características de Sass para crear hojas de estilo bien organizadas y mantenibles. Esto incluye el aprovechamiento de la anidación para agrupar lógicamente estilos y mixins para la reutilización de código, reduciendo la redundancia y mejorando la estructura general del código.
   \n<b>•Uso de variables para temas:</b> Adepto en el empleo de variables de Sass para definir colores, fuentes y otros elementos estilísticos en tus hojas de estilo. Esto permite cambios de tema sencillos y promueve la consistencia en la interfaz de usuario de tu aplicación.
   \n<b>•Técnicas avanzadas:</b> Experimentado en el uso de características más avanzadas de Sass como el control de anidación (por ejemplo, @at-root), selectores de padres (&) y selectores de marcador de posición (%), para una gestión de hojas de estilo más granular y eficiente.`,
-  SASS_YEARS: '4 años',
+  SASS_YEARS: '6 años',
 };
 
 const Android = {
   ANDROID_HELP:
     'Android es un sistema operativo móvil basado en una versión modificada del núcleo de Linux y otro software de código abierto, diseñado principalmente para dispositivos móviles con pantalla táctil como teléfonos inteligentes y tabletas.',
   ANDROID_EXPERIENCE: `He estado desarrollando aplicaciones para Android durante más de 3 años. Tengo experiencia en la creación de interfaces de usuario amigables, integración con servicios backend y publicación de aplicaciones en la Google Play Store.`,
-  ANDROID_YEARS: '3 años',
+  ANDROID_YEARS: '5 años',
 };
 
 const iOSDevelopment = {
@@ -446,7 +446,7 @@ const iOSDevelopment = {
   \n<b>•Diseño de interfaz intuitiva:</b> Tengo experiencia en el diseño y desarrollo de interfaces atractivas y fáciles de usar que se adhieren a las pautas de diseño de Apple para garantizar una experiencia de usuario perfecta.
   \n<b>•Integración de servicios backend:</b> Soy capaz de integrar aplicaciones de iOS con servicios backend mediante APIs RESTful u otros protocolos de comunicación para garantizar la conectividad y funcionalidad completa de la aplicación.
   \n<b>•Publicación en la App Store:</b> Tengo conocimiento de los requisitos y procesos para la publicación en la App Store de Apple, incluida la preparación de la aplicación, la configuración de perfiles de provisión y el envío de la aplicación para su revisión por parte de Apple.`,
-  IOS_YEARS: '1 año',
+  IOS_YEARS: '3 años',
 };
 
 const TelegramBotApi = {
@@ -460,7 +460,7 @@ const Postgres = {
   POSTGRESQL_HELP:
     'PostgreSQL es un potente sistema de gestión de bases de datos relacional de código abierto que utiliza y extiende el lenguaje SQL combinado con muchas características que almacenan y escalan cargas de trabajo de datos más complicadas de manera segura.',
   POSTGRESQL_EXPERIENCE: `He estado usando PostgreSQL durante más de 3 años. Tengo experiencia en la creación de bases de datos, la definición de tablas y la escritura de consultas complejas utilizando SQL.`,
-  POSTGRESQL_YEARS: '3 años',
+  POSTGRESQL_YEARS: '5 años',
 };
 
 const Express = {
@@ -476,7 +476,7 @@ const Express = {
   \n<b>•Optimización del rendimiento:</b> Experimentado en la optimización de aplicaciones Express.js para el rendimiento mediante la implementación de técnicas como almacenamiento en caché, compresión y equilibrio de carga para garantizar tiempos de respuesta rápidos y utilización eficiente de recursos.
   \n<b>•Gestión de sesiones:</b> Tengo experiencia con la gestión de sesiones en aplicaciones Express.js, incluida la implementación de sesiones de usuario, almacenamiento de sesiones y mecanismos de autenticación basados en sesiones.
   `,
-  EXPRESS_YEARS: '4 años',
+  EXPRESS_YEARS: '6 años',
 };
 
 const MercadoPago = {
@@ -490,7 +490,7 @@ const Expo = {
   EXPO_HELP:
     'Expo es una plataforma gratuita y de código abierto para crear aplicaciones nativas universales para Android, iOS y la web con JavaScript y React.',
   EXPO_EXPERIENCE: `He estado utilizando Expo durante más de 2 años. Tengo experiencia en la creación de aplicaciones móviles multiplataforma para iOS y Android utilizando las herramientas y servicios de Expo.`,
-  EXPO_YEARS: '2 años',
+  EXPO_YEARS: '4 años',
 };
 
 const SpotifyApi = {
@@ -504,14 +504,14 @@ const Vercel = {
   VERCEL_HELP:
     'Vercel es una plataforma de desarrollo y despliegue para aplicaciones web frontend. Ofrece despliegue automático, funciones serverless y optimización de rendimiento.',
   VERCEL_EXPERIENCE: `He estado usando Vercel durante más de 1 año. Tengo experiencia en el despliegue automático de aplicaciones React, Next.js y otras aplicaciones frontend. También he utilizado Vercel Functions para crear APIs serverless y he configurado dominios personalizados y certificados SSL.`,
-  VERCEL_YEARS: '1 año',
+  VERCEL_YEARS: '3 años',
 };
 
 const Cloudflare = {
   CLOUDFLARE_HELP:
     'Cloudflare es una plataforma de servicios web que ofrece CDN, DNS, protección DDoS, hosting y servicios de seguridad para sitios web y aplicaciones.',
   CLOUDFLARE_EXPERIENCE: `He estado usando Cloudflare durante más de 1 año. Tengo experiencia en la configuración de CDN para mejorar el rendimiento de aplicaciones web, gestión de DNS, implementación de reglas de firewall y optimización de la velocidad de carga de sitios web.`,
-  CLOUDFLARE_YEARS: '1 año',
+  CLOUDFLARE_YEARS: '3 años',
 };
 
 const Electron = {
@@ -519,6 +519,78 @@ const Electron = {
     'Electron es un framework que permite crear aplicaciones de escritorio multiplataforma usando tecnologías web como HTML, CSS y JavaScript.',
   ELECTRON_EXPERIENCE: `He estado usando Electron durante más de 1 año. Tengo experiencia en el desarrollo de aplicaciones de escritorio para Windows, macOS y Linux. He creado aplicaciones con funcionalidades nativas del sistema operativo, gestión de procesos del sistema y integración con APIs del sistema.`,
   ELECTRON_YEARS: '1 año',
+};
+
+const Nextjs = {
+  'NEXT.JS_HELP':
+    'Next.js es un framework de React para construir aplicaciones web full-stack. Ofrece renderizado del lado del servidor, generación de sitios estáticos, routing y API routes de forma nativa.',
+  'NEXT.JS_EXPERIENCE': `Experiencia práctica con Next.js (más de 2 años):
+  \n<b>•App Router y Pages:</b> Construcción de aplicaciones en producción con App Router y Pages Router, incluyendo layouts anidados, rutas dinámicas y patrones de carga de datos.
+  \n<b>•Estrategias de renderizado:</b> Elección entre SSR, SSG, ISR y renderizado del lado del cliente según SEO, rendimiento y frescura de datos.
+  \n<b>•Funcionalidades full-stack:</b> Implementación de API routes / Route Handlers, middleware y server actions cuando aportan valor al producto.
+  \n<b>•Despliegue:</b> Publicación de apps Next.js en Vercel con configuración de entornos, previews y rollouts a producción.`,
+  'NEXT.JS_YEARS': '4 años',
+};
+
+const AI = {
+  AI_HELP:
+    'AI cubre herramientas de IA generativa y desarrollo asistido por LLMs: usar modelos, APIs y flujos con agents para diseñar, construir y mejorar software más rápido.',
+  AI_EXPERIENCE: `IA aplicada en el día a día de ingeniería (más de 2 años):
+  \n<b>•Desarrollo asistido por LLMs:</b> Uso de herramientas como Cursor, Claude Code y Codex para acelerar diseño, implementación, refactoring, debugging y documentación, manteniendo la responsabilidad sobre arquitectura y calidad.
+  \n<b>•Prompting y flujos de trabajo:</b> Estructuración de prompts, contexto y revisiones iterativas para que la salida de la IA sea confiable en trabajo de producción.
+  \n<b>•Features de producto:</b> Exploración e integración de capacidades de IA en aplicaciones cuando aportan valor claro al usuario (generación de contenido, asistencia en research, automatización).
+  \n<b>•Aprendizaje continuo:</b> Completé especializaciones de Google AI y cursos relacionados, aplicando esos conceptos en proyectos reales.`,
+  AI_YEARS: '4 años',
+};
+
+const Cursor = {
+  CURSOR_HELP:
+    'Cursor es un editor de código potenciado por IA, pensado para desarrollo asistido por LLMs, con contexto profundo del codebase y flujos agentic.',
+  CURSOR_EXPERIENCE: `Uso diario de Cursor (más de 2 años):
+  \n<b>•Coding agentic:</b> Impulsar cambios multi-archivo, refactors y features con agents de Cursor, revisando diffs con cuidado.
+  \n<b>•Contexto del codebase:</b> Usar chat y rules conscientes del proyecto para alinear sugerencias con arquitectura y convenciones.
+  \n<b>•Debug y review:</b> Acelerar investigación, tests y pulido de PRs sin perder ownership del código final.`,
+  CURSOR_YEARS: '2 años',
+};
+
+const PromptEngineering = {
+  PROMPT_ENGINEERING_HELP:
+    'Prompt engineering es la práctica de diseñar instrucciones claras, contexto y loops de evaluación para que los LLMs produzcan outputs confiables y útiles en trabajo real de ingeniería.',
+  PROMPT_ENGINEERING_EXPERIENCE: `Prompt engineering aplicado (más de 2 años):
+  \n<b>•Prompts estructurados:</b> Definir rol, constraints, ejemplos y criterios de aceptación para que la salida del modelo sea accionable.
+  \n<b>•Loops iterativos:</b> Refinar prompts con feedback, rúbricas y verificación para resultados de calidad producción.
+  \n<b>•Flujos de ingeniería:</b> Aplicar patrones de prompting a diseño, implementación, debugging, documentación e investigación.`,
+  PROMPT_ENGINEERING_YEARS: '2 años',
+};
+
+const Notion = {
+  NOTION_HELP:
+    'Notion es un workspace all-in-one para docs, wikis, seguimiento de proyectos y gestión de conocimiento usado por equipos de producto e ingeniería.',
+  NOTION_EXPERIENCE: `Notion para colaboración de ingeniería (más de 3 años):
+  \n<b>•Docs y wikis:</b> Mantener notas técnicas, RFCs y bases de conocimiento del equipo.
+  \n<b>•Seguimiento de proyectos:</b> Organizar tareas, roadmaps y notas de reuniones en workspaces compartidos.
+  \n<b>•Proceso:</b> Usar templates y databases para mantener consistencia en delivery y documentación.`,
+  NOTION_YEARS: '3 años',
+};
+
+const GitHubActions = {
+  GITHUB_ACTIONS_HELP:
+    'GitHub Actions es una plataforma de CI/CD para automatizar workflows de build, test y deploy directamente desde repositorios de GitHub.',
+  GITHUB_ACTIONS_EXPERIENCE: `GitHub Actions en pipelines reales (más de 4 años):
+  \n<b>•Autoría de workflows:</b> Escribir workflows YAML para jobs de lint, test, build y deploy.
+  \n<b>•Automatización reutilizable:</b> Usar matrices, caching, artifacts y workflows reutilizables para pipelines rápidos y mantenibles.
+  \n<b>•Delivery:</b> Automatizar releases y deploys por entorno con secrets, environments y branch protections.`,
+  GITHUB_ACTIONS_YEARS: '4 años',
+};
+
+const Grafana = {
+  GRAFANA_HELP:
+    'Grafana es una plataforma de observabilidad para métricas, logs y dashboards usada para monitorear la salud de aplicaciones e infraestructura.',
+  GRAFANA_EXPERIENCE: `Grafana para observabilidad (más de 2 años):
+  \n<b>•Dashboards:</b> Construir paneles de latencia, errores, throughput y uso de recursos.
+  \n<b>•Alerting:</b> Configurar alertas que muestren incidentes accionables en vez de ruido.
+  \n<b>•Visibilidad ops:</b> Usar Grafana para debuggear issues en producción y seguir la salud del servicio en el tiempo.`,
+  GRAFANA_YEARS: '2 años',
 };
 
 export const SKILLS = {
@@ -577,4 +649,11 @@ export const SKILLS = {
   ...Vercel,
   ...Cloudflare,
   ...Electron,
+  ...Nextjs,
+  ...AI,
+  ...Cursor,
+  ...PromptEngineering,
+  ...Notion,
+  ...GitHubActions,
+  ...Grafana,
 };

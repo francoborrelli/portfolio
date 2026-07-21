@@ -35,8 +35,12 @@ import {
   LinuxOriginal,
   PostmanOriginal,
   PythonOriginal,
+  NextjsOriginal,
+  NotionOriginal,
+  GrafanaOriginal,
 } from 'devicons-react';
-import { FaSpotify, FaSymfony, FaTelegram, FaAws, FaApple, FaReact } from 'react-icons/fa6';
+import { FaSpotify, FaSymfony, FaTelegram, FaAws, FaApple, FaReact, FaBrain, FaWandMagicSparkles } from 'react-icons/fa6';
+import { SiCursor } from 'react-icons/si';
 
 export const tags = {
   Linux: {
@@ -210,6 +214,55 @@ export const tags = {
     link: 'https://nodejs.org/',
     image:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxT3I3S05wanE1dhd109jlO-1ujb4wZt4ibsclFJ7YnQ&s',
+  },
+  'Next.js': {
+    text: 'Next.js',
+    color: '#000000',
+    icon: <NextjsOriginal />,
+    link: 'https://nextjs.org/',
+    image: 'https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png',
+  },
+  AI: {
+    text: 'AI',
+    color: '#10a37f',
+    icon: <FaBrain />,
+    link: 'https://ai.google/',
+    image: 'https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_AI.max-1000x1000.png',
+  },
+  Cursor: {
+    text: 'Cursor',
+    color: '#000000',
+    icon: <SiCursor />,
+    link: 'https://cursor.com/',
+    image: 'https://cursor.com/assets/images/og-image.png',
+  },
+  'Prompt Engineering': {
+    text: 'Prompt Engineering',
+    color: '#7c3aed',
+    icon: <FaWandMagicSparkles />,
+    link: 'https://platform.openai.com/docs/guides/prompt-engineering',
+    image: 'https://miro.medium.com/v2/resize:fit:1400/1*44M2fsFP9sH05WD3yspWdA.png',
+  },
+  Notion: {
+    text: 'Notion',
+    color: '#ffffff',
+    icon: <NotionOriginal />,
+    link: 'https://www.notion.so/',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png',
+  },
+  'GitHub Actions': {
+    text: 'GitHub Actions',
+    color: '#2088FF',
+    icon: <GithubactionsOriginal />,
+    link: 'https://github.com/features/actions',
+    image: 'https://github.githubassets.com/images/modules/site/social-cards/github-actions.png',
+  },
+  Grafana: {
+    text: 'Grafana',
+    color: '#F46800',
+    icon: <GrafanaOriginal />,
+    link: 'https://grafana.com/',
+    image: 'https://grafana.com/static/img/about/grafana_logo_swirl_fullcolor.jpg',
   },
   TensorFlow: {
     text: 'TensorFlow',

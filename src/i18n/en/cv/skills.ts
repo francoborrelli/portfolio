@@ -3,7 +3,7 @@ const Linux = {
     'Linux is an open-source operating system that is based on the Linux kernel. It is used in many different devices such as servers, desktops, and mobile devices.',
   LINUX_EXPERIENCE:
     'I have been using Linux for over 6 years now. I have experience with both Debian and Arch based distributions. I have also used Linux in a server environment.',
-  LINUX_YEARS: '6 years',
+  LINUX_YEARS: '8 years',
 };
 
 const Keycloak = {
@@ -28,7 +28,7 @@ const GooglePlay = {
     'Google Play Console is a platform that allows developers to publish and manage their Android apps on the Google Play Store.',
   GOOGLE_PLAY_CONSOLE_EXPERIENCE:
     'I have been using Google Play Console for over 3 years now. I have experience with publishing apps, managing store listings, and analyzing app performance.',
-  GOOGLE_PLAY_CONSOLE_YEARS: '3 years',
+  GOOGLE_PLAY_CONSOLE_YEARS: '5 years',
 };
 
 const Heroku = {
@@ -50,7 +50,7 @@ const Gatsby = {
 const Postman = {
   POSTMAN_HELP:
     'Postman is a collaboration platform for API development. It allows developers to design, test, and document APIs with ease.',
-  POSTMAN_EXPERIENCE: `I have been using Gatsby for over 4 years now. I have experience with:
+  POSTMAN_EXPERIENCE: `I have been using Postman for over 4 years now. I have experience with:
   \n<b>•Efficient API Testing and Development:</b> I have extensive experience using Postman to create and send API requests of various types (GET, POST, PUT, etc.). This allows me to thoroughly test API functionality, identify and troubleshoot issues, and ensure smooth integration with other systems.
   \n<b>•Collections for Organization:</b> I effectively organize requests into collections for better API test suite management and maintainability.
   \n<b>•Environments for Flexibility:</b> I can create and manage different environments (e.g., development, staging, production) within Postman to handle API calls with varying configurations.
@@ -66,7 +66,7 @@ const Graphql = {
   \n<b>•Resolver Development:</b> I am skilled in writing resolvers, the heart of GraphQL servers. My experience encompasses:
   <ul style="margin-left: 20px"><li><b>•Data Fetching:</b> I can effectively fetch data from various sources like databases, APIs, or other services within resolvers to fulfill client requests.</li><li><b>•Data Transformation:</b> I understand the importance of transforming and manipulating data before returning it to the client. This can involve filtering, sorting, or applying business logic within resolvers.</li><li><b>•Performance Optimization:</b> I can consider techniques for optimizing resolvers to ensure efficient data fetching and response times.</li></ul>
   \n<b>•Crafting Effective Queries:</b> I am proficient in writing GraphQL queries that efficiently retrieve the specific data clients need. This includes utilizing features like nested queries, fragments, and variables for building flexible and reusable queries.`,
-  GRAPHQL_YEARS: '2 years',
+  GRAPHQL_YEARS: '4 years',
 };
 
 const Redis = {
@@ -89,7 +89,7 @@ const Sentry = {
     'Sentry is an open-source error tracking tool that helps developers monitor and fix crashes in real-time. It provides insights into application performance and user experience.',
   SENTRY_EXPERIENCE:
     'I have been using Sentry for over 3 years now. I have experience with setting up error tracking, monitoring application performance, and analyzing crash reports.',
-  SENTRY_YEARS: '3 years',
+  SENTRY_YEARS: '5 years',
 };
 
 const React = {
@@ -105,7 +105,7 @@ const React = {
     \n<b>•Memoization with useMemo and useCallback:</b> Caching expensive calculations and functions to prevent unnecessary re-renders.
     \n<b>•Virtualization for Large Lists:</b> Implementing techniques like virtual scrolling to render only visible list items and improve performance with large datasets.
     \n<b>•Leveraging Common Libraries:</b> I am familiar with and can effectively use popular React libraries to enhance functionality and development efficiency. These include Redux (A state management library for managing complex application state), React Router (A library for handling routing and navigation within your React applications), Material-UI/Ant Design/Chakra UI (UI component libraries for building visually appealing and consistent user interfaces).`,
-  REACT_YEARS: '6 years',
+  REACT_YEARS: '8 years',
 };
 
 const Firebase = {
@@ -126,7 +126,7 @@ const Typescript = {
     'TypeScript is a superset of JavaScript that adds static types to the language. It is used to build large-scale applications more easily and with fewer bugs.',
   TYPESCRIPT_EXPERIENCE:
     'I have been using TypeScript for over 4 years now. I have experience with writing type-safe code, defining interfaces, and using advanced features such as generics and decorators.',
-  TYPESCRIPT_YEARS: '4 years',
+  TYPESCRIPT_YEARS: '6 years',
 };
 
 const Javascript = {
@@ -144,7 +144,7 @@ const AntDesign = {
   \n<b>•Extensive Component Utilization:</b> I possess a thorough understanding of Ant Design's comprehensive component library. This allows me to efficiently build user interfaces with a wide range of features, from basic buttons and forms to complex data tables and charts.
   \n<b>•Theming Expertise:</b> I can effectively customize Ant Design themes to match specific brand guidelines or application needs. This includes adjusting colors, fonts, spacing, and other design elements to create a cohesive and visually appealing user experience.
   \n<b>•Design System Creation:</b> My experience extends to crafting reusable design systems based on Ant Design. This involves defining design patterns, components, and guidelines to ensure consistency and maintainability across web applications. Here, I can elaborate on specific aspects of your design system creation process, such as defining a style guide that documents component usage and best practices, utilizing tools like Less or Sass for efficient theme management and implementing a design token system for centralized control over design elements.`,
-  ANT_DESIGN_YEARS: '4 years',
+  ANT_DESIGN_YEARS: '6 years',
 };
 
 const Python = {
@@ -152,7 +152,7 @@ const Python = {
     'Python is a high-level, interpreted programming language that is known for its simplicity and readability. It is used for web development, data analysis, artificial intelligence, and more.',
   PYTHON_EXPERIENCE:
     'I have been using Python for over 5 years now. I have experience with writing scripts, developing web applications, and working with data science libraries such as NumPy and Pandas.',
-  PYTHON_YEARS: '5 years',
+  PYTHON_YEARS: '7 years',
 };
 
 const Nodejs = {
@@ -160,7 +160,7 @@ const Nodejs = {
     'Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside a web browser.',
   'NODE.JS_EXPERIENCE':
     'I have been using Node.js for over 4 years now. I have experience with building web servers, creating APIs, and working with npm packages.',
-  'NODE.JS_YEARS': '4 years',
+  'NODE.JS_YEARS': '6 years',
 };
 
 const Tensorflow = {
@@ -185,7 +185,7 @@ const Django = {
   \n<b>•Other advanced DRF Features</b>: I have experience with advanced DRF functionalities like custom permissions, filters, pagination, or viewsets.
   `,
 
-  DJANGO_YEARS: '4 years',
+  DJANGO_YEARS: '6 years',
 };
 
 const Git = {
@@ -193,7 +193,7 @@ const Git = {
     'Git is a distributed version control system that is used to track changes in source code during software development.',
   GIT_EXPERIENCE:
     'I have been using Git for over 7 years now. I have experience with creating repositories, branching, merging, and resolving conflicts.',
-  GIT_YEARS: '7 years',
+  GIT_YEARS: '9 years',
 };
 
 const Github = {
@@ -201,7 +201,7 @@ const Github = {
     'GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.',
   GITHUB_EXPERIENCE:
     'I have been using GitHub for over 7 years now. I have experience with creating repositories, managing issues, and collaborating with other developers. I have also used GitHub Actions to automate workflows and GitHub Pages to host static websites (like this one).',
-  GITHUB_YEARS: '7 years',
+  GITHUB_YEARS: '9 years',
 };
 
 const Gitlab = {
@@ -215,7 +215,7 @@ const Gitlab = {
   \n<b>•Configuration File Creation:</b> I can effectively write and maintain GitLab CI/CD configuration files (YAML) to define build stages, jobs, and deployment strategies.
   \n<b>•Cache and Artifact Management:</b> I understand the importance of optimizing CI/CD pipelines by leveraging caching mechanisms and managing build artifacts efficiently.
   \n<b>•Kubernetes Integration for Deployments:</b> I have experience integrating GitLab with Kubernetes for containerized application deployments. This demonstrates my ability to manage modern development workflows effectively.`,
-  GITLAB_YEARS: '5 years',
+  GITLAB_YEARS: '7 years',
 };
 
 const AWS = {
@@ -234,7 +234,7 @@ const AWS = {
   \n<b>•Amazon Route 53:</b> I am proficient in using Amazon Route 53 to manage DNS routing for my applications. This guarantees users are directed to the correct resources and helps ensure application availability.
   \n<b>•AWS IAM (Identity and Access Management):</b> I understand the importance of security and can implement AWS IAM to control access to AWS resources. This ensures only authorized users and applications can access specific resources.
   \n<b>•Amazon Cognito:</b> I can utilize Amazon Cognito to manage user authentication for web and mobile applications. This simplifies user login and signup processes while maintaining security.`,
-  AWS_YEARS: '4 years',
+  AWS_YEARS: '6 years',
 };
 
 const JIRA = {
@@ -244,7 +244,7 @@ const JIRA = {
   \n<b>•Issue Management:</b> Efficiently creating and managing issues throughout the project lifecycle. This includes prioritizing issues, assigning them to team members, and tracking their progress towards resolution.
   \n<b>•Agile Board Setup and Configuration:</b> Configuring and customizing Agile boards to best suit project needs. This may involve defining workflows, creating custom statuses and fields, and setting up swimlanes for improved project visualization.
   \n<b>•Project Progress Tracking and Reporting:</b> Utilizing Jira's features to effectively track project progress. This can involve monitoring key metrics, generating reports (burndown charts, sprint reports), and identifying potential roadblocks for proactive mitigation.`,
-  JIRA_YEARS: '4 years',
+  JIRA_YEARS: '6 years',
 };
 
 const SLACK = {
@@ -255,7 +255,7 @@ const SLACK = {
     \n<b>•Effective Communication:</b> I have extensive experience using Slack as a primary communication tool within teams. This includes creating channels, sending direct messages, and participating in group discussions to facilitate efficient and transparent communication.
     \n<b>•Channel Organization:</b> I can effectively organize channels based on topics, projects, or teams to ensure clear communication and easy access to relevant information.
     \n<b>•Integration with Other Tools:</b> I am proficient in integrating Slack with other tools and services to streamline workflows and enhance productivity. This includes setting up notifications, alerts, and automated messages to keep team members informed and engaged.`,
-  SLACK_YEARS: '5 years',
+  SLACK_YEARS: '7 years',
 };
 
 const Terraform = {
@@ -275,7 +275,7 @@ const CI_CD = {
   \n<b>•Build Automation:</b> Setting up automated build processes to compile, package, and prepare applications for deployment. This ensures consistent and reliable build artifacts that can be deployed across different environments.
   \n<b>•Deployment Automation:</b> Automating deployment processes to streamline the release of new features and updates. This includes deploying applications to various environments (development, staging, production) with minimal manual intervention.
   \n<b>•Monitoring and Feedback Loops:</b> Integrating monitoring tools and feedback mechanisms within CI/CD pipelines to track performance metrics, detect issues, and provide actionable insights for continuous improvement.`,
-  'CI/CD_YEARS': '3 years',
+  'CI/CD_YEARS': '5 years',
 };
 
 const Laravel = {
@@ -325,7 +325,7 @@ const Docker = {
   \n<b>•Docker networking:</b> I have used Docker networks to connect containers and manage their communication.
   \n<b>•CI/CD integration:</b> I have experience integrating Docker with CI/CD pipelines for automated container builds and deployments.
 `,
-  DOCKER_YEARS: '5 years',
+  DOCKER_YEARS: '7 years',
 };
 
 const Angular = {
@@ -360,7 +360,7 @@ const ReactNative = {
   \n<b>•Third-Party Integrations:</b> I have experience integrating third-party libraries and APIs into React Native applications to extend functionality and access additional features.
   \n<b>•Performance Optimization:</b> I understand the importance of optimizing React Native applications for performance. This includes techniques like code splitting, lazy loading, and image optimization to ensure smooth user experiences.
   `,
-  REACT_NATIVE_YEARS: '4 years',
+  REACT_NATIVE_YEARS: '6 years',
 };
 
 const Serverless = {
@@ -409,7 +409,7 @@ const Mongo = {
   MONGODB_HELP:
     'MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.',
   MONGODB_EXPERIENCE: `I have been using MongoDB for over 3 years now. I have experience with creating databases, defining collections, and querying data using the MongoDB shell and drivers.`,
-  MONGODB_YEARS: '3 years',
+  MONGODB_YEARS: '5 years',
 };
 
 const Redux = {
@@ -422,7 +422,7 @@ const Redux = {
   \n<b>•Redux Integration with React:</b> Proficient in integrating Redux with React applications using libraries like react-redux to connect components to the Redux store and access state or dispatch actions.
   \n<b>•Redux Saga for Asynchronous Operations:</b> Experienced in leveraging Redux Saga, a middleware for Redux, to manage asynchronous actions and side effects within your React applications. This promotes cleaner separation of concerns and simplifies handling complex asynchronous logic.
   \n<b>•Redux Toolkit Expertise:</b> Familiar with Redux Toolkit, a collection of tools that simplifies common Redux tasks like creating actions, reducers, and slices. This allows for writing more concise and maintainable Redux code.`,
-  REDUX_YEARS: '4 years',
+  REDUX_YEARS: '6 years',
 };
 
 const Sass = {
@@ -432,14 +432,14 @@ const Sass = {
   \n<b>•Writing maintainable stylesheets:</b> Utilizing Sass's features to create well-organized and maintainable stylesheets. This includes leveraging nesting for logical grouping of styles and mixins for code reuse, reducing redundancy and improving overall code structure.
   \n<b>•Variable usage for theming:</b> Adept at employing Sass variables to define colors, fonts, and other stylistic elements throughout your stylesheets. This allows for easy theme changes and promotes consistency across your application's UI.
   \n<b>•Advanced Techniques:</b> Experienced in utilizing more advanced Sass features like nesting control (e.g., @at-root), parent selectors (&), and placeholder selectors ( %) for more granular and efficient stylesheet management.`,
-  SASS_YEARS: '4 years',
+  SASS_YEARS: '6 years',
 };
 
 const Android = {
   ANDROID_HELP:
     'Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software, designed primarily for touchscreen mobile devices such as smartphones and tablets.',
   ANDROID_EXPERIENCE: `I have been developing Android applications for over 3 years now. I have experience with building user-friendly interfaces, integrating with backend services, and publishing apps to the Google Play Store.`,
-  ANDROID_YEARS: '3 years',
+  ANDROID_YEARS: '5 years',
 };
 
 const iOSDevelopment = {
@@ -449,7 +449,7 @@ const iOSDevelopment = {
   \n<b>•Intuitive Interface Design:</b> I have experience in designing and developing attractive, user-friendly interfaces that adhere to Apple's design guidelines to ensure a seamless user experience.
   \n<b>•Backend Service Integration:</b> I am capable of integrating iOS applications with backend services using RESTful APIs or other communication protocols to ensure connectivity and full functionality of the application.
   \n<b>•App Store Publishing:</b> I have knowledge of the requirements and processes for publishing to the Apple App Store, including preparing the application, configuring provisioning profiles, and submitting the application for review by Apple.`,
-  IOS_YEARS: '1 year',
+  IOS_YEARS: '3 years',
 };
 
 const TelegramBotApi = {
@@ -463,7 +463,7 @@ const Postgres = {
   POSTGRESQL_HELP:
     'PostgreSQL is a powerful, open-source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads.',
   POSTGRESQL_EXPERIENCE: `I have been using PostgreSQL for over 3 years now. I have experience with creating databases, defining tables, and writing complex queries using SQL.`,
-  POSTGRESQL_YEARS: '3 years',
+  POSTGRESQL_YEARS: '5 years',
 };
 
 const Express = {
@@ -479,7 +479,7 @@ const Express = {
   \n<b>•Performance Optimization:</b> Experienced in optimizing Express.js applications for performance by implementing techniques like caching, compression, and load balancing to ensure fast response times and efficient resource utilization.
   \n<b>•Session Management:</b> I have experience with session management in Express.js applications, including implementing user sessions, session storage, and session-based authentication mechanisms.
   `,
-  EXPRESS_YEARS: '4 years',
+  EXPRESS_YEARS: '6 years',
 };
 
 const MercadoPago = {
@@ -493,7 +493,7 @@ const Expo = {
   EXPO_HELP:
     'Expo is a free and open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.',
   EXPO_EXPERIENCE: `I have been using Expo for over 2 years now. I have experience with building cross-platform mobile applications for iOS and Android using Expo's tools and services.`,
-  EXPO_YEARS: '2 years',
+  EXPO_YEARS: '4 years',
 };
 
 const SpotifyApi = {
@@ -507,14 +507,14 @@ const Vercel = {
   VERCEL_HELP:
     'Vercel is a development and deployment platform for frontend web applications. It offers automatic deployment, serverless functions, and performance optimization.',
   VERCEL_EXPERIENCE: `I have been using Vercel for more than 1 year. I have experience in automatic deployment of React, Next.js and other frontend applications. I have also used Vercel Functions to create serverless APIs and configured custom domains and SSL certificates.`,
-  VERCEL_YEARS: '1 year',
+  VERCEL_YEARS: '3 years',
 };
 
 const Cloudflare = {
   CLOUDFLARE_HELP:
     'Cloudflare is a web services platform that offers CDN, DNS, DDoS protection, hosting and security services for websites and applications.',
   CLOUDFLARE_EXPERIENCE: `I have been using Cloudflare for more than 1 year. I have experience in configuring CDN to improve web application performance, DNS management, implementing firewall rules and optimizing website loading speed.`,
-  CLOUDFLARE_YEARS: '1 year',
+  CLOUDFLARE_YEARS: '3 years',
 };
 
 const Electron = {
@@ -522,6 +522,78 @@ const Electron = {
     'Electron is a framework that allows you to create cross-platform desktop applications using web technologies like HTML, CSS and JavaScript.',
   ELECTRON_EXPERIENCE: `I have been using Electron for more than 1 year. I have experience in developing desktop applications for Windows, macOS and Linux. I have created applications with native operating system functionality, system process management and integration with system APIs.`,
   ELECTRON_YEARS: '1 year',
+};
+
+const Nextjs = {
+  'NEXT.JS_HELP':
+    'Next.js is a React framework for building full-stack web applications. It provides server-side rendering, static site generation, routing, and API routes out of the box.',
+  'NEXT.JS_EXPERIENCE': `Hands-on Next.js experience (2+ Years):
+  \n<b>•App Router & Pages:</b> Building production apps with the App Router and Pages Router, including nested layouts, dynamic routes, and data loading patterns.
+  \n<b>•Rendering Strategies:</b> Choosing between SSR, SSG, ISR, and client-side rendering based on SEO, performance, and freshness requirements.
+  \n<b>•Full-stack Features:</b> Implementing API routes / Route Handlers, middleware, and server actions where they fit the product.
+  \n<b>•Deployment:</b> Shipping Next.js apps on Vercel with environment configuration, previews, and production rollouts.`,
+  'NEXT.JS_YEARS': '4 years',
+};
+
+const AI = {
+  AI_HELP:
+    'AI covers modern generative AI tooling and LLM-assisted development: using models, APIs, and agent workflows to design, build, and improve software faster.',
+  AI_EXPERIENCE: `Applied AI in day-to-day engineering (2+ Years):
+  \n<b>•LLM-assisted development:</b> Using tools like Cursor, Claude Code, and Codex to accelerate design, implementation, refactoring, debugging, and documentation while keeping ownership of architecture and code quality.
+  \n<b>•Prompting & workflows:</b> Structuring prompts, context, and iterative reviews so AI output is reliable enough for production work.
+  \n<b>•Product features:</b> Exploring and integrating AI capabilities into applications when they add clear user value (content generation, research assistance, automation).
+  \n<b>•Continuous learning:</b> Completing Google AI specializations and related coursework, then applying those concepts in real projects.`,
+  AI_YEARS: '4 years',
+};
+
+const Cursor = {
+  CURSOR_HELP:
+    'Cursor is an AI-powered code editor built for LLM-assisted software development, with deep codebase context and agentic workflows.',
+  CURSOR_EXPERIENCE: `Daily Cursor usage (2+ Years):
+  \n<b>•Agentic coding:</b> Driving multi-file changes, refactors, and feature work with Cursor agents while reviewing diffs carefully.
+  \n<b>•Codebase context:</b> Using project-aware chat and rules to keep suggestions aligned with architecture and conventions.
+  \n<b>•Debug & review:</b> Speeding up investigation, test writing, and PR-quality polish without giving up ownership of the final code.`,
+  CURSOR_YEARS: '2 years',
+};
+
+const PromptEngineering = {
+  PROMPT_ENGINEERING_HELP:
+    'Prompt engineering is the practice of designing clear instructions, context, and evaluation loops so LLMs produce reliable, useful outputs for real engineering work.',
+  PROMPT_ENGINEERING_EXPERIENCE: `Applied prompt engineering (2+ Years):
+  \n<b>•Structured prompts:</b> Writing role, constraints, examples, and acceptance criteria so model output is actionable.
+  \n<b>•Iterative loops:</b> Refining prompts with feedback, rubrics, and verification steps for production-quality results.
+  \n<b>•Engineering workflows:</b> Applying prompting patterns to design, implementation, debugging, documentation, and research.`,
+  PROMPT_ENGINEERING_YEARS: '2 years',
+};
+
+const Notion = {
+  NOTION_HELP:
+    'Notion is an all-in-one workspace for docs, wikis, project tracking, and knowledge management used by product and engineering teams.',
+  NOTION_EXPERIENCE: `Notion for engineering collaboration (3+ Years):
+  \n<b>•Docs & wikis:</b> Maintaining technical notes, RFCs, and team knowledge bases.
+  \n<b>•Project tracking:</b> Organizing tasks, roadmaps, and meeting notes in shared workspaces.
+  \n<b>•Process:</b> Using templates and databases to keep delivery and documentation consistent.`,
+  NOTION_YEARS: '3 years',
+};
+
+const GitHubActions = {
+  GITHUB_ACTIONS_HELP:
+    'GitHub Actions is a CI/CD platform for automating build, test, and deploy workflows directly from GitHub repositories.',
+  GITHUB_ACTIONS_EXPERIENCE: `GitHub Actions in real pipelines (4+ Years):
+  \n<b>•Workflow authoring:</b> Writing YAML workflows for lint, test, build, and deploy jobs.
+  \n<b>•Reusable automation:</b> Using matrices, caching, artifacts, and reusable workflows to keep pipelines fast and maintainable.
+  \n<b>•Delivery:</b> Automating releases and environment deploys with secrets, environments, and branch protections.`,
+  GITHUB_ACTIONS_YEARS: '4 years',
+};
+
+const Grafana = {
+  GRAFANA_HELP:
+    'Grafana is an observability platform for metrics, logs, and dashboards used to monitor application and infrastructure health.',
+  GRAFANA_EXPERIENCE: `Grafana for observability (2+ Years):
+  \n<b>•Dashboards:</b> Building panels for latency, errors, throughput, and resource usage.
+  \n<b>•Alerting:</b> Configuring alerts that surface actionable incidents instead of noise.
+  \n<b>•Ops visibility:</b> Using Grafana to debug production issues and track service health over time.`,
+  GRAFANA_YEARS: '2 years',
 };
 
 export const SKILLS = {
@@ -580,4 +652,11 @@ export const SKILLS = {
   ...Vercel,
   ...Cloudflare,
   ...Electron,
+  ...Nextjs,
+  ...AI,
+  ...Cursor,
+  ...PromptEngineering,
+  ...Notion,
+  ...GitHubActions,
+  ...Grafana,
 };
