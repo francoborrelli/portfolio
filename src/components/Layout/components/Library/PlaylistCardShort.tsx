@@ -1,13 +1,21 @@
+import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Playlist } from '../../../../interfaces/types';
 import { useAppSelector } from '../../../../store/store';
 import { Tooltip } from '../../../Tooltip';
 
-const PlaylistCardShort = ({ playlist, onClick }: { playlist: Playlist; onClick: () => void }) => {
+interface PlaylistCardShortProps {
+  playlist: Playlist;
+  onSelect: (name: string) => void;
+}
+
+const PlaylistCardShort = memo(({ playlist, onSelect }: PlaylistCardShortProps) => {
   const { t: cvt } = useTranslation(['cv']);
   const { t } = useTranslation(['playlist']);
   const language = useAppSelector((state) => state.language.language);
   const collapsed = useAppSelector((state) => state.library.collapsed);
+
+  const handleClick = () => onSelect(playlist.name);
 
   if (collapsed) {
     return (
@@ -25,7 +33,7 @@ const PlaylistCardShort = ({ playlist, onClick }: { playlist: Playlist; onClick:
         <button
           style={{ borderRadius: 10, display: 'flex', justifyContent: 'center' }}
           className='library-card collapsed'
-          onClick={onClick}
+          onClick={handleClick}
         >
           <div className='image aspect-square h-full items-center'>
             <img src={playlist.getImage(language)} alt='' style={{ width: 52 }} />
@@ -36,7 +44,7 @@ const PlaylistCardShort = ({ playlist, onClick }: { playlist: Playlist; onClick:
   }
 
   return (
-    <button style={{ borderRadius: 10 }} className='library-card' onClick={onClick}>
+    <button style={{ borderRadius: 10 }} className='library-card' onClick={handleClick}>
       <div className='image aspect-square p-2 h-full items-center'>
         <img src={playlist.getImage(language)} alt='' style={{ width: 52 }} />
       </div>
@@ -58,6 +66,8 @@ const PlaylistCardShort = ({ playlist, onClick }: { playlist: Playlist; onClick:
       </div>
     </button>
   );
-};
+});
+
+PlaylistCardShort.displayName = 'PlaylistCardShort';
 
 export default PlaylistCardShort;

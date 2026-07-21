@@ -98,7 +98,7 @@ const ExpandButton = () => {
   return (
     <>
       <FullScreen handle={handle}>
-        <FullScreenPlayer onExit={handle.exit} />
+        {handle.active ? <FullScreenPlayer onExit={handle.exit} /> : null}
       </FullScreen>
 
       <Tooltip title={t('Full Screen')}>

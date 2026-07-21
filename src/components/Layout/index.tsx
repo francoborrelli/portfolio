@@ -12,8 +12,11 @@ import { playlists } from '../../constants/cv';
 
 // Interfaces
 import type { FC, ReactElement } from 'react';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 export const AppLayout: FC<{ children: ReactElement }> = (props) => {
+  const isMobile = useIsMobile();
+
   return (
     <>
       {/* Modals & Drawers */}
@@ -38,9 +41,11 @@ export const AppLayout: FC<{ children: ReactElement }> = (props) => {
                 {props.children}
               </div>
 
-              <div className='mobile-hidden'>
-                <PlayingNow />
-              </div>
+              {!isMobile ? (
+                <div className='mobile-hidden'>
+                  <PlayingNow />
+                </div>
+              ) : null}
             </Flex>
           </Col>
         </Row>

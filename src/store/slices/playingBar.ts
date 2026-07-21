@@ -66,7 +66,7 @@ const playingBarSlice = createSlice({
       }
     },
     increaseTime(state) {
-      state.currentTime += 0.5;
+      state.currentTime += 1;
       if (state.currentTime >= state.duration) {
         state.currentTime = 0;
       }

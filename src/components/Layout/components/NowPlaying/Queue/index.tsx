@@ -3,7 +3,7 @@ import { NowPlayingLayout } from '../layout';
 import { getCurrentSongData, getQueue } from '../../../../../store/slices/playingBar';
 import { useAppSelector } from '../../../../../store/store';
 
-import QueueSongDetailsProps from './SongDetails';
+import QueueSongDetails from './SongDetails';
 
 const NowPlaying = () => {
   const [t] = useTranslation(['playingBar']);
@@ -13,7 +13,7 @@ const NowPlaying = () => {
     <div>
       <p className='playing-section-title'>{t('Now playing')}</p>
       <div style={{ margin: 5 }}>
-        <QueueSongDetailsProps song={currentSong} />
+        <QueueSongDetails song={currentSong} isCurrent />
       </div>
     </div>
   );
@@ -28,8 +28,8 @@ const Queueing = () => {
       <p className='playing-section-title'>{t('Next')}</p>
 
       <div style={{ margin: 5 }}>
-        {currentSongs.map((song, index) => (
-          <QueueSongDetailsProps key={index} song={song} />
+        {currentSongs.map((song) => (
+          <QueueSongDetails key={song.name} song={song} />
         ))}
       </div>
     </div>

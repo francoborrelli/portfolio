@@ -58,9 +58,9 @@ const YourLibrary = ({ playlists }: { playlists: Playlist[] }) => {
   const navigate = useNavigate();
   const collapsed = useAppSelector((state) => state.library.collapsed);
 
-  const onClick = useCallback(
-    (url: string) => {
-      navigate(`/playlist/${url}`);
+  const onSelect = useCallback(
+    (name: string) => {
+      navigate(`/playlist/${name.toLowerCase()}`);
     },
     [navigate]
   );
@@ -78,17 +78,9 @@ const YourLibrary = ({ playlists }: { playlists: Playlist[] }) => {
           <div
             style={collapsed ? { overflowY: 'scroll', overflowX: 'hidden', height: '100%' } : {}}
           >
-            {playlists.map((playlist: Playlist, index: number) => {
-              return (
-                <PlaylistCardShort
-                  key={playlist.name}
-                  playlist={playlist}
-                  onClick={() => {
-                    onClick(playlist.name.toLowerCase());
-                  }}
-                />
-              );
-            })}
+            {playlists.map((playlist: Playlist) => (
+              <PlaylistCardShort key={playlist.name} playlist={playlist} onSelect={onSelect} />
+            ))}
           </div>
         </Col>
         <Col style={{ maxHeight: 40 }}>

@@ -1,23 +1,25 @@
 import { FC, memo } from 'react';
 import { Pause, Play } from '../../../../Icons';
 import { AVAILABLE_SONGS } from '../../../../../constants/songs';
-import { useAppDispatch, useAppSelector } from '../../../../../store/store';
-import { getCurrentSongData, playingBarActions } from '../../../../../store/slices/playingBar';
+import { useAppDispatch } from '../../../../../store/store';
+import { playingBarActions } from '../../../../../store/slices/playingBar';
 import { useTranslation } from 'react-i18next';
+
+const SONG_INDEX_BY_NAME = new Map(AVAILABLE_SONGS.map((song, index) => [song.name, index]));
 
 interface QueueSongDetailsProps {
   song: (typeof AVAILABLE_SONGS)[number];
+  isCurrent?: boolean;
 }
 
-const QueueSongDetails: FC<QueueSongDetailsProps> = memo(({ song }) => {
+const QueueSongDetails: FC<QueueSongDetailsProps> = memo(({ song, isCurrent = false }) => {
   const [t] = useTranslation(['cv']);
   const dispatch = useAppDispatch();
-  const currentSong = useAppSelector(getCurrentSongData);
-
-  const sameSong = currentSong.name === song.name;
 
   const onPlay = () => {
-    dispatch(playingBarActions.setSong({ song: AVAILABLE_SONGS.indexOf(song) }));
+    const index = SONG_INDEX_BY_NAME.get(song.name);
+    if (index === undefined) return;
+    dispatch(playingBarActions.setSong({ song: index }));
   };
 
   return (
@@ -25,7 +27,7 @@ const QueueSongDetails: FC<QueueSongDetailsProps> = memo(({ song }) => {
       <div className=' flex flex-row items-center'>
         <div className='queue-song-image-container'>
           <div className='queue-song-overlay' onClick={onPlay}>
-            {sameSong ? <Pause /> : <Play />}
+            {isCurrent ? <Pause /> : <Play />}
           </div>
           <img
             alt='Album Cover'
@@ -46,5 +48,7 @@ const QueueSongDetails: FC<QueueSongDetailsProps> = memo(({ song }) => {
     </div>
   );
 });
+
+QueueSongDetails.displayName = 'QueueSongDetails';
 
 export default QueueSongDetails;

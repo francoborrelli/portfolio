@@ -30,24 +30,37 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
 
   useEffect(() => {
     const ref = container.current;
+    if (!ref) return;
+
+    let scrollRaf = 0;
+    let resizeRaf = 0;
 
     const handleScroll = () => {
-      if (ref) {
-        setActiveHeader(ref.scrollTop > 260);
-      }
+      if (scrollRaf) return;
+      scrollRaf = requestAnimationFrame(() => {
+        scrollRaf = 0;
+        const next = ref.scrollTop > 260;
+        setActiveHeader((prev) => (prev === next ? prev : next));
+      });
     };
 
-    ref?.addEventListener('scroll', handleScroll);
-
-    setHeaderWidth(container.current?.clientWidth || 0);
-    window.onresize = () => {
-      if (container.current) {
-        setHeaderWidth(container.current.clientWidth);
-      }
+    const handleResize = () => {
+      if (resizeRaf) return;
+      resizeRaf = requestAnimationFrame(() => {
+        resizeRaf = 0;
+        setHeaderWidth(ref.clientWidth);
+      });
     };
+
+    setHeaderWidth(ref.clientWidth);
+    ref.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleResize);
+
     return () => {
-      window.onresize = null;
-      ref?.removeEventListener('scroll', handleScroll);
+      cancelAnimationFrame(scrollRaf);
+      cancelAnimationFrame(resizeRaf);
+      ref.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, [container, detailsOpen, collapsed]);
 
