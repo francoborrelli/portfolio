@@ -16,20 +16,28 @@ interface PlaylistListProps {
 
 export const PlaylistList: FC<PlaylistListProps> = memo(({ playlist }) => {
   const { t } = useTranslation(['playlist']);
+  const [tcv] = useTranslation(['cv']);
   const order = useAppSelector((state) => state.playlist.order);
+  const search = useAppSelector((state) => state.playlist.search);
 
   const hasSkills = playlist.songs.some((song) => song.skills.length > 0);
 
   const songs = playlist.songs.filter((song) => {
-    if (order === 'ALL') return true;
-    return song.types?.includes(order as any);
+    if (order !== 'ALL' && !song.types?.includes(order as any)) return false;
+
+    const query = search.trim().toLowerCase();
+    if (!query) return true;
+
+    const name = tcv(song.name).toLowerCase();
+    const artist = song.artist ? tcv(song.artist).toLowerCase() : '';
+    return name.includes(query) || artist.includes(query);
   });
 
   return (
     <div
       className='playlist-list'
       style={{
-        background: `linear-gradient(${playlist.color} -10%, #121212 35%)`,
+        background: `linear-gradient(${playlist.color} -70px, #121212 140px)`,
       }}
     >
       <PlaylistControls playlist={playlist} />

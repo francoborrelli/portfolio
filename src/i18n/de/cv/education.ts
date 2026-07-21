@@ -113,6 +113,7 @@ const GOOGLE_AI_SPECIALIZATION = {
 };
 
 export const EDUCATION = {
+  GPA: 'Abschlussnote',
   ...APU,
   ...FISCALIA,
   ...REACT_UDEMY,

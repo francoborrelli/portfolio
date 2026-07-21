@@ -99,19 +99,124 @@ const RUKIR = {
     'Rukir ist die neue Online-Plattform, wo Sie durch eine Auktion den Preis der Immobilie verhandeln, die Sie kaufen möchten.',
 };
 
-export const PROJECTS = {
-  ...SPOTIFY_CLONE,
-  ...SETLIST_TO_SPOTIFY,
-  ...LOTTIE,
-  ...TENSORFLOW_REACT_NATIVE,
-  ...TFD,
-  ...CALM_COVID,
-  ...QWERTY_LANDING_PAGE,
-  ...AUTHORING_TOOL,
-  ...GRAL_LECTURAS,
-  ...GRAL_LECTURAS_WEB,
-  ...GRAL_VEHICLES,
-  ...MAS_EFECTIVO,
-  ...GO4CLIC,
-  ...RUKIR,
+const GRAL_STORES = {
+  GRAL_STORES_NAME: 'Gral | Lager & Bestand',
+  GRAL_STORES_ARTIST: 'GRAL Saneamiento SA',
+  GRAL_STORES_LENGTH: '2020 - 2022',
+  GRAL_STORES_DESCRIPTION: `Diese Anwendung stellt einen grundlegenden Bestandteil der Unternehmensinfrastruktur dar und ist der effizienten Verwaltung der Lager und Depots gewidmet. Ihre vielseitigen Funktionen ermöglichen die nahtlose Registrierung von Lagern im gesamten Unternehmensnetzwerk und fördern eine verbesserte Organisation und logistische Kontrolle.\nZusätzlich verfügt die Anwendung über solide Fähigkeiten zur sorgfältigen Überwachung der Bestandsebenen, einschließlich Ein- und Ausgangsoperationen. Diese sorgfältige Nachverfolgung gewährleistet eine optimale Bestandsverwaltung und ermöglicht proaktive Entscheidungsfindung, um Nachfrageschwankungen zu bewältigen und die betriebliche Kontinuität aufrechtzuerhalten.\nDarüber hinaus erleichtert die Anwendung umfassende Audits und bietet einen systematischen Rahmen zur Bewertung der Bestandsgenauigkeit und -integrität. Diese Audits spielen eine kritische Rolle bei der Einhaltung gesetzlicher Vorschriften, der Identifizierung von Abweichungen und der Umsetzung korrigierender Maßnahmen nach Bedarf.`,
 };
+
+const GRAL_STATISTICS = {
+  GRAL_STATISTICS_NAME: 'Gral | Statistiken',
+  GRAL_STATISTICS_ARTIST: 'GRAL Saneamiento SA',
+  GRAL_STATISTICS_LENGTH: '2022',
+  GRAL_STATISTICS_DESCRIPTION: `Diese Anwendung dient als Hub für die statistische Analyse und Berichtserstellung des Unternehmens und bietet eine breite Palette von Tools, um umsetzbare Erkenntnisse aus Betriebsdaten zu gewinnen. Durch den Einsatz fortschrittlicher Datenvisualisierungstechniken ermöglicht die Anwendung Stakeholdern, Trends, Muster und Anomalien zu identifizieren und so fundierte Entscheidungsfindung und strategische Planung zu erleichtern.\nZusätzlich bietet die Anwendung ein dynamisches Dashboard, das wichtige Leistungsindikatoren (KPIs) und Echtzeit-Leistungsmetriken anzeigt. Diese Funktion verbessert die betriebliche Transparenz und erleichtert datengetriebene Entscheidungsfindung, wodurch eine Kultur der kontinuierlichen Verbesserung und Verantwortlichkeit innerhalb der Organisation gefördert wird.\nDarüber hinaus unterstützt die Anwendung die Erstellung anpassbarer Berichte und Datenexporte, sodass Stakeholder Informationen an ihre spezifischen Bedürfnisse und Präferenzen anpassen können. Diese Flexibilität stellt sicher, dass Benutzer relevante Erkenntnisse effizient und effektiv extrahieren können und so den Nutzen und Wert der Anwendung steigern.`,
+};
+
+const GRAL_TASKS_WEB = {
+  GRAL_TASKS_WEB_NAME: 'Gral | Aufgaben (Web)',
+  GRAL_TASKS_WEB_ARTIST: 'GRAL Saneamiento SA',
+  GRAL_TASKS_WEB_LENGTH: '2020 - 2022',
+  GRAL_TASKS_WEB_DESCRIPTION: `Diese interne Unternehmens-Webanwendung ist für die Verwaltung und Zuweisung von Aufgaben konzipiert, die von Außendienstteams ausgeführt werden. Sie ermöglicht Benutzern, Aufgaben zu erstellen, zuzuweisen und zu überwachen. Die Anwendung erleichtert Kommunikation und Zusammenarbeit zwischen Teammitgliedern und verbessert so Effizienz und Koordination.`,
+};
+
+const GRAL_TASKS_MOBILE = {
+  GRAL_TASKS_MOBILE_NAME: 'Gral | Aufgaben (App)',
+  GRAL_TASKS_MOBILE_ARTIST: 'GRAL Saneamiento SA',
+  GRAL_TASKS_MOBILE_LENGTH: '2020',
+  GRAL_TASKS_MOBILE_DESCRIPTION: `Die Anwendung ermöglicht Außendienstteams, Arbeits- und Reparaturaufgaben, die für sie geplant sind (und zuvor über ein Websystem zugewiesen wurden), sofort im Feld zu empfangen. Dies gewährleistet eine reibungslose und genaue Kommunikation zwischen Büro und Feld und optimiert die Aufgabenausführung.\nDurch die Integration von Geolokalisierungsfunktionen können Teammitglieder zugewiesene Aufgaben auf einer Karte visualisieren, was die Routenplanung und Reiseoptimierung erleichtert.\nDie Anwendung ermöglicht Teams, den Arbeitsfortschritt zu erfassen, indem sie Aufgaben als erledigt markieren, Fotos der ausgeführten Arbeit hochladen und verwendete Materialien auflisten. Zusätzlich haben Benutzer die Möglichkeit, relevante Beobachtungen für eine detaillierte Erfassung jeder Aufgabe hinzuzufügen.\nEine der herausragenden Funktionen dieser Anwendung ist ihre Integration mit AppCenter, das CodePush verwendet, um automatische Updates an die Teams zu senden. Dies stellt sicher, dass sie immer die neueste Version der Anwendung ohne manuelle Eingriffe verwenden.\nZur Verbesserung der Anwesenheitsverwaltung der Teams wurde ein Gesichtserkennungssystem mit dem AWS Rekognition Liveness Detection Service implementiert. Diese Funktionalität gewährleistet eine genaue und sichere Überprüfung der Anwesenheit der Arbeiter am Arbeitsplatz.`,
+};
+
+const DPAS = {
+  DPAS_NAME: 'Mitgliedschaftssystem',
+  DPAS_ARTIST: 'Provinzielle Direktion für Sozialaktion',
+  DPAS_LENGTH: '2021',
+  DPAS_DESCRIPTION:
+    'Das Mitgliedschaftssystem ist eine Webanwendung, die für die Provinzielle Direktion für Sozialaktion der Provinz Buenos Aires, Argentinien, entwickelt wurde. Die Anwendung zielt darauf ab, die Verwaltung von Mitgliedern und der von ihnen erhaltenen Dienstleistungen zu erleichtern.',
+};
+
+const OTI = {
+  OTI_NAME: 'Eidesstattliche Erklärungen',
+  OTI_ARTIST: 'Provinz Buenos Aires',
+  OTI_LENGTH: '2021',
+  OTI_DESCRIPTION: `Ich habe ein internes System für das Büro für institutionelle Transparenz der Provinz Buenos Aires entwickelt. Das System kommuniziert mit der Agentur für Einnahmen und Zollkontrolle (ARCA), um Informationen über eidesstattliche Erklärungen zu Vermögenswerten zu erhalten, und ermöglicht deren anschließende Öffnung und Veröffentlichung durch die Generierung von PDFs mit den jeweiligen digitalen Signaturen.`,
+};
+
+const PUERTOS = {
+  PUERTOS_NAME: 'Häfen | Provinz Buenos Aires',
+  PUERTOS_ARTIST: 'LBS Informática',
+  PUERTOS_LENGTH: '2024',
+  PUERTOS_DESCRIPTION: `Es handelt sich um ein System zur Verwaltung der Ein- und Ausfahrt von Schiffen in den Häfen der Provinz Buenos Aires. Das System ermöglicht die Erfassung der Gültigkeitsdauer im Hafen, die Abrechnung an Schiffe, durchgeführte Wartungsaufgaben sowie Ein- und Ausgangsoperationen von Fracht.`,
+};
+
+const COOPERATIVAS = {
+  COOPERATIVAS_NAME: 'Genossenschaften | Provinz Buenos Aires',
+  COOPERATIVAS_ARTIST: 'LBS Informática',
+  COOPERATIVAS_LENGTH: '2024',
+  COOPERATIVAS_DESCRIPTION: `Das Genossenschaftssystem ermöglicht die Verwaltung von Informationen über Genossenschaften in der Provinz Buenos Aires. Es kann deren Tätigkeit, Mitglieder, Bilanzen und Versammlungen erfassen, sowie mögliche gewährte Subventionen und Inspektionen.`,
+};
+
+const OBJECT_DETECTION_LOCATION_APP = {
+  OBJECT_DETECTION_LOCATION_APP_NAME: 'Autorentool für Objektpositionierung',
+  OBJECT_DETECTION_LOCATION_APP_ARTIST: 'Persönliches Projekt',
+  OBJECT_DETECTION_LOCATION_APP_LENGTH: '2024',
+  OBJECT_DETECTION_LOCATION_APP_DESCRIPTION: `
+    Diese Implementierung ist Teil meiner Masterarbeit für die Nationale Universität von La Plata.
+  \n Für dieses Projekt habe ich ein Autorentool entwickelt, das Benutzern das In-Situ-Co-Design und Co-Testing kontextsensibler mobiler Anwendungen mithilfe von Objektpositionierungstechnologien erleichtert.
+  \n Diese Objektpositionierungslösung kombiniert Telefonsensordaten wie GPS und Gyroskop mit Informationen aus Objekterkennungsmodellen, die lokal auf den Geräten laufen. Auf diese Weise kann die Benutzerposition identifiziert und kontextuelle Informationen präzise bereitgestellt werden.
+  \n Das Tool ermöglicht die Erstellung mehrerer Arbeitsbereiche, zu denen mehrere Kollaborateure eingeladen werden können. Zusätzlich bietet es statistische Informationen über das Co-Erstellte.`,
+};
+
+const RONDAS_DE_NEGOCIO = {
+  RONDAS_DE_NEGOCIO_NAME: 'Geschäftsrunden | Provinz Buenos Aires',
+  RONDAS_DE_NEGOCIO_ARTIST: 'LBS Informática',
+  RONDAS_DE_NEGOCIO_LENGTH: '2025',
+  RONDAS_DE_NEGOCIO_DESCRIPTION:
+    'Entwicklung des Frontends und Backends des Systems für Geschäftsrunden, einer Plattform für die Provinz Buenos Aires, die den kommerziellen Austausch zwischen KMU, Großunternehmen und Genossenschaften erleichtern soll. Das System ermöglicht die effiziente Verwaltung der Teilnehmerregistrierung, der Terminplanung von Treffen und der Nachverfolgung kommerzieller Chancen und fördert so ein Umfeld, das Geschäftsabschlüsse und strategische Allianzen begünstigt.',
+};
+
+const SOUNDSUIT_WEB_APP = {
+  SOUNDSUIT_WEB_APP_NAME: 'SoundSuit Web-App',
+  SOUNDSUIT_WEB_APP_ARTIST: 'Spherz GmbH',
+  SOUNDSUIT_WEB_APP_LENGTH: '2025',
+  SOUNDSUIT_WEB_APP_DESCRIPTION: `Webanwendung zur Musikverwaltung, entwickelt mit React und TypeScript. Die Anwendung wurde im Microsoft Store veröffentlicht und bietet vollständige Musikverwaltungsfunktionen, einschließlich Songbibliothek, benutzerdefinierter Wiedergabelisten und Cloud-Synchronisation. Bereitgestellt auf Vercel mit Cloudflare CDN zur Leistungsoptimierung.`,
+};
+
+const SOUNDSUIT_MOBILE_APP = {
+  SOUNDSUIT_MOBILE_APP_NAME: 'SoundSuit Mobile-App',
+  SOUNDSUIT_MOBILE_APP_ARTIST: 'Spherz GmbH',
+  SOUNDSUIT_MOBILE_APP_LENGTH: '2025',
+  SOUNDSUIT_MOBILE_APP_DESCRIPTION: `Plattformübergreifende mobile Anwendung, entwickelt mit React Native und TypeScript. Veröffentlicht sowohl im Google Play Store als auch im Apple App Store, bietet eine native Benutzererfahrung für die Musikverwaltung mit Wiedergabelisten-Synchronisation und Integration von Musikdiensten.`,
+};
+
+// Global Object
+
+export const PROJECTS = {
+  // Projects
+  ...OTI,
+  ...TFD,
+  ...DPAS,
+  ...RUKIR,
+  ...LOTTIE,
+  ...GO4CLIC,
+  ...PUERTOS,
+  ...CALM_COVID,
+  ...GRAL_STORES,
+  ...MAS_EFECTIVO,
+  ...COOPERATIVAS,
+  ...SPOTIFY_CLONE,
+  ...GRAL_LECTURAS,
+  ...GRAL_VEHICLES,
+  ...GRAL_TASKS_WEB,
+  ...AUTHORING_TOOL,
+  ...GRAL_STATISTICS,
+  ...GRAL_TASKS_MOBILE,
+  ...GRAL_LECTURAS_WEB,
+  ...RONDAS_DE_NEGOCIO,
+  ...SETLIST_TO_SPOTIFY,
+  ...QWERTY_LANDING_PAGE,
+  ...TENSORFLOW_REACT_NATIVE,
+  ...OBJECT_DETECTION_LOCATION_APP,
+  ...SOUNDSUIT_WEB_APP,
+  ...SOUNDSUIT_MOBILE_APP,
+} as const;

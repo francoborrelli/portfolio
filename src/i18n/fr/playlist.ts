@@ -4,4 +4,5 @@ export const playlist = {
   Name: 'Nom',
   Skills: 'Compétences',
   Filter: 'Filtrer',
+  'Search in playlist': 'Rechercher dans la playlist',
 };

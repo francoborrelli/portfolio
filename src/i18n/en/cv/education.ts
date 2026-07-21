@@ -117,6 +117,7 @@ const GOOGLE_AI_SPECIALIZATION = {
 };
 
 export const EDUCATION = {
+  GPA: 'Degree GPA',
   ...APU,
   ...FISCALIA,
   ...REACT_UDEMY,

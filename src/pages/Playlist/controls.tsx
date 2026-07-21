@@ -1,5 +1,7 @@
 import { Col, Dropdown, Row, Space } from 'antd';
 
+import { PlaylistSearch } from './search';
+import { PlayCircleButton } from './playCircle';
 import { Tooltip } from '../../components/Tooltip';
 import { MenuDots, OrderListIcon } from '../../components/Icons';
 
@@ -13,7 +15,6 @@ import { useAppDispatch, useAppSelector } from '../../store/store';
 // Interfaces
 import type { FC } from 'react';
 import type { Playlist } from '../../interfaces/types';
-import { PlayCircleButton } from './playCircle';
 
 export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
   const dispatch = useAppDispatch();
@@ -41,6 +42,7 @@ export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
         </Col>
         <Col>
           <Space>
+            <PlaylistSearch />
             <Tooltip title={t('Filter')}>
               <Dropdown
                 placement='bottomRight'

@@ -116,6 +116,7 @@ const GOOGLE_AI_SPECIALIZATION = {
 };
 
 export const EDUCATION = {
+  GPA: 'Promedio de la carrera',
   ...APU,
   ...FISCALIA,
   ...REACT_UDEMY,

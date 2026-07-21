@@ -1,7 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-const initialState: { order: string } = {
+const initialState: { order: string; search: string } = {
   order: 'ALL',
+  search: '',
 };
 
 const playlistSlice = createSlice({
@@ -13,6 +14,10 @@ const playlistSlice = createSlice({
     },
     resetOrder(state, action: PayloadAction<{ order?: string }>) {
       state.order = action.payload.order || 'ALL';
+      state.search = '';
+    },
+    setSearch(state, action: PayloadAction<{ search: string }>) {
+      state.search = action.payload.search;
     },
   },
 });
