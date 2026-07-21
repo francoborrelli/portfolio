@@ -6,6 +6,7 @@ import {
   FaUnsplash,
   FaGoogleScholar,
 } from 'react-icons/fa6';
+import { SiCredly } from 'react-icons/si';
 import type { SocialNetwork } from '../interfaces/types';
 import { getSocialNetworkPath } from '../utils/getPublicPath';
 
@@ -43,6 +44,11 @@ export const ALL_SOCIAL_NETWORKS = [
     link: 'https://scholar.google.com/citations?user=Id9XmkoAAAAJ',
     imageUrl: getSocialNetworkPath('gitlab.png'),
     icon: <FaGoogleScholar />,
+  },
+  {
+    name: 'Credly',
+    link: 'https://www.credly.com/users/franco-martin-borrelli/badges/credly',
+    icon: <SiCredly />,
   },
   {
     name: 'Unsplash',
