@@ -34,10 +34,15 @@
 
   &.collapsed {
     border: none;
-    padding: 0px;
+    padding: 8px;
     display: flex;
-    width: 100%;
+    width: auto;
     justify-content: center;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: #ffffff0d;
+    }
   }
 
   &:hover {

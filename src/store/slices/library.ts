@@ -24,6 +24,9 @@ const librarySlice = createSlice({
     collapseLibrary(state) {
       state.collapsed = true;
     },
+    expandLibrary(state) {
+      state.collapsed = false;
+    },
     toggleLibrary(state) {
       state.collapsed = !state.collapsed;
     },
@@ -38,6 +41,10 @@ const librarySlice = createSlice({
       } else {
         state.detailsOpen = !state.detailsOpen;
       }
+    },
+    closeDetails(state) {
+      state.detailsOpen = false;
+      state.queue = false;
     },
     removeSongPlaying(state) {
       state.detailsOpen = false;

@@ -6,7 +6,6 @@ import { memo, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 // Components
-import { Col, Space } from 'antd';
 import { Tooltip } from '../../../Tooltip';
 import PlaylistCardShort from './PlaylistCardShort';
 
@@ -28,26 +27,34 @@ const Title = memo(() => {
 
   if (collapsed) {
     return (
-      <Tooltip placement='right' title={t('Expand your library')}>
-        <button
-          className='library-expand-button'
-          onClick={() => dispatch(libraryActions.toggleLibrary())}
-        >
-          <LibraryCollapsedIcon />
-        </button>
-      </Tooltip>
+      <div className='library-header library-header--collapsed'>
+        <Tooltip placement='right' title={t('Expand your library')}>
+          <span className='library-card-hitbox'>
+            <button
+              className='library-expand-button'
+              onClick={() => dispatch(libraryActions.toggleLibrary())}
+            >
+              <LibraryCollapsedIcon />
+            </button>
+          </span>
+        </Tooltip>
+      </div>
     );
   }
 
   return (
-    <Space wrap>
+    <div className='library-header'>
       <Tooltip placement='top' title={t('Collapse your library')}>
-        <button onClick={() => dispatch(libraryActions.toggleLibrary())}>
+        <button
+          type='button'
+          className='library-header__toggle'
+          onClick={() => dispatch(libraryActions.toggleLibrary())}
+        >
           <LibraryIcon />
         </button>
       </Tooltip>
       <span className='Navigation-button'>{t('Your Library')}</span>
-    </Space>
+    </div>
   );
 });
 
@@ -67,16 +74,14 @@ const YourLibrary = ({ playlists }: { playlists: Playlist[] }) => {
       <Title />
 
       <div className='library-list-container'>
-        <Col className={collapsed ? undefined : 'library-list-scroll'}>
-          <div className={collapsed ? 'library-list-scroll-collapsed' : undefined}>
-            {playlists.map((playlist: Playlist) => (
-              <PlaylistCardShort key={playlist.name} playlist={playlist} onSelect={onSelect} />
-            ))}
-          </div>
-        </Col>
-        <Col className='library-language-col'>
+        <div className={collapsed ? 'library-list-scroll-collapsed' : 'library-list-scroll'}>
+          {playlists.map((playlist: Playlist) => (
+            <PlaylistCardShort key={playlist.name} playlist={playlist} onSelect={onSelect} />
+          ))}
+        </div>
+        <div className='library-language-col'>
           <LanguageButton />
-        </Col>
+        </div>
       </div>
     </div>
   );

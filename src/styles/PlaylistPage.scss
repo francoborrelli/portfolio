@@ -381,12 +381,15 @@
   flex-direction: column;
   gap: 20px;
   height: 100%;
+  width: 100%;
   justify-content: space-between;
+  min-height: 0;
 }
 
 .open {
-  .library-list-container {
-    width: 120%;
+  .library-language-col {
+    width: 100%;
+    justify-content: center;
   }
 }
 

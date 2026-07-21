@@ -26,14 +26,16 @@ export const LanguageButton = memo(() => {
   if (collapsed) {
     return (
       <Tooltip placement='right' title={t('Language')}>
-        <button
-          className={'language-button collapsed'}
-          onClick={() => {
-            dispatch(languageActions.openLanguageModal());
-          }}
-        >
-          <WorldIcon />
-        </button>
+        <span className='library-card-hitbox'>
+          <button
+            className='language-button collapsed'
+            onClick={() => {
+              dispatch(languageActions.openLanguageModal());
+            }}
+          >
+            <WorldIcon />
+          </button>
+        </span>
       </Tooltip>
     );
   }

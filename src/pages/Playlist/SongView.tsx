@@ -35,7 +35,6 @@ const SongView = ({ song, index, hasSkills, onContextMenu }: SongViewProps) => {
       }}
       onContextMenu={(event) => {
         event.preventDefault();
-        dispatch(libraryActions.setSongPlaying(song));
         onContextMenu(song, { x: event.clientX, y: event.clientY });
       }}
     >

@@ -28,21 +28,19 @@ const PlaylistCardShort = memo(({ playlist, onSelect }: PlaylistCardShortProps) 
           </div>
         }
       >
-        <button className='library-card collapsed' onClick={handleClick}>
-          <div className='image aspect-square h-full items-center'>
+        <span className='library-card-hitbox'>
+          <button className='library-card collapsed' onClick={handleClick}>
             <img src={playlist.getImage(language)} alt='' />
-          </div>
-        </button>
+          </button>
+        </span>
       </Tooltip>
     );
   }
 
   return (
     <button className='library-card' onClick={handleClick}>
-      <div className='image aspect-square p-2 h-full items-center'>
-        <img src={playlist.getImage(language)} alt='' />
-      </div>
-      <div id='playlist-song-and-artist-name'>
+      <img src={playlist.getImage(language)} alt='' />
+      <div className='library-card-meta'>
         <h3 className='text-md font-semibold text-white library-card-title'>{cvt(playlist.name)}</h3>
 
         <p className='text-md font-semibold text-white library-card-subtitle'>

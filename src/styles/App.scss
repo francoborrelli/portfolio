@@ -42,7 +42,8 @@
 
 html,
 body {
-  font-family: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek,
+  font-family:
+    SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek,
     CircularSp-Deva, var(sans-serif) !important;
 }
 
@@ -103,52 +104,132 @@ h3 {
   justify-content: flex-start;
 }
 
+.library-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 14px 12px 8px 18px;
+  min-height: 40px;
+  box-sizing: border-box;
+
+  &--collapsed {
+    padding: 4px 0;
+    justify-content: center;
+  }
+
+  &__toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    line-height: 0;
+  }
+}
+
 .library-row {
   height: 100%;
+
+  > .ant-col {
+    height: 100%;
+  }
 }
 
 .library-expand-button {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff0d;
+  }
 }
 
 .library-list-scroll {
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
   height: 100%;
-  margin-left: -20px;
+  width: 100%;
+  min-height: 0;
 }
 
 .library-list-scroll-collapsed {
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.library-card-hitbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .library-language-col {
   max-height: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .library-card {
   all: unset;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-size: 0.9em;
   cursor: pointer;
-  border-radius: 10px;
-  padding: 2px;
-  width: 98%;
-  overflow-x: hidden;
+  border-radius: 8px;
+  padding: 6px 8px 6px 12px;
+  width: 100%;
+  overflow: hidden;
   transition: background-color 0.2s ease-in-out;
+  box-sizing: border-box;
 
   &.collapsed {
-    margin-bottom: 10px;
+    width: auto;
+    margin: 0 0 4px;
+    padding: 4px;
     justify-content: center;
   }
 
   img {
     border-radius: 4px;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  &:not(.collapsed) img {
     width: 52px;
+    height: 52px;
+  }
+
+  .library-card-meta {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .library-card-title,
+  .library-card-subtitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .library-card-title {
@@ -187,6 +268,85 @@ h3 {
   height: calc(100vh - 106px);
 }
 
+.main-panels {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  gap: 0;
+
+  &--dragging {
+    cursor: col-resize;
+
+    .main-panels__left,
+    .main-panels__center,
+    .main-panels__right {
+      pointer-events: none;
+    }
+  }
+
+  &__left {
+    flex: 0 0 var(--library-width);
+    width: var(--library-width);
+    min-width: 0;
+    max-width: 420px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__center {
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 100%;
+  }
+
+  &__right {
+    flex: 0 0 var(--right-width);
+    width: var(--right-width);
+    min-width: 0;
+    max-width: 420px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__resizer {
+    flex: 0 0 10px;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: col-resize;
+    touch-action: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 1px;
+      transform: translateX(-50%);
+      background: transparent;
+      transition:
+        background-color 0.15s ease,
+        width 0.15s ease;
+    }
+
+    &:hover::after,
+    &--active::after {
+      width: 2px;
+      background: #ffffff4d;
+    }
+
+    &--active::after {
+      background: #1db954;
+    }
+  }
+}
+
 .main-section-content {
   min-height: calc(100vh - 230px);
   width: 100%;
@@ -200,8 +360,12 @@ h3 {
   -webkit-app-region: no-drag !important;
   background-color: #282828 !important;
   border-radius: 4px !important;
-  -webkit-box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3), 0 6px 8px rgba(0, 0, 0, 0.2) !important;
-  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3), 0 6px 8px rgba(0, 0, 0, 0.2) !important;
+  -webkit-box-shadow:
+    0 16px 24px rgba(0, 0, 0, 0.3),
+    0 6px 8px rgba(0, 0, 0, 0.2) !important;
+  box-shadow:
+    0 16px 24px rgba(0, 0, 0, 0.3),
+    0 6px 8px rgba(0, 0, 0, 0.2) !important;
   max-height: calc(100vh - 24px) !important;
   max-width: 350px !important;
   min-width: 160px !important;
@@ -265,7 +429,7 @@ h3 {
 }
 
 @media (max-width: $desktop-breakpoint) {
-  #root>div:first-child {
+  #root > div:first-child {
     padding: 0px !important;
   }
 }
@@ -336,7 +500,9 @@ h3 {
 
   overscroll-behavior-y: contain;
   overflow-y: auto;
-  transition: background-color 0.3s ease-in-out, visibility 0.2s ease-in-out;
+  transition:
+    background-color 0.3s ease-in-out,
+    visibility 0.2s ease-in-out;
 
   @media (max-width: $desktop-breakpoint) {
     visibility: hidden !important;
@@ -397,12 +563,34 @@ h3 {
 }
 
 .transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
-    opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
-    opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
-    opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    text-decoration-color,
+    fill,
+    stroke,
+    opacity,
+    box-shadow,
+    transform,
+    filter,
+    -webkit-backdrop-filter;
+  transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+    transform, filter, backdrop-filter;
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    text-decoration-color,
+    fill,
+    stroke,
+    opacity,
+    box-shadow,
+    transform,
+    filter,
+    backdrop-filter,
+    -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 0.25s;
 }
