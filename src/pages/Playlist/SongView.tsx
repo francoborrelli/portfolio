@@ -18,18 +18,25 @@ interface SongViewProps {
   song: Song;
   index: number;
   hasSkills: boolean;
+  onContextMenu: (song: Song, position: { x: number; y: number }) => void;
 }
 
-const SongView = ({ song, index, hasSkills }: SongViewProps) => {
+const SongView = ({ song, index, hasSkills, onContextMenu }: SongViewProps) => {
   const dispatch = useAppDispatch();
   const [t] = useTranslation(['cv']);
 
   return (
     <button
       type='button'
+      data-song-row
       className='flex flex-col w-full hover:bg-spotify-gray-lightest items-center p-0 rounded-lg'
       onClick={() => {
         dispatch(libraryActions.setSongPlaying(song));
+      }}
+      onContextMenu={(event) => {
+        event.preventDefault();
+        dispatch(libraryActions.setSongPlaying(song));
+        onContextMenu(song, { x: event.clientX, y: event.clientY });
       }}
     >
       <div

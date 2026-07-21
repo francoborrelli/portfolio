@@ -28,7 +28,7 @@ export const LanguageModal = memo(() => {
         width={900}
         open={open}
         footer={null}
-        destroyOnClose
+        destroyOnHidden
         onCancel={() => onClose()}
         title={<h1 className='language-modal-title'>{t('Choose a language')}</h1>}
       >
