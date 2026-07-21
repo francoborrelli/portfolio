@@ -7,7 +7,7 @@ import { libraryActions } from '../../../../store/slices/library';
 
 const PlayButton = () => {
   const dispatch = useAppDispatch();
-  const { playing } = useAppSelector((state) => state.playingBar);
+  const playing = useAppSelector((state) => state.playingBar.playing);
   return (
     <button
       onClick={() =>
@@ -28,10 +28,24 @@ const QueueButton = () => {
   );
 };
 
-const NowPlayingBarMobile = () => {
-  const currentSongData = useAppSelector(getCurrentSongData);
+const MobileProgress = () => {
   const duration = useAppSelector((state) => state.playingBar.duration);
   const currentTime = useAppSelector((state) => state.playingBar.currentTime);
+
+  return (
+    <div className='time-line'>
+      <div
+        className='current-time'
+        style={{
+          width: `${(currentTime / duration) * 100}%`,
+        }}
+      ></div>
+    </div>
+  );
+};
+
+const NowPlayingBarMobile = () => {
+  const currentSongData = useAppSelector(getCurrentSongData);
 
   return (
     <div>
@@ -60,14 +74,7 @@ const NowPlayingBarMobile = () => {
             </div>
           </Col>
         </Row>
-        <div className='time-line'>
-          <div
-            className='current-time'
-            style={{
-              width: `${(currentTime / duration) * 100}%`,
-            }}
-          ></div>
-        </div>
+        <MobileProgress />
       </div>
     </div>
   );

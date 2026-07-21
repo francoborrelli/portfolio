@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import { memo, type FC, type ReactNode } from 'react';
 
 import { Col, Row } from 'antd';
 import { CloseIcon } from '../../../../Icons';
@@ -8,11 +8,11 @@ import { libraryActions } from '../../../../../store/slices/library';
 import { useAppDispatch } from '../../../../../store/store';
 
 interface NowPlayingLayoutProps {
-  children: any;
+  children: ReactNode;
   title?: string;
 }
 
-const CloseButton = () => {
+const CloseButton = memo(() => {
   const dispatch = useAppDispatch();
 
   return (
@@ -26,9 +26,11 @@ const CloseButton = () => {
       </button>
     </div>
   );
-};
+});
 
-export const NowPlayingLayout: FC<NowPlayingLayoutProps> = (props) => {
+CloseButton.displayName = 'CloseButton';
+
+export const NowPlayingLayout: FC<NowPlayingLayoutProps> = memo((props) => {
   return (
     <div className='playing-section'>
       <Row align='middle'>
@@ -43,4 +45,6 @@ export const NowPlayingLayout: FC<NowPlayingLayoutProps> = (props) => {
       {props.children}
     </div>
   );
-};
+});
+
+NowPlayingLayout.displayName = 'NowPlayingLayout';

@@ -1,4 +1,4 @@
-import { memo, useLayoutEffect, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 
 // Components
 import { Drawer } from 'antd';
@@ -7,23 +7,26 @@ import { PlayingNow } from './Layout/components/NowPlaying';
 // Redux
 import { useAppSelector } from '../store/store';
 
-function useWindowSize() {
-  const [size, setSize] = useState([0, 0]);
-  useLayoutEffect(() => {
-    function updateSize() {
-      setSize([window.innerWidth, window.innerHeight]);
-    }
-    window.addEventListener('resize', updateSize);
-    updateSize();
-    return () => window.removeEventListener('resize', updateSize);
+const MOBILE_MQ = '(max-width: 900px)';
+
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(() => window.matchMedia(MOBILE_MQ).matches);
+
+  useEffect(() => {
+    const media = window.matchMedia(MOBILE_MQ);
+    const onChange = () => setIsMobile(media.matches);
+    onChange();
+    media.addEventListener('change', onChange);
+    return () => media.removeEventListener('change', onChange);
   }, []);
-  return size;
+
+  return isMobile;
 }
 
 export const PlayingNowDrawer = memo(() => {
-  const [width] = useWindowSize();
+  const isMobile = useIsMobile();
   const open = useAppSelector((state) => state.library.detailsOpen);
-  if (width > 900) return null;
+  if (!isMobile) return null;
   return (
     <div className='playing-now-drawer'>
       <Drawer open={open}>

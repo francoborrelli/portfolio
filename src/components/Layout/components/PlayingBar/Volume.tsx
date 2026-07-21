@@ -31,7 +31,8 @@ export const VolumeControls = () => {
   const { t } = useTranslation(['playingBar']);
 
   const dispatch = useAppDispatch();
-  const { muted, volume } = useAppSelector((state) => state.playingBar);
+  const muted = useAppSelector((state) => state.playingBar.muted);
+  const volume = useAppSelector((state) => state.playingBar.volume);
 
   return (
     <div className='volume-control-container'>

@@ -13,7 +13,7 @@ import { AVAILABLE_SONGS } from '../../constants/songs';
 import { INITIAL_VOLUME } from '../../constants/player';
 
 // Redux
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSelector, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const initialState: {
   muted: boolean;
@@ -116,14 +116,13 @@ export const getCurrentSongData = (state: { playingBar: typeof initialState }) =
   return AVAILABLE_SONGS[state.playingBar.currentSong];
 };
 
-export const getQueue = (state: { playingBar: typeof initialState }) => {
-  const { currentSong } = state.playingBar;
-  const queue = [
-    ...AVAILABLE_SONGS.slice(currentSong + 1),
-    ...AVAILABLE_SONGS.slice(0, currentSong),
-  ];
-  return queue;
-};
+const selectCurrentSongIndex = (state: { playingBar: typeof initialState }) =>
+  state.playingBar.currentSong;
+
+export const getQueue = createSelector([selectCurrentSongIndex], (currentSong) => [
+  ...AVAILABLE_SONGS.slice(currentSong + 1),
+  ...AVAILABLE_SONGS.slice(0, currentSong),
+]);
 
 export const playingBarActions = playingBarSlice.actions;
 

@@ -1,17 +1,16 @@
 import { Col, Row } from 'antd';
-import { FC } from 'react';
+import { memo, type FC, type ReactNode } from 'react';
 
 interface NowPlayingCardProps {
   title: string;
-
-  extra?: any;
-  children?: any;
+  extra?: ReactNode;
+  children?: ReactNode;
   image?: string;
   subtitle?: string;
   imageTitle?: string;
 }
 
-export const NowPlayingCard: FC<NowPlayingCardProps> = (props) => {
+export const NowPlayingCard: FC<NowPlayingCardProps> = memo((props) => {
   return (
     <div className='playing-now-card'>
       {props.image ? (
@@ -46,4 +45,6 @@ export const NowPlayingCard: FC<NowPlayingCardProps> = (props) => {
       </div>
     </div>
   );
-};
+});
+
+NowPlayingCard.displayName = 'NowPlayingCard';

@@ -35,3 +35,5 @@ export const RelatedSong: FC<{ song: Song }> = memo(({ song }) => {
     </div>
   );
 });
+
+RelatedSong.displayName = 'RelatedSong';

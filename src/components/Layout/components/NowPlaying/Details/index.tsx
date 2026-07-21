@@ -7,7 +7,7 @@ import { NowPlayingLayout } from '../layout';
 import { useTranslation } from 'react-i18next';
 
 // Interfaces
-import type { FC } from 'react';
+import { memo, useMemo, type FC } from 'react';
 import type { Song } from '../../../../../interfaces/types';
 
 import { PiCertificateFill } from 'react-icons/pi';
@@ -22,25 +22,30 @@ import { EducationTypesEnum } from '../../../../../constants/cv/education';
 
 const EDUCATION_TYPES = new Set<string>(Object.values(EducationTypesEnum));
 
+const SKILLS_BY_NAME = new Map(SKILLS_SONGS.map((skill) => [skill.name, skill]));
+
 const isEducationSong = (song: Song) =>
   song.types?.some((type) => EDUCATION_TYPES.has(type)) ?? false;
 
-const Profile: FC<{ song: Song }> = ({ song }) => {
+const Profile: FC<{ song: Song }> = memo(({ song }) => {
   const [t] = useTranslation(['cv']);
 
   const hasButtons = song.link || song.github || song.youtube || song.certificate;
 
+  const explanationBullets = useMemo(() => {
+    if (!song.explanation) return null;
+    return t(song.explanation)
+      .split('\n')
+      .map((bullet, index) => (
+        <div className='playing-now-card-body' key={index}>
+          {parse(bullet)}
+        </div>
+      ));
+  }, [song.explanation, t]);
+
   return (
     <NowPlayingCard title={t(song.name)!} subtitle={t(song.artist || '')} image={song.imageUrl}>
-      {song.explanation
-        ? t(song.explanation || '')
-            .split('\n')
-            .map((bullet, index) => (
-              <div className='playing-now-card-body' key={index}>
-                {parse(bullet)}
-              </div>
-            ))
-        : null}
+      {explanationBullets}
       {hasButtons ? (
         <Space style={{ marginTop: 10 }}>
           {song.link ? (
@@ -132,47 +137,49 @@ const Profile: FC<{ song: Song }> = ({ song }) => {
       ) : null}
     </NowPlayingCard>
   );
-};
+});
 
-const Experience: FC<{ song: Song }> = ({ song }) => {
+const Experience: FC<{ song: Song }> = memo(({ song }) => {
   const [t] = useTranslation(['playingBar']);
   const [tcv] = useTranslation(['cv']);
 
-  if (!song.experience) return null;
+  const bullets = useMemo(() => {
+    if (!song.experience) return null;
+    return tcv(song.experience)
+      .split('\n')
+      .map((bullet, index) => (
+        <div className='playing-now-card-body' key={index}>
+          {bullet}
+        </div>
+      ));
+  }, [song.experience, tcv]);
 
-  return (
-    <NowPlayingCard title={t('Experience')}>
-      {tcv(song.experience)
-        .split('\n')
-        .map((bullet, index) => (
-          <div className='playing-now-card-body' key={index}>
-            {bullet}
-          </div>
-        ))}
-    </NowPlayingCard>
-  );
-};
+  if (!bullets) return null;
 
-const Description: FC<{ song: Song }> = ({ song }) => {
+  return <NowPlayingCard title={t('Experience')}>{bullets}</NowPlayingCard>;
+});
+
+const Description: FC<{ song: Song }> = memo(({ song }) => {
   const [t] = useTranslation(['playingBar']);
   const [tcv] = useTranslation(['cv']);
 
-  if (!song.description) return null;
+  const bullets = useMemo(() => {
+    if (!song.description) return null;
+    return tcv(song.description)
+      .split('\n')
+      .map((bullet, index) => (
+        <div className='playing-now-card-body' key={index}>
+          {parse(bullet)}
+        </div>
+      ));
+  }, [song.description, tcv]);
 
-  return (
-    <NowPlayingCard title={t('Description')}>
-      {tcv(song.description)
-        .split('\n')
-        .map((bullet, index) => (
-          <div className='playing-now-card-body' key={index}>
-            {parse(bullet)}
-          </div>
-        ))}
-    </NowPlayingCard>
-  );
-};
+  if (!bullets) return null;
 
-const Skills: FC<{ song: Song }> = ({ song }) => {
+  return <NowPlayingCard title={t('Description')}>{bullets}</NowPlayingCard>;
+});
+
+const Skills: FC<{ song: Song }> = memo(({ song }) => {
   const dispatch = useAppDispatch();
   const [t] = useTranslation(['playingBar']);
 
@@ -180,13 +187,11 @@ const Skills: FC<{ song: Song }> = ({ song }) => {
 
   return (
     <NowPlayingCard title={t('Skills')}>
-      {(song.skills || []).map((tag) => (
+      {song.skills.map((tag) => (
         <Tooltip title={tag.text} placement='top' key={tag.text}>
           <button
             onClick={() => {
-              dispatch(
-                libraryActions.setSongPlaying(SKILLS_SONGS.find((s) => s.name === tag.text))
-              );
+              dispatch(libraryActions.setSongPlaying(SKILLS_BY_NAME.get(tag.text)));
             }}
           >
             <Avatar style={{ backgroundColor: '#5c5c5c26' }} icon={tag.icon} />
@@ -195,9 +200,9 @@ const Skills: FC<{ song: Song }> = ({ song }) => {
       ))}
     </NowPlayingCard>
   );
-};
+});
 
-const Images: FC<{ song: Song }> = ({ song }) => {
+const Images: FC<{ song: Song }> = memo(({ song }) => {
   const [t] = useTranslation(['playingBar']);
   if (!song.images || !song.images.length) return null;
 
@@ -208,17 +213,19 @@ const Images: FC<{ song: Song }> = ({ song }) => {
       </Image.PreviewGroup>
     </NowPlayingCard>
   );
-};
+});
 
-const RelatedSongs: FC<{ song: Song }> = ({ song }) => {
+const RelatedSongs: FC<{ song: Song }> = memo(({ song }) => {
   const [t] = useTranslation(['playingBar']);
-  if (!song.relatedSongs || !song.relatedSongs.length) return null;
 
-  const isEducation = isEducationSong(song);
+  const relatedSongs = useMemo(() => {
+    if (!song.relatedSongs?.length) return null;
+    return isEducationSong(song) ? song.relatedSongs : shuffle(song.relatedSongs).slice(0, 3);
+  }, [song]);
+
+  if (!relatedSongs) return null;
+
   const isCourse = song.types?.includes(EducationTypesEnum.COURSE) ?? false;
-  const relatedSongs = isEducation
-    ? song.relatedSongs
-    : shuffle(song.relatedSongs).slice(0, 3);
 
   return (
     <NowPlayingCard title={t(isCourse ? 'Related courses' : 'Related projects')}>
@@ -227,7 +234,7 @@ const RelatedSongs: FC<{ song: Song }> = ({ song }) => {
       ))}
     </NowPlayingCard>
   );
-};
+});
 
 export const Details = () => {
   const song = useAppSelector((state) => state.library.songPlaying);

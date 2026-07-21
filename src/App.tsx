@@ -24,8 +24,7 @@ const Profile = lazy(() => import('./pages/Profile'));
 const PlaylistView = lazy(() => import('./pages/Playlist'));
 
 window.addEventListener('resize', () => {
-  const vh = window.innerWidth;
-  if (vh < 950) {
+  if (window.innerWidth < 950 && !store.getState().library.collapsed) {
     store.dispatch(libraryActions.collapseLibrary());
   }
 });

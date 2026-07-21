@@ -24,7 +24,7 @@ const SkipBackButton = () => {
 
 const PlayButton = () => {
   const dispatch = useAppDispatch();
-  const { playing } = useAppSelector((state) => state.playingBar);
+  const playing = useAppSelector((state) => state.playingBar.playing);
   return (
     <button
       className='player-pause-button'
@@ -48,7 +48,7 @@ const SkipNextButton = () => {
 
 const ReplayButton = () => {
   const dispatch = useAppDispatch();
-  const { looping } = useAppSelector((state) => state.playingBar);
+  const looping = useAppSelector((state) => state.playingBar.looping);
   return (
     <button
       className={looping ? 'active-icon-button' : ''}
