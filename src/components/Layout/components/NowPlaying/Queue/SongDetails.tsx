@@ -30,7 +30,7 @@ const QueueSongDetails: FC<QueueSongDetailsProps> = memo(({ song }) => {
           <img
             alt='Album Cover'
             className='album-cover'
-            src={`${process.env.PUBLIC_URL}/images/songs/${song.image}`}
+            src={`${import.meta.env.BASE_URL}images/songs/${song.image}`}
           />
         </div>
 

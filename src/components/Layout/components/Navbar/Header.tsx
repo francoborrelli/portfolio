@@ -33,7 +33,7 @@ const Header = ({ opacity }: { opacity: number; title?: string }) => {
                 id='user-avatar'
                 alt='User Avatar'
                 style={{ marginTop: -1 }}
-                src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}
+                src={`${import.meta.env.BASE_URL}images/profile.jpeg`}
               />
             </Link>
           </div>

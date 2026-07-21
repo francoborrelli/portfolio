@@ -107,10 +107,116 @@ const MAGISTER_DATA_ANALYSIS = {
   relatedSongs: [THESIS_MASTER_2024],
 } as Song;
 
+const AI_FUNDAMENTALS = {
+  types: [EducationTypesEnum.COURSE],
+  name: 'AI_FUNDAMENTALS_NAME',
+  artist: 'AI_FUNDAMENTALS_ARTIST',
+  length: 'AI_FUNDAMENTALS_LENGTH',
+  description: 'AI_FUNDAMENTALS_DESCRIPTION',
+  link: 'https://www.coursera.org/learn/google-ai-fundamentals',
+  certificate: 'https://www.coursera.org/account/accomplishments/verify/EORSXS15NW8P',
+  imageUrl: getEducationPath('coursera/logo.png'),
+  skills: [],
+} as Song;
+
+const AI_BRAINSTORMING_PLANNING = {
+  types: [EducationTypesEnum.COURSE],
+  name: 'AI_BRAINSTORMING_PLANNING_NAME',
+  artist: 'AI_BRAINSTORMING_PLANNING_ARTIST',
+  length: 'AI_BRAINSTORMING_PLANNING_LENGTH',
+  description: 'AI_BRAINSTORMING_PLANNING_DESCRIPTION',
+  link: 'https://www.coursera.org/learn/google-ai-for-brainstorming-and-planning',
+  certificate: 'https://www.coursera.org/account/accomplishments/verify/P4UXUSO37LVH',
+  imageUrl: getEducationPath('coursera/logo.png'),
+  skills: [],
+} as Song;
+
+const AI_RESEARCH_INSIGHTS = {
+  types: [EducationTypesEnum.COURSE],
+  name: 'AI_RESEARCH_INSIGHTS_NAME',
+  artist: 'AI_RESEARCH_INSIGHTS_ARTIST',
+  length: 'AI_RESEARCH_INSIGHTS_LENGTH',
+  description: 'AI_RESEARCH_INSIGHTS_DESCRIPTION',
+  link: 'https://www.coursera.org/learn/google-ai-for-research-and-insights',
+  certificate: 'https://www.coursera.org/account/accomplishments/verify/LB77OB0YBR1I',
+  imageUrl: getEducationPath('coursera/logo.png'),
+  skills: [],
+} as Song;
+
+const AI_WRITING_COMMUNICATING = {
+  types: [EducationTypesEnum.COURSE],
+  name: 'AI_WRITING_COMMUNICATING_NAME',
+  artist: 'AI_WRITING_COMMUNICATING_ARTIST',
+  length: 'AI_WRITING_COMMUNICATING_LENGTH',
+  description: 'AI_WRITING_COMMUNICATING_DESCRIPTION',
+  link: 'https://www.coursera.org/learn/google-ai-for-writing-and-communicating',
+  certificate: 'https://www.coursera.org/account/accomplishments/verify/155C91O1EBQL',
+  imageUrl: getEducationPath('coursera/logo.png'),
+  skills: [],
+} as Song;
+
+const AI_CONTENT_CREATION = {
+  types: [EducationTypesEnum.COURSE],
+  name: 'AI_CONTENT_CREATION_NAME',
+  artist: 'AI_CONTENT_CREATION_ARTIST',
+  length: 'AI_CONTENT_CREATION_LENGTH',
+  description: 'AI_CONTENT_CREATION_DESCRIPTION',
+  link: 'https://www.coursera.org/learn/google-ai-for-content-creation',
+  certificate: 'https://www.coursera.org/account/accomplishments/verify/7SK8QMTQUI4D',
+  imageUrl: getEducationPath('coursera/logo.png'),
+  skills: [],
+} as Song;
+
+const AI_DATA_ANALYSIS = {
+  types: [EducationTypesEnum.COURSE],
+  name: 'AI_DATA_ANALYSIS_NAME',
+  artist: 'AI_DATA_ANALYSIS_ARTIST',
+  length: 'AI_DATA_ANALYSIS_LENGTH',
+  description: 'AI_DATA_ANALYSIS_DESCRIPTION',
+  link: 'https://www.coursera.org/learn/google-ai-for-data-analysis',
+  certificate: 'https://www.coursera.org/account/accomplishments/verify/FAF1ZIPAHAIN',
+  imageUrl: getEducationPath('coursera/logo.png'),
+  skills: [],
+} as Song;
+
+const AI_APP_BUILDING = {
+  types: [EducationTypesEnum.COURSE],
+  name: 'AI_APP_BUILDING_NAME',
+  artist: 'AI_APP_BUILDING_ARTIST',
+  length: 'AI_APP_BUILDING_LENGTH',
+  description: 'AI_APP_BUILDING_DESCRIPTION',
+  link: 'https://www.coursera.org/learn/google-ai-for-app-building',
+  certificate: 'https://www.coursera.org/account/accomplishments/verify/4MQJKXU8SMIU',
+  imageUrl: getEducationPath('coursera/logo.png'),
+  skills: [],
+} as Song;
+
+const GOOGLE_AI_SPECIALIZATION = {
+  types: [EducationTypesEnum.COURSE],
+  name: 'GOOGLE_AI_SPECIALIZATION_NAME',
+  artist: 'GOOGLE_AI_SPECIALIZATION_ARTIST',
+  length: 'GOOGLE_AI_SPECIALIZATION_LENGTH',
+  description: 'GOOGLE_AI_SPECIALIZATION_DESCRIPTION',
+  link: 'https://www.coursera.org/professional-certificates/google-ai',
+  certificate: 'https://www.coursera.org/account/accomplishments/specialization/SUA7WJRYGZ4Y',
+  imageUrl: getEducationPath('coursera/logo.png'),
+  skills: [],
+  relatedSongs: [
+    AI_FUNDAMENTALS,
+    AI_BRAINSTORMING_PLANNING,
+    AI_RESEARCH_INSIGHTS,
+    AI_WRITING_COMMUNICATING,
+    AI_CONTENT_CREATION,
+    AI_DATA_ANALYSIS,
+    AI_APP_BUILDING,
+  ],
+} as Song;
+
 export const Education = {
   name: 'EDUCATION',
   description: 'Description 3',
   songs: [
+    GOOGLE_AI_SPECIALIZATION,
     MAGISTER_DATA_ANALYSIS,
     LICENCIATURA,
     MIKROWAYS_KUBERNETES,

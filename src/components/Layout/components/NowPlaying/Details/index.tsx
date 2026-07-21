@@ -15,10 +15,15 @@ import { FaApple, FaGithub, FaGooglePlay, FaLink, FaMicrosoft, FaYoutube } from 
 import { libraryActions } from '../../../../../store/slices/library';
 import { SKILLS_SONGS } from '../../../../../constants/cv/skills';
 
-import shuffle from 'lodash/shuffle';
-
 import parse from 'html-react-parser';
+import shuffle from 'lodash/shuffle';
 import { RelatedSong } from './related';
+import { EducationTypesEnum } from '../../../../../constants/cv/education';
+
+const EDUCATION_TYPES = new Set<string>(Object.values(EducationTypesEnum));
+
+const isEducationSong = (song: Song) =>
+  song.types?.some((type) => EDUCATION_TYPES.has(type)) ?? false;
 
 const Profile: FC<{ song: Song }> = ({ song }) => {
   const [t] = useTranslation(['cv']);
@@ -209,13 +214,17 @@ const RelatedSongs: FC<{ song: Song }> = ({ song }) => {
   const [t] = useTranslation(['playingBar']);
   if (!song.relatedSongs || !song.relatedSongs.length) return null;
 
+  const isEducation = isEducationSong(song);
+  const isCourse = song.types?.includes(EducationTypesEnum.COURSE) ?? false;
+  const relatedSongs = isEducation
+    ? song.relatedSongs
+    : shuffle(song.relatedSongs).slice(0, 3);
+
   return (
-    <NowPlayingCard title={t('Related projects')}>
-      {shuffle(song.relatedSongs)
-        .slice(0, 3)
-        .map((relatedSong) => (
-          <RelatedSong key={relatedSong.name} song={relatedSong} />
-        ))}
+    <NowPlayingCard title={t(isCourse ? 'Related courses' : 'Related projects')}>
+      {relatedSongs.map((relatedSong) => (
+        <RelatedSong key={relatedSong.name} song={relatedSong} />
+      ))}
     </NowPlayingCard>
   );
 };

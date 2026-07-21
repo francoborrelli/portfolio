@@ -11,7 +11,7 @@ const SongDetails = memo(() => {
       <img
         alt='Album Cover'
         className='album-cover'
-        src={`${process.env.PUBLIC_URL}/images/songs/${currentSongData.image}`}
+        src={`${import.meta.env.BASE_URL}images/songs/${currentSongData.image}`}
       />
       <div id='song-and-artist-name'>
         <p className='text-white font-bold song-title' title={currentSongData.name}>

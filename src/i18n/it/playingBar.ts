@@ -13,5 +13,6 @@ export const playingBar = {
   Description: 'Descrizione',
   Images: 'Immagini',
   'Related projects': 'Progetti correlati',
+  'Related courses': 'Corsi correlati',
   'Exit full screen': 'Esci da schermo intero',
 };

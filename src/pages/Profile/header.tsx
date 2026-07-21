@@ -14,7 +14,7 @@ export const ProfileHeader = () => {
           <Col xs={24} sm={6} lg={5}>
             <img
               alt='franco profile pic'
-              src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}
+              src={`${import.meta.env.BASE_URL}images/profile.jpeg`}
               className='profile-img'
             />
           </Col>

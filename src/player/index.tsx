@@ -21,7 +21,7 @@ export const setMediaSessionMetadata = (index: number) => {
   if (!canUseMediaSession() || typeof MediaMetadata === 'undefined') return;
 
   const song = AVAILABLE_SONGS[index];
-  const artworkSrc = `${process.env.PUBLIC_URL}/images/songs/${song.image}`;
+  const artworkSrc = `${import.meta.env.BASE_URL}images/songs/${song.image}`;
   const artworkType = getArtworkType(song.image);
 
   navigator.mediaSession.metadata = new MediaMetadata({

@@ -93,7 +93,7 @@ export const PlaylistHeader: FC<PlaylistHeaderProps> = ({ playlist, container })
                       className='playlist-avatar'
                       id='user-avatar'
                       alt='User Avatar'
-                      src={`${process.env.PUBLIC_URL}/images/profile.jpeg`}
+                      src={`${import.meta.env.BASE_URL}images/profile.jpeg`}
                     />
                   </Link>
                   <h3 className='text-sm font-semibold text-white'>

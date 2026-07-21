@@ -56,6 +56,62 @@ const MAGISTER_DATA_ANALYSIS = {
   MAGISTER_DATA_ANALYSIS_DESCRIPTION: `Abschlussnote: 9,6/10\nDer Master-Abschluss in Data Intelligence mit Schwerpunkt auf Big Data richtet sich an Universitätsabsolventen in Informatik und/oder verwandten Bereichen. Er verleiht den Titel Master in Data Intelligence mit Schwerpunkt auf Big Data.\nDas Ziel ist es, Fachleute auszubilden, die in der Lage sind, intelligente Systeme zu entwerfen und zu implementieren, um Big Data zu verarbeiten, relevante Muster und/oder Beziehungen klar und effizient zu extrahieren und zu kommunizieren, die für die Entscheidungsfindung sehr nützlich sind.\nDas Programm zielt darauf ab, sicherzustellen, dass Absolventen aktuelle Kenntnisse der Grundlagen des Bereichs und der derzeit verwendeten Technologien in Data Intelligence erwerben. Gleichzeitig wird angestrebt, Absolventen mit F&E&I-Fähigkeiten auszubilden, die einen Doktortitel in Informatik abschließen können, indem sie die thematischen Achsen des Master-Programms fortsetzen.\nDie Themen umfassen Machine Learning, Data und Text Mining, Zeitreihenanalyse und Datenvisualisierung, studiert aus der Perspektive der intelligenten Datenanalyse in Big Data-Umgebungen.`,
 };
 
+const AI_FUNDAMENTALS = {
+  AI_FUNDAMENTALS_NAME: 'AI Fundamentals',
+  AI_FUNDAMENTALS_ARTIST: 'Google | Coursera',
+  AI_FUNDAMENTALS_LENGTH: 'Juni 2026',
+  AI_FUNDAMENTALS_DESCRIPTION: `Erreichte Note: 90%\nKurszertifikat innerhalb des Google AI Professional Certificate. Grundlagen generativer KI, strukturierte Prompting-Frameworks, Bewertung von KI-Ausgaben auf Genauigkeit und Bias sowie Identifikation wirkungsvoller Möglichkeiten zur Zusammenarbeit mit KI.`,
+};
+
+const AI_BRAINSTORMING_PLANNING = {
+  AI_BRAINSTORMING_PLANNING_NAME: 'AI for Brainstorming and Planning',
+  AI_BRAINSTORMING_PLANNING_ARTIST: 'Google | Coursera',
+  AI_BRAINSTORMING_PLANNING_LENGTH: 'Juni 2026',
+  AI_BRAINSTORMING_PLANNING_DESCRIPTION: `Erreichte Note: 100%\nKurszertifikat innerhalb des Google AI Professional Certificate. KI als kreativer Partner zum Brainstorming und Erweitern von Ideen, Bewertung und Priorisierung anhand von Entscheidungsframeworks, Stärkung von Projektplänen durch Erkennen von Lücken und Risiken sowie Dokumentation über einen zentralen Knowledge Hub.`,
+};
+
+const AI_RESEARCH_INSIGHTS = {
+  AI_RESEARCH_INSIGHTS_NAME: 'AI for Research and Insights',
+  AI_RESEARCH_INSIGHTS_ARTIST: 'Google | Coursera',
+  AI_RESEARCH_INSIGHTS_LENGTH: 'Juni 2026',
+  AI_RESEARCH_INSIGHTS_DESCRIPTION: `Erreichte Note: 100%\nKurszertifikat innerhalb des Google AI Professional Certificate. Synthese mehrerer Quellen mit Gemini Deep Research zu actionable Reports, Aufbau eines Research Hubs in Gemini Notebook, Erstellung individueller KI-Experten mit Gemini Gems sowie Bewertung von KI-Ergebnissen durch Verifikation und Grounding der Quellen.`,
+};
+
+const AI_WRITING_COMMUNICATING = {
+  AI_WRITING_COMMUNICATING_NAME: 'AI for Writing and Communicating',
+  AI_WRITING_COMMUNICATING_ARTIST: 'Google | Coursera',
+  AI_WRITING_COMMUNICATING_LENGTH: 'Juni 2026',
+  AI_WRITING_COMMUNICATING_DESCRIPTION: `Erreichte Note: 100%\nKurszertifikat innerhalb des Google AI Professional Certificate. Synthese von Meeting-Transkripten mit Gemini in Google Meet, Verfeinerung der Arbeit mit kritischem Feedback, Erstellung von Kommunikationsassets für unterschiedliche Zielgruppen mit Gemini Canvas sowie Üben von Workplace-Szenarien mit Gemini Live.`,
+};
+
+const AI_CONTENT_CREATION = {
+  AI_CONTENT_CREATION_NAME: 'AI for Content Creation',
+  AI_CONTENT_CREATION_ARTIST: 'Google | Coursera',
+  AI_CONTENT_CREATION_LENGTH: 'Juni 2026',
+  AI_CONTENT_CREATION_DESCRIPTION: `Erreichte Note: 80%\nKurszertifikat innerhalb des Google AI Professional Certificate. Generierung visueller Assets mit Gemini Bild- und Videomodellen, Transformation von Präsentationen mit Gemini in Google Slides, Definition markenkonformer Design-Guidelines sowie Kritik kreativer Assets mit actionable KI-Feedback.`,
+};
+
+const AI_DATA_ANALYSIS = {
+  AI_DATA_ANALYSIS_NAME: 'AI for Data Analysis',
+  AI_DATA_ANALYSIS_ARTIST: 'Google | Coursera',
+  AI_DATA_ANALYSIS_LENGTH: 'Juni 2026',
+  AI_DATA_ANALYSIS_DESCRIPTION: `Erreichte Note: 100%\nKurszertifikat innerhalb des Google AI Professional Certificate. Identifikation von Erfolgsmetriken aus Business-Zielen, Bereinigung und Strukturierung unordentlicher Daten mit effektiven Prompts, Generierung von Tabellenformeln mit Gemini in Google Sheets sowie KI-gestützte Datenvisualisierungen zur Kommunikation von Insights.`,
+};
+
+const AI_APP_BUILDING = {
+  AI_APP_BUILDING_NAME: 'AI for App Building',
+  AI_APP_BUILDING_ARTIST: 'Google | Coursera',
+  AI_APP_BUILDING_LENGTH: 'Juni 2026',
+  AI_APP_BUILDING_DESCRIPTION: `Erreichte Note: 100%\nKurszertifikat innerhalb des Google AI Professional Certificate. Identifikation wirkungsvoller Workplace-Chancen für individuelle KI-Lösungen, Bau einer funktionalen Web-App per Vibe Coding aus natürlicher Sprache, Debugging mit KI zur Stabilisierung von Prototypen sowie Übung mit fortgeschrittenen Tools wie AI Studio.`,
+};
+
+const GOOGLE_AI_SPECIALIZATION = {
+  GOOGLE_AI_SPECIALIZATION_NAME: 'Google AI',
+  GOOGLE_AI_SPECIALIZATION_ARTIST: 'Google | Coursera',
+  GOOGLE_AI_SPECIALIZATION_LENGTH: 'Juni 2026',
+  GOOGLE_AI_SPECIALIZATION_DESCRIPTION: `Spezialisierungszertifikat (~1 Monat bei 2 Stunden/Woche).\nProfessional Certificate mit 7 Kursen: AI Fundamentals (90%), AI for Brainstorming and Planning (100%), AI for Research and Insights (100%), AI for Writing and Communicating (100%), AI for Content Creation (80%), AI for Data Analysis (100%) und AI for App Building (100%).\nFokus auf KI als professionellen Collaborator, verantwortungsvollen Einsatz in Research, Kommunikation, Content Creation und Data Analysis sowie Vibe-Coding einer individuellen Workplace-App. Skills: Generative AI, Data Analysis, Responsible AI, Research, Business Communication und Data Visualization.`,
+};
+
 export const EDUCATION = {
   ...APU,
   ...FISCALIA,
@@ -65,4 +121,12 @@ export const EDUCATION = {
   ...ENGLISH_CAMBRIDGE,
   ...MIKROWAYS_KUBERNETES,
   ...MAGISTER_DATA_ANALYSIS,
+  ...AI_FUNDAMENTALS,
+  ...AI_BRAINSTORMING_PLANNING,
+  ...AI_RESEARCH_INSIGHTS,
+  ...AI_WRITING_COMMUNICATING,
+  ...AI_CONTENT_CREATION,
+  ...AI_DATA_ANALYSIS,
+  ...AI_APP_BUILDING,
+  ...GOOGLE_AI_SPECIALIZATION,
 } as const;

@@ -8,7 +8,8 @@ import { AuthoringTool, SoundSuitMobileApp, SoundSuitWebApp } from './personalPr
 import { RUKIR, GO4Clic, MasEfectivo, QwertyLandingPage, TFD } from './personalProjects';
 import { GralLecturas, GralLecturasWeb, GralTasks, GralVehicles } from './personalProjects';
 
-const publicURL = (url: string) => process.env.PUBLIC_URL + url;
+const publicURL = (url: string) =>
+  `${import.meta.env.BASE_URL}${url.replace(/^\//, '')}`;
 
 export enum JobTypesEnum {
   JOB = 'JOB',

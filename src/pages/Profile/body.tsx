@@ -6,7 +6,7 @@ import { ALL_SOCIAL_NETWORKS } from '../../constants/socialNetworks';
 export const ProfileBody = () => {
   const { t } = useTranslation(['profile']);
 
-  const cvUrl = `${process.env.PUBLIC_URL}/cv/CV BORRELLI v2.pdf`;
+  const cvUrl = `${import.meta.env.BASE_URL}cv/CV BORRELLI v2.pdf`;
 
   return (
     <div className='profile-body'>

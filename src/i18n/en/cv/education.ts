@@ -60,6 +60,62 @@ The Master's Degree in Data Intelligence with a focus on Big Data is aimed at un
 \nThe topics include Machine Learning, Data and Text Mining, Time Series Analysis, and Data Visualization, studied from the perspective of intelligent data analysis in Big Data environments.`,
 };
 
+const AI_FUNDAMENTALS = {
+  AI_FUNDAMENTALS_NAME: 'AI Fundamentals',
+  AI_FUNDAMENTALS_ARTIST: 'Google | Coursera',
+  AI_FUNDAMENTALS_LENGTH: 'Jun 2026',
+  AI_FUNDAMENTALS_DESCRIPTION: `Grade Achieved: 90%\nCourse certificate within the Google AI Professional Certificate. Covered fundamental generative AI concepts, structured prompting frameworks, evaluating AI outputs for accuracy and bias, and identifying high-impact opportunities to collaborate with AI.`,
+};
+
+const AI_BRAINSTORMING_PLANNING = {
+  AI_BRAINSTORMING_PLANNING_NAME: 'AI for Brainstorming and Planning',
+  AI_BRAINSTORMING_PLANNING_ARTIST: 'Google | Coursera',
+  AI_BRAINSTORMING_PLANNING_LENGTH: 'Jun 2026',
+  AI_BRAINSTORMING_PLANNING_DESCRIPTION: `Grade Achieved: 100%\nCourse certificate within the Google AI Professional Certificate. Used AI as a creative partner to brainstorm and expand ideas, evaluate and prioritize them against decision frameworks, strengthen project plans by spotting gaps and risks, and manage documentation with a centralized knowledge hub.`,
+};
+
+const AI_RESEARCH_INSIGHTS = {
+  AI_RESEARCH_INSIGHTS_NAME: 'AI for Research and Insights',
+  AI_RESEARCH_INSIGHTS_ARTIST: 'Google | Coursera',
+  AI_RESEARCH_INSIGHTS_LENGTH: 'Jun 2026',
+  AI_RESEARCH_INSIGHTS_DESCRIPTION: `Grade Achieved: 100%\nCourse certificate within the Google AI Professional Certificate. Synthesized multiple sources with Gemini Deep Research into actionable reports, built a research hub in Gemini Notebook for multimodal summarization, created custom AI experts with Gemini Gems, and evaluated AI findings by verifying and grounding sources.`,
+};
+
+const AI_WRITING_COMMUNICATING = {
+  AI_WRITING_COMMUNICATING_NAME: 'AI for Writing and Communicating',
+  AI_WRITING_COMMUNICATING_ARTIST: 'Google | Coursera',
+  AI_WRITING_COMMUNICATING_LENGTH: 'Jun 2026',
+  AI_WRITING_COMMUNICATING_DESCRIPTION: `Grade Achieved: 100%\nCourse certificate within the Google AI Professional Certificate. Synthesized meeting transcripts with Gemini in Google Meet, refined work with critical feedback for high-stakes reviews, built communication assets for different audiences with Gemini Canvas, and practiced workplace scenarios with Gemini Live.`,
+};
+
+const AI_CONTENT_CREATION = {
+  AI_CONTENT_CREATION_NAME: 'AI for Content Creation',
+  AI_CONTENT_CREATION_ARTIST: 'Google | Coursera',
+  AI_CONTENT_CREATION_LENGTH: 'Jun 2026',
+  AI_CONTENT_CREATION_DESCRIPTION: `Grade Achieved: 80%\nCourse certificate within the Google AI Professional Certificate. Generated visual assets with Gemini image and video models, transformed slide decks with Gemini in Google Slides, established brand-aligned design guidelines for AI content, and critiqued creative assets with actionable AI feedback.`,
+};
+
+const AI_DATA_ANALYSIS = {
+  AI_DATA_ANALYSIS_NAME: 'AI for Data Analysis',
+  AI_DATA_ANALYSIS_ARTIST: 'Google | Coursera',
+  AI_DATA_ANALYSIS_LENGTH: 'Jun 2026',
+  AI_DATA_ANALYSIS_DESCRIPTION: `Grade Achieved: 100%\nCourse certificate within the Google AI Professional Certificate. Identified success metrics from business objectives, cleaned and structured messy data with effective prompts, generated spreadsheet formulas with Gemini in Google Sheets, and created AI-powered data visualizations to communicate insights.`,
+};
+
+const AI_APP_BUILDING = {
+  AI_APP_BUILDING_NAME: 'AI for App Building',
+  AI_APP_BUILDING_ARTIST: 'Google | Coursera',
+  AI_APP_BUILDING_LENGTH: 'Jun 2026',
+  AI_APP_BUILDING_DESCRIPTION: `Grade Achieved: 100%\nCourse certificate within the Google AI Professional Certificate. Identified high-impact workplace opportunities for custom AI solutions, built a functional web app with vibe coding from natural language, debugged with AI to stabilize prototypes, and practiced advanced tools like AI Studio for more scalable custom solutions.`,
+};
+
+const GOOGLE_AI_SPECIALIZATION = {
+  GOOGLE_AI_SPECIALIZATION_NAME: 'Google AI',
+  GOOGLE_AI_SPECIALIZATION_ARTIST: 'Google | Coursera',
+  GOOGLE_AI_SPECIALIZATION_LENGTH: 'Jun 2026',
+  GOOGLE_AI_SPECIALIZATION_DESCRIPTION: `Specialization Certificate (~1 month at 2 hours/week).\nProfessional Certificate covering 7 courses: AI Fundamentals (90%), AI for Brainstorming and Planning (100%), AI for Research and Insights (100%), AI for Writing and Communicating (100%), AI for Content Creation (80%), AI for Data Analysis (100%), and AI for App Building (100%).\nFocused on using AI as a professional collaborator, applying it responsibly across research, communication, content creation, and data analysis, and vibe-coding a custom workplace app. Skills include Generative AI, Data Analysis, Responsible AI, Research, Business Communication, and Data Visualization.`,
+};
+
 export const EDUCATION = {
   ...APU,
   ...FISCALIA,
@@ -69,4 +125,12 @@ export const EDUCATION = {
   ...ENGLISH_CAMBRIDGE,
   ...MIKROWAYS_KUBERNETES,
   ...MAGISTER_DATA_ANALYSIS,
+  ...AI_FUNDAMENTALS,
+  ...AI_BRAINSTORMING_PLANNING,
+  ...AI_RESEARCH_INSIGHTS,
+  ...AI_WRITING_COMMUNICATING,
+  ...AI_CONTENT_CREATION,
+  ...AI_DATA_ANALYSIS,
+  ...AI_APP_BUILDING,
+  ...GOOGLE_AI_SPECIALIZATION,
 } as const;
