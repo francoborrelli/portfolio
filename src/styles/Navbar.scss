@@ -118,6 +118,7 @@
   }
 
   .search-suffix {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -131,7 +132,8 @@
   }
 
   .search-shortcut {
-    display: none;
+    position: absolute;
+    right: calc(100% + 8px);
     font-family: inherit;
     font-size: 12px;
     font-weight: 600;
@@ -142,16 +144,24 @@
     border-radius: 4px;
     padding: 3px 5px;
     pointer-events: none;
-  }
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(6px);
+    transition: opacity 160ms ease, transform 160ms ease;
 
-  &:hover .search-shortcut {
-    @media (min-width: 950px) {
-      display: inline-block;
+    @media (max-width: 949px) {
+      display: none;
     }
   }
 
+  &:hover .search-shortcut {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
   &:focus-within .search-shortcut {
-    display: none;
+    opacity: 0;
+    transform: translateX(6px);
   }
 }
 

@@ -25,7 +25,7 @@ const PlaylistView: FC<{ container: RefObject<HTMLDivElement | null> }> = (props
       navigate('/404');
     }
 
-    dispatch(playlistActions.resetOrder({ order: playlist?.defaultFilter || '' }));
+    dispatch(playlistActions.resetOrder({ order: playlist?.defaultFilter }));
   }, [dispatch, playlist, navigate]);
 
   if (!playlist) {

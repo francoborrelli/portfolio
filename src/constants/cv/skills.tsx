@@ -126,7 +126,7 @@ export const Skills = {
   name: 'SKILLS',
   color: '#4f596e',
   songs: SKILLS_SONGS,
-  defaultFilter: 'CURRENT',
+  defaultFilter: SkillsTypesEnum.CURRENT,
   description: 'Description 5',
   filters: [
     SkillsTypesEnum.CURRENT,

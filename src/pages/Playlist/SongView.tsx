@@ -26,7 +26,6 @@ const SongView = ({ song, index, hasSkills }: SongViewProps) => {
 
   return (
     <button
-      key={song.name}
       type='button'
       className='flex flex-col w-full hover:bg-spotify-gray-lightest items-center p-0 rounded-lg'
       onClick={() => {
@@ -77,7 +76,7 @@ const SongView = ({ song, index, hasSkills }: SongViewProps) => {
           </Avatar.Group>
         </div>
 
-        <p className='playlist-track-row__time text-right'>{t(song.length!)}</p>
+        <p className='playlist-track-row__time text-right'>{t(song.length || '')}</p>
       </div>
     </button>
   );

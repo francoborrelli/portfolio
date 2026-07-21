@@ -14,7 +14,7 @@ import { useAppDispatch, useAppSelector } from '../../store/store';
 
 // Interfaces
 import type { FC } from 'react';
-import type { Playlist } from '../../interfaces/types';
+import type { Playlist, PlaylistOrder } from '../../interfaces/types';
 
 export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
   const dispatch = useAppDispatch();
@@ -23,7 +23,7 @@ export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
   const [tor] = useTranslation(['order']);
   const [t] = useTranslation(['playlist']);
 
-  const filters = ['ALL', ...(playlist.filters || [])];
+  const filters: PlaylistOrder[] = ['ALL', ...(playlist.filters || [])];
 
   const items = filters.map((filter) => ({
     key: filter,

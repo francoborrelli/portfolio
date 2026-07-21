@@ -1,10 +1,14 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import type {
+  PlaylistOrder,
+  PlaylistSortBy,
+  PlaylistSortDirection,
+} from '../../interfaces/types';
 
-export type PlaylistSortBy = 'custom' | 'name' | 'length';
-export type PlaylistSortDirection = 'asc' | 'desc';
+export type { PlaylistSortBy, PlaylistSortDirection };
 
 const initialState: {
-  order: string;
+  order: PlaylistOrder;
   search: string;
   sortBy: PlaylistSortBy;
   sortDirection: PlaylistSortDirection;
@@ -19,10 +23,10 @@ const playlistSlice = createSlice({
   name: 'playlist',
   initialState,
   reducers: {
-    setOrder(state, action: PayloadAction<{ order: string }>) {
+    setOrder(state, action: PayloadAction<{ order: PlaylistOrder }>) {
       state.order = action.payload.order;
     },
-    resetOrder(state, action: PayloadAction<{ order?: string }>) {
+    resetOrder(state, action: PayloadAction<{ order?: PlaylistOrder }>) {
       state.order = action.payload.order || 'ALL';
       state.search = '';
       state.sortBy = 'custom';

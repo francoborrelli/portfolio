@@ -4,12 +4,17 @@ import { EducationTypesEnum } from '../constants/cv/education';
 import { ProjectTypesEnum } from '../constants/cv/personalProjects';
 import { PublicationsTypesEnum } from '../constants/cv/publications';
 
-type SongType =
+export type SongType =
   | JobTypesEnum
   | SkillsTypesEnum
   | ProjectTypesEnum
   | EducationTypesEnum
   | PublicationsTypesEnum;
+
+export type PlaylistOrder = SongType | 'ALL';
+
+export type PlaylistSortBy = 'custom' | 'name' | 'length';
+export type PlaylistSortDirection = 'asc' | 'desc';
 
 export type Song = {
   name: string;
@@ -40,8 +45,8 @@ export type Playlist = {
   description?: string;
   songs: Song[];
   color: string;
-  filters?: string[];
-  defaultFilter?: string;
+  filters?: SongType[];
+  defaultFilter?: SongType;
   getImage: (lang: string) => string;
 };
 
