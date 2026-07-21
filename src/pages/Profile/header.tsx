@@ -9,7 +9,7 @@ export const ProfileHeader = () => {
 
   return (
     <div className='profile-header'>
-      <div style={{ padding: 40, paddingTop: 20 }}>
+      <div className='profile-header-content'>
         <Row gutter={[24, 24]} align={'middle'}>
           <Col xs={24} sm={6} lg={5}>
             <img

@@ -30,19 +30,7 @@ export const LanguageModal = memo(() => {
         footer={null}
         destroyOnClose
         onCancel={() => onClose()}
-        title={
-          <h1
-            style={{
-              fontWeight: 700,
-              fontSize: '1.5rem',
-              marginBlockStart: 0,
-              paddingBlockEnd: 8,
-              color: 'white',
-            }}
-          >
-            {t('Choose a language')}
-          </h1>
-        }
+        title={<h1 className='language-modal-title'>{t('Choose a language')}</h1>}
       >
         <div className='language-grid'>
           {AVAILABLE_LANGUAGES.map((language) => (

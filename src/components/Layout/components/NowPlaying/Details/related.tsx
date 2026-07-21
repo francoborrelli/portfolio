@@ -14,10 +14,10 @@ export const RelatedSong: FC<{ song: Song }> = memo(({ song }) => {
   };
 
   return (
-    <div className='queue-song'>
+    <button type='button' className='queue-song queue-song-button' onClick={onPlay}>
       <div className=' flex flex-row items-center'>
         <div className='queue-song-image-container'>
-          <div className='queue-song-overlay' onClick={onPlay}>
+          <div className='queue-song-overlay'>
             <Play />
           </div>
           <img alt='Album Cover' className='album-cover' src={song.imageUrl} />
@@ -32,7 +32,7 @@ export const RelatedSong: FC<{ song: Song }> = memo(({ song }) => {
           </p>
         </div>
       </div>
-    </div>
+    </button>
   );
 });
 

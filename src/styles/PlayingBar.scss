@@ -40,6 +40,7 @@
   position: relative;
   display: grid;
   place-content: center;
+  margin-left: 10px;
 
   #center-heart {
     #inner {
@@ -66,6 +67,7 @@
 
 .heart-liked {
   cursor: pointer;
+  margin-left: 10px;
 
   ::before {
     content: '';
@@ -175,6 +177,7 @@
     background-color: #696969;
     transition: width 0.1s;
     border-radius: 4px;
+    cursor: pointer;
 
     .position-sider {
       background-color: white;
@@ -274,9 +277,22 @@
     margin: 20px 10px;
     padding: 10px;
     width: calc(100vw - 20px);
+    background: linear-gradient(var(--song-color) -50%, rgb(18, 18, 18) 300%);
 
     svg {
       fill: white !important;
+    }
+
+    .mobile-player-actions-col {
+      display: flex;
+    }
+
+    .mobile-player-actions {
+      display: flex;
+      align-items: center;
+      min-width: 50px;
+      margin-right: 5px;
+      justify-content: space-between;
     }
 
     .time-line {
@@ -289,6 +305,7 @@
 
       .current-time {
         height: 3px;
+        width: var(--progress);
         background: white;
       }
     }
@@ -332,5 +349,57 @@
 @media (max-width: $desktop-breakpoint) {
   .Main-section {
     padding-bottom: 50px !important;
+  }
+}
+
+.play-controls {
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+.song-progress-slider {
+  width: 100%;
+}
+
+.control-buttons {
+  justify-content: center;
+}
+
+.extra-btn {
+  &--lyrics {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  &--details {
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+
+  &--queue {
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+
+  &--expand {
+    margin-right: 5px;
+  }
+
+  &--pointer {
+    cursor: pointer;
+  }
+
+  &--blocked {
+    cursor: not-allowed;
+  }
+}
+
+.volume-control-container {
+  .volume-control-space {
+    display: flex;
+  }
+
+  .volume-slider-wrap {
+    width: 90px;
   }
 }

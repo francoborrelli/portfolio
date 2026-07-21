@@ -18,7 +18,7 @@ const SongProgressBar = () => {
   return (
     <div className='flex items-center justify-between w-full'>
       <div className='text-white mr-2 text-xs'>{secondsToTime(currentTime)}</div>
-      <div style={{ width: '100%' }}>
+      <div className='song-progress-slider'>
         <Slider
           value={duration ? currentTime / duration : 0}
           isEnabled

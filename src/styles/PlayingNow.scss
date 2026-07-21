@@ -40,6 +40,18 @@
   .playing-now-card-title {
     color: $text-primary-color;
     font-weight: 700;
+
+    &.no-image {
+      margin-top: 10px;
+    }
+  }
+
+  .playing-now-social-links {
+    margin-top: 10px;
+  }
+
+  .skill-avatar {
+    background-color: #5c5c5c26;
   }
 
   .playing-now-card-subtitle {
@@ -58,6 +70,8 @@
   }
 
   .playing-now-card-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%),
+      var(--playing-card-image);
     background-position: 50% 50%;
     background-size: cover;
     border-radius: 8px 8px 0 0;
@@ -93,10 +107,27 @@
   margin-bottom: 20px;
 }
 
+.queue-section-songs {
+  margin: 5px;
+}
+
+.queue-section-next {
+  margin-top: 30px;
+}
+
 .queue-song {
   margin: 5px;
   padding: 5px;
   border-radius: 10px;
+
+  &.queue-song-button {
+    display: block;
+    width: 100%;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+  }
 
   .queue-song-image-container {
     position: relative;

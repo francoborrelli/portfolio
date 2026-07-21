@@ -22,7 +22,7 @@ const LyricsButton = () => {
   return (
     <Tooltip title={t('Lyrics')}>
       <button
-        style={{ marginLeft: 5, marginRight: 5 }}
+        className='extra-btn extra-btn--lyrics'
         onClick={() => dispatch(languageActions.openLanguageModal())}
       >
         <MicrophoneIcon />
@@ -46,13 +46,10 @@ const DetailsButton = () => {
       <Tooltip title={t('Now playing view')}>
         <button
           disabled={!songPlaying}
-          className={active ? 'active-icon-button' : ''}
+          className={`extra-btn extra-btn--details ${active ? 'active-icon-button' : ''} ${
+            songPlaying ? 'extra-btn--pointer' : 'extra-btn--blocked'
+          }`}
           onClick={() => dispatch(libraryActions.toggleSongPlaying())}
-          style={{
-            marginLeft: 5,
-            marginRight: 10,
-            cursor: songPlaying ? 'pointer' : 'not-allowed',
-          }}
         >
           <DetailsIcon active={active} />
         </button>
@@ -73,15 +70,12 @@ const QueueButton = () => {
   return (
     <Tooltip title={t('Queue')}>
       <button
-        className={active ? 'active-icon-button' : ''}
+        className={`extra-btn extra-btn--queue ${active ? 'active-icon-button' : ''} ${
+          isQueueOpen ? 'extra-btn--pointer' : 'extra-btn--blocked'
+        }`}
         onClick={() =>
           isQueueOpen ? dispatch(libraryActions.closeQueue()) : dispatch(libraryActions.openQueue())
         }
-        style={{
-          marginLeft: 10,
-          marginRight: 5,
-          cursor: isQueueOpen ? 'pointer' : 'not-allowed',
-        }}
       >
         <ListIcon active={active} />
       </button>
@@ -104,10 +98,9 @@ const ExpandButton = () => {
       <Tooltip title={t('Full Screen')}>
         <button
           onClick={handle.enter}
-          style={{
-            marginRight: 5,
-            cursor: isQueueOpen ? 'pointer' : 'not-allowed',
-          }}
+          className={`extra-btn extra-btn--expand ${
+            isQueueOpen ? 'extra-btn--pointer' : 'extra-btn--blocked'
+          }`}
         >
           <ExpandIcon />
         </button>

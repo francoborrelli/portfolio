@@ -17,7 +17,7 @@ const ExpandOutButton: FC<FullScreenPlayerProps> = (props) => {
   const [t] = useTranslation(['playingBar']);
   return (
     <Tooltip title={t('Exit full screen')}>
-      <button title={t('Exit full screen')} style={{ marginLeft: 20 }} onClick={props.onExit}>
+      <button title={t('Exit full screen')} className='fullscreen-exit-button' onClick={props.onExit}>
         <ExpandOutIcon />
       </button>
     </Tooltip>
@@ -28,8 +28,8 @@ export const FullScreenPlayer: FC<FullScreenPlayerProps> = (props) => {
   return (
     <div className='Full-screen-page'>
       <div></div>
-      <div style={{ width: '100%', padding: 60 }}>
-        <Row gutter={[24, 24]} justify='center' style={{ alignItems: 'baseline' }}>
+      <div className='fullscreen-content'>
+        <Row gutter={[24, 24]} justify='center' className='fullscreen-row'>
           <Col span={24}>
             <AlbumSongDetails />
           </Col>
@@ -40,7 +40,7 @@ export const FullScreenPlayer: FC<FullScreenPlayerProps> = (props) => {
           <Col span={8}>
             <ControlButtons />
           </Col>
-          <Col span={8} style={{ textAlign: 'end' }}>
+          <Col span={8} className='fullscreen-controls-end'>
             <Space>
               <VolumeControls />
               <ExpandOutButton onExit={props.onExit} />

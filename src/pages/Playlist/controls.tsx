@@ -50,7 +50,11 @@ export const PlaylistControls: FC<{ playlist: Playlist }> = ({ playlist }) => {
               >
                 <button className='order-button'>
                   <Space align='center'>
-                    <span style={{ color: order !== 'ALL' ? 'inherit' : 'transparent' }}>
+                    <span
+                      className={`order-button__label ${
+                        order === 'ALL' ? 'order-button__label--hidden' : ''
+                      }`}
+                    >
                       {tor(order)}
                     </span>
                     <OrderListIcon />

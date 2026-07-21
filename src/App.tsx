@@ -55,7 +55,7 @@ const RootComponent = () => {
       <Router basename='portfolio'>
         <AppLayout>
           <div className='Main-section' ref={container}>
-            <div style={{ minHeight: 'calc(100vh - 230px)', width: '100%' }}>
+            <div className='main-section-content'>
               <Routes>
                 {routes.map((route) => (
                   <Route

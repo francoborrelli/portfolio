@@ -1,8 +1,22 @@
 @use './variables.scss' as *;
 
-@media (max-width: 768px) {
-  .navbar {
+.navbar {
+  margin: 0 5px;
+
+  .navbar-search-col {
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
     padding: 10px;
+  }
+}
+
+.navbar-header {
+  background-color: rgba(12, 12, 12, var(--header-opacity));
+
+  .avatar {
+    margin-top: -1px;
   }
 }
 
@@ -100,8 +114,44 @@
   }
 
   .ant-input-suffix {
-    border-left: 1px solid #b3b3b3;
-    padding-left: 10px;
+    margin-inline-start: 8px;
+  }
+
+  .search-suffix {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .search-suffix-divider {
+    width: 1px;
+    height: 16px;
+    background: #b3b3b3;
+    flex-shrink: 0;
+  }
+
+  .search-shortcut {
+    display: none;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #b3b3b3;
+    background: transparent;
+    border: 1px solid #5a5a5a;
+    border-radius: 4px;
+    padding: 3px 5px;
+    pointer-events: none;
+  }
+
+  &:hover .search-shortcut {
+    @media (min-width: 950px) {
+      display: inline-block;
+    }
+  }
+
+  &:focus-within .search-shortcut {
+    display: none;
   }
 }
 

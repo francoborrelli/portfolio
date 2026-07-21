@@ -103,6 +103,31 @@ h3 {
   justify-content: flex-start;
 }
 
+.library-row {
+  height: 100%;
+}
+
+.library-expand-button {
+  display: flex;
+  justify-content: center;
+}
+
+.library-list-scroll {
+  overflow-y: scroll;
+  height: 100%;
+  margin-left: -20px;
+}
+
+.library-list-scroll-collapsed {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.library-language-col {
+  max-height: 40px;
+}
+
 .library-card {
   all: unset;
   display: flex;
@@ -110,7 +135,7 @@ h3 {
   gap: 10px;
   font-size: 0.9em;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 2px;
   width: 98%;
   overflow-x: hidden;
@@ -118,10 +143,23 @@ h3 {
 
   &.collapsed {
     margin-bottom: 10px;
+    justify-content: center;
   }
 
   img {
     border-radius: 4px;
+    width: 52px;
+  }
+
+  .library-card-title {
+    font-size: 15px;
+    margin-bottom: -5px;
+  }
+
+  .library-card-subtitle {
+    font-size: 13px;
+    opacity: 0.7;
+    font-weight: 400;
   }
 
   .artist {
@@ -137,6 +175,21 @@ h3 {
   &[data-active='true'] {
     background-color: #ffffff1a;
   }
+}
+
+.library-tooltip-subtitle {
+  font-size: 13px;
+  color: gray;
+  font-weight: 400;
+}
+
+.main-layout-row {
+  height: calc(100vh - 106px);
+}
+
+.main-section-content {
+  min-height: calc(100vh - 230px);
+  width: 100%;
 }
 
 .hoverable-icon.active:hover {
@@ -325,6 +378,10 @@ h3 {
 }
 
 .avatar-tag {
+  background-color: var(--tag-bg);
+  font-size: 1.5rem;
+  margin-right: 15px;
+
   svg {
     width: 1.5rem !important;
     height: 1.5rem !important;

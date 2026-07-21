@@ -24,7 +24,7 @@ interface PlaylistListProps extends HomeProps {
 
 const HorizontalPlaylists: FC<PlaylistListProps> = (props) => {
   return (
-    <Row gutter={[16, 16]} style={{ margin: 10 }} justify='space-between'>
+    <Row gutter={[16, 16]} className='home-horizontal-playlists' justify='space-between'>
       {SOCIAL_NETWORKS.map((socialNetwork) => {
         return (
           <Col key={socialNetwork.name} xs={12} md={12} xl={6}>
@@ -49,13 +49,7 @@ const Playlists: FC<PlaylistListProps> = ({ playlists, onSetColor }) => {
 const Home = () => {
   const [color, setColor] = useState('rgb(66, 32, 35)');
   return (
-    <div
-      className='Home-seccion'
-      style={{
-        transition: 'background: 0.5s',
-        background: `linear-gradient(180deg, ${color} -20%, rgb(18, 18, 18) 50%)`,
-      }}
-    >
+    <div className='Home-seccion' style={{ ['--playlist-color' as any]: color }}>
       <Row gutter={[16, 16]}>
         <Col span={24}>
           <HorizontalPlaylists playlists={playlists} onSetColor={setColor} />

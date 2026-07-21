@@ -7,8 +7,8 @@ const Header = ({ opacity }: { opacity: number; title?: string }) => {
 
   return (
     <div
-      className={`flex r-0 w-full flex-row items-center justify-between bg-gray-900 rounded-t-md z-10`}
-      style={{ backgroundColor: `rgba(12, 12, 12, ${opacity}%)` }}
+      className='flex r-0 w-full flex-row items-center justify-between bg-gray-900 rounded-t-md z-10 navbar-header'
+      style={{ ['--header-opacity' as any]: `${opacity}%` }}
     >
       <div className='flex flex-row items-center'>
         <Space>
@@ -32,7 +32,6 @@ const Header = ({ opacity }: { opacity: number; title?: string }) => {
                 className='avatar'
                 id='user-avatar'
                 alt='User Avatar'
-                style={{ marginTop: -1 }}
                 src={`${import.meta.env.BASE_URL}images/profile.jpeg`}
               />
             </Link>

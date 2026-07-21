@@ -16,9 +16,7 @@ export const NowPlayingCard: FC<NowPlayingCardProps> = memo((props) => {
       {props.image ? (
         <div
           className='playing-now-card-image'
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%), url("${props.image}")`,
-          }}
+          style={{ ['--playing-card-image' as any]: `url("${props.image}")` }}
         >
           <div className='playing-now-card-image-text'>
             <div data-encore-id='text'>
@@ -31,10 +29,7 @@ export const NowPlayingCard: FC<NowPlayingCardProps> = memo((props) => {
       <div className='playing-now-card-text'>
         <Row align='middle' justify='space-between'>
           <Col span={props.extra ? 14 : 24}>
-            <div
-              className='playing-now-card-title'
-              style={props.image ? undefined : { marginTop: 10 }}
-            >
+            <div className={`playing-now-card-title${props.image ? '' : ' no-image'}`}>
               {props.title}
             </div>
             <div className='playing-now-card-subtitle'>{props.subtitle}</div>

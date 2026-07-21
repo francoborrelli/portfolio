@@ -88,6 +88,14 @@
   border-color: rgba(255, 255, 255, 0.1);
 }
 
+.language-modal-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-block-start: 0;
+  padding-block-end: 8px;
+  color: white;
+}
+
 .language-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

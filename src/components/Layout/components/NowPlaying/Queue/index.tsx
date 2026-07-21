@@ -12,7 +12,7 @@ const NowPlaying = () => {
   return (
     <div>
       <p className='playing-section-title'>{t('Now playing')}</p>
-      <div style={{ margin: 5 }}>
+      <div className='queue-section-songs'>
         <QueueSongDetails song={currentSong} isCurrent />
       </div>
     </div>
@@ -24,10 +24,10 @@ const Queueing = () => {
   const currentSongs = useAppSelector(getQueue);
 
   return (
-    <div style={{ marginTop: 30 }}>
+    <div className='queue-section-next'>
       <p className='playing-section-title'>{t('Next')}</p>
 
-      <div style={{ margin: 5 }}>
+      <div className='queue-section-songs'>
         {currentSongs.map((song) => (
           <QueueSongDetails key={song.name} song={song} />
         ))}

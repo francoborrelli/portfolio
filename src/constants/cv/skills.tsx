@@ -109,7 +109,7 @@ const mapTag = (tag: (typeof AVALIABLE_SKILLS)['CURRENT'][number], type: string)
         shape='square'
         size={'large'}
         className='avatar-tag'
-        style={{ backgroundColor: tag.color, fontSize: '1.5rem', marginRight: 15 }}
+        style={{ ['--tag-bg' as any]: tag.color }}
         icon={tag.icon}
       ></Avatar>
     ),

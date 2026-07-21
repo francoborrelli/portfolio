@@ -46,4 +46,21 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+
+  .fullscreen-content {
+    width: 100%;
+    padding: 60px;
+  }
+
+  .fullscreen-row {
+    align-items: baseline;
+  }
+
+  .fullscreen-controls-end {
+    text-align: end;
+  }
+
+  .fullscreen-exit-button {
+    margin-left: 20px;
+  }
 }

@@ -12,7 +12,7 @@ interface LibraryProps {
 
 export const Library: FC<LibraryProps> = ({ playlists = [] }) => {
   return (
-    <Row gutter={[8, 8]} style={{ height: '100%' }}>
+    <Row gutter={[8, 8]} className='library-row'>
       <Col span={24}>
         <YourLibrary playlists={playlists} />
       </Col>

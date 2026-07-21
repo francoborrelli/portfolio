@@ -3,7 +3,6 @@ import {
   JavascriptPlain,
   LaravelOriginal,
   DjangoPlain,
-  GithubOriginal,
   GitlabOriginal,
   TensorflowOriginal,
   GitPlain,
@@ -39,7 +38,7 @@ import {
   NotionOriginal,
   GrafanaOriginal,
 } from 'devicons-react';
-import { FaSpotify, FaSymfony, FaTelegram, FaAws, FaApple, FaReact, FaBrain, FaWandMagicSparkles } from 'react-icons/fa6';
+import { FaSpotify, FaSymfony, FaTelegram, FaAws, FaApple, FaReact, FaBrain, FaWandMagicSparkles, FaGithub } from 'react-icons/fa6';
 import { SiCursor } from 'react-icons/si';
 
 export const tags = {
@@ -288,8 +287,8 @@ export const tags = {
   },
   GitHub: {
     text: 'GitHub',
-    color: 'white',
-    icon: <GithubOriginal />,
+    color: '#181717',
+    icon: <FaGithub style={{ color: 'white' }} />,
     link: 'https://github.com/',
     image: `https://www.bew-web-agency.fr/wp-content/uploads/2024/02/GitHub.jpg`,
   },

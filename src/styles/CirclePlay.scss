@@ -18,6 +18,10 @@
   inline-size: var(--encore-control-size-smaller, 40px);
   block-size: var(--encore-control-size-smaller, 40px);
 
+  svg {
+    height: var(--play-icon-size, 20px);
+  }
+
   &.big {
     min-block-size: var(--encore-control-size-smaller, 60px);
     inline-size: var(--encore-control-size-smaller, 60px);

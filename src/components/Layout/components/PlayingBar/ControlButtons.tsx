@@ -63,7 +63,7 @@ const CONTROLS = [ShuffleButton, SkipBackButton, PlayButton, SkipNextButton, Rep
 
 const ControlButtons = () => {
   return (
-    <Row gutter={24} align='middle' style={{ justifyContent: 'center' }}>
+    <Row gutter={24} align='middle' className='control-buttons'>
       {CONTROLS.map((Component, index) => (
         <Col key={index}>
           <Component />

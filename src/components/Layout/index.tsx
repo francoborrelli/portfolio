@@ -25,7 +25,7 @@ export const AppLayout: FC<{ children: ReactElement }> = (props) => {
 
       {/* Main Component */}
       <div className='main-container'>
-        <Row justify='end' gutter={[8, 8]} wrap style={{ height: 'calc(100vh - 106px)' }}>
+        <Row justify='end' gutter={[8, 8]} wrap className='main-layout-row'>
           <Col span={24}>
             <Navbar />
           </Col>

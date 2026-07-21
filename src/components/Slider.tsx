@@ -83,9 +83,6 @@ export const Slider = ({
         isEnabled={isEnabled}
         direction={direction}
         className='volume-sider'
-        style={{
-          cursor: 'pointer',
-        }}
         {...props}
       >
         <SliderBar className='position-sider' direction={direction} value={value} />

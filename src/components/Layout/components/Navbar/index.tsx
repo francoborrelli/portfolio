@@ -6,18 +6,12 @@ import { Search } from './Search';
 
 export const Navbar = memo(() => {
   return (
-    <Row
-      align='middle'
-      gutter={[16, 16]}
-      className='navbar'
-      justify='space-between'
-      style={{ margin: '0 5px' }}
-    >
+    <Row align='middle' gutter={[16, 16]} className='navbar' justify='space-between'>
       <Col>
         <HistoryNavigation />
       </Col>
 
-      <Col span={0} md={12} lg={10} xl={8} style={{ textAlign: 'center' }}>
+      <Col span={0} md={12} lg={10} xl={8} className='navbar-search-col'>
         <Search />
       </Col>
 

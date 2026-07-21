@@ -33,16 +33,12 @@ export const TopResultSong = ({ item, onClick }: { item: SearchResult; onClick?:
 
   return (
     <div
-      style={{ cursor: 'pointer' }}
       className='playlist-card relative rounded-lg overflow-hidden  hover:bg-spotify-gray-lightest transition'
       onClick={() => {
         navigate(`/playlist/${item.playlist.toLowerCase()}`);
       }}
     >
-      <div
-        style={{ position: 'relative' }}
-        className='md:aspect-w-1 md:aspect-h-1/2 lg:aspect-w-1 lg:aspect-h-3/4 xl:aspect-w-1 xl:aspect-h-4/5 p-4'
-      >
+      <div className='playlist-card-image-wrap md:aspect-w-1 md:aspect-h-1/2 lg:aspect-w-1 lg:aspect-h-3/4 xl:aspect-w-1 xl:aspect-h-4/5 p-4'>
         <img alt='' src={item.imageUrl} />
       </div>
       <div className='playlist-card-info'>

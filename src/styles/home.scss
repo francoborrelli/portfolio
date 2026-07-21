@@ -1,5 +1,14 @@
 @use './variables.scss' as *;
 
+.Home-seccion {
+  transition: background 0.5s;
+  background: linear-gradient(180deg, var(--playlist-color) -20%, rgb(18, 18, 18) 50%);
+}
+
+.home-horizontal-playlists {
+  margin: 10px;
+}
+
 .horizontal-playlist {
   display: flex;
   align-items: center;
@@ -83,6 +92,18 @@
 }
 
 .playlist-card {
+  cursor: pointer;
+  position: relative;
+
+  .playlist-card-image-wrap {
+    position: relative;
+  }
+
+  .playlist-card-image {
+    border-radius: 5px;
+    width: 100%;
+  }
+
   .circle-play-div {
     position: absolute;
     right: 10px;

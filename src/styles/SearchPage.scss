@@ -80,5 +80,25 @@
       color: white;
       text-decoration: underline;
     }
+
+    .song-details-title {
+      flex: 10;
+
+      &.has-skills {
+        flex: 6;
+      }
+    }
+
+    .song-details-time {
+      flex: 4;
+    }
+
+    .song-details-image {
+      position: relative;
+
+      &.has-avatar > div {
+        margin-right: -15px;
+      }
+    }
   }
 }

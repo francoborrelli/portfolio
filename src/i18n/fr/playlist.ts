@@ -5,4 +5,7 @@ export const playlist = {
   Skills: 'Compétences',
   Filter: 'Filtrer',
   'Search in playlist': 'Rechercher dans la playlist',
+  'No results found for': 'Aucun résultat trouvé pour « {{query}} »',
+  'Check spelling or try different keywords':
+    'Vérifie l’orthographe ou essaie d’autres mots-clés.',
 };

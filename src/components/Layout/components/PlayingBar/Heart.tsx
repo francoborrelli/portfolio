@@ -9,11 +9,7 @@ export const HeartLike = () => {
   };
 
   return (
-    <div
-      onClick={onClick}
-      style={{ marginLeft: 10 }}
-      className={liked ? 'heart-liked' : 'heart-like'}
-    >
+    <div onClick={onClick} className={liked ? 'heart-liked' : 'heart-like'}>
       <Heart />
     </div>
   );

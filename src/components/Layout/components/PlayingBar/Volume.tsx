@@ -36,7 +36,7 @@ export const VolumeControls = () => {
 
   return (
     <div className='volume-control-container'>
-      <Space style={{ display: 'flex' }}>
+      <Space className='volume-control-space'>
         <Tooltip title={muted ? t('Unmute') : t('Mute')}>
           <div
             onClick={() => {
@@ -47,7 +47,7 @@ export const VolumeControls = () => {
           </div>
         </Tooltip>
 
-        <div className='flex items-center justify-between w-full' style={{ width: 90 }}>
+        <div className='volume-slider-wrap flex items-center justify-between w-full'>
           <Slider
             isEnabled
             value={muted ? 0 : volume}

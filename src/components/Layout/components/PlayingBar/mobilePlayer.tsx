@@ -37,7 +37,7 @@ const MobileProgress = () => {
       <div
         className='current-time'
         style={{
-          width: `${(currentTime / duration) * 100}%`,
+          ['--progress' as string]: `${(currentTime / duration) * 100}%`,
         }}
       ></div>
     </div>
@@ -52,23 +52,15 @@ const NowPlayingBarMobile = () => {
       <div
         className='mobile-player'
         style={{
-          background: `linear-gradient(${currentSongData.color} -50%, rgb(18, 18, 18) 300%)`,
+          ['--song-color' as string]: currentSongData.color,
         }}
       >
         <Row justify='space-between'>
           <Col>
             <SongDetails />
           </Col>
-          <Col style={{ display: 'flex' }}>
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                minWidth: 50,
-                marginRight: 5,
-                justifyContent: 'space-between',
-              }}
-            >
+          <Col className='mobile-player-actions-col'>
+            <div className='mobile-player-actions'>
               <QueueButton />
               <PlayButton />
             </div>

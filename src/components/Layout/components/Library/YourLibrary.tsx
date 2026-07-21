@@ -30,10 +30,7 @@ const Title = memo(() => {
     return (
       <Tooltip placement='right' title={t('Expand your library')}>
         <button
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-          }}
+          className='library-expand-button'
           onClick={() => dispatch(libraryActions.toggleLibrary())}
         >
           <LibraryCollapsedIcon />
@@ -70,20 +67,14 @@ const YourLibrary = ({ playlists }: { playlists: Playlist[] }) => {
       <Title />
 
       <div className='library-list-container'>
-        <Col
-          style={
-            collapsed ? {} : ({ overflowY: 'scroll', height: '100%', marginLeft: -20 } as const)
-          }
-        >
-          <div
-            style={collapsed ? { overflowY: 'scroll', overflowX: 'hidden', height: '100%' } : {}}
-          >
+        <Col className={collapsed ? undefined : 'library-list-scroll'}>
+          <div className={collapsed ? 'library-list-scroll-collapsed' : undefined}>
             {playlists.map((playlist: Playlist) => (
               <PlaylistCardShort key={playlist.name} playlist={playlist} onSelect={onSelect} />
             ))}
           </div>
         </Col>
-        <Col style={{ maxHeight: 40 }}>
+        <Col className='library-language-col'>
           <LanguageButton />
         </Col>
       </div>

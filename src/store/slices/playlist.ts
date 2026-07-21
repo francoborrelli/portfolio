@@ -1,8 +1,18 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-const initialState: { order: string; search: string } = {
+export type PlaylistSortBy = 'custom' | 'name' | 'length';
+export type PlaylistSortDirection = 'asc' | 'desc';
+
+const initialState: {
+  order: string;
+  search: string;
+  sortBy: PlaylistSortBy;
+  sortDirection: PlaylistSortDirection;
+} = {
   order: 'ALL',
   search: '',
+  sortBy: 'custom',
+  sortDirection: 'asc',
 };
 
 const playlistSlice = createSlice({
@@ -15,9 +25,31 @@ const playlistSlice = createSlice({
     resetOrder(state, action: PayloadAction<{ order?: string }>) {
       state.order = action.payload.order || 'ALL';
       state.search = '';
+      state.sortBy = 'custom';
+      state.sortDirection = 'asc';
     },
     setSearch(state, action: PayloadAction<{ search: string }>) {
       state.search = action.payload.search;
+    },
+    setSort(
+      state,
+      action: PayloadAction<{ sortBy: PlaylistSortBy; sortDirection?: PlaylistSortDirection }>
+    ) {
+      state.sortBy = action.payload.sortBy;
+      state.sortDirection = action.payload.sortDirection || 'asc';
+    },
+    toggleSort(state, action: PayloadAction<{ sortBy: Exclude<PlaylistSortBy, 'custom'> }>) {
+      if (state.sortBy === action.payload.sortBy) {
+        if (state.sortDirection === 'asc') {
+          state.sortDirection = 'desc';
+          return;
+        }
+        state.sortBy = 'custom';
+        state.sortDirection = 'asc';
+        return;
+      }
+      state.sortBy = action.payload.sortBy;
+      state.sortDirection = 'asc';
     },
   },
 });

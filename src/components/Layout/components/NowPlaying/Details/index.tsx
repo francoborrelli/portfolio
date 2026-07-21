@@ -47,7 +47,7 @@ const Profile: FC<{ song: Song }> = memo(({ song }) => {
     <NowPlayingCard title={t(song.name)!} subtitle={t(song.artist || '')} image={song.imageUrl}>
       {explanationBullets}
       {hasButtons ? (
-        <Space style={{ marginTop: 10 }}>
+        <Space className='playing-now-social-links'>
           {song.link ? (
             <Tooltip title={t('WEB_SITE')} placement='top'>
               <a target={'_blank'} href={song.link} className='link-social-button' rel='noreferrer'>
@@ -194,7 +194,7 @@ const Skills: FC<{ song: Song }> = memo(({ song }) => {
               dispatch(libraryActions.setSongPlaying(SKILLS_BY_NAME.get(tag.text)));
             }}
           >
-            <Avatar style={{ backgroundColor: '#5c5c5c26' }} icon={tag.icon} />
+            <Avatar className='skill-avatar' icon={tag.icon} />
           </button>
         </Tooltip>
       ))}
